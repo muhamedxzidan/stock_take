@@ -43,3 +43,6 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Project-local Graphify source checkout (installed in editable mode).
+/tools/graphify/

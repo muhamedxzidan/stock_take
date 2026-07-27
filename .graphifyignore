@@ -1,0 +1,4 @@
+# Keep the application graph strictly scoped to Flutter source.
+/*
+!/lib/
+!/lib/**
