@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "853924723033",
+    "project_id": "stock-sira",
+    "storage_bucket": "stock-sira.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853924723033:android:bb6ea33e83d06883497448",
+        "android_client_info": {
+          "package_name": "com.example.stock_take"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDvrWfyt4MNy38Nx1_zijTMgIjy2coudE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

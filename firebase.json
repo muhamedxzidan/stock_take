@@ -1,0 +1,55 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "stock-sira",
+          "appId": "1:853924723033:android:bb6ea33e83d06883497448",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "stock-sira",
+          "appId": "1:853924723033:ios:b8c72109db57d98e497448",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "stock-sira",
+          "appId": "1:853924723033:ios:b8c72109db57d98e497448",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "stock-sira",
+          "configurations": {
+            "android": "1:853924723033:android:bb6ea33e83d06883497448",
+            "ios": "1:853924723033:ios:b8c72109db57d98e497448",
+            "macos": "1:853924723033:ios:b8c72109db57d98e497448",
+            "web": "1:853924723033:web:1fc001795ce0149a497448",
+            "windows": "1:853924723033:web:f534eeb545a1ddbb497448"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

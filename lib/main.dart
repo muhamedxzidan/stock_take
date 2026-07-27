@@ -1,6 +1,8 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:stock_take/firebase_options.dart';
 
 import 'core/constants/app_router.dart';
 import 'core/constants/app_strings.dart';
@@ -15,9 +17,10 @@ import 'features/items/data/repositories/items_repository.dart';
 import 'features/transactions/cubit/transactions_cubit.dart';
 import 'features/transactions/data/repositories/transactions_repository.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const StockTakeApp());
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 }
 
 class StockTakeApp extends StatelessWidget {
@@ -33,13 +36,16 @@ class StockTakeApp extends StatelessWidget {
         return MultiBlocProvider(
           providers: [
             BlocProvider<DashboardCubit>(
-              create: (context) => DashboardCubit(DashboardRepository())..loadDashboardData(),
+              create: (context) =>
+                  DashboardCubit(DashboardRepository())..loadDashboardData(),
             ),
             BlocProvider<ItemsCubit>(
               create: (context) => ItemsCubit(ItemsRepository()),
             ),
             BlocProvider<TransactionsCubit>(
-              create: (context) => TransactionsCubit(TransactionsRepository())..loadTransactions(),
+              create: (context) =>
+                  TransactionsCubit(TransactionsRepository())
+                    ..loadTransactions(),
             ),
           ],
           child: MaterialApp.router(
