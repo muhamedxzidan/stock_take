@@ -4,8 +4,12 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../../../core/models/carton_piece_quantity.dart';
+import '../../../../core/models/inventory_item.dart';
+import '../../../../core/shared_widgets/carton_piece_quantity_fields.dart';
 import '../../../../core/shared_widgets/custom_button.dart';
 import '../../../../core/shared_widgets/custom_text_field.dart';
+import '../../../items/presentation/widgets/inventory_item_selector_field.dart';
 import '../../data/models/warehouse_return_draft.dart';
 
 class WarehouseReturnForm extends StatefulWidget {
@@ -20,11 +24,6 @@ class WarehouseReturnForm extends StatefulWidget {
 class _WarehouseReturnFormState extends State<WarehouseReturnForm> {
   final _voucherController = TextEditingController(text: 'OUT-1048');
   final _returnSourceController = TextEditingController(text: 'فرع مدينة نصر');
-  final _itemNameController = TextEditingController(
-    text: 'مناديل فاين 500 سحبة',
-  );
-  final _itemCodeController = TextEditingController(text: 'ITM-004');
-  final _quantityController = TextEditingController(text: '5');
   final _returnedByController = TextEditingController(text: 'مسؤول الفرع');
   final _receivedByController = TextEditingController(text: 'أمين المخزن');
   final _dateController = TextEditingController(text: '2026-07-27');
@@ -34,14 +33,16 @@ class _WarehouseReturnFormState extends State<WarehouseReturnForm> {
   final _notesController = TextEditingController();
 
   ReturnItemCondition _condition = ReturnItemCondition.needsInspection;
+  InventoryItem? _selectedItem;
+  CartonPieceQuantity _quantity = const CartonPieceQuantity(
+    cartons: 0,
+    pieces: 0,
+  );
 
   @override
   void dispose() {
     _voucherController.dispose();
     _returnSourceController.dispose();
-    _itemNameController.dispose();
-    _itemCodeController.dispose();
-    _quantityController.dispose();
     _returnedByController.dispose();
     _receivedByController.dispose();
     _dateController.dispose();
@@ -51,12 +52,24 @@ class _WarehouseReturnFormState extends State<WarehouseReturnForm> {
   }
 
   void _submitPreview() {
+    final selectedItem = _selectedItem;
+    if (selectedItem == null) {
+      _showValidationMessage('اختر الصنف المرتجع.');
+      return;
+    }
+
+    final totalPieces = _quantity.totalPiecesFor(selectedItem.itemsPerCarton);
+    if (totalPieces <= 0) {
+      _showValidationMessage('اكتب عدد الكراتين أو القطع.');
+      return;
+    }
+
     final draft = WarehouseReturnDraft(
       originalVoucherNumber: _voucherController.text,
       returnSource: _returnSourceController.text,
-      itemName: _itemNameController.text,
-      itemCode: _itemCodeController.text,
-      quantity: int.tryParse(_quantityController.text),
+      itemName: selectedItem.name,
+      itemCode: selectedItem.code,
+      quantity: totalPieces,
       returnedBy: _returnedByController.text,
       receivedBy: _receivedByController.text,
       returnDate: _dateController.text,
@@ -75,6 +88,12 @@ class _WarehouseReturnFormState extends State<WarehouseReturnForm> {
         content: Text(AppStrings.returnUiOnlyMessage),
         backgroundColor: AppColors.info,
       ),
+    );
+  }
+
+  void _showValidationMessage(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(message), backgroundColor: AppColors.error),
     );
   }
 
@@ -122,38 +141,30 @@ class _WarehouseReturnFormState extends State<WarehouseReturnForm> {
               prefixIcon: Icons.storefront_outlined,
             ),
             SizedBox(height: AppSizes.h16),
-            _ResponsiveFieldRow(
-              children: [
-                CustomTextField(
-                  label: AppStrings.itemName,
-                  controller: _itemNameController,
-                  prefixIcon: Icons.inventory_2_outlined,
-                ),
-                CustomTextField(
-                  label: AppStrings.itemCode,
-                  controller: _itemCodeController,
-                  prefixIcon: Icons.qr_code_2_rounded,
-                ),
-              ],
+            InventoryItemSelectorField(
+              selectedItem: _selectedItem,
+              onSelected: (item) => setState(() {
+                _selectedItem = item;
+                _quantity = const CartonPieceQuantity(cartons: 0, pieces: 0);
+              }),
             ),
             SizedBox(height: AppSizes.h16),
-            _ResponsiveFieldRow(
-              children: [
-                CustomTextField(
-                  label: AppStrings.returnQuantity,
-                  controller: _quantityController,
-                  keyboardType: TextInputType.number,
-                  prefixIcon: Icons.numbers_rounded,
-                ),
-                _ReturnConditionField(
-                  value: _condition,
-                  onChanged: (condition) {
-                    if (condition != null) {
-                      setState(() => _condition = condition);
-                    }
-                  },
-                ),
-              ],
+            if (_selectedItem case final item?) ...[
+              CartonPieceQuantityFields(
+                key: ValueKey(item.id),
+                keyPrefix: 'return-quantity',
+                itemsPerCarton: item.itemsPerCarton,
+                onChanged: (value) => _quantity = value,
+              ),
+              SizedBox(height: AppSizes.h16),
+            ],
+            _ReturnConditionField(
+              value: _condition,
+              onChanged: (condition) {
+                if (condition != null) {
+                  setState(() => _condition = condition);
+                }
+              },
             ),
             SizedBox(height: AppSizes.h16),
             _ResponsiveFieldRow(

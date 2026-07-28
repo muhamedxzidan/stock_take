@@ -14,20 +14,42 @@ class TransactionFilterBar extends StatelessWidget {
     return BlocBuilder<TransactionsCubit, TransactionsState>(
       buildWhen: (prev, curr) => curr is TransactionsSuccess,
       builder: (context, state) {
-        final selected = state is TransactionsSuccess ? state.selectedFilter : null;
+        final selected = state is TransactionsSuccess
+            ? state.selectedFilter
+            : null;
 
         return SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              _buildFilterChip(context, label: AppStrings.filterAll, type: null, isSelected: selected == null),
+              _buildFilterChip(
+                context,
+                label: AppStrings.filterAll,
+                type: null,
+                isSelected: selected == null,
+              ),
               const SizedBox(width: 8.0),
-              _buildFilterChip(context, label: AppStrings.filterInbound, type: TransactionType.inbound, isSelected: selected == TransactionType.inbound),
+              _buildFilterChip(
+                context,
+                label: AppStrings.filterInbound,
+                type: TransactionType.inbound,
+                isSelected: selected == TransactionType.inbound,
+              ),
               const SizedBox(width: 8.0),
-              _buildFilterChip(context, label: AppStrings.filterOutbound, type: TransactionType.outbound, isSelected: selected == TransactionType.outbound),
+              _buildFilterChip(
+                context,
+                label: AppStrings.filterOutbound,
+                type: TransactionType.outbound,
+                isSelected: selected == TransactionType.outbound,
+              ),
               const SizedBox(width: 8.0),
-              _buildFilterChip(context, label: AppStrings.filterAdjustment, type: TransactionType.adjustment, isSelected: selected == TransactionType.adjustment),
+              _buildFilterChip(
+                context,
+                label: AppStrings.filterAdjustment,
+                type: TransactionType.adjustment,
+                isSelected: selected == TransactionType.adjustment,
+              ),
             ],
           ),
         );

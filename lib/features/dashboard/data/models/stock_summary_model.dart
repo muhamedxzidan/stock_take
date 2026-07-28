@@ -20,9 +20,9 @@ class StockSummaryModel {
       );
 
   Map<String, dynamic> toJson() => {
-        'totalItemsCount': totalItemsCount,
-        'totalInboundCount': totalInboundCount,
-        'totalOutboundCount': totalOutboundCount,
-        'lowStockItemsCount': lowStockItemsCount,
-      };
+    'totalItemsCount': totalItemsCount,
+    'totalInboundCount': totalInboundCount,
+    'totalOutboundCount': totalOutboundCount,
+    'lowStockItemsCount': lowStockItemsCount,
+  };
 }

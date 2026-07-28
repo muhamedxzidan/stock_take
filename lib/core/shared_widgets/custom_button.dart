@@ -49,7 +49,12 @@ class CustomButton extends StatelessWidget {
                     Icon(icon, color: AppColors.surface, size: AppSizes.iconMd),
                     SizedBox(width: AppSizes.p8),
                   ],
-                  Text(text, style: AppTextStyles.buttonText),
+                  Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(text, style: AppTextStyles.buttonText),
+                    ),
+                  ),
                 ],
               ),
       ),

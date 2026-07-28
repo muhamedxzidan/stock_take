@@ -20,7 +20,6 @@ class AddItemForm extends StatefulWidget {
 class _AddItemFormState extends State<AddItemForm> {
   final _nameController = TextEditingController();
   final _codeController = TextEditingController();
-  final _unitController = TextEditingController(text: 'قطعة');
   final _itemsPerCartonController = TextEditingController(text: '12');
   final _initialBalanceController = TextEditingController(text: '0');
 
@@ -28,7 +27,6 @@ class _AddItemFormState extends State<AddItemForm> {
   void dispose() {
     _nameController.dispose();
     _codeController.dispose();
-    _unitController.dispose();
     _itemsPerCartonController.dispose();
     _initialBalanceController.dispose();
     super.dispose();
@@ -58,7 +56,8 @@ class _AddItemFormState extends State<AddItemForm> {
           );
         }
       },
-      buildWhen: (prev, curr) => curr is ItemsLoading || curr is ItemsInitial || curr is ItemsFailure,
+      buildWhen: (prev, curr) =>
+          curr is ItemsLoading || curr is ItemsInitial || curr is ItemsFailure,
       builder: (context, state) {
         final isLoading = state is ItemsLoading;
         return Column(
@@ -77,31 +76,16 @@ class _AddItemFormState extends State<AddItemForm> {
               prefixIcon: Icons.qr_code,
             ),
             SizedBox(height: AppSizes.h16),
-            Row(
-              children: [
-                Expanded(
-                  child: CustomTextField(
-                    label: AppStrings.itemUnit,
-                    hint: 'قطعة / علبة / كرتونة',
-                    controller: _unitController,
-                    prefixIcon: Icons.unfold_more,
-                  ),
-                ),
-                SizedBox(width: AppSizes.p12),
-                Expanded(
-                  child: CustomTextField(
-                    label: AppStrings.itemsPerCarton,
-                    hint: '12',
-                    keyboardType: TextInputType.number,
-                    controller: _itemsPerCartonController,
-                    prefixIcon: Icons.grid_view,
-                  ),
-                ),
-              ],
+            CustomTextField(
+              label: AppStrings.itemsPerCarton,
+              hint: 'مثال: 12',
+              keyboardType: TextInputType.number,
+              controller: _itemsPerCartonController,
+              prefixIcon: Icons.grid_view,
             ),
             SizedBox(height: AppSizes.h16),
             CustomTextField(
-              label: AppStrings.initialBalance,
+              label: '${AppStrings.initialBalance} بالقطعة',
               hint: '0',
               keyboardType: TextInputType.number,
               controller: _initialBalanceController,
@@ -114,12 +98,11 @@ class _AddItemFormState extends State<AddItemForm> {
               isLoading: isLoading,
               onPressed: () {
                 context.read<ItemsCubit>().submitNewItem(
-                      name: _nameController.text,
-                      code: _codeController.text,
-                      unit: _unitController.text,
-                      itemsPerCartonStr: _itemsPerCartonController.text,
-                      initialBalanceStr: _initialBalanceController.text,
-                    );
+                  name: _nameController.text,
+                  code: _codeController.text,
+                  itemsPerCartonStr: _itemsPerCartonController.text,
+                  initialBalanceStr: _initialBalanceController.text,
+                );
               },
             ),
           ],

@@ -285,8 +285,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_material_dart",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 27,
+      "community_name": "custom_app_bar.dart",
       "norm_label": "package:flutter/material.dart"
     },
     {
@@ -1225,6 +1225,17 @@
       "norm_label": "dispatchedby"
     },
     {
+      "label": "driverName",
+      "file_type": "code",
+      "source_file": "lib/core/constants/app_strings.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_core_constants_app_strings_drivername",
+      "community": 0,
+      "community_name": "app_strings.dart",
+      "norm_label": "drivername"
+    },
+    {
       "label": "transactionDate",
       "file_type": "code",
       "source_file": "lib/core/constants/app_strings.dart",
@@ -1902,8 +1913,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "constants_app_colors_dart",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 27,
+      "community_name": "custom_app_bar.dart",
       "norm_label": "../constants/app_colors.dart"
     },
     {
@@ -1990,8 +2001,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "icondata",
-      "community": 23,
-      "community_name": "custom_button.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "icondata"
     },
     {
@@ -2380,6 +2391,17 @@
       "norm_label": "receivedby"
     },
     {
+      "label": "driverName",
+      "file_type": "code",
+      "source_file": "lib/core/shared_widgets/pdf_voucher_dialog.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_core_shared_widgets_pdf_voucher_dialog_drivername",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "drivername"
+    },
+    {
       "label": "itemName",
       "file_type": "code",
       "source_file": "lib/core/shared_widgets/pdf_voucher_dialog.dart",
@@ -2617,8 +2639,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 27,
+      "community_name": "custom_app_bar.dart",
       "norm_label": "app_theme.dart"
     },
     {
@@ -2628,8 +2650,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme_apptheme",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 27,
+      "community_name": "custom_app_bar.dart",
       "norm_label": "apptheme"
     },
     {
@@ -2661,8 +2683,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "cubit"
     },
     {
@@ -2771,8 +2793,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_item_model_dart",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "../../data/models/item_model.dart"
     },
     {
@@ -3299,8 +3321,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "dashboard_screen.dart"
     },
     {
@@ -3343,8 +3365,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_routes_dart",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "../../../../core/constants/app_routes.dart"
     },
     {
@@ -3387,8 +3409,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_text_field_dart",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 14,
+      "community_name": "adjustment_form.dart",
       "norm_label": "../../../../core/shared_widgets/custom_text_field.dart"
     },
     {
@@ -3398,8 +3420,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_dashboard_cubit_dart",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "../../cubit/dashboard_cubit.dart"
     },
     {
@@ -3409,8 +3431,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_dashboard_state_dart",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "../../cubit/dashboard_state.dart"
     },
     {
@@ -3420,8 +3442,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_quick_action_bar_dart",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "../widgets/quick_action_bar.dart"
     },
     {
@@ -3431,8 +3453,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_stock_items_list_dart",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "../widgets/stock_items_list.dart"
     },
     {
@@ -3442,8 +3464,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_stock_summary_card_dart",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "../widgets/stock_summary_card.dart"
     },
     {
@@ -3453,8 +3475,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "quick_action_bar.dart"
     },
     {
@@ -3464,8 +3486,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_quickactionbar",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "quickactionbar"
     },
     {
@@ -3475,8 +3497,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_quickaction",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "_quickaction"
     },
     {
@@ -3486,8 +3508,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_title",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "title"
     },
     {
@@ -3497,8 +3519,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_icon",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "icon"
     },
     {
@@ -3508,8 +3530,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_color",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "color"
     },
     {
@@ -3519,8 +3541,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_route",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "route"
     },
     {
@@ -3530,8 +3552,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_build",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "build"
     },
     {
@@ -3541,8 +3563,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_buildactionbutton",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "_buildactionbutton"
     },
     {
@@ -3574,8 +3596,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "stock_items_list.dart"
     },
     {
@@ -3596,8 +3618,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_build",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "build"
     },
     {
@@ -3607,8 +3629,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_builditemcard",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_builditemcard"
     },
     {
@@ -3684,8 +3706,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_cubit_itemscubit",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "itemscubit"
     },
     {
@@ -3750,8 +3772,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "items_state.dart"
     },
     {
@@ -3761,8 +3783,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsstate",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "itemsstate"
     },
     {
@@ -3772,8 +3794,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsinitial",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "itemsinitial"
     },
     {
@@ -3783,8 +3805,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsloading",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "itemsloading"
     },
     {
@@ -3794,8 +3816,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemssuccess",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "itemssuccess"
     },
     {
@@ -3805,8 +3827,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsfailure",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "itemsfailure"
     },
     {
@@ -3816,8 +3838,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_message",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "message"
     },
     {
@@ -3948,8 +3970,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "add_item_form.dart"
     },
     {
@@ -3959,8 +3981,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_additemform",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "additemform"
     },
     {
@@ -3970,8 +3992,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "statefulwidget",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "statefulwidget"
     },
     {
@@ -3981,8 +4003,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_additemformstate",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_additemformstate"
     },
     {
@@ -4003,8 +4025,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_namecontroller",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_namecontroller"
     },
     {
@@ -4014,8 +4036,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_codecontroller",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_codecontroller"
     },
     {
@@ -4025,8 +4047,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_unitcontroller",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_unitcontroller"
     },
     {
@@ -4036,8 +4058,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_itemspercartoncontroller",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_itemspercartoncontroller"
     },
     {
@@ -4047,8 +4069,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_initialbalancecontroller",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_initialbalancecontroller"
     },
     {
@@ -4058,8 +4080,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_createstate",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "createstate"
     },
     {
@@ -4069,8 +4091,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_dispose",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "dispose"
     },
     {
@@ -4080,8 +4102,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_build",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "build"
     },
     {
@@ -4091,8 +4113,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_dashboard",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "approutes.dashboard"
     },
     {
@@ -4102,8 +4124,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_button_dart",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 14,
+      "community_name": "adjustment_form.dart",
       "norm_label": "../../../../core/shared_widgets/custom_button.dart"
     },
     {
@@ -4113,8 +4135,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_items_cubit_dart",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "../../cubit/items_cubit.dart"
     },
     {
@@ -4124,8 +4146,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_items_state_dart",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "../../cubit/items_state.dart"
     },
     {
@@ -4366,8 +4388,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "return_workflow_card.dart"
     },
     {
@@ -4377,8 +4399,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_returnworkflowcard",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "returnworkflowcard"
     },
     {
@@ -4388,8 +4410,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_workflowstep",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "_workflowstep"
     },
     {
@@ -4399,8 +4421,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_number",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "number"
     },
     {
@@ -4410,8 +4432,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_title",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "title"
     },
     {
@@ -4421,8 +4443,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_description",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "description"
     },
     {
@@ -4432,8 +4454,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_islast",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "islast"
     },
     {
@@ -4443,8 +4465,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_build",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "build"
     },
     {
@@ -4905,8 +4927,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_transaction_model_dart",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "../../data/models/transaction_model.dart"
     },
     {
@@ -5048,8 +5070,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_models_transaction_model_transactiontype",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "transactiontype"
     },
     {
@@ -5059,8 +5081,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_models_transaction_model_transactionmodel",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "transactionmodel"
     },
     {
@@ -5488,7 +5510,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen",
-      "community": 3,
+      "community": 30,
       "community_name": "TransactionsCubit",
       "norm_label": "transaction_history_screen.dart"
     },
@@ -5499,7 +5521,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_transactionhistoryscreen",
-      "community": 3,
+      "community": 30,
       "community_name": "TransactionsCubit",
       "norm_label": "transactionhistoryscreen"
     },
@@ -5510,7 +5532,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_build",
-      "community": 3,
+      "community": 30,
       "community_name": "TransactionsCubit",
       "norm_label": "build"
     },
@@ -5543,7 +5565,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_transaction_filter_bar_dart",
-      "community": 3,
+      "community": 30,
       "community_name": "TransactionsCubit",
       "norm_label": "../widgets/transaction_filter_bar.dart"
     },
@@ -5554,7 +5576,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_transaction_list_item_dart",
-      "community": 3,
+      "community": 30,
       "community_name": "TransactionsCubit",
       "norm_label": "../widgets/transaction_list_item.dart"
     },
@@ -5746,6 +5768,17 @@
       "norm_label": "_receivedbycontroller"
     },
     {
+      "label": "_driverNameController",
+      "file_type": "code",
+      "source_file": "lib/features/transactions/presentation/widgets/inbound_form.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_transactions_presentation_widgets_inbound_form_drivernamecontroller",
+      "community": 15,
+      "community_name": "inbound_form.dart",
+      "norm_label": "_drivernamecontroller"
+    },
+    {
       "label": "_itemNameController",
       "file_type": "code",
       "source_file": "lib/features/transactions/presentation/widgets/inbound_form.dart",
@@ -5840,8 +5873,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_pdf_voucher_dialog_dart",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "../../../../core/shared_widgets/pdf_voucher_dialog.dart"
     },
     {
@@ -5909,6 +5942,17 @@
       "community": 16,
       "community_name": "outbound_form.dart",
       "norm_label": "_receivedbycontroller"
+    },
+    {
+      "label": "_driverNameController",
+      "file_type": "code",
+      "source_file": "lib/features/transactions/presentation/widgets/outbound_form.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_transactions_presentation_widgets_outbound_form_drivernamecontroller",
+      "community": 16,
+      "community_name": "outbound_form.dart",
+      "norm_label": "_drivernamecontroller"
     },
     {
       "label": "_itemNameController",
@@ -6049,8 +6093,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "transaction_list_item.dart"
     },
     {
@@ -6060,8 +6104,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_transactionlistitem",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "transactionlistitem"
     },
     {
@@ -6071,8 +6115,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_transaction",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "transaction"
     },
     {
@@ -6082,8 +6126,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_showpdfdialog",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "_showpdfdialog"
     },
     {
@@ -6093,8 +6137,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_build",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "build"
     },
     {
@@ -6104,8 +6148,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_buildbadge",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "_buildbadge"
     },
     {
@@ -6115,8 +6159,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_status_badge_dart",
-      "community": 9,
-      "community_name": "transaction_model.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "../../../../core/shared_widgets/status_badge.dart"
     },
     {
@@ -6126,8 +6170,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_main",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "main.dart"
     },
     {
@@ -6137,8 +6181,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_main_stocktakeapp",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "stocktakeapp"
     },
     {
@@ -6148,8 +6192,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_main_main",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "main"
     },
     {
@@ -6159,8 +6203,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_main_build",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "build"
     },
     {
@@ -6170,8 +6214,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_router_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "core/constants/app_router.dart"
     },
     {
@@ -6181,8 +6225,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_theme_app_theme_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "core/theme/app_theme.dart"
     },
     {
@@ -6192,8 +6236,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_dashboard_cubit_dashboard_cubit_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "features/dashboard/cubit/dashboard_cubit.dart"
     },
     {
@@ -6203,8 +6247,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_dashboard_data_repositories_dashboard_repository_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "features/dashboard/data/repositories/dashboard_repository.dart"
     },
     {
@@ -6214,8 +6258,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_items_cubit_items_cubit_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "features/items/cubit/items_cubit.dart"
     },
     {
@@ -6225,8 +6269,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_items_data_repositories_items_repository_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "features/items/data/repositories/items_repository.dart"
     },
     {
@@ -6236,8 +6280,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_transactions_cubit_transactions_cubit_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "features/transactions/cubit/transactions_cubit.dart"
     },
     {
@@ -6247,8 +6291,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "features_transactions_data_repositories_transactions_repository_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "features/transactions/data/repositories/transactions_repository.dart"
     },
     {
@@ -6304,6 +6348,61 @@
       "id": "graphify_out_memory_query_20260726_232727_\u0627\u0633\u062a\u062e\u062f\u0645_\u0628\u0627\u0643\u062f\u062c_flutter_bloc_\u0639\u0634\u0627\u0646_\u0647\u0646\u0633\u062a\u062e\u062f\u0645_\u0643\u064a\u0648\u0628\u062a_\u0645\u0646\u0647\u0627_source_nodes",
       "community": 31,
       "community_name": "Q: \u0627\u0633\u062a\u062e\u062f\u0645 \u0628\u0627\u0643\u062f\u062c flutter bloc \u0639\u0634\u0627\u0646 \u0647\u0646\u0633\u062a\u062e\u062f\u0645 \u0643\u064a\u0648\u0628\u062a \u0645\u0646\u0647\u0627",
+      "norm_label": "source nodes"
+    },
+    {
+      "label": "query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a",
+      "community": 32,
+      "community_name": "Q: \u0647\u064a\u0627 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0643 ui ux \u0628\u0633 \u0648\u0636\u064a\u0641 \u0643\u0645\u0627\u0646 \u062e\u0627\u0635\u064a\u0647 \u0627\u0644\u0645\u0631\u062a\u062c\u0639 \u0641\u064a \u0627\u0644\u0645\u062e\u0632\u0646 \u0643 ui \u0628\u0633 \u0628\u0631\u0636\u0648 \u0645\u0641\u064a\u0634 \u0627\u064a \u0644\u0648\u062c\u064a\u0643 \u0644\u0633\u0647 \u062e\u0644\u064a\u0647 \u0628\u0633 \u062c\u0627\u0647\u0632 \u0644\u0644\u0648\u062c\u064a\u0643",
+      "norm_label": "query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md"
+    },
+    {
+      "label": "Q: \u0647\u064a\u0627 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0643 ui ux \u0628\u0633 \u0648\u0636\u064a\u0641 \u0643\u0645\u0627\u0646 \u062e\u0627\u0635\u064a\u0647 \u0627\u0644\u0645\u0631\u062a\u062c\u0639 \u0641\u064a \u0627\u0644\u0645\u062e\u0632\u0646 \u0643 ui \u0628\u0633 \u0628\u0631\u0636\u0648 \u0645\u0641\u064a\u0634 \u0627\u064a \u0644\u0648\u062c\u064a\u0643 \u0644\u0633\u0647 \u062e\u0644\u064a\u0647 \u0628\u0633 \u062c\u0627\u0647\u0632 \u0644\u0644\u0648\u062c\u064a\u0643",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_q_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_\u0627\u0644\u0645\u062e\u0632\u0646_\u0643_ui_\u0628\u0633_\u0628\u0631\u0636\u0648_\u0645\u0641\u064a\u0634_\u0627\u064a_\u0644\u0648\u062c\u064a\u0643_\u0644\u0633\u0647_\u062e\u0644\u064a\u0647_\u0628\u0633_\u062c\u0627\u0647\u0632_\u0644\u0644\u0648\u062c\u064a\u0643",
+      "community": 32,
+      "community_name": "Q: \u0647\u064a\u0627 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0643 ui ux \u0628\u0633 \u0648\u0636\u064a\u0641 \u0643\u0645\u0627\u0646 \u062e\u0627\u0635\u064a\u0647 \u0627\u0644\u0645\u0631\u062a\u062c\u0639 \u0641\u064a \u0627\u0644\u0645\u062e\u0632\u0646 \u0643 ui \u0628\u0633 \u0628\u0631\u0636\u0648 \u0645\u0641\u064a\u0634 \u0627\u064a \u0644\u0648\u062c\u064a\u0643 \u0644\u0633\u0647 \u062e\u0644\u064a\u0647 \u0628\u0633 \u062c\u0627\u0647\u0632 \u0644\u0644\u0648\u062c\u064a\u0643",
+      "norm_label": "q: \u0647\u064a\u0627 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0643 ui ux \u0628\u0633 \u0648\u0636\u064a\u0641 \u0643\u0645\u0627\u0646 \u062e\u0627\u0635\u064a\u0647 \u0627\u0644\u0645\u0631\u062a\u062c\u0639 \u0641\u064a \u0627\u0644\u0645\u062e\u0632\u0646 \u0643 ui \u0628\u0633 \u0628\u0631\u0636\u0648 \u0645\u0641\u064a\u0634 \u0627\u064a \u0644\u0648\u062c\u064a\u0643 \u0644\u0633\u0647 \u062e\u0644\u064a\u0647 \u0628\u0633 \u062c\u0627\u0647\u0632 \u0644\u0644\u0648\u062c\u064a\u0643"
+    },
+    {
+      "label": "Answer",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_answer",
+      "community": 32,
+      "community_name": "Q: \u0647\u064a\u0627 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0643 ui ux \u0628\u0633 \u0648\u0636\u064a\u0641 \u0643\u0645\u0627\u0646 \u062e\u0627\u0635\u064a\u0647 \u0627\u0644\u0645\u0631\u062a\u062c\u0639 \u0641\u064a \u0627\u0644\u0645\u062e\u0632\u0646 \u0643 ui \u0628\u0633 \u0628\u0631\u0636\u0648 \u0645\u0641\u064a\u0634 \u0627\u064a \u0644\u0648\u062c\u064a\u0643 \u0644\u0633\u0647 \u062e\u0644\u064a\u0647 \u0628\u0633 \u062c\u0627\u0647\u0632 \u0644\u0644\u0648\u062c\u064a\u0643",
+      "norm_label": "answer"
+    },
+    {
+      "label": "Outcome",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_outcome",
+      "community": 32,
+      "community_name": "Q: \u0647\u064a\u0627 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0643 ui ux \u0628\u0633 \u0648\u0636\u064a\u0641 \u0643\u0645\u0627\u0646 \u062e\u0627\u0635\u064a\u0647 \u0627\u0644\u0645\u0631\u062a\u062c\u0639 \u0641\u064a \u0627\u0644\u0645\u062e\u0632\u0646 \u0643 ui \u0628\u0633 \u0628\u0631\u0636\u0648 \u0645\u0641\u064a\u0634 \u0627\u064a \u0644\u0648\u062c\u064a\u0643 \u0644\u0633\u0647 \u062e\u0644\u064a\u0647 \u0628\u0633 \u062c\u0627\u0647\u0632 \u0644\u0644\u0648\u062c\u064a\u0643",
+      "norm_label": "outcome"
+    },
+    {
+      "label": "Source Nodes",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_source_nodes",
+      "community": 32,
+      "community_name": "Q: \u0647\u064a\u0627 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0643 ui ux \u0628\u0633 \u0648\u0636\u064a\u0641 \u0643\u0645\u0627\u0646 \u062e\u0627\u0635\u064a\u0647 \u0627\u0644\u0645\u0631\u062a\u062c\u0639 \u0641\u064a \u0627\u0644\u0645\u062e\u0632\u0646 \u0643 ui \u0628\u0633 \u0628\u0631\u0636\u0648 \u0645\u0641\u064a\u0634 \u0627\u064a \u0644\u0648\u062c\u064a\u0643 \u0644\u0633\u0647 \u062e\u0644\u064a\u0647 \u0628\u0633 \u062c\u0627\u0647\u0632 \u0644\u0644\u0648\u062c\u064a\u0643",
       "norm_label": "source nodes"
     }
   ],
@@ -7787,6 +7886,17 @@
       "_origin": "ast",
       "source": "lib_core_constants_app_strings",
       "target": "lib_core_constants_app_strings_dispatchedby"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/core/constants/app_strings.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_core_constants_app_strings",
+      "target": "lib_core_constants_app_strings_drivername"
     },
     {
       "relation": "defines",
@@ -9583,6 +9693,17 @@
       "_origin": "ast",
       "source": "lib_core_shared_widgets_pdf_voucher_dialog",
       "target": "lib_core_shared_widgets_pdf_voucher_dialog_deliveredby"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/core/shared_widgets/pdf_voucher_dialog.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_core_shared_widgets_pdf_voucher_dialog",
+      "target": "lib_core_shared_widgets_pdf_voucher_dialog_drivername"
     },
     {
       "relation": "defines",
@@ -14676,6 +14797,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_transactions_presentation_widgets_inbound_form",
+      "target": "lib_features_transactions_presentation_widgets_inbound_form_drivernamecontroller"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/widgets/inbound_form.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_widgets_inbound_form",
       "target": "lib_features_transactions_presentation_widgets_inbound_form_inboundform"
     },
     {
@@ -14842,6 +14974,17 @@
       "_origin": "ast",
       "source": "lib_features_transactions_presentation_widgets_outbound_form",
       "target": "lib_features_transactions_presentation_widgets_outbound_form_dispose"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/widgets/outbound_form.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_widgets_outbound_form",
+      "target": "lib_features_transactions_presentation_widgets_outbound_form_drivernamecontroller"
     },
     {
       "relation": "defines",
@@ -15204,6 +15347,50 @@
       "_origin": "ast",
       "source": "graphify_out_memory_query_20260726_232727_\u0627\u0633\u062a\u062e\u062f\u0645_\u0628\u0627\u0643\u062f\u062c_flutter_bloc_\u0639\u0634\u0627\u0646_\u0647\u0646\u0633\u062a\u062e\u062f\u0645_\u0643\u064a\u0648\u0628\u062a_\u0645\u0646\u0647\u0627_q_\u0627\u0633\u062a\u062e\u062f\u0645_\u0628\u0627\u0643\u062f\u062c_flutter_bloc_\u0639\u0634\u0627\u0646_\u0647\u0646\u0633\u062a\u062e\u062f\u0645_\u0643\u064a\u0648\u0628\u062a_\u0645\u0646\u0647\u0627",
       "target": "graphify_out_memory_query_20260726_232727_\u0627\u0633\u062a\u062e\u062f\u0645_\u0628\u0627\u0643\u062f\u062c_flutter_bloc_\u0639\u0634\u0627\u0646_\u0647\u0646\u0633\u062a\u062e\u062f\u0645_\u0643\u064a\u0648\u0628\u062a_\u0645\u0646\u0647\u0627_source_nodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a",
+      "target": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_q_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_\u0627\u0644\u0645\u062e\u0632\u0646_\u0643_ui_\u0628\u0633_\u0628\u0631\u0636\u0648_\u0645\u0641\u064a\u0634_\u0627\u064a_\u0644\u0648\u062c\u064a\u0643_\u0644\u0633\u0647_\u062e\u0644\u064a\u0647_\u0628\u0633_\u062c\u0627\u0647\u0632_\u0644\u0644\u0648\u062c\u064a\u0643",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_q_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_\u0627\u0644\u0645\u062e\u0632\u0646_\u0643_ui_\u0628\u0633_\u0628\u0631\u0636\u0648_\u0645\u0641\u064a\u0634_\u0627\u064a_\u0644\u0648\u062c\u064a\u0643_\u0644\u0633\u0647_\u062e\u0644\u064a\u0647_\u0628\u0633_\u062c\u0627\u0647\u0632_\u0644\u0644\u0648\u062c\u064a\u0643",
+      "target": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_q_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_\u0627\u0644\u0645\u062e\u0632\u0646_\u0643_ui_\u0628\u0633_\u0628\u0631\u0636\u0648_\u0645\u0641\u064a\u0634_\u0627\u064a_\u0644\u0648\u062c\u064a\u0643_\u0644\u0633\u0647_\u062e\u0644\u064a\u0647_\u0628\u0633_\u062c\u0627\u0647\u0632_\u0644\u0644\u0648\u062c\u064a\u0643",
+      "target": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_outcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_q_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_\u0627\u0644\u0645\u062e\u0632\u0646_\u0643_ui_\u0628\u0633_\u0628\u0631\u0636\u0648_\u0645\u0641\u064a\u0634_\u0627\u064a_\u0644\u0648\u062c\u064a\u0643_\u0644\u0633\u0647_\u062e\u0644\u064a\u0647_\u0628\u0633_\u062c\u0627\u0647\u0632_\u0644\u0644\u0648\u062c\u064a\u0643",
+      "target": "graphify_out_memory_query_20260726_234308_\u0647\u064a\u0627_\u0627\u0644\u0645\u0634\u0631\u0648\u0639_\u0643_ui_ux_\u0628\u0633_\u0648\u0636\u064a\u0641_\u0643\u0645\u0627\u0646_\u062e\u0627\u0635\u064a\u0647_\u0627\u0644\u0645\u0631\u062a\u062c\u0639_\u0641\u064a_source_nodes",
       "confidence_score": 1.0
     }
   ],

@@ -1,0 +1,657 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isNonEmptyString(value, maxLength) {
+      return value is string
+        && value.size() > 0
+        && value.size() <= maxLength;
+    }
+
+    function isOptionalString(value, maxLength) {
+      return value is string && value.size() <= maxLength;
+    }
+
+    function isValidMovementType(type) {
+      return type in [
+        'inbound',
+        'outbound',
+        'customerReturn',
+        'supplierReturn',
+        'supplierReplacement',
+        'stocktakeAdjustment'
+      ];
+    }
+
+    function isValidItemState(data) {
+      return isNonEmptyString(data.code, 50)
+        && isNonEmptyString(data.name, 200)
+        && data.unit == 'piece'
+        && data.itemsPerCarton is int
+        && data.itemsPerCarton > 0
+        && data.openingStockPieces is int
+        && data.openingStockPieces >= 0
+        && data.currentStockPieces is int
+        && data.currentStockPieces >= 0
+        && data.totalInboundPieces is int
+        && data.totalInboundPieces >= 0
+        && data.totalOutboundPieces is int
+        && data.totalOutboundPieces >= 0
+        && data.totalCustomerReturnPieces is int
+        && data.totalCustomerReturnPieces >= 0
+        && data.totalSupplierReturnPieces is int
+        && data.totalSupplierReturnPieces >= 0
+        && data.totalAdjustmentPieces is int
+        && data.active is bool
+        && data.currentStockPieces
+          == data.openingStockPieces
+            + data.totalInboundPieces
+            + data.totalCustomerReturnPieces
+            - data.totalOutboundPieces
+            - data.totalSupplierReturnPieces
+            + data.totalAdjustmentPieces;
+    }
+
+    function movementExistsAfter(movementId) {
+      return movementId is string
+        && movementId.size() > 0
+        && existsAfter(
+          /databases/$(database)/documents/movements/$(movementId)
+        );
+    }
+
+    function movementAfter(movementId) {
+      return getAfter(
+        /databases/$(database)/documents/movements/$(movementId)
+      ).data;
+    }
+
+    function isMovementLinkedToItem(itemId) {
+      let movementId = request.resource.data.lastMovementId;
+      let movement = movementAfter(movementId);
+      let stockDelta = request.resource.data.currentStockPieces
+        - resource.data.currentStockPieces;
+
+      return movementExistsAfter(movementId)
+        && movement.createdAt == request.time
+        && movement.createdBy == request.auth.uid
+        && movement.status == 'completed'
+        && movement.itemIds.hasAny([itemId])
+        && movement.itemDeltas[itemId] is int
+        && movement.itemDeltas[itemId] == stockDelta
+        && stockDelta != 0;
+    }
+
+    function hasValidAggregateChange() {
+      let movement = movementAfter(request.resource.data.lastMovementId);
+      let stockDelta = request.resource.data.currentStockPieces
+        - resource.data.currentStockPieces;
+
+      return (
+          movement.type == 'inbound'
+          && stockDelta > 0
+          && request.resource.data.totalInboundPieces
+            == resource.data.totalInboundPieces + stockDelta
+          && request.resource.data.totalOutboundPieces
+            == resource.data.totalOutboundPieces
+          && request.resource.data.totalCustomerReturnPieces
+            == resource.data.totalCustomerReturnPieces
+          && request.resource.data.totalSupplierReturnPieces
+            == resource.data.totalSupplierReturnPieces
+          && request.resource.data.totalAdjustmentPieces
+            == resource.data.totalAdjustmentPieces
+        ) || (
+          movement.type == 'outbound'
+          && stockDelta < 0
+          && request.resource.data.totalInboundPieces
+            == resource.data.totalInboundPieces
+          && request.resource.data.totalOutboundPieces
+            == resource.data.totalOutboundPieces - stockDelta
+          && request.resource.data.totalCustomerReturnPieces
+            == resource.data.totalCustomerReturnPieces
+          && request.resource.data.totalSupplierReturnPieces
+            == resource.data.totalSupplierReturnPieces
+          && request.resource.data.totalAdjustmentPieces
+            == resource.data.totalAdjustmentPieces
+        ) || (
+          movement.type == 'customerReturn'
+          && stockDelta > 0
+          && request.resource.data.totalInboundPieces
+            == resource.data.totalInboundPieces
+          && request.resource.data.totalOutboundPieces
+            == resource.data.totalOutboundPieces
+          && request.resource.data.totalCustomerReturnPieces
+            == resource.data.totalCustomerReturnPieces + stockDelta
+          && request.resource.data.totalSupplierReturnPieces
+            == resource.data.totalSupplierReturnPieces
+          && request.resource.data.totalAdjustmentPieces
+            == resource.data.totalAdjustmentPieces
+        ) || (
+          movement.type == 'supplierReturn'
+          && stockDelta < 0
+          && request.resource.data.totalInboundPieces
+            == resource.data.totalInboundPieces
+          && request.resource.data.totalOutboundPieces
+            == resource.data.totalOutboundPieces
+          && request.resource.data.totalCustomerReturnPieces
+            == resource.data.totalCustomerReturnPieces
+          && request.resource.data.totalSupplierReturnPieces
+            == resource.data.totalSupplierReturnPieces - stockDelta
+          && request.resource.data.totalAdjustmentPieces
+            == resource.data.totalAdjustmentPieces
+        ) || (
+          movement.type == 'stocktakeAdjustment'
+          && request.resource.data.totalInboundPieces
+            == resource.data.totalInboundPieces
+          && request.resource.data.totalOutboundPieces
+            == resource.data.totalOutboundPieces
+          && request.resource.data.totalCustomerReturnPieces
+            == resource.data.totalCustomerReturnPieces
+          && request.resource.data.totalSupplierReturnPieces
+            == resource.data.totalSupplierReturnPieces
+          && request.resource.data.totalAdjustmentPieces
+            == resource.data.totalAdjustmentPieces + stockDelta
+        );
+    }
+
+    match /items/{itemId} {
+      allow read: if isSignedIn();
+
+      allow create: if isSignedIn()
+        && request.resource.data.code == itemId
+        && request.resource.data.keys().hasAll([
+          'code',
+          'name',
+          'unit',
+          'itemsPerCarton',
+          'openingStockPieces',
+          'currentStockPieces',
+          'totalInboundPieces',
+          'totalOutboundPieces',
+          'totalCustomerReturnPieces',
+          'totalSupplierReturnPieces',
+          'totalAdjustmentPieces',
+          'active',
+          'lastMovementId',
+          'createdAt',
+          'createdBy',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'code',
+          'name',
+          'unit',
+          'itemsPerCarton',
+          'openingStockPieces',
+          'currentStockPieces',
+          'totalInboundPieces',
+          'totalOutboundPieces',
+          'totalCustomerReturnPieces',
+          'totalSupplierReturnPieces',
+          'totalAdjustmentPieces',
+          'active',
+          'lastMovementId',
+          'createdAt',
+          'createdBy',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && isValidItemState(request.resource.data)
+        && request.resource.data.currentStockPieces
+          == request.resource.data.openingStockPieces
+        && request.resource.data.totalInboundPieces == 0
+        && request.resource.data.totalOutboundPieces == 0
+        && request.resource.data.totalCustomerReturnPieces == 0
+        && request.resource.data.totalSupplierReturnPieces == 0
+        && request.resource.data.totalAdjustmentPieces == 0
+        && request.resource.data.lastMovementId == ''
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.createdBy == request.auth.uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid;
+
+      allow update: if isSignedIn()
+        && isValidItemState(request.resource.data)
+        && request.resource.data.code == resource.data.code
+        && request.resource.data.unit == resource.data.unit
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.createdBy == resource.data.createdBy
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid
+        && (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+            'name',
+            'itemsPerCarton',
+            'active',
+            'updatedAt',
+            'updatedBy'
+          ])
+          || (
+            request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+              'currentStockPieces',
+              'totalInboundPieces',
+              'totalOutboundPieces',
+              'totalCustomerReturnPieces',
+              'totalSupplierReturnPieces',
+              'totalAdjustmentPieces',
+              'lastMovementId',
+              'updatedAt',
+              'updatedBy'
+            ])
+            && isMovementLinkedToItem(itemId)
+            && hasValidAggregateChange()
+          )
+        );
+
+      allow delete: if false;
+    }
+
+    match /movements/{movementId} {
+      allow read: if isSignedIn();
+
+      allow create: if isSignedIn()
+        && request.resource.data.keys().hasAll([
+          'voucherNumber',
+          'type',
+          'status',
+          'businessAt',
+          'partyName',
+          'deliveredBy',
+          'receivedBy',
+          'driverName',
+          'notes',
+          'itemIds',
+          'itemDeltas',
+          'lines',
+          'returnId',
+          'stocktakeId',
+          'createdAt',
+          'createdBy'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'voucherNumber',
+          'type',
+          'status',
+          'businessAt',
+          'partyName',
+          'deliveredBy',
+          'receivedBy',
+          'driverName',
+          'notes',
+          'itemIds',
+          'itemDeltas',
+          'lines',
+          'returnId',
+          'stocktakeId',
+          'createdAt',
+          'createdBy'
+        ])
+        && isNonEmptyString(request.resource.data.voucherNumber, 80)
+        && isValidMovementType(request.resource.data.type)
+        && request.resource.data.status == 'completed'
+        && request.resource.data.businessAt is timestamp
+        && request.resource.data.businessAt <= request.time
+        && isOptionalString(request.resource.data.partyName, 200)
+        && isOptionalString(request.resource.data.deliveredBy, 150)
+        && isOptionalString(request.resource.data.receivedBy, 150)
+        && isOptionalString(request.resource.data.driverName, 150)
+        && isOptionalString(request.resource.data.notes, 1000)
+        && request.resource.data.itemIds is list
+        && request.resource.data.itemIds.size() > 0
+        && request.resource.data.itemIds.size() <= 50
+        && request.resource.data.itemDeltas is map
+        && request.resource.data.itemDeltas.size()
+          == request.resource.data.itemIds.size()
+        && request.resource.data.lines is list
+        && request.resource.data.lines.size()
+          == request.resource.data.itemIds.size()
+        && isOptionalString(request.resource.data.returnId, 128)
+        && isOptionalString(request.resource.data.stocktakeId, 128)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.createdBy == request.auth.uid;
+
+      allow update, delete: if false;
+    }
+
+    match /returns/{returnId} {
+      function itemPath() {
+        return /databases/$(database)/documents/items/$(request.resource.data.itemId);
+      }
+
+      function receiptMovementMatches() {
+        let movementId = request.resource.data.receiptMovementId;
+        let movement = movementAfter(movementId);
+
+        return movementExistsAfter(movementId)
+          && movement.type == 'customerReturn'
+          && movement.returnId == returnId
+          && movement.createdAt == request.time
+          && movement.createdBy == request.auth.uid
+          && movement.itemIds.hasAny([request.resource.data.itemId])
+          && movement.itemDeltas[request.resource.data.itemId]
+            == request.resource.data.quantityPieces;
+      }
+
+      function resolutionMovementMatches() {
+        let movementId = request.resource.data.resolutionMovementId;
+        let movement = movementAfter(movementId);
+        let expectedType = request.resource.data.status == 'replaced'
+          ? 'supplierReplacement'
+          : 'supplierReturn';
+        let expectedDelta = request.resource.data.status == 'replaced'
+          ? 0
+          : -request.resource.data.quantityPieces;
+
+        return movementExistsAfter(movementId)
+          && movement.type == expectedType
+          && movement.returnId == returnId
+          && movement.createdAt == request.time
+          && movement.createdBy == request.auth.uid
+          && movement.itemIds.hasAny([request.resource.data.itemId])
+          && movement.itemDeltas[request.resource.data.itemId] == expectedDelta;
+      }
+
+      allow read: if isSignedIn();
+
+      allow create: if isSignedIn()
+        && request.resource.data.keys().hasAll([
+          'returnNumber',
+          'originalVoucherNumber',
+          'itemId',
+          'itemNameSnapshot',
+          'itemCodeSnapshot',
+          'quantityPieces',
+          'sourceName',
+          'returnedBy',
+          'receivedBy',
+          'reason',
+          'notes',
+          'condition',
+          'status',
+          'supplierName',
+          'receiptMovementId',
+          'resolutionMovementId',
+          'receivedAt',
+          'resolvedAt',
+          'resolvedBy',
+          'createdAt',
+          'createdBy',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'returnNumber',
+          'originalVoucherNumber',
+          'itemId',
+          'itemNameSnapshot',
+          'itemCodeSnapshot',
+          'quantityPieces',
+          'sourceName',
+          'returnedBy',
+          'receivedBy',
+          'reason',
+          'notes',
+          'condition',
+          'status',
+          'supplierName',
+          'receiptMovementId',
+          'resolutionMovementId',
+          'receivedAt',
+          'resolvedAt',
+          'resolvedBy',
+          'createdAt',
+          'createdBy',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && isNonEmptyString(request.resource.data.returnNumber, 80)
+        && isOptionalString(
+          request.resource.data.originalVoucherNumber,
+          80
+        )
+        && isNonEmptyString(request.resource.data.itemId, 128)
+        && isNonEmptyString(request.resource.data.itemNameSnapshot, 200)
+        && isOptionalString(request.resource.data.itemCodeSnapshot, 50)
+        && request.resource.data.quantityPieces is int
+        && request.resource.data.quantityPieces > 0
+        && isNonEmptyString(request.resource.data.sourceName, 200)
+        && isNonEmptyString(request.resource.data.returnedBy, 150)
+        && isNonEmptyString(request.resource.data.receivedBy, 150)
+        && isNonEmptyString(request.resource.data.reason, 500)
+        && isOptionalString(request.resource.data.notes, 1000)
+        && request.resource.data.condition in [
+          'readyForStock',
+          'damaged',
+          'needsInspection'
+        ]
+        && request.resource.data.status == 'pendingSupplierResolution'
+        && request.resource.data.supplierName == ''
+        && request.resource.data.resolutionMovementId == ''
+        && request.resource.data.receivedAt is timestamp
+        && request.resource.data.receivedAt <= request.time
+        && request.resource.data.resolvedAt == null
+        && request.resource.data.resolvedBy == ''
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.createdBy == request.auth.uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid
+        && receiptMovementMatches()
+        && getAfter(itemPath()).data.currentStockPieces
+          == get(itemPath()).data.currentStockPieces
+            + request.resource.data.quantityPieces;
+
+      allow update: if isSignedIn()
+        && resource.data.status == 'pendingSupplierResolution'
+        && request.resource.data.status in ['replaced', 'returnedToSupplier']
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'status',
+          'supplierName',
+          'resolutionMovementId',
+          'resolvedAt',
+          'resolvedBy',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && isNonEmptyString(request.resource.data.supplierName, 200)
+        && isNonEmptyString(request.resource.data.resolutionMovementId, 128)
+        && request.resource.data.resolvedAt == request.time
+        && request.resource.data.resolvedBy == request.auth.uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid
+        && resolutionMovementMatches()
+        && (
+          request.resource.data.status == 'replaced'
+          || (
+            getAfter(itemPath()).data.currentStockPieces
+              == get(itemPath()).data.currentStockPieces
+                - request.resource.data.quantityPieces
+            && getAfter(itemPath()).data.currentStockPieces >= 0
+          )
+        );
+
+      allow delete: if false;
+    }
+
+    match /stocktakes/{stocktakeId} {
+      function completionMovementMatches() {
+        let movementId = request.resource.data.completionMovementId;
+
+        return movementId == ''
+          || (
+            movementExistsAfter(movementId)
+            && movementAfter(movementId).type == 'stocktakeAdjustment'
+            && movementAfter(movementId).stocktakeId == stocktakeId
+            && movementAfter(movementId).createdAt == request.time
+            && movementAfter(movementId).createdBy == request.auth.uid
+          );
+      }
+
+      allow read: if isSignedIn();
+
+      allow create: if isSignedIn()
+        && request.resource.data.keys().hasAll([
+          'stocktakeNumber',
+          'status',
+          'periodFrom',
+          'periodTo',
+          'startedAt',
+          'completedAt',
+          'completedBy',
+          'completionMovementId',
+          'notes',
+          'createdAt',
+          'createdBy',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'stocktakeNumber',
+          'status',
+          'periodFrom',
+          'periodTo',
+          'startedAt',
+          'completedAt',
+          'completedBy',
+          'completionMovementId',
+          'notes',
+          'createdAt',
+          'createdBy',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && isNonEmptyString(request.resource.data.stocktakeNumber, 80)
+        && request.resource.data.status == 'open'
+        && request.resource.data.periodFrom is timestamp
+        && request.resource.data.periodTo is timestamp
+        && request.resource.data.periodFrom <= request.resource.data.periodTo
+        && request.resource.data.startedAt == request.time
+        && request.resource.data.completedAt == null
+        && request.resource.data.completedBy == ''
+        && request.resource.data.completionMovementId == ''
+        && isOptionalString(request.resource.data.notes, 1000)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.createdBy == request.auth.uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid;
+
+      allow update: if isSignedIn()
+        && resource.data.status == 'open'
+        && request.resource.data.status == 'completed'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'status',
+          'completedAt',
+          'completedBy',
+          'completionMovementId',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && request.resource.data.completedAt == request.time
+        && request.resource.data.completedBy == request.auth.uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid
+        && completionMovementMatches();
+
+      allow delete: if false;
+
+      match /lines/{itemId} {
+        function stocktakeIsOpen() {
+          return getAfter(
+            /databases/$(database)/documents/stocktakes/$(stocktakeId)
+          ).data.status == 'open';
+        }
+
+        function isValidLine(data) {
+          return data.itemId == itemId
+            && isNonEmptyString(data.itemNameSnapshot, 200)
+            && isOptionalString(data.itemCodeSnapshot, 50)
+            && data.systemQuantityPieces is int
+            && data.systemQuantityPieces >= 0
+            && data.actualQuantityPieces is int
+            && data.actualQuantityPieces >= 0
+            && data.differencePieces
+              == data.actualQuantityPieces - data.systemQuantityPieces
+            && data.countedAt == request.time
+            && data.countedBy == request.auth.uid;
+        }
+
+        allow read: if isSignedIn();
+
+        allow create: if isSignedIn()
+          && request.resource.data.keys().hasAll([
+            'itemId',
+            'itemNameSnapshot',
+            'itemCodeSnapshot',
+            'systemQuantityPieces',
+            'actualQuantityPieces',
+            'differencePieces',
+            'countedAt',
+            'countedBy'
+          ])
+          && request.resource.data.keys().hasOnly([
+            'itemId',
+            'itemNameSnapshot',
+            'itemCodeSnapshot',
+            'systemQuantityPieces',
+            'actualQuantityPieces',
+            'differencePieces',
+            'countedAt',
+            'countedBy'
+          ])
+          && stocktakeIsOpen()
+          && isValidLine(request.resource.data);
+
+        allow update: if isSignedIn()
+          && stocktakeIsOpen()
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+            'actualQuantityPieces',
+            'differencePieces',
+            'countedAt',
+            'countedBy'
+          ])
+          && isValidLine(request.resource.data);
+
+        allow delete: if false;
+      }
+    }
+
+    match /counters/{counterId} {
+      allow read: if isSignedIn();
+
+      allow create: if isSignedIn()
+        && request.resource.data.keys().hasAll([
+          'value',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'value',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && request.resource.data.value == 1
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid;
+
+      allow update: if isSignedIn()
+        && request.resource.data.keys().hasOnly([
+          'value',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && request.resource.data.value == resource.data.value + 1
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid;
+
+      allow delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

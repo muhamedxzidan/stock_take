@@ -5,9 +5,13 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_routes.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
+import '../../../../core/models/carton_piece_quantity.dart';
+import '../../../../core/models/inventory_item.dart';
+import '../../../../core/shared_widgets/carton_piece_quantity_fields.dart';
 import '../../../../core/shared_widgets/custom_button.dart';
 import '../../../../core/shared_widgets/custom_text_field.dart';
 import '../../../../core/shared_widgets/pdf_voucher_dialog.dart';
+import '../../../items/presentation/widgets/inventory_item_selector_field.dart';
 import '../../cubit/transactions_cubit.dart';
 import '../../cubit/transactions_state.dart';
 
@@ -23,12 +27,12 @@ class _InboundFormState extends State<InboundForm> {
   final _deliveredByController = TextEditingController();
   final _receivedByController = TextEditingController();
   final _driverNameController = TextEditingController();
-  final _itemNameController = TextEditingController(
-    text: 'شامبو لوريال 400 مل',
-  );
-  final _itemCodeController = TextEditingController(text: 'ITM-001');
-  final _quantityController = TextEditingController(text: '50');
   final _dateController = TextEditingController(text: '2026-07-25');
+  InventoryItem? _selectedItem;
+  CartonPieceQuantity _quantity = const CartonPieceQuantity(
+    cartons: 0,
+    pieces: 0,
+  );
 
   @override
   void dispose() {
@@ -36,14 +40,22 @@ class _InboundFormState extends State<InboundForm> {
     _deliveredByController.dispose();
     _receivedByController.dispose();
     _driverNameController.dispose();
-    _itemNameController.dispose();
-    _itemCodeController.dispose();
-    _quantityController.dispose();
     _dateController.dispose();
     super.dispose();
   }
 
   void _showPdfPreview() {
+    final selectedItem = _selectedItem;
+    if (selectedItem == null) {
+      _showValidationMessage('اختر الصنف أولًا.');
+      return;
+    }
+    final totalPieces = _quantity.totalPiecesFor(selectedItem.itemsPerCarton);
+    if (totalPieces <= 0) {
+      _showValidationMessage('اكتب عدد الكراتين أو القطع.');
+      return;
+    }
+
     showDialog(
       context: context,
       builder: (ctx) => PdfVoucherDialog(
@@ -60,10 +72,16 @@ class _InboundFormState extends State<InboundForm> {
             ? 'أمين المخزن'
             : _receivedByController.text,
         driverName: _driverNameController.text,
-        itemName: _itemNameController.text,
-        quantity: int.tryParse(_quantityController.text) ?? 50,
+        itemName: selectedItem.name,
+        quantity: totalPieces,
         unit: 'قطعة',
       ),
+    );
+  }
+
+  void _showValidationMessage(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(message), backgroundColor: AppColors.error),
     );
   }
 
@@ -124,31 +142,27 @@ class _InboundFormState extends State<InboundForm> {
               prefixIcon: Icons.local_shipping_outlined,
             ),
             SizedBox(height: AppSizes.h16),
-            CustomTextField(
-              label: AppStrings.itemName,
-              controller: _itemNameController,
-              prefixIcon: Icons.inventory_2_outlined,
+            InventoryItemSelectorField(
+              selectedItem: _selectedItem,
+              onSelected: (item) => setState(() {
+                _selectedItem = item;
+                _quantity = const CartonPieceQuantity(cartons: 0, pieces: 0);
+              }),
             ),
             SizedBox(height: AppSizes.h16),
-            Row(
-              children: [
-                Expanded(
-                  child: CustomTextField(
-                    label: AppStrings.quantityPieces,
-                    keyboardType: TextInputType.number,
-                    controller: _quantityController,
-                    prefixIcon: Icons.numbers,
-                  ),
-                ),
-                SizedBox(width: AppSizes.p12),
-                Expanded(
-                  child: CustomTextField(
-                    label: AppStrings.transactionDate,
-                    controller: _dateController,
-                    prefixIcon: Icons.calendar_today,
-                  ),
-                ),
-              ],
+            if (_selectedItem case final item?) ...[
+              CartonPieceQuantityFields(
+                key: ValueKey(item.id),
+                keyPrefix: 'inbound-quantity',
+                itemsPerCarton: item.itemsPerCarton,
+                onChanged: (value) => _quantity = value,
+              ),
+              SizedBox(height: AppSizes.h16),
+            ],
+            CustomTextField(
+              label: AppStrings.transactionDate,
+              controller: _dateController,
+              prefixIcon: Icons.calendar_today,
             ),
             SizedBox(height: AppSizes.h24),
             OutlinedButton.icon(
@@ -169,10 +183,23 @@ class _InboundFormState extends State<InboundForm> {
               backgroundColor: AppColors.success,
               isLoading: isLoading,
               onPressed: () {
+                final selectedItem = _selectedItem;
+                if (selectedItem == null) {
+                  _showValidationMessage('اختر الصنف أولًا.');
+                  return;
+                }
+                final totalPieces = _quantity.totalPiecesFor(
+                  selectedItem.itemsPerCarton,
+                );
+                if (totalPieces <= 0) {
+                  _showValidationMessage('اكتب عدد الكراتين أو القطع.');
+                  return;
+                }
+
                 context.read<TransactionsCubit>().createInboundTransaction(
-                  itemName: _itemNameController.text,
-                  itemCode: _itemCodeController.text,
-                  quantity: int.tryParse(_quantityController.text) ?? 0,
+                  itemName: selectedItem.name,
+                  itemCode: selectedItem.code,
+                  quantity: totalPieces,
                   supplierName: _supplierController.text,
                   deliveredBy: _deliveredByController.text,
                   receivedBy: _receivedByController.text,

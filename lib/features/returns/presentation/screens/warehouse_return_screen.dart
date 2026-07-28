@@ -1,18 +1,41 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../core/constants/app_routes.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/shared_widgets/custom_app_bar.dart';
+import '../../../items/cubit/item_catalog_cubit.dart';
 import '../widgets/return_workflow_card.dart';
 import '../widgets/warehouse_return_form.dart';
 
-class WarehouseReturnScreen extends StatelessWidget {
+class WarehouseReturnScreen extends StatefulWidget {
   const WarehouseReturnScreen({super.key});
+
+  @override
+  State<WarehouseReturnScreen> createState() => _WarehouseReturnScreenState();
+}
+
+class _WarehouseReturnScreenState extends State<WarehouseReturnScreen> {
+  @override
+  void initState() {
+    super.initState();
+    context.read<ItemCatalogCubit>().loadItems();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: AppStrings.warehouseReturnTitle),
+      appBar: CustomAppBar(
+        title: AppStrings.warehouseReturnTitle,
+        leading: IconButton(
+          key: const Key('return-to-new-movement'),
+          tooltip: AppStrings.backToNewMovement,
+          onPressed: () => context.go(AppRoutes.newMovement),
+          icon: const Icon(Icons.arrow_forward_rounded),
+        ),
+      ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(AppSizes.p20),
         child: Center(

@@ -2,25 +2,25 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:stock_take/firebase_options.dart';
 
-import 'core/constants/app_router.dart';
 import 'core/constants/app_strings.dart';
+import 'core/di/service_locator.dart';
 import 'core/theme/app_theme.dart';
 
 import 'features/dashboard/cubit/dashboard_cubit.dart';
-import 'features/dashboard/data/repositories/dashboard_repository.dart';
 
 import 'features/items/cubit/items_cubit.dart';
-import 'features/items/data/repositories/items_repository.dart';
+import 'features/items/cubit/item_catalog_cubit.dart';
 
 import 'features/transactions/cubit/transactions_cubit.dart';
-import 'features/transactions/data/repositories/transactions_repository.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const StockTakeApp());
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await configureDependencies();
+  runApp(const StockTakeApp());
 }
 
 class StockTakeApp extends StatelessWidget {
@@ -36,23 +36,24 @@ class StockTakeApp extends StatelessWidget {
         return MultiBlocProvider(
           providers: [
             BlocProvider<DashboardCubit>(
-              create: (context) =>
-                  DashboardCubit(DashboardRepository())..loadDashboardData(),
+              create: (context) => serviceLocator<DashboardCubit>(),
             ),
+
             BlocProvider<ItemsCubit>(
-              create: (context) => ItemsCubit(ItemsRepository()),
+              create: (context) => serviceLocator<ItemsCubit>(),
+            ),
+            BlocProvider<ItemCatalogCubit>(
+              create: (context) => serviceLocator<ItemCatalogCubit>(),
             ),
             BlocProvider<TransactionsCubit>(
-              create: (context) =>
-                  TransactionsCubit(TransactionsRepository())
-                    ..loadTransactions(),
+              create: (context) => serviceLocator<TransactionsCubit>(),
             ),
           ],
           child: MaterialApp.router(
             title: AppStrings.appTitle,
             debugShowCheckedModeBanner: false,
             theme: AppTheme.lightTheme,
-            routerConfig: AppRouter.router,
+            routerConfig: serviceLocator<GoRouter>(),
             builder: (context, widget) {
               return Directionality(
                 textDirection: TextDirection.rtl, // Native RTL Arabic Support

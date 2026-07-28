@@ -4,11 +4,13 @@ import '../constants/app_text_styles.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
+  final Widget? leading;
   final List<Widget>? actions;
 
   const CustomAppBar({
     super.key,
     required this.title,
+    this.leading,
     this.actions,
   });
 
@@ -21,6 +23,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       backgroundColor: AppColors.primary,
       elevation: 0,
+      leading: leading,
       actions: actions,
       iconTheme: const IconThemeData(color: AppColors.surface),
     );

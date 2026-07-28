@@ -1,6 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../dashboard/data/models/item_model.dart';
+
+import '../../../core/models/inventory_item.dart';
 import '../data/repositories/items_repository_base.dart';
+import '../data/repositories/items_repository_failure.dart';
 import 'items_state.dart';
 
 /// ItemsCubit manages item definition submission and validation.
@@ -13,35 +15,61 @@ class ItemsCubit extends Cubit<ItemsState> {
   Future<void> submitNewItem({
     required String name,
     required String code,
-    required String unit,
     required String itemsPerCartonStr,
     required String initialBalanceStr,
   }) async {
-    if (name.trim().isEmpty || code.trim().isEmpty) {
-      emit(ItemsFailure('يرجى ملء اسم الصنف والكود بشكل صحيح.'));
+    if (state is ItemsLoading) {
       return;
     }
 
-    final itemsPerCarton = int.tryParse(itemsPerCartonStr) ?? 1;
-    final initialBalance = int.tryParse(initialBalanceStr) ?? 0;
+    final normalizedName = name.trim();
+    final normalizedCode = code.trim().toUpperCase();
+    if (normalizedName.isEmpty || normalizedName.length > 200) {
+      emit(ItemsFailure('اكتب اسم صنف صحيحًا.'));
+      return;
+    }
+    if (normalizedCode.length > 50 ||
+        !RegExp(r'^[A-Z0-9_-]+$').hasMatch(normalizedCode)) {
+      emit(ItemsFailure('كود الصنف يقبل حروفًا إنجليزية وأرقامًا وشرطة فقط.'));
+      return;
+    }
+
+    final itemsPerCarton = int.tryParse(itemsPerCartonStr.trim());
+    if (itemsPerCarton == null || itemsPerCarton <= 0) {
+      emit(ItemsFailure('عدد القطع في الكرتونة يجب أن يكون أكبر من صفر.'));
+      return;
+    }
+
+    final initialBalance = int.tryParse(initialBalanceStr.trim());
+    if (initialBalance == null || initialBalance < 0) {
+      emit(ItemsFailure('الرصيد الافتتاحي يجب أن يكون صفرًا أو أكبر.'));
+      return;
+    }
 
     emit(ItemsLoading());
     try {
-      final newItem = ItemModel(
-        id: DateTime.now().millisecondsSinceEpoch.toString(),
-        code: code.trim(),
-        name: name.trim(),
-        unit: unit.isEmpty ? 'قطعة' : unit,
+      final newItem = InventoryItem(
+        id: normalizedCode,
+        code: normalizedCode,
+        name: normalizedName,
+        unit: 'piece',
         itemsPerCarton: itemsPerCarton,
-        openingBalance: initialBalance,
-        totalInbound: 0,
-        totalOutbound: 0,
+        openingStockPieces: initialBalance,
+        currentStockPieces: initialBalance,
+        totalInboundPieces: 0,
+        totalOutboundPieces: 0,
+        totalCustomerReturnPieces: 0,
+        totalSupplierReturnPieces: 0,
+        totalAdjustmentPieces: 0,
+        active: true,
       );
 
       await _repository.addItem(newItem);
       emit(ItemsSuccess());
-    } catch (e) {
-      emit(ItemsFailure('حدث خطأ أثناء حفظ الصنف. حاول مرة أخرى.'));
+    } on ItemsRepositoryFailure catch (failure) {
+      emit(ItemsFailure(failure.message));
+    } catch (_) {
+      emit(ItemsFailure('تعذر حفظ الصنف الآن. حاول مرة أخرى.'));
     }
   }
 }

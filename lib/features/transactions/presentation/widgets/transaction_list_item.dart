@@ -18,8 +18,8 @@ class TransactionListItem extends StatelessWidget {
         voucherType: transaction.type == TransactionType.inbound
             ? 'وارد'
             : transaction.type == TransactionType.outbound
-                ? 'منصرف'
-                : 'تسوية',
+            ? 'منصرف'
+            : 'تسوية',
         voucherNumber: transaction.voucherNumber,
         date: transaction.date,
         partyName: transaction.partyName,
@@ -54,8 +54,8 @@ class TransactionListItem extends StatelessWidget {
                 color: transaction.type == TransactionType.inbound
                     ? AppColors.success
                     : transaction.type == TransactionType.outbound
-                        ? AppColors.error
-                        : AppColors.warning,
+                    ? AppColors.error
+                    : AppColors.warning,
               ),
             ),
           ],
@@ -64,16 +64,26 @@ class TransactionListItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: AppSizes.h4),
-            Text('الإذن: #${transaction.voucherNumber}  •  ${transaction.partyName}', style: AppTextStyles.bodyMedium),
-            Text('من سلّم/صرف: ${transaction.actorName}  |  من استلم: ${transaction.receiverName}', style: AppTextStyles.caption),
+            Text(
+              'الإذن: #${transaction.voucherNumber}  •  ${transaction.partyName}',
+              style: AppTextStyles.bodyMedium,
+            ),
+            Text(
+              'من سلّم/صرف: ${transaction.actorName}  |  من استلم: ${transaction.receiverName}',
+              style: AppTextStyles.caption,
+            ),
             SizedBox(height: AppSizes.h4),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(transaction.date, style: AppTextStyles.caption),
-                const Icon(Icons.picture_as_pdf, color: AppColors.primary, size: 18),
+                const Icon(
+                  Icons.picture_as_pdf,
+                  color: AppColors.primary,
+                  size: 18,
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),

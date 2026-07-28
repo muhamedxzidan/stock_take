@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T23:55:43.776432+00:00",
+  "generated_at": "2026-07-28T11:59:30.550987+00:00",
   "nodes": {
     "cubit": {
       "code_fingerprint": "",
@@ -12,13 +12,34 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.999546407,
+      "score": 0.965439638,
       "source_file": "",
       "status": "tentative",
       "uses": 1
     },
+    "lib_core_constants_app_router_approuter": {
+      "code_fingerprint": "6e3d9114e108cb3b5d362584e041971eef52a8f3c86aec689f20026c5781a9cf",
+      "label": "AppRouter",
+      "last": "2026-07-28T10:28:52.480697+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:28:52.480697+00:00",
+          "outcome": "useful",
+          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
+        },
+        {
+          "date": "2026-07-27T17:54:07.742196+00:00",
+          "outcome": "useful",
+          "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
+        }
+      ],
+      "score": 1.98128258,
+      "source_file": "lib/core/constants/app_router.dart",
+      "status": "preferred",
+      "uses": 2
+    },
     "lib_core_constants_app_router_router": {
-      "code_fingerprint": "e9579ad8cae29c2b5b5b405f02e8cd9e5c34b620d5ddd658ddfa62d147409169",
+      "code_fingerprint": "6e3d9114e108cb3b5d362584e041971eef52a8f3c86aec689f20026c5781a9cf",
       "label": "router",
       "last": "2026-07-26T23:43:08.088908+00:00",
       "provenance": [
@@ -28,10 +49,73 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.999797936,
+      "score": 0.965682584,
       "source_file": "lib/core/constants/app_router.dart",
       "status": "tentative",
       "uses": 1
+    },
+    "lib_core_shared_widgets_pdf_voucher_dialog_pdfvoucherdialog": {
+      "code_fingerprint": "192c7aeb6efaab1df613ff22a38eb4839c8173e545008e3637eb6705160e7e7f",
+      "label": "PdfVoucherDialog",
+      "last": "2026-07-27T17:34:43.991563+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:34:43.991563+00:00",
+          "outcome": "useful",
+          "q": "اعمل الخطه ك ui. بس"
+        },
+        {
+          "date": "2026-07-27T17:24:28.747892+00:00",
+          "outcome": "useful",
+          "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
+        },
+        {
+          "date": "2026-07-26T23:58:03.382506+00:00",
+          "outcome": "useful",
+          "q": "اضافه اسم السائق في الاستلام والتسليم"
+        }
+      ],
+      "score": 2.930612136,
+      "source_file": "lib/core/shared_widgets/pdf_voucher_dialog.dart",
+      "status": "preferred",
+      "uses": 3
+    },
+    "lib_core_shared_widgets_tablet_navigation_rail_tabletnavigationrail": {
+      "code_fingerprint": "89149abd081b0294a669c4d67be2e27513aee079d538fd94c7663a66ac54f6e9",
+      "label": "TabletNavigationRail",
+      "last": "2026-07-28T10:40:02.815211+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:40:02.815211+00:00",
+          "outcome": "useful",
+          "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
+        }
+      ],
+      "score": 0.998725835,
+      "source_file": "lib/core/shared_widgets/tablet_navigation_rail.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_core_shared_widgets_worker_bottom_navigation_workerbottomnavigation": {
+      "code_fingerprint": "bc80e0e2beeef8c703dc31d47616d5fc770930e4f2878b0f375572a3cc3ebbf0",
+      "label": "WorkerBottomNavigation",
+      "last": "2026-07-28T10:40:02.815211+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:40:02.815211+00:00",
+          "outcome": "useful",
+          "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
+        },
+        {
+          "date": "2026-07-27T17:54:07.742196+00:00",
+          "outcome": "useful",
+          "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
+        }
+      ],
+      "score": 1.981461595,
+      "source_file": "lib/core/shared_widgets/worker_bottom_navigation.dart",
+      "status": "preferred",
+      "uses": 2
     },
     "lib_features_dashboard_cubit_dashboard_cubit_dashboardcubit": {
       "code_fingerprint": "76572f519b86fa6cb5f34980409ef69efd0458a459eda70016f682213e38da04",
@@ -44,10 +128,68 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.999546407,
+      "score": 0.965439638,
       "source_file": "lib/features/dashboard/cubit/dashboard_cubit.dart",
       "status": "tentative",
       "uses": 1
+    },
+    "lib_features_dashboard_data_repositories_dashboard_repository_dashboardrepository": {
+      "code_fingerprint": "2e73a0df4f8a184845a7918c7b8b829a2212e5e09f510b9a7ec4d08ca3415a73",
+      "label": "DashboardRepository",
+      "last": "2026-07-28T10:50:22.410550+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-27T18:12:24.811771+00:00",
+          "outcome": "useful",
+          "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
+        }
+      ],
+      "score": 1.981915442,
+      "source_file": "lib/features/dashboard/data/repositories/dashboard_repository.dart",
+      "status": "preferred",
+      "uses": 2
+    },
+    "lib_features_dashboard_presentation_screens_dashboard_screen_dashboardscreen": {
+      "code_fingerprint": "3b725040d8e319a2f0afe830de73c904f60bccca31d7b6bea808a40f7c8c5b77",
+      "label": "DashboardScreen",
+      "last": "2026-07-27T17:34:43.991563+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:34:43.991563+00:00",
+          "outcome": "useful",
+          "q": "اعمل الخطه ك ui. بس"
+        }
+      ],
+      "score": 0.982429973,
+      "source_file": "lib/features/dashboard/presentation/screens/dashboard_screen.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_features_dashboard_presentation_widgets_stock_items_list_stockitemslist": {
+      "code_fingerprint": "7d7138d43ec49f9baa252dea5995b838907dbd81abcf4a180424799ed2cbce16",
+      "label": "StockItemsList",
+      "last": "2026-07-27T17:34:43.991563+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:34:43.991563+00:00",
+          "outcome": "useful",
+          "q": "اعمل الخطه ك ui. بس"
+        },
+        {
+          "date": "2026-07-27T17:24:28.747892+00:00",
+          "outcome": "useful",
+          "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
+        }
+      ],
+      "score": 1.964698323,
+      "source_file": "lib/features/dashboard/presentation/widgets/stock_items_list.dart",
+      "status": "preferred",
+      "uses": 2
     },
     "lib_features_items_cubit_items_cubit_itemscubit": {
       "code_fingerprint": "1df64c9976b22e6ec4f53994f965776c4848f7a3a70eb64cabfc9c61579fe520",
@@ -60,7 +202,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.999546407,
+      "score": 0.965439638,
       "source_file": "lib/features/items/cubit/items_cubit.dart",
       "status": "tentative",
       "uses": 1
@@ -68,34 +210,54 @@
     "lib_features_returns_data_models_warehouse_return_draft_warehousereturndraft": {
       "code_fingerprint": "95cef2a38a0b95a27998cc7c1bf1b2b8b5f4079427d7025dbcc7801d0dbdc92f",
       "label": "WarehouseReturnDraft",
-      "last": "2026-07-26T23:43:08.088908+00:00",
+      "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-28T10:28:52.480697+00:00",
+          "outcome": "useful",
+          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
+        },
         {
           "date": "2026-07-26T23:43:08.088908+00:00",
           "outcome": "useful",
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.999797936,
+      "score": 2.963120731,
       "source_file": "lib/features/returns/data/models/warehouse_return_draft.dart",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 3
     },
     "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreen": {
-      "code_fingerprint": "9adad7c159c5297c577be632ef5000054984823b93a9fc89ce9c166387461381",
+      "code_fingerprint": "bb4970c3d647727a6d1313db2029b6f0a6d5fd9a1b4349a3ad2589e7ffa88eb0",
       "label": "WarehouseReturnScreen",
-      "last": "2026-07-26T23:43:08.088908+00:00",
+      "last": "2026-07-28T10:40:02.815211+00:00",
       "provenance": [
+        {
+          "date": "2026-07-28T10:40:02.815211+00:00",
+          "outcome": "useful",
+          "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
+        },
+        {
+          "date": "2026-07-28T10:28:52.480697+00:00",
+          "outcome": "useful",
+          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
+        },
         {
           "date": "2026-07-26T23:43:08.088908+00:00",
           "outcome": "useful",
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.999797936,
+      "score": 2.962955238,
       "source_file": "lib/features/returns/presentation/screens/warehouse_return_screen.dart",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 3
     },
     "lib_features_returns_presentation_widgets_return_workflow_card": {
       "code_fingerprint": "be332b45b8b5a61ff474324b01de40c11ab486d38c189615342b9dc4cfca857a",
@@ -108,7 +270,7 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.999797936,
+      "score": 0.965682584,
       "source_file": "lib/features/returns/presentation/widgets/return_workflow_card.dart",
       "status": "tentative",
       "uses": 1
@@ -124,24 +286,402 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.999797936,
+      "score": 0.965682584,
       "source_file": "lib/features/returns/presentation/widgets/warehouse_return_form.dart",
       "status": "tentative",
       "uses": 1
     },
+    "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnform": {
+      "code_fingerprint": "0f911c944a59e2f7573a0d166255f1f2949f21e12716d95ccf5b58db436605a8",
+      "label": "WarehouseReturnForm",
+      "last": "2026-07-28T10:50:22.410550+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-28T10:28:52.480697+00:00",
+          "outcome": "useful",
+          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
+        }
+      ],
+      "score": 1.997438148,
+      "source_file": "lib/features/returns/presentation/widgets/warehouse_return_form.dart",
+      "status": "preferred",
+      "uses": 2
+    },
     "lib_features_transactions_cubit_transactions_cubit_transactionscubit": {
       "code_fingerprint": "beca1e3dd0b0a067706829285285ce905cfdc47de6eee4f8518f04af24834021",
       "label": "TransactionsCubit",
-      "last": "2026-07-26T23:27:27.197460+00:00",
+      "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-28T10:28:52.480697+00:00",
+          "outcome": "useful",
+          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
+        },
+        {
+          "date": "2026-07-27T18:12:24.811771+00:00",
+          "outcome": "useful",
+          "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
+        },
+        {
+          "date": "2026-07-27T17:24:28.747892+00:00",
+          "outcome": "useful",
+          "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
+        },
         {
           "date": "2026-07-26T23:27:27.197460+00:00",
           "outcome": "useful",
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.999546407,
+      "score": 4.928170249,
       "source_file": "lib/features/transactions/cubit/transactions_cubit.dart",
+      "status": "preferred",
+      "uses": 5
+    },
+    "lib_features_transactions_data_models_transaction_model_transactionmodel": {
+      "code_fingerprint": "8586a777f760a5b83bd8ba15e2fbde3711b4e0c9c53ade383069c6f2caca67fe",
+      "label": "TransactionModel",
+      "last": "2026-07-28T10:50:22.410550+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-27T18:12:24.811771+00:00",
+          "outcome": "useful",
+          "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
+        },
+        {
+          "date": "2026-07-27T17:24:28.747892+00:00",
+          "outcome": "useful",
+          "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
+        }
+      ],
+      "score": 2.964183792,
+      "source_file": "lib/features/transactions/data/models/transaction_model.dart",
+      "status": "preferred",
+      "uses": 3
+    },
+    "lib_features_transactions_data_repositories_transactions_repository_transactionsrepository": {
+      "code_fingerprint": "1662c03412a07619fc6f55833acc596c455e0b0562dee489edf89c88d967d38c",
+      "label": "TransactionsRepository",
+      "last": "2026-07-28T10:50:22.410550+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-27T18:12:24.811771+00:00",
+          "outcome": "useful",
+          "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
+        }
+      ],
+      "score": 1.981915442,
+      "source_file": "lib/features/transactions/data/repositories/transactions_repository.dart",
+      "status": "preferred",
+      "uses": 2
+    },
+    "lib_features_transactions_presentation_screens_new_movement_screen_newmovementscreen": {
+      "code_fingerprint": "c0ce79f0e2aa0ab2a08f062da2481f03cb49b40ef2dfd669c88c02eef36654a5",
+      "label": "NewMovementScreen",
+      "last": "2026-07-28T10:40:02.815211+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:40:02.815211+00:00",
+          "outcome": "useful",
+          "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
+        },
+        {
+          "date": "2026-07-28T10:28:52.480697+00:00",
+          "outcome": "useful",
+          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
+        },
+        {
+          "date": "2026-07-27T18:12:24.811771+00:00",
+          "outcome": "useful",
+          "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
+        },
+        {
+          "date": "2026-07-27T17:54:07.742196+00:00",
+          "outcome": "useful",
+          "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
+        }
+      ],
+      "score": 3.963032528,
+      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
+      "status": "preferred",
+      "uses": 4
+    },
+    "lib_features_transactions_presentation_screens_stock_adjustment_screen_stockadjustmentscreen": {
+      "code_fingerprint": "3c20132d23f6f4c8819c78d4af530bf2a1de9383875f1ae9dc7e584066e1274d",
+      "label": "StockAdjustmentScreen",
+      "last": "2026-07-28T10:50:22.410550+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-28T10:40:02.815211+00:00",
+          "outcome": "useful",
+          "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
+        },
+        {
+          "date": "2026-07-28T10:28:52.480697+00:00",
+          "outcome": "useful",
+          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
+        }
+      ],
+      "score": 2.996163982,
+      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "status": "preferred",
+      "uses": 3
+    },
+    "lib_features_transactions_presentation_screens_transaction_history_screen_transactionhistoryscreen": {
+      "code_fingerprint": "c649e35a1327484c02a1de7de76f435afbab4019a8a85e43330905f03868e418",
+      "label": "TransactionHistoryScreen",
+      "last": "2026-07-27T17:34:43.991563+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:34:43.991563+00:00",
+          "outcome": "useful",
+          "q": "اعمل الخطه ك ui. بس"
+        }
+      ],
+      "score": 0.982429973,
+      "source_file": "lib/features/transactions/presentation/screens/transaction_history_screen.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_features_transactions_presentation_widgets_adjustment_form_adjustmentform": {
+      "code_fingerprint": "0c98d992ccde286f74ca99875851e62e5e992d556d630ec966f3271604b95396",
+      "label": "AdjustmentForm",
+      "last": "2026-07-28T10:50:22.410550+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-28T10:28:52.480697+00:00",
+          "outcome": "useful",
+          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
+        }
+      ],
+      "score": 1.997438148,
+      "source_file": "lib/features/transactions/presentation/widgets/adjustment_form.dart",
+      "status": "preferred",
+      "uses": 2
+    },
+    "lib_features_transactions_presentation_widgets_current_voucher_panel_currentvoucherpanel": {
+      "code_fingerprint": "7190499b4f2eaddaa80bdac3b4bf8e4d3be55213eda6dca7913bf2cc97695a19",
+      "label": "CurrentVoucherPanel",
+      "last": "2026-07-27T17:54:07.742196+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:54:07.742196+00:00",
+          "outcome": "useful",
+          "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
+        }
+      ],
+      "score": 0.98273576,
+      "source_file": "lib/features/transactions/presentation/widgets/current_voucher_panel.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_features_transactions_presentation_widgets_inbound_form": {
+      "code_fingerprint": "a06db88c3417d5abdf60c5bdee2a68f3f410b6be76f5bcdccebe67e533e653af",
+      "label": "inbound_form.dart",
+      "last": "2026-07-26T23:58:03.382506+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-26T23:58:03.382506+00:00",
+          "outcome": "useful",
+          "q": "اضافه اسم السائق في الاستلام والتسليم"
+        }
+      ],
+      "score": 0.965913813,
+      "source_file": "lib/features/transactions/presentation/widgets/inbound_form.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_features_transactions_presentation_widgets_inbound_form_inboundform": {
+      "code_fingerprint": "a06db88c3417d5abdf60c5bdee2a68f3f410b6be76f5bcdccebe67e533e653af",
+      "label": "InboundForm",
+      "last": "2026-07-27T17:34:43.991563+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:34:43.991563+00:00",
+          "outcome": "useful",
+          "q": "اعمل الخطه ك ui. بس"
+        },
+        {
+          "date": "2026-07-27T17:24:28.747892+00:00",
+          "outcome": "useful",
+          "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
+        }
+      ],
+      "score": 1.964698323,
+      "source_file": "lib/features/transactions/presentation/widgets/inbound_form.dart",
+      "status": "preferred",
+      "uses": 2
+    },
+    "lib_features_transactions_presentation_widgets_item_quantity_sheet_itemquantitysheet": {
+      "code_fingerprint": "6a0e2fd2069aec7c7a20448f20bbfbe4b0656bc4028e45855af61f32252e17cf",
+      "label": "ItemQuantitySheet",
+      "last": "2026-07-28T10:50:22.410550+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        },
+        {
+          "date": "2026-07-27T17:54:07.742196+00:00",
+          "outcome": "useful",
+          "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
+        }
+      ],
+      "score": 1.981627088,
+      "source_file": "lib/features/transactions/presentation/widgets/item_quantity_sheet.dart",
+      "status": "preferred",
+      "uses": 2
+    },
+    "lib_features_transactions_presentation_widgets_movement_details_sheet_movementdetailssheet": {
+      "code_fingerprint": "53e649f706505971a992ac8773766f042ac3c11a3bb5a897dbd426de306c7c9f",
+      "label": "MovementDetailsSheet",
+      "last": "2026-07-27T17:54:07.742196+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:54:07.742196+00:00",
+          "outcome": "useful",
+          "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
+        }
+      ],
+      "score": 0.98273576,
+      "source_file": "lib/features/transactions/presentation/widgets/movement_details_sheet.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_features_transactions_presentation_widgets_movement_type_selector_movementtypeselector": {
+      "code_fingerprint": "dacaeff9c2eb44b9b43495dcb81b7910f28d198773946b7c65b88ff7dfbf792f",
+      "label": "MovementTypeSelector",
+      "last": "2026-07-27T17:54:07.742196+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:54:07.742196+00:00",
+          "outcome": "useful",
+          "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
+        }
+      ],
+      "score": 0.98273576,
+      "source_file": "lib/features/transactions/presentation/widgets/movement_type_selector.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_features_transactions_presentation_widgets_movement_voucher_preview_dialog_movementvoucherpreviewdialog": {
+      "code_fingerprint": "9d567c37ca53eb3e0164eb00487a9a48e3dffa398b3296931c569d21ce1ffde8",
+      "label": "MovementVoucherPreviewDialog",
+      "last": "2026-07-27T18:12:24.811771+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T18:12:24.811771+00:00",
+          "outcome": "useful",
+          "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
+        },
+        {
+          "date": "2026-07-27T17:54:07.742196+00:00",
+          "outcome": "useful",
+          "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
+        }
+      ],
+      "score": 1.965759874,
+      "source_file": "lib/features/transactions/presentation/widgets/movement_voucher_preview_dialog.dart",
+      "status": "preferred",
+      "uses": 2
+    },
+    "lib_features_transactions_presentation_widgets_outbound_form": {
+      "code_fingerprint": "316780505347167b1c58cf2d2069fd96ca5b788a340d2d00704a0c5b5e69eee9",
+      "label": "outbound_form.dart",
+      "last": "2026-07-26T23:58:03.382506+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-26T23:58:03.382506+00:00",
+          "outcome": "useful",
+          "q": "اضافه اسم السائق في الاستلام والتسليم"
+        }
+      ],
+      "score": 0.965913813,
+      "source_file": "lib/features/transactions/presentation/widgets/outbound_form.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_features_transactions_presentation_widgets_outbound_form_outboundform": {
+      "code_fingerprint": "316780505347167b1c58cf2d2069fd96ca5b788a340d2d00704a0c5b5e69eee9",
+      "label": "OutboundForm",
+      "last": "2026-07-27T17:34:43.991563+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-27T17:34:43.991563+00:00",
+          "outcome": "useful",
+          "q": "اعمل الخطه ك ui. بس"
+        },
+        {
+          "date": "2026-07-27T17:24:28.747892+00:00",
+          "outcome": "useful",
+          "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
+        }
+      ],
+      "score": 1.964698323,
+      "source_file": "lib/features/transactions/presentation/widgets/outbound_form.dart",
+      "status": "preferred",
+      "uses": 2
+    },
+    "lib_features_transactions_presentation_widgets_secondary_operations_bar_secondaryoperationsbar": {
+      "code_fingerprint": "178fd50ec2e79d871b7ce1cee3370f325791a10c38a75b3ad0748a4e2a422fe1",
+      "label": "SecondaryOperationsBar",
+      "last": "2026-07-28T10:40:02.815211+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:40:02.815211+00:00",
+          "outcome": "useful",
+          "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
+        }
+      ],
+      "score": 0.998725835,
+      "source_file": "lib/features/transactions/presentation/widgets/secondary_operations_bar.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_firebase_options": {
+      "code_fingerprint": "8761324a9e6e6b8a889c6c4cf775c5d9d1e9469c661561972466ee4d03b17c12",
+      "label": "firebase_options.dart",
+      "last": "2026-07-28T10:50:22.410550+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T10:50:22.410550+00:00",
+          "outcome": "useful",
+          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
+        }
+      ],
+      "score": 0.998891328,
+      "source_file": "lib/firebase_options.dart",
       "status": "tentative",
       "uses": 1
     },
@@ -156,7 +696,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.999546407,
+      "score": 0.965439638,
       "source_file": "",
       "status": "tentative",
       "uses": 1
@@ -172,7 +712,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.999546407,
+      "score": 0.965439638,
       "source_file": "",
       "status": "tentative",
       "uses": 1

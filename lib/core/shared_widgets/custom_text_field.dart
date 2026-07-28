@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../constants/app_colors.dart';
 import '../constants/app_sizes.dart';
 import '../constants/app_text_styles.dart';
 
 class CustomTextField extends StatelessWidget {
+  final Key? fieldKey;
   final String label;
   final String? hint;
   final TextEditingController? controller;
@@ -11,10 +13,19 @@ class CustomTextField extends StatelessWidget {
   final ValueChanged<String>? onChanged;
   final String? Function(String?)? validator;
   final IconData? prefixIcon;
+  final Widget? suffixIcon;
   final int maxLines;
+  final bool obscureText;
+  final bool enabled;
+  final FocusNode? focusNode;
+  final TextInputAction? textInputAction;
+  final Iterable<String>? autofillHints;
+  final ValueChanged<String>? onFieldSubmitted;
+  final List<TextInputFormatter>? inputFormatters;
 
   const CustomTextField({
     super.key,
+    this.fieldKey,
     required this.label,
     this.hint,
     this.controller,
@@ -22,7 +33,15 @@ class CustomTextField extends StatelessWidget {
     this.onChanged,
     this.validator,
     this.prefixIcon,
+    this.suffixIcon,
     this.maxLines = 1,
+    this.obscureText = false,
+    this.enabled = true,
+    this.focusNode,
+    this.textInputAction,
+    this.autofillHints,
+    this.onFieldSubmitted,
+    this.inputFormatters,
   });
 
   @override
@@ -36,11 +55,21 @@ class CustomTextField extends StatelessWidget {
         ),
         SizedBox(height: AppSizes.h8),
         TextFormField(
+          key: fieldKey,
           controller: controller,
+          focusNode: focusNode,
           keyboardType: keyboardType,
           onChanged: onChanged,
+          onFieldSubmitted: onFieldSubmitted,
           validator: validator,
           maxLines: maxLines,
+          obscureText: obscureText,
+          enabled: enabled,
+          textInputAction: textInputAction,
+          autofillHints: autofillHints,
+          inputFormatters: inputFormatters,
+          autocorrect: !obscureText,
+          enableSuggestions: !obscureText,
           style: AppTextStyles.bodyLarge,
           decoration: InputDecoration(
             hintText: hint,
@@ -54,6 +83,7 @@ class CustomTextField extends StatelessWidget {
                     size: AppSizes.iconMd,
                   )
                 : null,
+            suffixIcon: suffixIcon,
             filled: true,
             fillColor: AppColors.surface,
             contentPadding: EdgeInsets.symmetric(

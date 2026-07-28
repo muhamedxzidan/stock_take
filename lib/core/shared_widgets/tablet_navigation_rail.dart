@@ -6,8 +6,13 @@ import '../constants/app_sizes.dart';
 
 class TabletNavigationRail extends StatelessWidget {
   final String currentRoute;
+  final VoidCallback onLogout;
 
-  const TabletNavigationRail({super.key, required this.currentRoute});
+  const TabletNavigationRail({
+    super.key,
+    required this.currentRoute,
+    required this.onLogout,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -51,39 +56,15 @@ class TabletNavigationRail extends StatelessWidget {
                 children: [
                   _buildNavItem(
                     context,
-                    title: 'الرئيسية والمخزون',
-                    icon: Icons.dashboard_rounded,
-                    route: AppRoutes.dashboard,
-                  ),
-                  _buildNavItem(
-                    context,
-                    title: 'تعريف صنف',
+                    title: 'حركة جديدة',
                     icon: Icons.add_box_rounded,
-                    route: AppRoutes.addItem,
+                    route: AppRoutes.newMovement,
                   ),
                   _buildNavItem(
                     context,
-                    title: 'تسجيل وارد',
-                    icon: Icons.input_rounded,
-                    route: AppRoutes.inboundEntry,
-                  ),
-                  _buildNavItem(
-                    context,
-                    title: 'تسجيل منصرف',
-                    icon: Icons.output_rounded,
-                    route: AppRoutes.outboundEntry,
-                  ),
-                  _buildNavItem(
-                    context,
-                    title: 'مرتجع للمخزن',
-                    icon: Icons.assignment_return_rounded,
-                    route: AppRoutes.warehouseReturn,
-                  ),
-                  _buildNavItem(
-                    context,
-                    title: 'تسوية جردية',
-                    icon: Icons.fact_check_rounded,
-                    route: AppRoutes.stockAdjustment,
+                    title: 'رصيد المخزن',
+                    icon: Icons.inventory_2_rounded,
+                    route: AppRoutes.dashboard,
                   ),
                   _buildNavItem(
                     context,
@@ -96,6 +77,26 @@ class TabletNavigationRail extends StatelessWidget {
             ),
           ),
 
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Material(
+              color: Colors.transparent,
+              child: ListTile(
+                onTap: onLogout,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(AppSizes.r12),
+                ),
+                leading: const Icon(
+                  Icons.logout_rounded,
+                  color: AppColors.surface,
+                ),
+                title: const Text(
+                  'تسجيل الخروج',
+                  style: TextStyle(color: AppColors.surface),
+                ),
+              ),
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
@@ -117,7 +118,10 @@ class TabletNavigationRail extends StatelessWidget {
     required IconData icon,
     required String route,
   }) {
-    final isSelected = currentRoute == route;
+    final isSelected =
+        currentRoute == route ||
+        (route == AppRoutes.newMovement &&
+            _isSecondaryMovementRoute(currentRoute));
 
     // Use fixed horizontal padding (8.0, 12.0) inside fixed 220px container to prevent overflow on wide screens
     return Padding(
@@ -126,7 +130,7 @@ class TabletNavigationRail extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           onTap: () {
-            if (!isSelected) {
+            if (currentRoute != route) {
               context.go(route);
             }
           },
@@ -174,5 +178,10 @@ class TabletNavigationRail extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  bool _isSecondaryMovementRoute(String route) {
+    return route == AppRoutes.warehouseReturn ||
+        route == AppRoutes.stockAdjustment;
   }
 }

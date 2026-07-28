@@ -4,9 +4,9 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../../../core/models/inventory_item.dart';
 import '../../cubit/dashboard_cubit.dart';
 import '../../cubit/dashboard_state.dart';
-import '../../data/models/item_model.dart';
 
 class StockItemsList extends StatelessWidget {
   const StockItemsList({super.key});
@@ -15,25 +15,33 @@ class StockItemsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<DashboardCubit, DashboardState>(
       buildWhen: (previous, current) =>
-          current is DashboardSuccess || current is DashboardLoading || current is DashboardFailure,
+          current is DashboardSuccess ||
+          current is DashboardLoading ||
+          current is DashboardFailure,
       builder: (context, state) {
         if (state is DashboardLoading) {
           return const Center(child: CircularProgressIndicator());
         }
         if (state is DashboardFailure) {
-          return Center(child: Text(state.message, style: AppTextStyles.bodyLarge));
+          return Center(
+            child: Text(state.message, style: AppTextStyles.bodyLarge),
+          );
         }
         if (state is DashboardSuccess) {
           if (state.items.isEmpty) {
             return Center(
-              child: Text(AppStrings.emptyList, style: AppTextStyles.bodyMedium),
+              child: Text(
+                AppStrings.emptyList,
+                style: AppTextStyles.bodyMedium,
+              ),
             );
           }
           return ListView.separated(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             itemCount: state.items.length,
-            separatorBuilder: (context, index) => SizedBox(height: AppSizes.h12),
+            separatorBuilder: (context, index) =>
+                SizedBox(height: AppSizes.h12),
             itemBuilder: (context, index) {
               final item = state.items[index];
               return _buildItemCard(item);
@@ -45,7 +53,7 @@ class StockItemsList extends StatelessWidget {
     );
   }
 
-  Widget _buildItemCard(ItemModel item) {
+  Widget _buildItemCard(InventoryItem item) {
     final bool isLowStock = item.currentStockBalance <= 30;
 
     return Card(
@@ -73,19 +81,26 @@ class StockItemsList extends StatelessWidget {
                 ),
                 SizedBox(width: AppSizes.p8),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: AppSizes.p8, vertical: AppSizes.p4),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: AppSizes.p8,
+                    vertical: AppSizes.p4,
+                  ),
                   decoration: BoxDecoration(
-                    color: isLowStock ? AppColors.errorBackground : AppColors.successBackground,
+                    color: isLowStock
+                        ? AppColors.errorBackground
+                        : AppColors.successBackground,
                     borderRadius: BorderRadius.circular(AppSizes.r8),
                   ),
                   child: Text(
-                    isLowStock ? AppStrings.lowStockWarning : AppStrings.inStock,
+                    isLowStock
+                        ? AppStrings.lowStockWarning
+                        : AppStrings.inStock,
                     style: AppTextStyles.caption.copyWith(
                       color: isLowStock ? AppColors.error : AppColors.success,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                )
+                ),
               ],
             ),
             SizedBox(height: AppSizes.h8),
@@ -93,7 +108,11 @@ class StockItemsList extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
-                  child: Text('الكود: ${item.code}', style: AppTextStyles.bodyMedium, overflow: TextOverflow.ellipsis),
+                  child: Text(
+                    'الكود: ${item.code}',
+                    style: AppTextStyles.bodyMedium,
+                    overflow: TextOverflow.ellipsis,
+                  ),
                 ),
                 Expanded(
                   child: Text(
@@ -115,9 +134,11 @@ class StockItemsList extends StatelessWidget {
                     children: [
                       Text('الرصيد الإجمالي:', style: AppTextStyles.caption),
                       Text(
-                        '${item.currentStockBalance} ${item.unit}',
+                        '${item.currentStockBalance} ${AppStrings.piecesCount}',
                         style: AppTextStyles.heading2.copyWith(
-                          color: isLowStock ? AppColors.error : AppColors.primary,
+                          color: isLowStock
+                              ? AppColors.error
+                              : AppColors.primary,
                         ),
                         overflow: TextOverflow.ellipsis,
                       ),
@@ -128,7 +149,9 @@ class StockItemsList extends StatelessWidget {
                   child: Text(
                     item.formattedCartonStock,
                     textAlign: TextAlign.end,
-                    style: AppTextStyles.bodyMedium.copyWith(fontWeight: FontWeight.bold),
+                    style: AppTextStyles.bodyMedium.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),

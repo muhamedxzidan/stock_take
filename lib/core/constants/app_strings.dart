@@ -6,9 +6,24 @@ class AppStrings {
   static const String appTitle = 'نظام إدارة المخزون';
   static const String singleWarehouseName = 'المخزن الرئيسي';
   static const String currency = 'ج.م';
+  static const String email = 'البريد الإلكتروني';
+  static const String emailHint = 'name@example.com';
+  static const String password = 'كلمة المرور';
+  static const String passwordHint = 'اكتب كلمة المرور';
+  static const String signIn = 'تسجيل الدخول';
+  static const String loginSubtitle = 'سجّل الدخول للوصول إلى المخزن الرئيسي';
+  static const String authorizedUsersOnly = 'الدخول متاح للحسابات المعتمدة فقط';
+  static const String invalidEmail = 'اكتب بريدًا إلكترونيًا صحيحًا';
+  static const String passwordRequired = 'اكتب كلمة المرور';
+  static const String showPassword = 'إظهار كلمة المرور';
+  static const String hidePassword = 'إخفاء كلمة المرور';
+  static const String logout = 'تسجيل الخروج';
+  static const String logoutConfirmation = 'هل تريد تسجيل الخروج؟';
+  static const String logoutFailure = 'تعذر تسجيل الخروج. حاول مرة أخرى.';
 
   // Navigation & Screens Titles
-  static const String dashboardTitle = 'الرئيسية ورصيد المخزون';
+  static const String dashboardTitle = 'رصيد المخزن';
+  static const String newMovementTitle = 'حركة جديدة';
   static const String addItemTitle = 'تعريف صنف جديد';
   static const String inboundTitle = 'تسجيل وارد جديد';
   static const String outboundTitle = 'تسجيل منصرف جديد';
@@ -16,6 +31,12 @@ class AppStrings {
   static const String adjustmentTitle = 'تسوية جردية لتصحيح الرصيد';
   static const String transactionHistoryTitle = 'سجل الحركات والعمليات';
   static const String printVoucherTitle = 'معاينة وطباعة الإذن';
+  static const String otherOperations = 'عمليات أخرى';
+  static const String warehouseReturn = 'مرتجع للمخزن';
+  static const String warehouseReturnHint = 'إرجاع صنف سبق صرفه';
+  static const String stocktake = 'جرد المخزن';
+  static const String stocktakeHint = 'مطابقة الرصيد الفعلي';
+  static const String backToNewMovement = 'الرجوع إلى الحركة الجديدة';
 
   // Item Fields
   static const String itemName = 'اسم الصنف';

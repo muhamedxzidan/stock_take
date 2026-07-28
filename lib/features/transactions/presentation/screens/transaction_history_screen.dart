@@ -30,7 +30,9 @@ class TransactionHistoryScreen extends StatelessWidget {
                       label: 'البحث في سجل الحركات',
                       hint: 'ابحث برقم الإذن، اسم الصنف، المورد أو المستلم...',
                       prefixIcon: Icons.search,
-                      onChanged: (val) => context.read<TransactionsCubit>().onSearchQueryChanged(val),
+                      onChanged: (val) => context
+                          .read<TransactionsCubit>()
+                          .onSearchQueryChanged(val),
                     ),
                     SizedBox(height: AppSizes.h12),
                     const TransactionFilterBar(),
@@ -39,7 +41,9 @@ class TransactionHistoryScreen extends StatelessWidget {
               ),
               Expanded(
                 child: BlocBuilder<TransactionsCubit, TransactionsState>(
-                  buildWhen: (prev, curr) => curr is TransactionsSuccess || curr is TransactionsLoading,
+                  buildWhen: (prev, curr) =>
+                      curr is TransactionsSuccess ||
+                      curr is TransactionsLoading,
                   builder: (context, state) {
                     if (state is TransactionsLoading) {
                       return const Center(child: CircularProgressIndicator());
@@ -47,15 +51,21 @@ class TransactionHistoryScreen extends StatelessWidget {
                     if (state is TransactionsSuccess) {
                       if (state.transactions.isEmpty) {
                         return Center(
-                          child: Text(AppStrings.emptyList, style: AppTextStyles.bodyMedium),
+                          child: Text(
+                            AppStrings.emptyList,
+                            style: AppTextStyles.bodyMedium,
+                          ),
                         );
                       }
                       return ListView.separated(
                         padding: EdgeInsets.all(AppSizes.p16),
                         itemCount: state.transactions.length,
-                        separatorBuilder: (context, index) => SizedBox(height: AppSizes.h12),
+                        separatorBuilder: (context, index) =>
+                            SizedBox(height: AppSizes.h12),
                         itemBuilder: (context, index) {
-                          return TransactionListItem(transaction: state.transactions[index]);
+                          return TransactionListItem(
+                            transaction: state.transactions[index],
+                          );
                         },
                       );
                     }
