@@ -45,6 +45,25 @@ await expectStatus({
 });
 
 await expectStatus({
+  name: 'item code counter and generated item can be created atomically',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createCounterWrite({
+          counterId: 'itemCode',
+          value: 1,
+        }),
+        createItemWrite({
+          itemId: 'S-N-1',
+          openingStockPieces: 0,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
   name: 'negative opening stock is denied',
   expected: [401, 403],
   request: () =>
@@ -82,6 +101,10 @@ await expectStatus({
   request: () =>
     commit(
       [
+        createCounterWrite({
+          counterId: 'inboundVoucher',
+          value: 1,
+        }),
         createMovementWrite({
           movementId: 'movement-1',
           itemId: 'ITM-001',
@@ -93,6 +116,384 @@ await expectStatus({
           currentStockPieces: 15,
           totalInboundPieces: 5,
           lastMovementId: 'movement-1',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'outbound movement atomically deducts available stock',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createCounterWrite({
+          counterId: 'outboundVoucher',
+          value: 1,
+        }),
+        createMovementWrite({
+          movementId: 'movement-2',
+          itemId: 'ITM-001',
+          delta: -4,
+          type: 'outbound',
+        }),
+        updateItemOutboundStockWrite({
+          itemId: 'ITM-001',
+          currentStockPieces: 11,
+          totalOutboundPieces: 4,
+          lastMovementId: 'movement-2',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'outbound movement that would create negative stock is denied',
+  expected: [401, 403],
+  request: () =>
+    commit(
+      [
+        updateCounterWrite({
+          counterId: 'outboundVoucher',
+          value: 2,
+        }),
+        createMovementWrite({
+          movementId: 'movement-3',
+          itemId: 'ITM-001',
+          delta: -20,
+          type: 'outbound',
+        }),
+        updateItemOutboundStockWrite({
+          itemId: 'ITM-001',
+          currentStockPieces: -9,
+          totalOutboundPieces: 24,
+          lastMovementId: 'movement-3',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'rejected outbound movement leaves no partial movement document',
+  expected: [404],
+  request: () => readDocument('movements', 'movement-3', workerToken),
+});
+
+await expectIntegerField({
+  name: 'rejected outbound movement preserves the latest item stock',
+  collection: 'items',
+  documentId: 'ITM-001',
+  field: 'currentStockPieces',
+  expected: 11,
+  token: workerToken,
+});
+
+await expectStatus({
+  name: 'customer return, stock increase, and return log succeed atomically',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createCounterWrite({
+          counterId: 'customerReturn',
+          value: 1,
+        }),
+        createMovementWrite({
+          movementId: 'movement-return-1',
+          itemId: 'ITM-001',
+          delta: 3,
+          type: 'customerReturn',
+          returnId: 'return-1',
+        }),
+        updateItemCustomerReturnStockWrite({
+          itemId: 'ITM-001',
+          currentStockPieces: 14,
+          totalCustomerReturnPieces: 3,
+          lastMovementId: 'movement-return-1',
+        }),
+        createCustomerReturnWrite({
+          returnId: 'return-1',
+          movementId: 'movement-return-1',
+          itemId: 'ITM-001',
+          quantityPieces: 3,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'customer return log is readable after atomic save',
+  expected: [200],
+  request: () => readDocument('returns', 'return-1', workerToken),
+});
+
+await expectIntegerField({
+  name: 'customer return increases the item stock',
+  collection: 'items',
+  documentId: 'ITM-001',
+  field: 'currentStockPieces',
+  expected: 14,
+  token: workerToken,
+});
+
+await expectStatus({
+  name: 'supplier replacement resolves a return without changing stock',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createCounterWrite({
+          counterId: 'returnResolution',
+          value: 1,
+        }),
+        createMovementWrite({
+          movementId: 'resolution-replaced-1',
+          itemId: 'ITM-001',
+          delta: 0,
+          type: 'supplierReplacement',
+          returnId: 'return-1',
+        }),
+        resolveCustomerReturnWrite({
+          returnId: 'return-1',
+          movementId: 'resolution-replaced-1',
+          status: 'replaced',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectIntegerField({
+  name: 'supplier replacement preserves item stock',
+  collection: 'items',
+  documentId: 'ITM-001',
+  field: 'currentStockPieces',
+  expected: 14,
+  token: workerToken,
+});
+
+await expectStatus({
+  name: 'the same customer return cannot be resolved twice',
+  expected: [401, 403],
+  request: () =>
+    commit(
+      [
+        updateCounterWrite({
+          counterId: 'returnResolution',
+          value: 2,
+        }),
+        createMovementWrite({
+          movementId: 'resolution-duplicate',
+          itemId: 'ITM-001',
+          delta: 0,
+          type: 'supplierReplacement',
+          returnId: 'return-1',
+        }),
+        resolveCustomerReturnWrite({
+          returnId: 'return-1',
+          movementId: 'resolution-duplicate',
+          status: 'replaced',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'rejected duplicate resolution leaves no movement document',
+  expected: [404],
+  request: () =>
+    readDocument('movements', 'resolution-duplicate', workerToken),
+});
+
+await expectStatus({
+  name: 'a second customer return can be recorded for supplier return',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        updateCounterWrite({
+          counterId: 'customerReturn',
+          value: 2,
+        }),
+        createMovementWrite({
+          movementId: 'movement-return-2',
+          itemId: 'ITM-001',
+          delta: 2,
+          type: 'customerReturn',
+          returnId: 'return-2',
+        }),
+        updateItemCustomerReturnStockWrite({
+          itemId: 'ITM-001',
+          currentStockPieces: 16,
+          totalCustomerReturnPieces: 5,
+          lastMovementId: 'movement-return-2',
+        }),
+        createCustomerReturnWrite({
+          returnId: 'return-2',
+          returnNumber: 'RET-2026-000002',
+          movementId: 'movement-return-2',
+          itemId: 'ITM-001',
+          quantityPieces: 2,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'returning to supplier resolves the return and deducts stock',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        updateCounterWrite({
+          counterId: 'returnResolution',
+          value: 2,
+        }),
+        createMovementWrite({
+          movementId: 'resolution-supplier-1',
+          itemId: 'ITM-001',
+          delta: -2,
+          type: 'supplierReturn',
+          returnId: 'return-2',
+        }),
+        updateItemSupplierReturnStockWrite({
+          itemId: 'ITM-001',
+          currentStockPieces: 14,
+          totalSupplierReturnPieces: 2,
+          lastMovementId: 'resolution-supplier-1',
+        }),
+        resolveCustomerReturnWrite({
+          returnId: 'return-2',
+          movementId: 'resolution-supplier-1',
+          status: 'returnedToSupplier',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectIntegerField({
+  name: 'supplier return deducts exactly the returned quantity',
+  collection: 'items',
+  documentId: 'ITM-001',
+  field: 'currentStockPieces',
+  expected: 14,
+  token: workerToken,
+});
+
+await expectStatus({
+  name: 'stocktake session and system snapshot lines start atomically',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createCounterWrite({
+          counterId: 'stocktakeNumber',
+          value: 1,
+        }),
+        createStocktakeWrite({
+          stocktakeId: 'stocktake-1',
+        }),
+        createStocktakeLineWrite({
+          stocktakeId: 'stocktake-1',
+          itemId: 'ITM-001',
+          systemQuantityPieces: 14,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'actual stocktake count can be saved while the session is open',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        countStocktakeLineWrite({
+          stocktakeId: 'stocktake-1',
+          itemId: 'ITM-001',
+          actualQuantityPieces: 12,
+          systemQuantityPieces: 14,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'stocktake completion creates its adjustment and updates stock atomically',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createCounterWrite({
+          counterId: 'stocktakeAdjustmentVoucher',
+          value: 1,
+        }),
+        createMovementWrite({
+          movementId: 'stocktake-adjustment-1',
+          itemId: 'ITM-001',
+          delta: -2,
+          type: 'stocktakeAdjustment',
+          stocktakeId: 'stocktake-1',
+        }),
+        updateItemAdjustmentStockWrite({
+          itemId: 'ITM-001',
+          currentStockPieces: 12,
+          totalAdjustmentPieces: -2,
+          lastMovementId: 'stocktake-adjustment-1',
+        }),
+        completeStocktakeWrite({
+          stocktakeId: 'stocktake-1',
+          movementId: 'stocktake-adjustment-1',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectIntegerField({
+  name: 'stocktake adjustment applies the exact counted difference',
+  collection: 'items',
+  documentId: 'ITM-001',
+  field: 'currentStockPieces',
+  expected: 12,
+  token: workerToken,
+});
+
+await expectStatus({
+  name: 'the same stocktake session cannot be completed twice',
+  expected: [401, 403],
+  request: () =>
+    commit(
+      [
+        completeStocktakeWrite({
+          stocktakeId: 'stocktake-1',
+          movementId: 'stocktake-adjustment-1',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'counts cannot change after stocktake completion',
+  expected: [401, 403],
+  request: () =>
+    commit(
+      [
+        countStocktakeLineWrite({
+          stocktakeId: 'stocktake-1',
+          itemId: 'ITM-001',
+          actualQuantityPieces: 13,
+          systemQuantityPieces: 14,
         }),
       ],
       workerToken,
@@ -200,12 +601,146 @@ function updateItemStockWrite({
   };
 }
 
-function createMovementWrite({ movementId, itemId, delta, type }) {
+function updateItemOutboundStockWrite({
+  itemId,
+  currentStockPieces,
+  totalOutboundPieces,
+  lastMovementId,
+}) {
+  return {
+    update: {
+      name: documentName('items', itemId),
+      fields: {
+        currentStockPieces: integerValue(currentStockPieces),
+        totalOutboundPieces: integerValue(totalOutboundPieces),
+        lastMovementId: stringValue(lastMovementId),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: [
+        'currentStockPieces',
+        'totalOutboundPieces',
+        'lastMovementId',
+        'updatedBy',
+      ],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [serverTimestampTransform('updatedAt')],
+  };
+}
+
+function updateItemCustomerReturnStockWrite({
+  itemId,
+  currentStockPieces,
+  totalCustomerReturnPieces,
+  lastMovementId,
+}) {
+  return {
+    update: {
+      name: documentName('items', itemId),
+      fields: {
+        currentStockPieces: integerValue(currentStockPieces),
+        totalCustomerReturnPieces: integerValue(totalCustomerReturnPieces),
+        lastMovementId: stringValue(lastMovementId),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: [
+        'currentStockPieces',
+        'totalCustomerReturnPieces',
+        'lastMovementId',
+        'updatedBy',
+      ],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [serverTimestampTransform('updatedAt')],
+  };
+}
+
+function updateItemSupplierReturnStockWrite({
+  itemId,
+  currentStockPieces,
+  totalSupplierReturnPieces,
+  lastMovementId,
+}) {
+  return {
+    update: {
+      name: documentName('items', itemId),
+      fields: {
+        currentStockPieces: integerValue(currentStockPieces),
+        totalSupplierReturnPieces: integerValue(totalSupplierReturnPieces),
+        lastMovementId: stringValue(lastMovementId),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: [
+        'currentStockPieces',
+        'totalSupplierReturnPieces',
+        'lastMovementId',
+        'updatedBy',
+      ],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [serverTimestampTransform('updatedAt')],
+  };
+}
+
+function updateItemAdjustmentStockWrite({
+  itemId,
+  currentStockPieces,
+  totalAdjustmentPieces,
+  lastMovementId,
+}) {
+  return {
+    update: {
+      name: documentName('items', itemId),
+      fields: {
+        currentStockPieces: integerValue(currentStockPieces),
+        totalAdjustmentPieces: integerValue(totalAdjustmentPieces),
+        lastMovementId: stringValue(lastMovementId),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: [
+        'currentStockPieces',
+        'totalAdjustmentPieces',
+        'lastMovementId',
+        'updatedBy',
+      ],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [serverTimestampTransform('updatedAt')],
+  };
+}
+
+function createMovementWrite({
+  movementId,
+  itemId,
+  delta,
+  type,
+  returnId = '',
+  stocktakeId = '',
+}) {
+  const quantity = Math.abs(delta);
   return {
     update: {
       name: documentName('movements', movementId),
       fields: {
-        voucherNumber: stringValue('IN-000001'),
+        voucherNumber: stringValue(
+          type === 'inbound' ? 'IN-000001' : 'OUT-000001',
+        ),
         type: stringValue(type),
         status: stringValue('completed'),
         businessAt: timestampValue(
@@ -226,12 +761,12 @@ function createMovementWrite({ movementId, itemId, delta, type }) {
             itemName: stringValue('صنف اختبار'),
             itemCode: stringValue('ITM-001'),
             cartons: integerValue(0),
-            pieces: integerValue(delta),
-            totalPieces: integerValue(delta),
+            pieces: integerValue(quantity),
+            totalPieces: integerValue(quantity),
           }),
         ]),
-        returnId: stringValue(''),
-        stocktakeId: stringValue(''),
+        returnId: stringValue(returnId),
+        stocktakeId: stringValue(stocktakeId),
         createdBy: stringValue('warehouse-worker'),
       },
     },
@@ -239,6 +774,250 @@ function createMovementWrite({ movementId, itemId, delta, type }) {
       exists: false,
     },
     updateTransforms: [serverTimestampTransform('createdAt')],
+  };
+}
+
+function createStocktakeWrite({ stocktakeId }) {
+  return {
+    update: {
+      name: documentName('stocktakes', stocktakeId),
+      fields: {
+        stocktakeNumber: stringValue('STK-2026-000001'),
+        status: stringValue('open'),
+        periodFrom: timestampValue(
+          new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(),
+        ),
+        periodTo: timestampValue(
+          new Date(Date.now() - 1000).toISOString(),
+        ),
+        completedAt: nullValue(),
+        completedBy: stringValue(''),
+        completionMovementId: stringValue(''),
+        notes: stringValue('جرد اختبار'),
+        createdBy: stringValue('warehouse-worker'),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    currentDocument: {
+      exists: false,
+    },
+    updateTransforms: [
+      serverTimestampTransform('startedAt'),
+      serverTimestampTransform('createdAt'),
+      serverTimestampTransform('updatedAt'),
+    ],
+  };
+}
+
+function createStocktakeLineWrite({
+  stocktakeId,
+  itemId,
+  systemQuantityPieces,
+}) {
+  return {
+    update: {
+      name: documentName(
+        `stocktakes/${stocktakeId}/lines`,
+        itemId,
+      ),
+      fields: {
+        itemId: stringValue(itemId),
+        itemNameSnapshot: stringValue('صنف اختبار'),
+        itemCodeSnapshot: stringValue(itemId),
+        unit: stringValue('piece'),
+        itemsPerCarton: integerValue(12),
+        systemQuantityPieces: integerValue(systemQuantityPieces),
+        actualQuantityPieces: integerValue(0),
+        differencePieces: integerValue(-systemQuantityPieces),
+        counted: booleanValue(false),
+        countedAt: nullValue(),
+        countedBy: stringValue(''),
+      },
+    },
+    currentDocument: {
+      exists: false,
+    },
+  };
+}
+
+function countStocktakeLineWrite({
+  stocktakeId,
+  itemId,
+  actualQuantityPieces,
+  systemQuantityPieces,
+}) {
+  return {
+    update: {
+      name: documentName(
+        `stocktakes/${stocktakeId}/lines`,
+        itemId,
+      ),
+      fields: {
+        actualQuantityPieces: integerValue(actualQuantityPieces),
+        differencePieces: integerValue(
+          actualQuantityPieces - systemQuantityPieces,
+        ),
+        counted: booleanValue(true),
+        countedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: [
+        'actualQuantityPieces',
+        'differencePieces',
+        'counted',
+        'countedBy',
+      ],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [serverTimestampTransform('countedAt')],
+  };
+}
+
+function completeStocktakeWrite({ stocktakeId, movementId }) {
+  return {
+    update: {
+      name: documentName('stocktakes', stocktakeId),
+      fields: {
+        status: stringValue('completed'),
+        completedBy: stringValue('warehouse-worker'),
+        completionMovementId: stringValue(movementId),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: [
+        'status',
+        'completedBy',
+        'completionMovementId',
+        'updatedBy',
+      ],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [
+      serverTimestampTransform('completedAt'),
+      serverTimestampTransform('updatedAt'),
+    ],
+  };
+}
+
+function createCustomerReturnWrite({
+  returnId,
+  returnNumber = 'RET-2026-000001',
+  movementId,
+  itemId,
+  quantityPieces,
+}) {
+  return {
+    update: {
+      name: documentName('returns', returnId),
+      fields: {
+        returnNumber: stringValue(returnNumber),
+        originalVoucherNumber: stringValue('OUT-2026-000001'),
+        itemId: stringValue(itemId),
+        itemNameSnapshot: stringValue('صنف اختبار'),
+        itemCodeSnapshot: stringValue(itemId),
+        quantityPieces: integerValue(quantityPieces),
+        sourceName: stringValue('فرع اختبار'),
+        returnedBy: stringValue('مسؤول الفرع'),
+        receivedBy: stringValue('أمين المخزن'),
+        reason: stringValue('كمية زائدة'),
+        notes: stringValue(''),
+        condition: stringValue('needsInspection'),
+        status: stringValue('pendingSupplierResolution'),
+        supplierName: stringValue(''),
+        receiptMovementId: stringValue(movementId),
+        resolutionMovementId: stringValue(''),
+        receivedAt: timestampValue(
+          new Date(Date.now() - 1000).toISOString(),
+        ),
+        resolvedAt: nullValue(),
+        resolvedBy: stringValue(''),
+        createdBy: stringValue('warehouse-worker'),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    currentDocument: {
+      exists: false,
+    },
+    updateTransforms: [
+      serverTimestampTransform('createdAt'),
+      serverTimestampTransform('updatedAt'),
+    ],
+  };
+}
+
+function resolveCustomerReturnWrite({
+  returnId,
+  movementId,
+  status,
+}) {
+  return {
+    update: {
+      name: documentName('returns', returnId),
+      fields: {
+        status: stringValue(status),
+        supplierName: stringValue('المورد الرئيسي'),
+        resolutionMovementId: stringValue(movementId),
+        resolvedBy: stringValue('warehouse-worker'),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: [
+        'status',
+        'supplierName',
+        'resolutionMovementId',
+        'resolvedBy',
+        'updatedBy',
+      ],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [
+      serverTimestampTransform('resolvedAt'),
+      serverTimestampTransform('updatedAt'),
+    ],
+  };
+}
+
+function createCounterWrite({ counterId, value }) {
+  return {
+    update: {
+      name: documentName('counters', counterId),
+      fields: {
+        value: integerValue(value),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    currentDocument: {
+      exists: false,
+    },
+    updateTransforms: [serverTimestampTransform('updatedAt')],
+  };
+}
+
+function updateCounterWrite({ counterId, value }) {
+  return {
+    update: {
+      name: documentName('counters', counterId),
+      fields: {
+        value: integerValue(value),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: ['value', 'updatedBy'],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [serverTimestampTransform('updatedAt')],
   };
 }
 
@@ -261,6 +1040,14 @@ async function commit(writes, token) {
   );
 }
 
+function readDocument(collection, documentId, token) {
+  return fetch(`${baseUrl}/${collection}/${documentId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+}
+
 async function expectStatus({ name, expected, request }) {
   const response = await request();
   if (!expected.includes(response.status)) {
@@ -270,6 +1057,29 @@ async function expectStatus({ name, expected, request }) {
         `received ${response.status}\n${body}`,
     );
   }
+  passed++;
+  console.log(`✓ ${name}`);
+}
+
+async function expectIntegerField({
+  name,
+  collection,
+  documentId,
+  field,
+  expected,
+  token,
+}) {
+  const response = await readDocument(collection, documentId, token);
+  if (response.status !== 200) {
+    throw new Error(`${name}: document read returned ${response.status}`);
+  }
+
+  const document = await response.json();
+  const actual = Number(document.fields?.[field]?.integerValue);
+  if (actual !== expected) {
+    throw new Error(`${name}: expected ${expected}, received ${actual}`);
+  }
+
   passed++;
   console.log(`✓ ${name}`);
 }
@@ -289,6 +1099,10 @@ function integerValue(value) {
 
 function booleanValue(value) {
   return { booleanValue: value };
+}
+
+function nullValue() {
+  return { nullValue: null };
 }
 
 function timestampValue(value) {

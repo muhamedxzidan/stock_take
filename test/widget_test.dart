@@ -8,20 +8,36 @@ import 'package:stock_take/core/di/service_locator.dart';
 import 'package:stock_take/core/theme/app_theme.dart';
 import 'package:stock_take/features/auth/data/repositories/auth_repository.dart';
 import 'package:stock_take/features/items/cubit/item_catalog_cubit.dart';
+import 'package:stock_take/features/returns/cubit/return_resolution_cubit.dart';
+import 'package:stock_take/features/returns/cubit/returns_cubit.dart';
+import 'package:stock_take/features/returns/data/models/return_resolution.dart';
 import 'package:stock_take/features/returns/presentation/screens/warehouse_return_screen.dart';
+import 'package:stock_take/features/transactions/cubit/transactions_cubit.dart';
 import 'package:stock_take/features/transactions/presentation/screens/new_movement_screen.dart';
 import 'package:stock_take/main.dart';
 
 import 'support/fake_items_repository.dart';
+import 'support/fake_returns_repository.dart';
+import 'support/fake_stocktake_repository.dart';
+import 'support/fake_transactions_repository.dart';
 
 void main() {
   late FakeItemsRepository itemsRepository;
+  late FakeReturnsRepository returnsRepository;
+  late FakeStocktakeRepository stocktakeRepository;
+  late FakeTransactionsRepository transactionsRepository;
 
   setUpAll(() async {
     itemsRepository = FakeItemsRepository();
+    returnsRepository = FakeReturnsRepository();
+    stocktakeRepository = FakeStocktakeRepository();
+    transactionsRepository = FakeTransactionsRepository();
     await configureDependencies(
       authRepository: _AuthenticatedTestRepository(),
       itemsRepository: itemsRepository,
+      returnsRepository: returnsRepository,
+      stocktakeRepository: stocktakeRepository,
+      transactionsRepository: transactionsRepository,
       reset: true,
     );
   });
@@ -29,6 +45,9 @@ void main() {
   tearDownAll(() async {
     await serviceLocator.reset();
     await itemsRepository.close();
+    await returnsRepository.close();
+    await stocktakeRepository.close();
+    await transactionsRepository.close();
   });
 
   testWidgets('App smoke test', (WidgetTester tester) async {
@@ -100,15 +119,25 @@ void main() {
     expect(find.byKey(const Key('open-warehouse-return')), findsOneWidget);
   });
 
-  testWidgets('warehouse return UI renders without feature logic', (
+  testWidgets('warehouse return saves through its feature cubit', (
     WidgetTester tester,
   ) async {
     await tester.pumpWidget(
       ScreenUtilInit(
         designSize: const Size(375, 812),
         builder: (context, child) {
-          return BlocProvider<ItemCatalogCubit>(
-            create: (_) => ItemCatalogCubit(itemsRepository)..loadItems(),
+          return MultiBlocProvider(
+            providers: [
+              BlocProvider<ItemCatalogCubit>(
+                create: (_) => ItemCatalogCubit(itemsRepository)..loadItems(),
+              ),
+              BlocProvider<ReturnsCubit>(
+                create: (_) => ReturnsCubit(returnsRepository),
+              ),
+              BlocProvider<ReturnResolutionCubit>(
+                create: (_) => ReturnResolutionCubit(returnsRepository),
+              ),
+            ],
             child: const MaterialApp(
               home: Directionality(
                 textDirection: TextDirection.rtl,
@@ -123,8 +152,8 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('تسجيل مرتجع للمخزن'), findsOneWidget);
-    expect(find.text('واجهة تجريبية جاهزة للربط'), findsOneWidget);
-    expect(find.text('حفظ مسودة المرتجع'), findsOneWidget);
+    expect(find.text('الحفظ متصل بالمخزون'), findsOneWidget);
+    expect(find.text('حفظ المرتجع وإضافته للمخزون'), findsOneWidget);
     expect(find.byKey(const Key('inventory-item-selector')), findsOneWidget);
 
     await tester.ensureVisible(
@@ -141,6 +170,60 @@ void main() {
     await tester.pump();
 
     expect(find.text('الإجمالي: 12 قطعة • الكرتونة = 12 قطعة'), findsOneWidget);
+
+    await tester.enterText(
+      find.byKey(const Key('return-source-field')),
+      'فرع مدينة نصر',
+    );
+    await tester.ensureVisible(
+      find.byKey(const Key('return-returned-by-field')),
+    );
+    await tester.enterText(
+      find.byKey(const Key('return-returned-by-field')),
+      'مسؤول الفرع',
+    );
+    await tester.enterText(
+      find.byKey(const Key('return-received-by-field')),
+      'أمين المخزن',
+    );
+    await tester.ensureVisible(find.byKey(const Key('return-reason-field')));
+    await tester.enterText(
+      find.byKey(const Key('return-reason-field')),
+      'كمية زائدة',
+    );
+    tester.testTextInput.hide();
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.byKey(const Key('save-customer-return')));
+    await tester.pumpAndSettle();
+    await tester.tap(
+      find.descendant(
+        of: find.byKey(const Key('save-customer-return')),
+        matching: find.byType(ElevatedButton),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('تم حفظ المرتجع RET-'), findsOneWidget);
+    expect(returnsRepository.drafts.last.quantityPieces, 12);
+
+    expect(find.byKey(const Key('pending-return-return-1')), findsOneWidget);
+    await tester.ensureVisible(
+      find.byKey(const Key('replace-return-return-1')),
+    );
+    await tester.tap(find.byKey(const Key('replace-return-return-1')));
+    await tester.pumpAndSettle();
+    await tester.enterText(
+      find.byKey(const Key('return-resolution-supplier-field')),
+      'المورد الرئيسي',
+    );
+    await tester.tap(find.byKey(const Key('confirm-return-resolution')));
+    await tester.pumpAndSettle();
+
+    expect(
+      returnsRepository.resolutions.last.kind,
+      ReturnResolutionKind.replaced,
+    );
+    expect(find.byKey(const Key('pending-return-return-1')), findsNothing);
   });
 
   testWidgets('new movement UI adds items without leaving the mobile screen', (
@@ -151,8 +234,13 @@ void main() {
     expect(find.text('حركة جديدة'), findsOneWidget);
     expect(find.text('وارد +'), findsOneWidget);
     expect(find.text('منصرف −'), findsOneWidget);
+    expect(find.byKey(const Key('add-new-item-from-movement')), findsOneWidget);
 
-    await tester.tap(find.byKey(const Key('movement-item-1')));
+    await tester.ensureVisible(find.byKey(const Key('movement-item-1')));
+    await tester.tapAt(
+      tester.getTopLeft(find.byKey(const Key('movement-item-1'))) +
+          const Offset(24, 24),
+    );
     await tester.pumpAndSettle();
 
     expect(find.text('عدد الكراتين'), findsOneWidget);
@@ -179,9 +267,15 @@ void main() {
 
     expect(find.text('معاينة إذن وارد'), findsOneWidget);
     expect(
-      find.text('هذه معاينة UI فقط؛ لن يتم حفظ البيانات أو تعديل الرصيد.'),
+      find.text('عند التأكيد سيُحفظ إذن الوارد وتُحدّث الأرصدة معًا.'),
       findsOneWidget,
     );
+
+    await tester.tap(find.byKey(const Key('voucher-ui-finish')));
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('تم حفظ إذن الوارد IN-'), findsOneWidget);
+    expect(find.text('الإذن الحالي: فارغ'), findsOneWidget);
   });
 
   testWidgets('new movement UI shows a persistent voucher on desktop', (
@@ -231,7 +325,9 @@ Future<void> _pumpMovementScreen(
   required Size size,
 }) async {
   final itemsRepository = FakeItemsRepository();
+  final transactionsRepository = FakeTransactionsRepository();
   addTearDown(itemsRepository.close);
+  addTearDown(transactionsRepository.close);
   tester.view.physicalSize = size;
   tester.view.devicePixelRatio = 1;
   addTearDown(tester.view.resetPhysicalSize);
@@ -243,8 +339,16 @@ Future<void> _pumpMovementScreen(
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return BlocProvider<ItemCatalogCubit>(
-          create: (context) => ItemCatalogCubit(itemsRepository)..loadItems(),
+        return MultiBlocProvider(
+          providers: [
+            BlocProvider<ItemCatalogCubit>(
+              create: (context) =>
+                  ItemCatalogCubit(itemsRepository)..loadItems(),
+            ),
+            BlocProvider<TransactionsCubit>(
+              create: (context) => TransactionsCubit(transactionsRepository),
+            ),
+          ],
           child: MaterialApp(
             theme: AppTheme.lightTheme,
             home: const Directionality(

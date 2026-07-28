@@ -19,14 +19,12 @@ class AddItemForm extends StatefulWidget {
 
 class _AddItemFormState extends State<AddItemForm> {
   final _nameController = TextEditingController();
-  final _codeController = TextEditingController();
   final _itemsPerCartonController = TextEditingController(text: '12');
   final _initialBalanceController = TextEditingController(text: '0');
 
   @override
   void dispose() {
     _nameController.dispose();
-    _codeController.dispose();
     _itemsPerCartonController.dispose();
     _initialBalanceController.dispose();
     super.dispose();
@@ -39,13 +37,18 @@ class _AddItemFormState extends State<AddItemForm> {
       listener: (context, state) {
         if (state is ItemsSuccess) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text(AppStrings.successSave),
+            SnackBar(
+              content: Text(
+                '${AppStrings.successSave} كود الصنف: ${state.item.code}',
+              ),
               backgroundColor: AppColors.success,
             ),
           );
-          // Navigate safely using GoRouter instead of Navigator.pop which breaks ShellRoute
-          context.go(AppRoutes.dashboard);
+          if (context.canPop()) {
+            context.pop();
+          } else {
+            context.go(AppRoutes.dashboard);
+          }
         }
         if (state is ItemsFailure) {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -69,11 +72,15 @@ class _AddItemFormState extends State<AddItemForm> {
               prefixIcon: Icons.shopping_bag,
             ),
             SizedBox(height: AppSizes.h16),
-            CustomTextField(
-              label: AppStrings.itemCode,
-              hint: 'مثال: ITM-101',
-              controller: _codeController,
-              prefixIcon: Icons.qr_code,
+            InputDecorator(
+              decoration: const InputDecoration(
+                labelText: AppStrings.itemCode,
+                prefixIcon: Icon(Icons.qr_code),
+              ),
+              child: const Text(
+                'يُنشأ تلقائيًا بصيغة S-N-1',
+                key: Key('generated-item-code-hint'),
+              ),
             ),
             SizedBox(height: AppSizes.h16),
             CustomTextField(
@@ -99,7 +106,6 @@ class _AddItemFormState extends State<AddItemForm> {
               onPressed: () {
                 context.read<ItemsCubit>().submitNewItem(
                   name: _nameController.text,
-                  code: _codeController.text,
                   itemsPerCartonStr: _itemsPerCartonController.text,
                   initialBalanceStr: _initialBalanceController.text,
                 );

@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../data/models/inventory_movement.dart';
 import '../data/models/transaction_model.dart';
 import '../data/repositories/transactions_repository_base.dart';
+import '../data/repositories/transactions_repository_failure.dart';
 import 'transactions_state.dart';
 
 /// TransactionsCubit manages transaction submission and log filtering.
@@ -10,18 +12,122 @@ class TransactionsCubit extends Cubit<TransactionsState> {
   Timer? _debounceTimer;
   List<TransactionModel> _allLogs = [];
   TransactionType? _currentFilter;
+  bool _isSavingMovement = false;
 
   TransactionsCubit(this._repository) : super(TransactionsInitial());
+
+  Future<SavedInventoryMovement?> createInboundMovement(
+    InventoryMovementDraft draft,
+  ) {
+    return _saveMovement(draft: draft, isInbound: true);
+  }
+
+  Future<SavedInventoryMovement?> createOutboundMovement(
+    InventoryMovementDraft draft,
+  ) {
+    return _saveMovement(draft: draft, isInbound: false);
+  }
+
+  Future<SavedInventoryMovement?> _saveMovement({
+    required InventoryMovementDraft draft,
+    required bool isInbound,
+  }) async {
+    if (_isSavingMovement) {
+      return null;
+    }
+
+    final validationMessage = _validateMovementDraft(
+      draft,
+      isInbound: isInbound,
+    );
+    if (validationMessage != null) {
+      emit(InventoryMovementFailure(validationMessage));
+      return null;
+    }
+
+    _isSavingMovement = true;
+    emit(InventoryMovementSaving());
+    try {
+      final movement = isInbound
+          ? await _repository.createInboundMovement(draft)
+          : await _repository.createOutboundMovement(draft);
+      emit(InventoryMovementSaved(movement));
+      return movement;
+    } on TransactionsRepositoryFailure catch (failure) {
+      emit(InventoryMovementFailure(failure.message));
+      return null;
+    } catch (_) {
+      emit(
+        InventoryMovementFailure(
+          'تعذر حفظ إذن ${isInbound ? 'الوارد' : 'المنصرف'} الآن.',
+        ),
+      );
+      return null;
+    } finally {
+      _isSavingMovement = false;
+    }
+  }
+
+  String? _validateMovementDraft(
+    InventoryMovementDraft draft, {
+    required bool isInbound,
+  }) {
+    final movementLabel = isInbound ? 'الوارد' : 'المنصرف';
+    if (draft.lines.isEmpty) {
+      return 'أضف صنفًا واحدًا على الأقل إلى إذن $movementLabel.';
+    }
+    if (draft.lines.length > 50) {
+      return 'الحد الأقصى للإذن الواحد هو 50 صنفًا.';
+    }
+    if (draft.partyName.trim().isEmpty || draft.partyName.length > 200) {
+      return isInbound
+          ? 'اكتب اسم المورد بشكل صحيح.'
+          : 'اكتب اسم الجهة المستلمة بشكل صحيح.';
+    }
+    if (draft.deliveredBy.length > 150 ||
+        draft.receivedBy.length > 150 ||
+        draft.driverName.length > 150 ||
+        draft.notes.length > 1000) {
+      return 'إحدى بيانات الإذن أطول من الحد المسموح.';
+    }
+
+    final itemIds = <String>{};
+    for (final line in draft.lines) {
+      if (!itemIds.add(line.itemId)) {
+        return 'لا يمكن إضافة الصنف نفسه مرتين داخل الإذن.';
+      }
+      if (line.cartons < 0 ||
+          line.pieces < 0 ||
+          line.itemsPerCarton <= 0 ||
+          line.totalPieces <= 0) {
+        return 'كمية الصنف ${line.itemName} غير صالحة.';
+      }
+    }
+
+    final today = DateTime.now();
+    final todayOnly = DateTime(today.year, today.month, today.day);
+    final businessDateOnly = DateTime(
+      draft.businessDate.year,
+      draft.businessDate.month,
+      draft.businessDate.day,
+    );
+    if (businessDateOnly.isAfter(todayOnly)) {
+      return 'لا يمكن تسجيل إذن $movementLabel بتاريخ مستقبلي.';
+    }
+    return null;
+  }
 
   /// Loads full list of inventory transactions.
   Future<void> loadTransactions() async {
     emit(TransactionsLoading());
     try {
       _allLogs = await _repository.fetchTransactions();
-      emit(TransactionsSuccess(
-        transactions: _allLogs,
-        selectedFilter: _currentFilter,
-      ));
+      emit(
+        TransactionsSuccess(
+          transactions: _allLogs,
+          selectedFilter: _currentFilter,
+        ),
+      );
     } catch (e) {
       emit(TransactionsFailure('فشل في تحميل سجل الحركات.'));
     }
@@ -58,10 +164,9 @@ class TransactionsCubit extends Cubit<TransactionsState> {
       }).toList();
     }
 
-    emit(TransactionsSuccess(
-      transactions: result,
-      selectedFilter: _currentFilter,
-    ));
+    emit(
+      TransactionsSuccess(transactions: result, selectedFilter: _currentFilter),
+    );
   }
 
   /// Record an Inbound transaction.

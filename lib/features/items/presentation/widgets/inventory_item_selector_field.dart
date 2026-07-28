@@ -116,11 +116,7 @@ class _InventoryItemPickerSheetState extends State<_InventoryItemPickerSheet> {
   Widget build(BuildContext context) {
     final normalizedQuery = _query.trim().toLowerCase();
     final visibleItems = widget.items
-        .where((item) {
-          return normalizedQuery.isEmpty ||
-              item.name.toLowerCase().contains(normalizedQuery) ||
-              item.code.toLowerCase().contains(normalizedQuery);
-        })
+        .where((item) => item.matchesSearch(normalizedQuery))
         .toList(growable: false);
 
     return SizedBox(
@@ -137,7 +133,7 @@ class _InventoryItemPickerSheetState extends State<_InventoryItemPickerSheet> {
               autofocus: true,
               onChanged: (value) => setState(() => _query = value),
               decoration: const InputDecoration(
-                hintText: 'ابحث بالاسم أو الكود',
+                hintText: 'ابحث بالاسم أو الكود أو الرقم',
                 prefixIcon: Icon(Icons.search_rounded),
               ),
             ),

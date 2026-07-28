@@ -1,33 +1,70 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../cubit/transactions_cubit.dart';
+import '../../cubit/transactions_state.dart';
+import '../../data/models/inventory_movement.dart';
 import 'movement_ui_types.dart';
 
-class MovementVoucherPreviewDialog extends StatelessWidget {
+class MovementVoucherPreviewDialog extends StatefulWidget {
   final MovementKind movementKind;
   final List<MovementLineViewData> lines;
   final MovementVoucherDetails details;
+  final InventoryMovementDraft movementDraft;
 
   const MovementVoucherPreviewDialog({
     super.key,
     required this.movementKind,
     required this.lines,
     required this.details,
+    required this.movementDraft,
   });
 
   @override
+  State<MovementVoucherPreviewDialog> createState() =>
+      _MovementVoucherPreviewDialogState();
+}
+
+class _MovementVoucherPreviewDialogState
+    extends State<MovementVoucherPreviewDialog> {
+  bool _isSaving = false;
+
+  Future<void> _confirm() async {
+    setState(() => _isSaving = true);
+    final cubit = context.read<TransactionsCubit>();
+    final movement = widget.movementKind == MovementKind.inbound
+        ? await cubit.createInboundMovement(widget.movementDraft)
+        : await cubit.createOutboundMovement(widget.movementDraft);
+    if (!mounted) return;
+
+    if (movement == null) {
+      final state = cubit.state;
+      final message = state is InventoryMovementFailure
+          ? state.message
+          : 'تعذر حفظ إذن ${widget.movementKind.voucherLabel} الآن.';
+      setState(() => _isSaving = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(message), backgroundColor: AppColors.error),
+      );
+      return;
+    }
+
+    Navigator.pop(context, movement);
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final actionColor = movementKind == MovementKind.inbound
+    final actionColor = widget.movementKind == MovementKind.inbound
         ? AppColors.success
         : AppColors.error;
-    final totalPieces = lines.fold<int>(
+    final totalPieces = widget.lines.fold<int>(
       0,
       (sum, line) => sum + line.totalPieces,
     );
-
     return Dialog(
       insetPadding: EdgeInsets.all(AppSizes.p16),
       shape: RoundedRectangleBorder(
@@ -59,11 +96,11 @@ class MovementVoucherPreviewDialog extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'معاينة إذن ${movementKind.label}',
+                          'معاينة إذن ${widget.movementKind.label}',
                           style: AppTextStyles.heading1,
                         ),
                         Text(
-                          '${lines.length} أصناف • $totalPieces قطعة إجمالي',
+                          '${widget.lines.length} أصناف • $totalPieces قطعة إجمالي',
                           style: AppTextStyles.bodyMedium,
                         ),
                       ],
@@ -92,7 +129,9 @@ class MovementVoucherPreviewDialog extends StatelessWidget {
                     SizedBox(width: AppSizes.p8),
                     Expanded(
                       child: Text(
-                        'هذه معاينة UI فقط؛ لن يتم حفظ البيانات أو تعديل الرصيد.',
+                        'عند التأكيد سيُحفظ إذن '
+                        '${widget.movementKind.voucherLabel} '
+                        'وتُحدّث الأرصدة معًا.',
                         style: AppTextStyles.bodySmall.copyWith(
                           color: AppColors.info,
                         ),
@@ -107,20 +146,26 @@ class MovementVoucherPreviewDialog extends StatelessWidget {
                 runSpacing: AppSizes.h8,
                 children: [
                   _DetailChip(
-                    label: movementKind == MovementKind.inbound
+                    label: widget.movementKind == MovementKind.inbound
                         ? 'المورد'
                         : 'الجهة المستلمة',
-                    value: details.partyName,
+                    value: widget.details.partyName,
                   ),
-                  _DetailChip(label: 'التاريخ', value: details.date),
-                  if (details.deliveredBy.isNotEmpty)
-                    _DetailChip(label: 'من سلّم', value: details.deliveredBy),
-                  if (details.receivedBy.isNotEmpty)
-                    _DetailChip(label: 'من استلم', value: details.receivedBy),
-                  if (details.driverName.isNotEmpty)
+                  _DetailChip(label: 'التاريخ', value: widget.details.date),
+                  if (widget.details.deliveredBy.isNotEmpty)
+                    _DetailChip(
+                      label: 'من سلّم',
+                      value: widget.details.deliveredBy,
+                    ),
+                  if (widget.details.receivedBy.isNotEmpty)
+                    _DetailChip(
+                      label: 'من استلم',
+                      value: widget.details.receivedBy,
+                    ),
+                  if (widget.details.driverName.isNotEmpty)
                     _DetailChip(
                       label: AppStrings.driverName,
-                      value: details.driverName,
+                      value: widget.details.driverName,
                     ),
                 ],
               ),
@@ -142,11 +187,12 @@ class MovementVoucherPreviewDialog extends StatelessWidget {
                           ),
                           columns: const [
                             DataColumn(label: Text('الصنف')),
+                            DataColumn(label: Text('كود الصنف')),
                             DataColumn(numeric: true, label: Text('كرتونة')),
                             DataColumn(numeric: true, label: Text('قطع')),
                             DataColumn(numeric: true, label: Text('الإجمالي')),
                           ],
-                          rows: lines
+                          rows: widget.lines
                               .map(
                                 (line) => DataRow(
                                   cells: [
@@ -156,6 +202,17 @@ class MovementVoucherPreviewDialog extends StatelessWidget {
                                         child: Text(
                                           line.item.name,
                                           overflow: TextOverflow.ellipsis,
+                                        ),
+                                      ),
+                                    ),
+                                    DataCell(
+                                      SizedBox(
+                                        width: 100,
+                                        child: Text(
+                                          line.item.code,
+                                          key: Key(
+                                            'voucher-item-code-${line.item.id}',
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -172,10 +229,10 @@ class MovementVoucherPreviewDialog extends StatelessWidget {
                   ),
                 ),
               ),
-              if (details.notes.isNotEmpty) ...[
+              if (widget.details.notes.isNotEmpty) ...[
                 SizedBox(height: AppSizes.h12),
                 Text(
-                  'ملاحظات: ${details.notes}',
+                  'ملاحظات: ${widget.details.notes}',
                   style: AppTextStyles.bodyMedium,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
@@ -197,28 +254,25 @@ class MovementVoucherPreviewDialog extends StatelessWidget {
                           borderRadius: BorderRadius.circular(AppSizes.r12),
                         ),
                       ),
-                      onPressed: () {
-                        final messenger = ScaffoldMessenger.of(context);
-                        Navigator.pop(context);
-                        messenger.showSnackBar(
-                          const SnackBar(
-                            content: Text(
-                              'تمت معاينة الحفظ والطباعة كواجهة فقط.',
-                            ),
-                            backgroundColor: AppColors.info,
-                          ),
-                        );
-                      },
-                      icon: const Icon(Icons.print_outlined),
+                      onPressed: _isSaving ? null : _confirm,
+                      icon: _isSaving
+                          ? const SizedBox.square(
+                              dimension: 20,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2,
+                                color: AppColors.surface,
+                              ),
+                            )
+                          : const Icon(Icons.save_rounded),
                       label: Text(
-                        'حفظ وطباعة',
+                        'حفظ ${widget.movementKind.voucherLabel}',
                         style: AppTextStyles.buttonText,
                       ),
                     ),
                   ),
                   SizedBox(width: AppSizes.p12),
                   OutlinedButton(
-                    onPressed: () => Navigator.pop(context),
+                    onPressed: _isSaving ? null : () => Navigator.pop(context),
                     child: const Text('رجوع للتعديل'),
                   ),
                 ],

@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
-import '../../cubit/transactions_cubit.dart';
-import '../../cubit/transactions_state.dart';
-import '../../data/models/transaction_model.dart';
+import '../../cubit/movement_history_cubit.dart';
+import '../../cubit/movement_history_state.dart';
+import '../../data/models/movement_record.dart';
 
 class TransactionFilterBar extends StatelessWidget {
   const TransactionFilterBar({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<TransactionsCubit, TransactionsState>(
-      buildWhen: (prev, curr) => curr is TransactionsSuccess,
+    return BlocBuilder<MovementHistoryCubit, MovementHistoryState>(
+      buildWhen: (previous, current) => current is MovementHistorySuccess,
       builder: (context, state) {
-        final selected = state is TransactionsSuccess
-            ? state.selectedFilter
+        final selected = state is MovementHistorySuccess
+            ? state.selectedType
             : null;
 
         return SingleChildScrollView(
@@ -33,22 +33,43 @@ class TransactionFilterBar extends StatelessWidget {
               _buildFilterChip(
                 context,
                 label: AppStrings.filterInbound,
-                type: TransactionType.inbound,
-                isSelected: selected == TransactionType.inbound,
+                type: MovementRecordType.inbound,
+                isSelected: selected == MovementRecordType.inbound,
               ),
               const SizedBox(width: 8.0),
               _buildFilterChip(
                 context,
                 label: AppStrings.filterOutbound,
-                type: TransactionType.outbound,
-                isSelected: selected == TransactionType.outbound,
+                type: MovementRecordType.outbound,
+                isSelected: selected == MovementRecordType.outbound,
+              ),
+              const SizedBox(width: 8.0),
+              _buildFilterChip(
+                context,
+                label: 'مرتجع عميل',
+                type: MovementRecordType.customerReturn,
+                isSelected: selected == MovementRecordType.customerReturn,
+              ),
+              const SizedBox(width: 8.0),
+              _buildFilterChip(
+                context,
+                label: 'رجوع للمورد',
+                type: MovementRecordType.supplierReturn,
+                isSelected: selected == MovementRecordType.supplierReturn,
+              ),
+              const SizedBox(width: 8.0),
+              _buildFilterChip(
+                context,
+                label: 'استبدال',
+                type: MovementRecordType.supplierReplacement,
+                isSelected: selected == MovementRecordType.supplierReplacement,
               ),
               const SizedBox(width: 8.0),
               _buildFilterChip(
                 context,
                 label: AppStrings.filterAdjustment,
-                type: TransactionType.adjustment,
-                isSelected: selected == TransactionType.adjustment,
+                type: MovementRecordType.stocktakeAdjustment,
+                isSelected: selected == MovementRecordType.stocktakeAdjustment,
               ),
             ],
           ),
@@ -60,7 +81,7 @@ class TransactionFilterBar extends StatelessWidget {
   Widget _buildFilterChip(
     BuildContext context, {
     required String label,
-    required TransactionType? type,
+    required MovementRecordType? type,
     required bool isSelected,
   }) {
     return ChoiceChip(
@@ -72,7 +93,7 @@ class TransactionFilterBar extends StatelessWidget {
         fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
       ),
       onSelected: (_) {
-        context.read<TransactionsCubit>().filterByType(type);
+        context.read<MovementHistoryCubit>().filterByType(type);
       },
     );
   }

@@ -14,7 +14,13 @@ import 'features/dashboard/cubit/dashboard_cubit.dart';
 import 'features/items/cubit/items_cubit.dart';
 import 'features/items/cubit/item_catalog_cubit.dart';
 
+import 'features/returns/cubit/returns_cubit.dart';
+import 'features/returns/cubit/return_resolution_cubit.dart';
+
+import 'features/stocktake/cubit/stocktake_cubit.dart';
+
 import 'features/transactions/cubit/transactions_cubit.dart';
+import 'features/transactions/cubit/movement_history_cubit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,8 +51,20 @@ class StockTakeApp extends StatelessWidget {
             BlocProvider<ItemCatalogCubit>(
               create: (context) => serviceLocator<ItemCatalogCubit>(),
             ),
+            BlocProvider<ReturnsCubit>(
+              create: (context) => serviceLocator<ReturnsCubit>(),
+            ),
+            BlocProvider<ReturnResolutionCubit>(
+              create: (context) => serviceLocator<ReturnResolutionCubit>(),
+            ),
             BlocProvider<TransactionsCubit>(
               create: (context) => serviceLocator<TransactionsCubit>(),
+            ),
+            BlocProvider<MovementHistoryCubit>(
+              create: (context) => serviceLocator<MovementHistoryCubit>(),
+            ),
+            BlocProvider<StocktakeCubit>(
+              create: (context) => serviceLocator<StocktakeCubit>(),
             ),
           ],
           child: MaterialApp.router(

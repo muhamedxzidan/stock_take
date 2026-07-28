@@ -63,5 +63,21 @@
   "61": "stock_summary_model.dart",
   "62": "State",
   "63": "login_cubit.dart",
-  "64": "build"
+  "64": "build",
+  "65": "inventory_item_selector_field.dart",
+  "66": "dashboard_cubit.dart",
+  "67": "inventory_number_parsing.dart",
+  "68": "package:go_router/go_router.dart",
+  "69": "StatelessWidget",
+  "70": "return_resolution.dart",
+  "71": "transaction_filter_bar.dart",
+  "72": "_NewMovementScreenState",
+  "73": "inbound_entry_screen.dart",
+  "74": "warehouse_return_screen.dart",
+  "75": "inventory_number_parsing.dart",
+  "76": "CartonPieceQuantity",
+  "77": "AppRoutes.transactionHistory",
+  "78": "main.dart",
+  "79": "StatelessWidget",
+  "80": "outbound_entry_screen.dart"
 }

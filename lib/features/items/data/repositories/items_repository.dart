@@ -3,10 +3,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../core/constants/firestore_collections.dart';
 import '../../../../core/models/inventory_item.dart';
+import '../models/new_inventory_item_draft.dart';
 import 'items_repository_failure.dart';
 import 'items_repository_base.dart';
 
 class ItemsRepository implements ItemsRepositoryBase {
+  static const String _itemCounterId = 'itemCode';
+  static const String _itemCodePrefix = 'S-N-';
+
   final FirebaseFirestore _firestore;
   final FirebaseAuth _firebaseAuth;
 
@@ -18,6 +22,9 @@ class ItemsRepository implements ItemsRepositoryBase {
 
   CollectionReference<Map<String, dynamic>> get _items =>
       _firestore.collection(FirestoreCollections.items);
+
+  CollectionReference<Map<String, dynamic>> get _counters =>
+      _firestore.collection(FirestoreCollections.counters);
 
   @override
   Stream<List<InventoryItem>> watchActiveItems() async* {
@@ -44,7 +51,7 @@ class ItemsRepository implements ItemsRepositoryBase {
   }
 
   @override
-  Future<void> addItem(InventoryItem item) async {
+  Future<InventoryItem> addItem(NewInventoryItemDraft draft) async {
     final user = _firebaseAuth.currentUser;
     if (user == null) {
       throw const ItemsRepositoryFailure(
@@ -52,13 +59,53 @@ class ItemsRepository implements ItemsRepositoryBase {
       );
     }
 
-    final itemReference = _items.doc(item.id);
+    final counterReference = _counters.doc(_itemCounterId);
 
     try {
-      await _firestore.runTransaction((transaction) async {
+      return await _firestore.runTransaction((transaction) async {
+        final counterSnapshot = await transaction.get(counterReference);
+        final currentCounter = counterSnapshot.data()?['value'];
+        if (counterSnapshot.exists && currentCounter is! int) {
+          throw const ItemsRepositoryFailure(
+            'عداد أكواد الأصناف غير صالح. راجع مسؤول النظام.',
+          );
+        }
+
+        final nextNumber = (currentCounter as int? ?? 0) + 1;
+        final itemCode = '$_itemCodePrefix$nextNumber';
+        final itemReference = _items.doc(itemCode);
         final existingItem = await transaction.get(itemReference);
         if (existingItem.exists) {
-          throw const ItemsRepositoryFailure('كود الصنف مستخدم بالفعل.');
+          throw const ItemsRepositoryFailure(
+            'تعذر إنشاء كود صنف جديد. راجع عداد الأصناف.',
+          );
+        }
+
+        final item = InventoryItem(
+          id: itemCode,
+          code: itemCode,
+          name: draft.name,
+          unit: 'piece',
+          itemsPerCarton: draft.itemsPerCarton,
+          openingStockPieces: draft.openingStockPieces,
+          currentStockPieces: draft.openingStockPieces,
+          totalInboundPieces: 0,
+          totalOutboundPieces: 0,
+          totalCustomerReturnPieces: 0,
+          totalSupplierReturnPieces: 0,
+          totalAdjustmentPieces: 0,
+          active: true,
+        );
+
+        final counterData = <String, Object>{
+          'value': nextNumber,
+          'updatedAt': FieldValue.serverTimestamp(),
+          'updatedBy': user.uid,
+        };
+        if (counterSnapshot.exists) {
+          transaction.update(counterReference, counterData);
+        } else {
+          transaction.set(counterReference, counterData);
         }
 
         transaction.set(itemReference, {
@@ -68,6 +115,7 @@ class ItemsRepository implements ItemsRepositoryBase {
           'updatedAt': FieldValue.serverTimestamp(),
           'updatedBy': user.uid,
         });
+        return item;
       });
     } on ItemsRepositoryFailure {
       rethrow;

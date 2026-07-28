@@ -1,3 +1,5 @@
+import '../extensions/inventory_number_parsing.dart';
+
 class InventoryItem {
   final String id;
   final String code;
@@ -30,6 +32,29 @@ class InventoryItem {
   });
 
   int get currentStockBalance => currentStockPieces;
+
+  int? get codeNumber {
+    final match = RegExp(r'(\d+)$').firstMatch(code.trim());
+    return match == null ? null : int.tryParse(match.group(1)!);
+  }
+
+  bool matchesSearch(String query) {
+    final normalizedQuery = query
+        .trim()
+        .normalizedInventoryDigits
+        .toLowerCase();
+    if (normalizedQuery.isEmpty) {
+      return true;
+    }
+
+    if (name.toLowerCase().contains(normalizedQuery) ||
+        code.toLowerCase().contains(normalizedQuery)) {
+      return true;
+    }
+
+    final searchedNumber = int.tryParse(normalizedQuery);
+    return searchedNumber != null && codeNumber == searchedNumber;
+  }
 
   String get formattedCartonStock {
     final cartons = currentStockPieces ~/ itemsPerCarton;

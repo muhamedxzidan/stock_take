@@ -1,16 +1,22 @@
 import 'dart:async';
 
 import 'package:stock_take/core/models/inventory_item.dart';
+import 'package:stock_take/features/items/data/models/new_inventory_item_draft.dart';
 import 'package:stock_take/features/items/data/repositories/items_repository_base.dart';
-import 'package:stock_take/features/items/data/repositories/items_repository_failure.dart';
 
 class FakeItemsRepository implements ItemsRepositoryBase {
   final StreamController<List<InventoryItem>> _controller =
       StreamController<List<InventoryItem>>.broadcast();
   final List<InventoryItem> _items;
+  late int _lastItemNumber;
 
   FakeItemsRepository({List<InventoryItem>? items})
-    : _items = [...(items ?? sampleInventoryItems)];
+    : _items = [...(items ?? sampleInventoryItems)] {
+    _lastItemNumber = _items
+        .where((item) => item.code.startsWith('S-N-'))
+        .map((item) => item.codeNumber ?? 0)
+        .fold(0, (maximum, number) => number > maximum ? number : maximum);
+  }
 
   @override
   Stream<List<InventoryItem>> watchActiveItems() async* {
@@ -19,13 +25,28 @@ class FakeItemsRepository implements ItemsRepositoryBase {
   }
 
   @override
-  Future<void> addItem(InventoryItem item) async {
-    if (_items.any((current) => current.id == item.id)) {
-      throw const ItemsRepositoryFailure('كود الصنف مستخدم بالفعل.');
-    }
+  Future<InventoryItem> addItem(NewInventoryItemDraft draft) async {
+    _lastItemNumber += 1;
+    final code = 'S-N-$_lastItemNumber';
+    final item = InventoryItem(
+      id: code,
+      code: code,
+      name: draft.name,
+      unit: 'piece',
+      itemsPerCarton: draft.itemsPerCarton,
+      openingStockPieces: draft.openingStockPieces,
+      currentStockPieces: draft.openingStockPieces,
+      totalInboundPieces: 0,
+      totalOutboundPieces: 0,
+      totalCustomerReturnPieces: 0,
+      totalSupplierReturnPieces: 0,
+      totalAdjustmentPieces: 0,
+      active: true,
+    );
 
     _items.add(item);
     _controller.add(_activeItems);
+    return item;
   }
 
   List<InventoryItem> get items => List.unmodifiable(_items);

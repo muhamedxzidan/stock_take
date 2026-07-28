@@ -6,6 +6,9 @@ enum MovementKind {
 
   String get label => this == MovementKind.inbound ? 'وارد' : 'منصرف';
 
+  String get voucherLabel =>
+      this == MovementKind.inbound ? 'الوارد' : 'المنصرف';
+
   String get actionLabel =>
       this == MovementKind.inbound ? 'إضافة للمخزن' : 'خصم من المخزن';
 }

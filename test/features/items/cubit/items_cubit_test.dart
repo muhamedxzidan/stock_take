@@ -18,29 +18,30 @@ void main() {
     await repository.close();
   });
 
-  test('normalizes the code and publishes the new item immediately', () async {
-    await cubit.submitNewItem(
-      name: '  مياه معدنية  ',
-      code: ' itm-100 ',
-      itemsPerCartonStr: '24',
-      initialBalanceStr: '48',
-    );
+  test(
+    'generates a short code and publishes the new item immediately',
+    () async {
+      await cubit.submitNewItem(
+        name: '  مياه معدنية  ',
+        itemsPerCartonStr: '24',
+        initialBalanceStr: '48',
+      );
 
-    expect(cubit.state, isA<ItemsSuccess>());
-    final items = repository.items;
-    expect(items, hasLength(1));
-    expect(items.single.id, 'ITM-100');
-    expect(items.single.code, 'ITM-100');
-    expect(items.single.name, 'مياه معدنية');
-    expect(items.single.currentStockPieces, 48);
-  });
+      expect(cubit.state, isA<ItemsSuccess>());
+      final items = repository.items;
+      expect(items, hasLength(1));
+      expect(items.single.id, 'S-N-1');
+      expect(items.single.code, 'S-N-1');
+      expect(items.single.name, 'مياه معدنية');
+      expect(items.single.currentStockPieces, 48);
+    },
+  );
 
   test(
     'rejects an invalid carton size before calling the repository',
     () async {
       await cubit.submitNewItem(
         name: 'صنف اختبار',
-        code: 'ITM-100',
         itemsPerCartonStr: '0',
         initialBalanceStr: '10',
       );
@@ -53,22 +54,19 @@ void main() {
     },
   );
 
-  test('returns a clear failure when the item code already exists', () async {
+  test('increments only the numeric part of the generated code', () async {
     await cubit.submitNewItem(
       name: 'الصنف الأول',
-      code: 'ITM-100',
       itemsPerCartonStr: '12',
       initialBalanceStr: '0',
     );
 
     await cubit.submitNewItem(
-      name: 'الصنف المكرر',
-      code: 'itm-100',
+      name: 'الصنف الثاني',
       itemsPerCartonStr: '12',
       initialBalanceStr: '0',
     );
 
-    expect(cubit.state, isA<ItemsFailure>());
-    expect((cubit.state as ItemsFailure).message, 'كود الصنف مستخدم بالفعل.');
+    expect(repository.items.map((item) => item.code), ['S-N-1', 'S-N-2']);
   });
 }

@@ -7,6 +7,7 @@ import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/shared_widgets/custom_app_bar.dart';
 import '../../../items/cubit/item_catalog_cubit.dart';
+import '../../cubit/return_resolution_cubit.dart';
 import '../widgets/return_workflow_card.dart';
 import '../widgets/warehouse_return_form.dart';
 
@@ -22,6 +23,7 @@ class _WarehouseReturnScreenState extends State<WarehouseReturnScreen> {
   void initState() {
     super.initState();
     context.read<ItemCatalogCubit>().loadItems();
+    context.read<ReturnResolutionCubit>().loadPendingReturns();
   }
 
   @override
@@ -43,7 +45,7 @@ class _WarehouseReturnScreenState extends State<WarehouseReturnScreen> {
             constraints: const BoxConstraints(maxWidth: 1100),
             child: Column(
               children: [
-                const _UiOnlyNotice(),
+                const _ReturnPersistenceNotice(),
                 SizedBox(height: AppSizes.h20),
                 LayoutBuilder(
                   builder: (context, constraints) {
@@ -76,8 +78,8 @@ class _WarehouseReturnScreenState extends State<WarehouseReturnScreen> {
   }
 }
 
-class _UiOnlyNotice extends StatelessWidget {
-  const _UiOnlyNotice();
+class _ReturnPersistenceNotice extends StatelessWidget {
+  const _ReturnPersistenceNotice();
 
   @override
   Widget build(BuildContext context) {

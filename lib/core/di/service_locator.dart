@@ -14,7 +14,15 @@ import '../../features/items/cubit/items_cubit.dart';
 import '../../features/items/cubit/item_catalog_cubit.dart';
 import '../../features/items/data/repositories/items_repository.dart';
 import '../../features/items/data/repositories/items_repository_base.dart';
+import '../../features/returns/cubit/returns_cubit.dart';
+import '../../features/returns/cubit/return_resolution_cubit.dart';
+import '../../features/returns/data/repositories/returns_repository.dart';
+import '../../features/returns/data/repositories/returns_repository_base.dart';
+import '../../features/stocktake/cubit/stocktake_cubit.dart';
+import '../../features/stocktake/data/repositories/stocktake_repository.dart';
+import '../../features/stocktake/data/repositories/stocktake_repository_base.dart';
 import '../../features/transactions/cubit/transactions_cubit.dart';
+import '../../features/transactions/cubit/movement_history_cubit.dart';
 import '../../features/transactions/data/repositories/transactions_repository.dart';
 import '../../features/transactions/data/repositories/transactions_repository_base.dart';
 import '../constants/app_router.dart';
@@ -24,6 +32,9 @@ final GetIt serviceLocator = GetIt.instance;
 Future<void> configureDependencies({
   AuthRepository? authRepository,
   ItemsRepositoryBase? itemsRepository,
+  ReturnsRepositoryBase? returnsRepository,
+  StocktakeRepositoryBase? stocktakeRepository,
+  TransactionsRepositoryBase? transactionsRepository,
   bool reset = false,
 }) async {
   if (reset) {
@@ -63,9 +74,40 @@ Future<void> configureDependencies({
   serviceLocator.registerLazySingleton<DashboardRepositoryBase>(
     () => DashboardRepository(serviceLocator<ItemsRepositoryBase>()),
   );
-  serviceLocator.registerLazySingleton<TransactionsRepositoryBase>(
-    TransactionsRepository.new,
-  );
+  if (returnsRepository != null) {
+    serviceLocator.registerSingleton<ReturnsRepositoryBase>(returnsRepository);
+  } else {
+    serviceLocator.registerLazySingleton<ReturnsRepositoryBase>(
+      () => ReturnsRepository(
+        firestore: serviceLocator<FirebaseFirestore>(),
+        firebaseAuth: serviceLocator<FirebaseAuth>(),
+      ),
+    );
+  }
+  if (transactionsRepository != null) {
+    serviceLocator.registerSingleton<TransactionsRepositoryBase>(
+      transactionsRepository,
+    );
+  } else {
+    serviceLocator.registerLazySingleton<TransactionsRepositoryBase>(
+      () => TransactionsRepository(
+        firestore: serviceLocator<FirebaseFirestore>(),
+        firebaseAuth: serviceLocator<FirebaseAuth>(),
+      ),
+    );
+  }
+  if (stocktakeRepository != null) {
+    serviceLocator.registerSingleton<StocktakeRepositoryBase>(
+      stocktakeRepository,
+    );
+  } else {
+    serviceLocator.registerLazySingleton<StocktakeRepositoryBase>(
+      () => StocktakeRepository(
+        firestore: serviceLocator<FirebaseFirestore>(),
+        firebaseAuth: serviceLocator<FirebaseAuth>(),
+      ),
+    );
+  }
 
   serviceLocator.registerFactory<LoginCubit>(
     () => LoginCubit(serviceLocator<AuthRepository>()),
@@ -79,10 +121,20 @@ Future<void> configureDependencies({
   serviceLocator.registerFactory<ItemCatalogCubit>(
     () => ItemCatalogCubit(serviceLocator<ItemsRepositoryBase>()),
   );
+  serviceLocator.registerFactory<ReturnsCubit>(
+    () => ReturnsCubit(serviceLocator<ReturnsRepositoryBase>()),
+  );
+  serviceLocator.registerFactory<ReturnResolutionCubit>(
+    () => ReturnResolutionCubit(serviceLocator<ReturnsRepositoryBase>()),
+  );
   serviceLocator.registerFactory<TransactionsCubit>(
-    () =>
-        TransactionsCubit(serviceLocator<TransactionsRepositoryBase>())
-          ..loadTransactions(),
+    () => TransactionsCubit(serviceLocator<TransactionsRepositoryBase>()),
+  );
+  serviceLocator.registerFactory<MovementHistoryCubit>(
+    () => MovementHistoryCubit(serviceLocator<TransactionsRepositoryBase>()),
+  );
+  serviceLocator.registerFactory<StocktakeCubit>(
+    () => StocktakeCubit(serviceLocator<StocktakeRepositoryBase>()),
   );
 
   serviceLocator.registerLazySingleton<AuthSessionNotifier>(

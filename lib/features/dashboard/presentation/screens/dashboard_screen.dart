@@ -8,6 +8,7 @@ import '../../../../core/shared_widgets/custom_app_bar.dart';
 import '../../../../core/shared_widgets/custom_text_field.dart';
 import '../../cubit/dashboard_cubit.dart';
 import '../../cubit/dashboard_state.dart';
+import '../widgets/quick_action_bar.dart';
 import '../widgets/stock_items_list.dart';
 import '../widgets/stock_summary_card.dart';
 
@@ -55,6 +56,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     return const SizedBox.shrink();
                   },
                 ),
+                SizedBox(height: AppSizes.h20),
+                const QuickActionBar(),
                 SizedBox(height: AppSizes.h20),
                 CustomTextField(
                   label: 'بحث سريع بالأصناف',

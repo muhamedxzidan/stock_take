@@ -20,12 +20,12 @@
     "semantic_hash": ""
   },
   "lib/core/constants/app_strings.dart": {
-    "mtime": 1785240772.213895,
-    "ast_hash": "3dbf13ac66da99cba56436f6433e8889",
+    "mtime": 1785256859.3604043,
+    "ast_hash": "c4721deb09117aa9b4dffb80536705a0",
     "semantic_hash": ""
   },
   "lib/core/constants/app_text_styles.dart": {
-    "mtime": 1784937765.3270726,
+    "mtime": 1785245476.8841176,
     "ast_hash": "f2ae28cf8f73d92f6416fca5f7448627",
     "semantic_hash": "f2ae28cf8f73d92f6416fca5f7448627"
   },
@@ -70,13 +70,13 @@
     "semantic_hash": ""
   },
   "lib/core/theme/app_theme.dart": {
-    "mtime": 1784937232.7310798,
+    "mtime": 1785245477.7345612,
     "ast_hash": "fa04793234284f06dad97908c26902de",
     "semantic_hash": "fa04793234284f06dad97908c26902de"
   },
   "lib/features/dashboard/cubit/dashboard_cubit.dart": {
-    "mtime": 1785242444.4755657,
-    "ast_hash": "9a40d3a078d540fd4d0869e77e8b3e05",
+    "mtime": 1785255695.2468472,
+    "ast_hash": "855239273da5d9dd5d8180b8f9ded7da",
     "semantic_hash": ""
   },
   "lib/features/dashboard/cubit/dashboard_state.dart": {
@@ -100,8 +100,8 @@
     "semantic_hash": ""
   },
   "lib/features/dashboard/presentation/screens/dashboard_screen.dart": {
-    "mtime": 1785242298.4791489,
-    "ast_hash": "3f5edc20d4a4c3a95da69b9aa5e9adc1",
+    "mtime": 1785244934.7192428,
+    "ast_hash": "f757d1bc5d7df8ee42fb233ab85414f9",
     "semantic_hash": ""
   },
   "lib/features/dashboard/presentation/widgets/quick_action_bar.dart": {
@@ -120,23 +120,23 @@
     "semantic_hash": ""
   },
   "lib/features/items/cubit/items_cubit.dart": {
-    "mtime": 1785242527.2664292,
-    "ast_hash": "736d0e127ac5a2f7d761bbea53542522",
+    "mtime": 1785255728.0326872,
+    "ast_hash": "47a4ee452584750f7e09c8e2b24af07d",
     "semantic_hash": ""
   },
   "lib/features/items/cubit/items_state.dart": {
-    "mtime": 1784937128.6487775,
-    "ast_hash": "c1dab1f77be37699b1157a5f49592825",
-    "semantic_hash": "c1dab1f77be37699b1157a5f49592825"
+    "mtime": 1785255693.6006687,
+    "ast_hash": "4d252d949ffa3e5656a77f0b5ecbbae4",
+    "semantic_hash": ""
   },
   "lib/features/items/data/repositories/items_repository.dart": {
-    "mtime": 1785242444.451151,
-    "ast_hash": "89fdc259d00d7918e64f12f9f4ce5759",
+    "mtime": 1785255691.961508,
+    "ast_hash": "ec0b5e1580f068748b1988be0df06ad1",
     "semantic_hash": ""
   },
   "lib/features/items/data/repositories/items_repository_base.dart": {
-    "mtime": 1785242227.3626418,
-    "ast_hash": "29d63841e881ea5b83fb83b0f473a7ee",
+    "mtime": 1785255691.1277933,
+    "ast_hash": "0c6cae84845204b8f5a22e2d3814d0b4",
     "semantic_hash": ""
   },
   "lib/features/items/presentation/screens/add_item_screen.dart": {
@@ -145,34 +145,34 @@
     "semantic_hash": "7935b38c633ba20dfffaf4d9a6125a4e"
   },
   "lib/features/items/presentation/widgets/add_item_form.dart": {
-    "mtime": 1785242444.465025,
-    "ast_hash": "0a0a5ab08937a30484a4a7e7dd5a3ea7",
+    "mtime": 1785255694.405112,
+    "ast_hash": "686d65b310fd32ef51096496c091339b",
     "semantic_hash": ""
   },
   "lib/features/transactions/cubit/transactions_cubit.dart": {
-    "mtime": 1784937166.4840622,
-    "ast_hash": "123ef5c3fe51d3f1ce27c3ad4b7fbaa6",
-    "semantic_hash": "123ef5c3fe51d3f1ce27c3ad4b7fbaa6"
+    "mtime": 1785256198.6786766,
+    "ast_hash": "9ddd04dba1ea30ab272361487621a100",
+    "semantic_hash": ""
   },
   "lib/features/transactions/cubit/transactions_state.dart": {
-    "mtime": 1784937160.706704,
-    "ast_hash": "35696823ce672264094e4f783d7e3346",
-    "semantic_hash": "35696823ce672264094e4f783d7e3346"
+    "mtime": 1785256197.7836378,
+    "ast_hash": "c870a0c0e3ccee5c683ffd8ac908666f",
+    "semantic_hash": ""
   },
   "lib/features/transactions/data/models/transaction_model.dart": {
-    "mtime": 1784937147.5912607,
+    "mtime": 1785245478.5826752,
     "ast_hash": "a4986de8e26641e46cce065b65f97906",
     "semantic_hash": "a4986de8e26641e46cce065b65f97906"
   },
   "lib/features/transactions/data/repositories/transactions_repository.dart": {
-    "mtime": 1784937156.8130753,
-    "ast_hash": "28b23837527e2b9dcceb1ef1583ab766",
-    "semantic_hash": "28b23837527e2b9dcceb1ef1583ab766"
+    "mtime": 1785258238.5024629,
+    "ast_hash": "520d1675079109af3c7d2af9e1c603fd",
+    "semantic_hash": ""
   },
   "lib/features/transactions/data/repositories/transactions_repository_base.dart": {
-    "mtime": 1784937151.9139318,
-    "ast_hash": "aa7205f162c9a9f831e7ba8e63d05231",
-    "semantic_hash": "aa7205f162c9a9f831e7ba8e63d05231"
+    "mtime": 1785257939.038542,
+    "ast_hash": "2e2859b373a620a5a38a702ea7edeabf",
+    "semantic_hash": ""
   },
   "lib/features/transactions/presentation/screens/inbound_entry_screen.dart": {
     "mtime": 1785243063.892922,
@@ -185,13 +185,13 @@
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart": {
-    "mtime": 1785242961.3179145,
-    "ast_hash": "17dd8eae4f88a934e4249b194a6c6b7c",
+    "mtime": 1785259653.8423464,
+    "ast_hash": "c650fbd021414dc6c48fa32d2279f9a8",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/screens/transaction_history_screen.dart": {
-    "mtime": 1785242444.548028,
-    "ast_hash": "68a856a62595d46f1fb75a00a51cdd0a",
+    "mtime": 1785258238.5133002,
+    "ast_hash": "c70ec0bcbc577167fcce841bd2bebc9f",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/adjustment_form.dart": {
@@ -210,38 +210,38 @@
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/transaction_filter_bar.dart": {
-    "mtime": 1785242444.6416712,
-    "ast_hash": "9b83858f75250a261bd14031848512e4",
+    "mtime": 1785258238.518458,
+    "ast_hash": "cd4aba694cddc4e4770963885eee7cd0",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/transaction_list_item.dart": {
-    "mtime": 1785242444.645574,
-    "ast_hash": "cc37a4cbb5a08e989daf0113eab51936",
+    "mtime": 1785258238.525694,
+    "ast_hash": "67e583999c17055926a3bd22e2ff10d0",
     "semantic_hash": ""
   },
   "lib/main.dart": {
-    "mtime": 1785242865.0548408,
-    "ast_hash": "6e00256fdae14f4523c8a7bf0c0676ec",
+    "mtime": 1785259599.5046465,
+    "ast_hash": "15a2c3efbb768f4026d0129749ab2e9e",
     "semantic_hash": ""
   },
   "lib/features/returns/data/models/warehouse_return_draft.dart": {
-    "mtime": 1785109023.514442,
-    "ast_hash": "8c69f3eae13455b670b1ac2a63a83602",
+    "mtime": 1785256783.6551952,
+    "ast_hash": "6e1cbfae4e458dd224edbbc136011ec3",
     "semantic_hash": ""
   },
   "lib/features/returns/presentation/screens/warehouse_return_screen.dart": {
-    "mtime": 1785242926.3998356,
-    "ast_hash": "8fda9bfeb20643f3230bc02359fb4655",
+    "mtime": 1785257443.7974694,
+    "ast_hash": "31abf40335c2efd49b887da2ca1a75c8",
     "semantic_hash": ""
   },
   "lib/features/returns/presentation/widgets/return_workflow_card.dart": {
-    "mtime": 1785109023.525483,
-    "ast_hash": "7d8380c247f4777494570ca1a3a7c568",
+    "mtime": 1785257582.8253849,
+    "ast_hash": "369630ee7e06571aab39f361068ec874",
     "semantic_hash": ""
   },
   "lib/features/returns/presentation/widgets/warehouse_return_form.dart": {
-    "mtime": 1785243076.91639,
-    "ast_hash": "6cae9b31c8a984366fd9b7b0106b8780",
+    "mtime": 1785256921.5495646,
+    "ast_hash": "1ee717061ca2c21f1f101fccce078bd2",
     "semantic_hash": ""
   },
   "graphify-out/memory/query_20260726_232727_\u0627\u0633\u062a\u062e\u062f\u0645_\u0628\u0627\u0643\u062f\u062c_flutter_bloc_\u0639\u0634\u0627\u0646_\u0647\u0646\u0633\u062a\u062e\u062f\u0645_\u0643\u064a\u0648\u0628\u062a_\u0645\u0646\u0647\u0627.md": {
@@ -270,8 +270,8 @@
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/screens/new_movement_screen.dart": {
-    "mtime": 1785242899.0328426,
-    "ast_hash": "8d5bdbf8c0445c711008b001f982f974",
+    "mtime": 1785256392.7661304,
+    "ast_hash": "5ad7c5162c140c20aef776aade8c1c91",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/current_voucher_panel.dart": {
@@ -295,13 +295,13 @@
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/movement_ui_types.dart": {
-    "mtime": 1785242289.0823338,
-    "ast_hash": "f638e076fdb8246cd538bac819b4ff16",
+    "mtime": 1785256392.1586623,
+    "ast_hash": "bdf36e4729287a0f0ff511768847bba5",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/movement_voucher_preview_dialog.dart": {
-    "mtime": 1785174503.8409996,
-    "ast_hash": "4ca53075fec84883cb2615beebf0a292",
+    "mtime": 1785256393.4116588,
+    "ast_hash": "f87cd746496947d494a6abf946ca199f",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/selectable_item_card.dart": {
@@ -355,8 +355,8 @@
     "semantic_hash": ""
   },
   "lib/core/di/service_locator.dart": {
-    "mtime": 1785242864.2065148,
-    "ast_hash": "295914c7230473fcd27862f9d7779c6e",
+    "mtime": 1785259598.8778956,
+    "ast_hash": "2ca3b0b09010cbd55167976328041653",
     "semantic_hash": ""
   },
   "lib/features/auth/data/repositories/auth_failure.dart": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "lib/core/models/inventory_item.dart": {
-    "mtime": 1785242180.6283083,
-    "ast_hash": "d144d4b17c05fe10245d27f107d31a53",
+    "mtime": 1785256000.1000416,
+    "ast_hash": "6a56bdd97201958ed8782f55a75bbc89",
     "semantic_hash": ""
   },
   "lib/features/items/data/repositories/items_repository_failure.dart": {
@@ -430,8 +430,133 @@
     "semantic_hash": ""
   },
   "lib/features/items/presentation/widgets/inventory_item_selector_field.dart": {
-    "mtime": 1785243076.89568,
-    "ast_hash": "b2082d97fe1975f1dab30bf506630abb",
+    "mtime": 1785255696.0468042,
+    "ast_hash": "03f1d371832bf843feccb50032d649e3",
+    "semantic_hash": ""
+  },
+  "lib/features/transactions/data/repositories/transactions_repository_failure.dart": {
+    "mtime": 1785244819.3606708,
+    "ast_hash": "a044869be11ed96186806b1b8213f69f",
+    "semantic_hash": ""
+  },
+  "lib/features/items/data/models/new_inventory_item_draft.dart": {
+    "mtime": 1785255689.4584775,
+    "ast_hash": "f131ca25dfb4ee4c2628cb5cfac891e4",
+    "semantic_hash": ""
+  },
+  "lib/features/transactions/data/models/inventory_movement.dart": {
+    "mtime": 1785256194.7731414,
+    "ast_hash": "22f3d7f1a8e52c0d70f90e94b18564bc",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/cubit/returns_cubit.dart": {
+    "mtime": 1785256787.716156,
+    "ast_hash": "c60708456d4d351ae3ae3bbdfa3301d8",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/cubit/returns_state.dart": {
+    "mtime": 1785256787.0167422,
+    "ast_hash": "0d332bb2f33072c29f870fe38c9f4fc6",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/data/repositories/returns_repository.dart": {
+    "mtime": 1785257582.809356,
+    "ast_hash": "f0e5fc2a4fe0ee415a10245298a846a9",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/data/repositories/returns_repository_base.dart": {
+    "mtime": 1785257276.1424055,
+    "ast_hash": "10bafb6eee2c391665b70eefb9a2f0a6",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/data/repositories/returns_repository_failure.dart": {
+    "mtime": 1785256785.3589993,
+    "ast_hash": "ba0e99dc8d5608894e2dc32444dea84a",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/cubit/return_resolution_cubit.dart": {
+    "mtime": 1785257582.7902296,
+    "ast_hash": "e1fde0e7c5861a8dd63505c5783679d7",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/cubit/return_resolution_state.dart": {
+    "mtime": 1785257582.7914584,
+    "ast_hash": "415dc55a7a5662daca5b752fc0ade413",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/data/models/return_resolution.dart": {
+    "mtime": 1785257275.5189948,
+    "ast_hash": "52d6f097e9e22aef8e3d3273fa8a087d",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/data/models/warehouse_return_record.dart": {
+    "mtime": 1785257274.890137,
+    "ast_hash": "9653198de9b93aa61f8aae97922db2b5",
+    "semantic_hash": ""
+  },
+  "lib/features/transactions/cubit/movement_history_cubit.dart": {
+    "mtime": 1785258238.4819412,
+    "ast_hash": "3791006d61b8d18b3ac0f22122181173",
+    "semantic_hash": ""
+  },
+  "lib/features/transactions/cubit/movement_history_state.dart": {
+    "mtime": 1785257939.8246775,
+    "ast_hash": "ea6d429e77ca334232a53ebd676572c4",
+    "semantic_hash": ""
+  },
+  "lib/features/transactions/data/models/movement_record.dart": {
+    "mtime": 1785257937.796317,
+    "ast_hash": "f725f4192fd4aee1d18761558fe41a5c",
+    "semantic_hash": ""
+  },
+  "lib/features/transactions/data/models/movement_report_summary.dart": {
+    "mtime": 1785258238.489515,
+    "ast_hash": "b99a238a187f9006c09590abdc096826",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/cubit/stocktake_cubit.dart": {
+    "mtime": 1785259653.7690108,
+    "ast_hash": "cfcbbeefed8b4b49ea01dec4905a8ead",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/cubit/stocktake_state.dart": {
+    "mtime": 1785259498.470273,
+    "ast_hash": "cc298b63bb356eecd77b008aaafadb07",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/data/models/stocktake_line.dart": {
+    "mtime": 1785259653.774424,
+    "ast_hash": "249b83c04b4a33734111ad350c8a4c08",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/data/models/stocktake_session.dart": {
+    "mtime": 1785259445.0885193,
+    "ast_hash": "0d851ee5553f4d622d313e9a8b487806",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/data/repositories/stocktake_repository.dart": {
+    "mtime": 1785259653.7960732,
+    "ast_hash": "89bff616a744fd056dd7457d0b54c8de",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/data/repositories/stocktake_repository_base.dart": {
+    "mtime": 1785259446.8611383,
+    "ast_hash": "c9b7bee41a70719d64fea54fe7f40c2d",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/data/repositories/stocktake_repository_failure.dart": {
+    "mtime": 1785259447.4990437,
+    "ast_hash": "e3aa73053a10f92cf95a1fd58b16dbcc",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/presentation/widgets/start_stocktake_card.dart": {
+    "mtime": 1785259653.8093915,
+    "ast_hash": "cecc8f39c029ee2706a1cc90187a65ee",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart": {
+    "mtime": 1785259653.8251317,
+    "ast_hash": "e1092c253f23f3275d24f71424868355",
     "semantic_hash": ""
   }
 }

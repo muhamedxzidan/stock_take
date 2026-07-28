@@ -569,14 +569,28 @@ service cloud.firestore {
           return data.itemId == itemId
             && isNonEmptyString(data.itemNameSnapshot, 200)
             && isOptionalString(data.itemCodeSnapshot, 50)
+            && data.unit == 'piece'
+            && data.itemsPerCarton is int
+            && data.itemsPerCarton > 0
             && data.systemQuantityPieces is int
             && data.systemQuantityPieces >= 0
             && data.actualQuantityPieces is int
             && data.actualQuantityPieces >= 0
             && data.differencePieces
               == data.actualQuantityPieces - data.systemQuantityPieces
-            && data.countedAt == request.time
-            && data.countedBy == request.auth.uid;
+            && data.counted is bool
+            && (
+              (
+                data.counted == false
+                && data.actualQuantityPieces == 0
+                && data.countedAt == null
+                && data.countedBy == ''
+              ) || (
+                data.counted == true
+                && data.countedAt == request.time
+                && data.countedBy == request.auth.uid
+              )
+            );
         }
 
         allow read: if isSignedIn();
@@ -586,9 +600,12 @@ service cloud.firestore {
             'itemId',
             'itemNameSnapshot',
             'itemCodeSnapshot',
+            'unit',
+            'itemsPerCarton',
             'systemQuantityPieces',
             'actualQuantityPieces',
             'differencePieces',
+            'counted',
             'countedAt',
             'countedBy'
           ])
@@ -596,13 +613,17 @@ service cloud.firestore {
             'itemId',
             'itemNameSnapshot',
             'itemCodeSnapshot',
+            'unit',
+            'itemsPerCarton',
             'systemQuantityPieces',
             'actualQuantityPieces',
             'differencePieces',
+            'counted',
             'countedAt',
             'countedBy'
           ])
           && stocktakeIsOpen()
+          && request.resource.data.counted == false
           && isValidLine(request.resource.data);
 
         allow update: if isSignedIn()
@@ -610,9 +631,11 @@ service cloud.firestore {
           && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
             'actualQuantityPieces',
             'differencePieces',
+            'counted',
             'countedAt',
             'countedBy'
           ])
+          && request.resource.data.counted == true
           && isValidLine(request.resource.data);
 
         allow delete: if false;

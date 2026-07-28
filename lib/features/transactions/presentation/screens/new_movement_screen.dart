@@ -11,6 +11,7 @@ import '../../../../core/models/inventory_item.dart';
 import '../../../../core/shared_widgets/custom_app_bar.dart';
 import '../../../items/cubit/item_catalog_cubit.dart';
 import '../../../items/cubit/item_catalog_state.dart';
+import '../../data/models/inventory_movement.dart';
 import '../widgets/current_voucher_panel.dart';
 import '../widgets/item_quantity_sheet.dart';
 import '../widgets/movement_details_sheet.dart';
@@ -118,12 +119,58 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
 
     if (details == null || !mounted) return;
 
-    await showDialog<void>(
+    final businessDate = DateTime.tryParse(details.date);
+    if (businessDate == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('اكتب التاريخ بصيغة صحيحة مثل 2026-07-28.'),
+          backgroundColor: AppColors.error,
+        ),
+      );
+      return;
+    }
+
+    final movementDraft = InventoryMovementDraft(
+      lines: _orderedLines
+          .map(
+            (line) => InventoryMovementLine(
+              itemId: line.item.id,
+              itemCode: line.item.code,
+              itemName: line.item.name,
+              unit: line.item.unit,
+              itemsPerCarton: line.item.itemsPerCarton,
+              cartons: line.cartons,
+              pieces: line.pieces,
+            ),
+          )
+          .toList(growable: false),
+      partyName: details.partyName,
+      deliveredBy: details.deliveredBy,
+      receivedBy: details.receivedBy,
+      driverName: details.driverName,
+      notes: details.notes,
+      businessDate: businessDate,
+    );
+
+    final savedMovement = await showDialog<SavedInventoryMovement>(
       context: context,
       builder: (context) => MovementVoucherPreviewDialog(
         movementKind: _movementKind,
         lines: _orderedLines,
         details: details,
+        movementDraft: movementDraft,
+      ),
+    );
+    if (savedMovement == null || !mounted) return;
+
+    setState(() => _lines.clear());
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          'تم حفظ إذن ${_movementKind.voucherLabel} '
+          '${savedMovement.voucherNumber}.',
+        ),
+        backgroundColor: AppColors.success,
       ),
     );
   }
@@ -183,7 +230,9 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
                   SizedBox(width: AppSizes.p8),
                   Expanded(
                     child: Text(
-                      'واجهة تجريبية فقط؛ لن يتم حفظ البيانات أو تعديل الرصيد.',
+                      _movementKind == MovementKind.inbound
+                          ? 'الوارد متصل بالمخزون: الحفظ يزيد الرصيد بعد نجاح العملية.'
+                          : 'المنصرف متصل بالمخزون: الحفظ يخصم ذريًا ولن يسمح برصيد سالب.',
                       style: AppTextStyles.bodySmall.copyWith(
                         color: AppColors.info,
                       ),
@@ -214,6 +263,7 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
                   final itemsPane = _ItemsPane(
                     searchQuery: _searchQuery,
                     selectedLines: _lines,
+                    onAddItem: () => context.push(AppRoutes.addItem),
                     onSearchChanged: (value) {
                       setState(() => _searchQuery = value);
                     },
@@ -305,12 +355,14 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
 class _ItemsPane extends StatelessWidget {
   final String searchQuery;
   final Map<String, MovementLineViewData> selectedLines;
+  final VoidCallback onAddItem;
   final ValueChanged<String> onSearchChanged;
   final ValueChanged<InventoryItem> onItemTap;
 
   const _ItemsPane({
     required this.searchQuery,
     required this.selectedLines,
+    required this.onAddItem,
     required this.onSearchChanged,
     required this.onItemTap,
   });
@@ -331,7 +383,17 @@ class _ItemsPane extends StatelessWidget {
                 : const Icon(Icons.filter_alt_outlined),
           ),
         ),
-        SizedBox(height: AppSizes.h12),
+        SizedBox(height: AppSizes.h8),
+        Align(
+          alignment: AlignmentDirectional.centerEnd,
+          child: OutlinedButton.icon(
+            key: const Key('add-new-item-from-movement'),
+            onPressed: onAddItem,
+            icon: const Icon(Icons.add_box_outlined),
+            label: const Text('تعريف صنف جديد'),
+          ),
+        ),
+        SizedBox(height: AppSizes.h8),
         Expanded(
           child: BlocBuilder<ItemCatalogCubit, ItemCatalogState>(
             builder: (context, state) {
@@ -349,11 +411,7 @@ class _ItemsPane extends StatelessWidget {
 
               final normalizedQuery = searchQuery.trim().toLowerCase();
               final visibleItems = state.items
-                  .where((item) {
-                    if (normalizedQuery.isEmpty) return true;
-                    return item.name.toLowerCase().contains(normalizedQuery) ||
-                        item.code.toLowerCase().contains(normalizedQuery);
-                  })
+                  .where((item) => item.matchesSearch(normalizedQuery))
                   .toList(growable: false);
 
               if (visibleItems.isEmpty) {

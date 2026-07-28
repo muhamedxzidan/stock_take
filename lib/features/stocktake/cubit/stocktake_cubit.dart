@@ -1,0 +1,293 @@
+import 'dart:async';
+
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../data/models/stocktake_line.dart';
+import '../data/models/stocktake_session.dart';
+import '../data/repositories/stocktake_repository_base.dart';
+import '../data/repositories/stocktake_repository_failure.dart';
+import 'stocktake_state.dart';
+
+class StocktakeCubit extends Cubit<StocktakeState> {
+  final StocktakeRepositoryBase _repository;
+  StreamSubscription<List<StocktakeLine>>? _linesSubscription;
+  bool _isLoading = false;
+  bool _isActing = false;
+
+  StocktakeCubit(this._repository) : super(const StocktakeInitial());
+
+  Future<void> load() async {
+    if (_isLoading) {
+      return;
+    }
+
+    _isLoading = true;
+    emit(const StocktakeLoading());
+    try {
+      final session = await _repository.fetchOpenStocktake();
+      if (session == null) {
+        await _linesSubscription?.cancel();
+        _linesSubscription = null;
+        emit(const StocktakeReady(session: null, lines: []));
+        return;
+      }
+      await _watchLines(session);
+    } on StocktakeRepositoryFailure catch (failure) {
+      emit(
+        StocktakeFailure(
+          session: null,
+          lines: const [],
+          message: failure.message,
+        ),
+      );
+    } catch (_) {
+      emit(
+        const StocktakeFailure(
+          session: null,
+          lines: [],
+          message: 'تعذر تحميل جلسة الجرد الآن.',
+        ),
+      );
+    } finally {
+      _isLoading = false;
+    }
+  }
+
+  Future<bool> startStocktake(StartStocktakeDraft draft) async {
+    if (_isActing) {
+      return false;
+    }
+
+    final validationMessage = _validateStartDraft(draft);
+    if (validationMessage != null) {
+      emit(
+        StocktakeFailure(
+          session: null,
+          lines: const [],
+          message: validationMessage,
+        ),
+      );
+      return false;
+    }
+
+    _isActing = true;
+    emit(
+      const StocktakeActionInProgress(
+        session: null,
+        lines: [],
+        action: StocktakeAction.starting,
+      ),
+    );
+    try {
+      final session = await _repository.startStocktake(draft);
+      await _watchLines(session);
+      return true;
+    } on StocktakeRepositoryFailure catch (failure) {
+      emit(
+        StocktakeFailure(
+          session: null,
+          lines: const [],
+          message: failure.message,
+        ),
+      );
+      return false;
+    } catch (_) {
+      emit(
+        const StocktakeFailure(
+          session: null,
+          lines: [],
+          message: 'تعذر بدء جلسة الجرد الآن.',
+        ),
+      );
+      return false;
+    } finally {
+      _isActing = false;
+    }
+  }
+
+  Future<bool> saveCount({
+    required String itemId,
+    required int actualQuantityPieces,
+  }) async {
+    final readyState = _readyState;
+    final session = readyState?.session;
+    if (_isActing || readyState == null || session == null) {
+      return false;
+    }
+    if (actualQuantityPieces < 0) {
+      emit(
+        StocktakeFailure(
+          session: session,
+          lines: readyState.lines,
+          message: 'العدد الفعلي لا يمكن أن يكون سالبًا.',
+        ),
+      );
+      return false;
+    }
+
+    _isActing = true;
+    emit(
+      StocktakeActionInProgress(
+        session: session,
+        lines: readyState.lines,
+        action: StocktakeAction.savingCount,
+        itemId: itemId,
+      ),
+    );
+    try {
+      await _repository.saveCount(
+        stocktakeId: session.id,
+        itemId: itemId,
+        actualQuantityPieces: actualQuantityPieces,
+      );
+      final updatedLines = readyState.lines
+          .map(
+            (line) => line.itemId == itemId
+                ? line.copyWith(
+                    actualQuantityPieces: actualQuantityPieces,
+                    differencePieces:
+                        actualQuantityPieces - line.systemQuantityPieces,
+                    counted: true,
+                    countedAt: DateTime.now(),
+                  )
+                : line,
+          )
+          .toList(growable: false);
+      emit(StocktakeReady(session: session, lines: updatedLines));
+      return true;
+    } on StocktakeRepositoryFailure catch (failure) {
+      emit(
+        StocktakeFailure(
+          session: session,
+          lines: readyState.lines,
+          message: failure.message,
+        ),
+      );
+      return false;
+    } catch (_) {
+      emit(
+        StocktakeFailure(
+          session: session,
+          lines: readyState.lines,
+          message: 'تعذر حفظ العدد الفعلي الآن.',
+        ),
+      );
+      return false;
+    } finally {
+      _isActing = false;
+    }
+  }
+
+  Future<SavedStocktakeCompletion?> completeStocktake() async {
+    final readyState = _readyState;
+    final session = readyState?.session;
+    if (_isActing || readyState == null || session == null) {
+      return null;
+    }
+    if (readyState.lines.isEmpty ||
+        readyState.lines.any((line) => !line.counted)) {
+      emit(
+        StocktakeFailure(
+          session: session,
+          lines: readyState.lines,
+          message: 'احفظ العدد الفعلي لكل الأصناف قبل اعتماد الجرد.',
+        ),
+      );
+      return null;
+    }
+
+    _isActing = true;
+    emit(
+      StocktakeActionInProgress(
+        session: session,
+        lines: readyState.lines,
+        action: StocktakeAction.completing,
+      ),
+    );
+    try {
+      final completion = await _repository.completeStocktake(session.id);
+      await _linesSubscription?.cancel();
+      _linesSubscription = null;
+      emit(StocktakeCompleted(completion: completion));
+      return completion;
+    } on StocktakeRepositoryFailure catch (failure) {
+      emit(
+        StocktakeFailure(
+          session: session,
+          lines: readyState.lines,
+          message: failure.message,
+        ),
+      );
+      return null;
+    } catch (_) {
+      emit(
+        StocktakeFailure(
+          session: session,
+          lines: readyState.lines,
+          message: 'تعذر اعتماد جلسة الجرد الآن.',
+        ),
+      );
+      return null;
+    } finally {
+      _isActing = false;
+    }
+  }
+
+  Future<void> _watchLines(StocktakeSession session) async {
+    await _linesSubscription?.cancel();
+    emit(StocktakeReady(session: session, lines: const []));
+    _linesSubscription = _repository
+        .watchLines(session.id)
+        .listen(
+          (lines) => emit(StocktakeReady(session: session, lines: lines)),
+          onError: (Object error) {
+            final message = error is StocktakeRepositoryFailure
+                ? error.message
+                : 'تعذر تحميل أصناف جلسة الجرد.';
+            emit(
+              StocktakeFailure(
+                session: session,
+                lines: const [],
+                message: message,
+              ),
+            );
+          },
+        );
+  }
+
+  StocktakeReady? get _readyState {
+    final current = state;
+    return current is StocktakeReady ? current : null;
+  }
+
+  String? _validateStartDraft(StartStocktakeDraft draft) {
+    final from = DateTime(
+      draft.periodFrom.year,
+      draft.periodFrom.month,
+      draft.periodFrom.day,
+    );
+    final to = DateTime(
+      draft.periodTo.year,
+      draft.periodTo.month,
+      draft.periodTo.day,
+    );
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    if (from.isAfter(to)) {
+      return 'تاريخ البداية يجب أن يسبق تاريخ النهاية.';
+    }
+    if (to.isAfter(today)) {
+      return 'لا يمكن بدء جلسة جرد لفترة مستقبلية.';
+    }
+    if (draft.notes.length > 1000) {
+      return 'ملاحظات جلسة الجرد أطول من الحد المسموح.';
+    }
+    return null;
+  }
+
+  @override
+  Future<void> close() async {
+    await _linesSubscription?.cancel();
+    return super.close();
+  }
+}

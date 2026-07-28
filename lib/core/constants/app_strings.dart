@@ -73,17 +73,15 @@ class AppStrings {
   static const String returnReason = 'سبب المرتجع';
   static const String returnCondition = 'حالة الصنف المرتجع';
   static const String returnQuantity = 'الكمية المرتجعة';
-  static const String returnUiNoticeTitle = 'واجهة تجريبية جاهزة للربط';
+  static const String returnUiNoticeTitle = 'الحفظ متصل بالمخزون';
   static const String returnUiNoticeBody =
-      'لن يتم تعديل رصيد المخزون أو حفظ أي بيانات في هذه المرحلة.';
-  static const String returnUiOnlyMessage =
-      'تم تجهيز نموذج المرتجع كواجهة فقط، وسيتم ربط الحفظ لاحقًا.';
+      'عند الحفظ سيزيد رصيد الصنف وتُسجل الحركة والمرتجع معًا، ثم ينتظر المرتجع تسوية المورد.';
 
   // Action Buttons
   static const String save = 'حفظ البيانات';
   static const String cancel = 'إلغاء';
   static const String printPdf = 'طباعة PDF';
-  static const String searchHint = 'بحث بكود أو اسم الصنف...';
+  static const String searchHint = 'بحث بالاسم أو الكود أو الرقم...';
   static const String filterAll = 'الكل';
   static const String filterInbound = 'وارد';
   static const String filterOutbound = 'منصرف';

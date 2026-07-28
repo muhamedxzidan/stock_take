@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:stock_take/features/items/cubit/item_catalog_cubit.dart';
 import 'package:stock_take/features/items/cubit/item_catalog_state.dart';
+import 'package:stock_take/features/items/data/models/new_inventory_item_draft.dart';
 
 import '../../../support/fake_items_repository.dart';
 
@@ -30,11 +31,17 @@ void main() {
         isA<ItemCatalogSuccess>().having(
           (state) => state.items.single.code,
           'new item code',
-          'ITM-001',
+          'S-N-1',
         ),
       ),
     );
-    await repository.addItem(sampleInventoryItems.first);
+    await repository.addItem(
+      const NewInventoryItemDraft(
+        name: 'زيت دوار الشمس',
+        itemsPerCarton: 12,
+        openingStockPieces: 120,
+      ),
+    );
     await updatedCatalog;
   });
 }

@@ -53,10 +53,7 @@ class DashboardCubit extends Cubit<DashboardState> {
     final visibleItems = normalizedQuery.isEmpty
         ? _allItems
         : _allItems
-              .where((item) {
-                return item.name.toLowerCase().contains(normalizedQuery) ||
-                    item.code.toLowerCase().contains(normalizedQuery);
-              })
+              .where((item) => item.matchesSearch(normalizedQuery))
               .toList(growable: false);
 
     emit(
