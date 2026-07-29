@@ -67,11 +67,7 @@ class AppStrings {
   static const String notes = 'ملاحظات إضافية';
 
   // Warehouse Return Fields
-  static const String originalVoucherNumber = 'رقم إذن الصرف الأصلي';
   static const String returnSource = 'الجهة المُرجعة';
-  static const String returnedBy = 'اسم من سلّم المرتجع';
-  static const String returnReason = 'سبب المرتجع';
-  static const String returnCondition = 'حالة الصنف المرتجع';
   static const String returnQuantity = 'الكمية المرتجعة';
   static const String returnUiNoticeTitle = 'الحفظ متصل بالمخزون';
   static const String returnUiNoticeBody =

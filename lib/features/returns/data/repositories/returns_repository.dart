@@ -12,6 +12,7 @@ import 'returns_repository_failure.dart';
 class ReturnsRepository implements ReturnsRepositoryBase {
   static const String _customerReturnCounterId = 'customerReturn';
   static const String _returnResolutionCounterId = 'returnResolution';
+  static const String _inventoryControlId = 'primaryWarehouse';
 
   final FirebaseFirestore _firestore;
   final FirebaseAuth _firebaseAuth;
@@ -33,6 +34,13 @@ class ReturnsRepository implements ReturnsRepositoryBase {
 
   CollectionReference<Map<String, dynamic>> get _counters =>
       _firestore.collection(FirestoreCollections.counters);
+
+  CollectionReference<Map<String, dynamic>> get _stocktakes =>
+      _firestore.collection(FirestoreCollections.stocktakes);
+
+  DocumentReference<Map<String, dynamic>> get _inventoryControl => _firestore
+      .collection(FirestoreCollections.inventoryControl)
+      .doc(_inventoryControlId);
 
   @override
   Stream<List<WarehouseReturnRecord>> watchPendingReturns() async* {
@@ -80,7 +88,10 @@ class ReturnsRepository implements ReturnsRepositoryBase {
     final counterReference = _counters.doc(_customerReturnCounterId);
 
     try {
+      await _ensureNoLegacyOpenStocktake();
       return await _firestore.runTransaction((transaction) async {
+        final controlSnapshot = await transaction.get(_inventoryControl);
+        _ensureInventoryIsUnlocked(controlSnapshot);
         final counterSnapshot = await transaction.get(counterReference);
         final itemSnapshot = await transaction.get(itemReference);
         if (!itemSnapshot.exists) {
@@ -103,7 +114,7 @@ class ReturnsRepository implements ReturnsRepositoryBase {
             ? _readCounterValue(counterSnapshot) + 1
             : 1;
         final returnNumber =
-            'RET-${draft.receivedAt.year}-${nextCounterValue.toString().padLeft(6, '0')}';
+            'RET-${DateTime.now().year}-${nextCounterValue.toString().padLeft(6, '0')}';
 
         final counterData = <String, Object>{
           'value': nextCounterValue,
@@ -129,12 +140,12 @@ class ReturnsRepository implements ReturnsRepositoryBase {
           'voucherNumber': returnNumber,
           'type': 'customerReturn',
           'status': 'completed',
-          'businessAt': Timestamp.fromDate(draft.receivedAt),
+          'businessAt': FieldValue.serverTimestamp(),
           'partyName': draft.sourceName,
-          'deliveredBy': draft.returnedBy,
-          'receivedBy': draft.receivedBy,
+          'deliveredBy': draft.sourceName,
+          'receivedBy': '',
           'driverName': '',
-          'notes': draft.notes,
+          'notes': '',
           'itemIds': [item.id],
           'itemDeltas': {item.id: draft.quantityPieces},
           'lines': [
@@ -157,22 +168,17 @@ class ReturnsRepository implements ReturnsRepositoryBase {
 
         transaction.set(returnReference, {
           'returnNumber': returnNumber,
-          'originalVoucherNumber': draft.originalVoucherNumber,
           'itemId': item.id,
           'itemNameSnapshot': item.name,
           'itemCodeSnapshot': item.code,
+          'itemsPerCartonSnapshot': item.itemsPerCarton,
           'quantityPieces': draft.quantityPieces,
           'sourceName': draft.sourceName,
-          'returnedBy': draft.returnedBy,
-          'receivedBy': draft.receivedBy,
-          'reason': draft.reason,
-          'notes': draft.notes,
-          'condition': draft.condition.name,
           'status': 'pendingSupplierResolution',
           'supplierName': '',
           'receiptMovementId': movementReference.id,
           'resolutionMovementId': '',
-          'receivedAt': Timestamp.fromDate(draft.receivedAt),
+          'receivedAt': FieldValue.serverTimestamp(),
           'resolvedAt': null,
           'resolvedBy': '',
           'createdAt': FieldValue.serverTimestamp(),
@@ -215,7 +221,10 @@ class ReturnsRepository implements ReturnsRepositoryBase {
     final counterReference = _counters.doc(_returnResolutionCounterId);
 
     try {
+      await _ensureNoLegacyOpenStocktake();
       return await _firestore.runTransaction((transaction) async {
+        final controlSnapshot = await transaction.get(_inventoryControl);
+        _ensureInventoryIsUnlocked(controlSnapshot);
         final returnSnapshot = await transaction.get(returnReference);
         final counterSnapshot = await transaction.get(counterReference);
         if (!returnSnapshot.exists) {
@@ -291,10 +300,10 @@ class ReturnsRepository implements ReturnsRepositoryBase {
           'status': 'completed',
           'businessAt': FieldValue.serverTimestamp(),
           'partyName': draft.supplierName,
-          'deliveredBy': warehouseReturn.receivedBy,
+          'deliveredBy': 'المخزن',
           'receivedBy': draft.supplierName,
           'driverName': '',
-          'notes': warehouseReturn.notes,
+          'notes': '',
           'itemIds': [item.id],
           'itemDeltas': {item.id: stockDelta},
           'lines': [
@@ -343,6 +352,30 @@ class ReturnsRepository implements ReturnsRepositoryBase {
     }
   }
 
+  Future<void> _ensureNoLegacyOpenStocktake() async {
+    final snapshot = await _stocktakes
+        .where('status', isEqualTo: 'open')
+        .limit(1)
+        .get();
+    if (snapshot.docs.isNotEmpty) {
+      throw const ReturnsRepositoryFailure(
+        'لا يمكن تعديل المخزون بمرتجع أثناء وجود جلسة جرد مفتوحة.',
+      );
+    }
+  }
+
+  void _ensureInventoryIsUnlocked(
+    DocumentSnapshot<Map<String, dynamic>> controlSnapshot,
+  ) {
+    final activeStocktakeId =
+        controlSnapshot.data()?['activeStocktakeId'] as String?;
+    if (activeStocktakeId != null && activeStocktakeId.isNotEmpty) {
+      throw const ReturnsRepositoryFailure(
+        'لا يمكن تعديل المخزون بمرتجع أثناء وجود جلسة جرد مفتوحة.',
+      );
+    }
+  }
+
   int _readCounterValue(
     DocumentSnapshot<Map<String, dynamic>> counterSnapshot,
   ) {
@@ -376,32 +409,23 @@ class ReturnsRepository implements ReturnsRepositoryBase {
 
   WarehouseReturnRecord _mapReturn(String id, Map<String, dynamic> data) {
     final returnNumber = data['returnNumber'];
-    final originalVoucherNumber = data['originalVoucherNumber'];
     final itemId = data['itemId'];
     final itemName = data['itemNameSnapshot'];
     final itemCode = data['itemCodeSnapshot'];
+    final itemsPerCarton = data['itemsPerCartonSnapshot'];
     final quantityPieces = data['quantityPieces'];
     final sourceName = data['sourceName'];
-    final returnedBy = data['returnedBy'];
-    final receivedBy = data['receivedBy'];
-    final reason = data['reason'];
-    final notes = data['notes'];
-    final condition = data['condition'];
     final status = data['status'];
     final receivedAt = data['receivedAt'];
 
     if (returnNumber is! String ||
-        originalVoucherNumber is! String ||
         itemId is! String ||
         itemName is! String ||
         itemCode is! String ||
+        (itemsPerCarton != null &&
+            (itemsPerCarton is! int || itemsPerCarton <= 0)) ||
         quantityPieces is! int ||
         sourceName is! String ||
-        returnedBy is! String ||
-        receivedBy is! String ||
-        reason is! String ||
-        notes is! String ||
-        condition is! String ||
         status is! String ||
         receivedAt is! Timestamp) {
       throw const FormatException('Malformed warehouse return data.');
@@ -410,17 +434,12 @@ class ReturnsRepository implements ReturnsRepositoryBase {
     return WarehouseReturnRecord(
       id: id,
       returnNumber: returnNumber,
-      originalVoucherNumber: originalVoucherNumber,
       itemId: itemId,
       itemName: itemName,
       itemCode: itemCode,
+      itemsPerCarton: itemsPerCarton as int?,
       quantityPieces: quantityPieces,
       sourceName: sourceName,
-      returnedBy: returnedBy,
-      receivedBy: receivedBy,
-      reason: reason,
-      notes: notes,
-      condition: ReturnItemCondition.values.byName(condition),
       status: WarehouseReturnStatus.values.byName(status),
       receivedAt: receivedAt.toDate(),
     );

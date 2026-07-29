@@ -79,5 +79,20 @@
   "77": "AppRoutes.transactionHistory",
   "78": "main.dart",
   "79": "StatelessWidget",
-  "80": "outbound_entry_screen.dart"
+  "80": "outbound_entry_screen.dart",
+  "81": "start_stocktake_card.dart",
+  "82": "stocktake_session.dart",
+  "83": "transaction_history_screen.dart",
+  "84": "stocktake_line.dart",
+  "85": "movement_report_summary.dart",
+  "86": "add_item_form.dart",
+  "87": "stocktake_repository_base.dart",
+  "88": "tablet_navigation_rail.dart",
+  "89": "dashboard_screen.dart",
+  "90": "../../../../core/constants/app_colors.dart",
+  "91": "package:go_router/go_router.dart",
+  "92": "build",
+  "93": "stock_summary_model.dart",
+  "94": "item_catalog_cubit.dart",
+  "95": "ItemsRepositoryBase"
 }

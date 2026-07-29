@@ -22,7 +22,7 @@ class MainShellScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final currentRoute = state.uri.toString();
+    final currentRoute = state.matchedLocation;
 
     if (currentRoute == AppRoutes.login) {
       return child;

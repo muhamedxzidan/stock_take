@@ -10,46 +10,67 @@ import 'stocktake_state.dart';
 
 class StocktakeCubit extends Cubit<StocktakeState> {
   final StocktakeRepositoryBase _repository;
+  final Duration _loadTimeout;
   StreamSubscription<List<StocktakeLine>>? _linesSubscription;
-  bool _isLoading = false;
   bool _isActing = false;
+  int _loadGeneration = 0;
 
-  StocktakeCubit(this._repository) : super(const StocktakeInitial());
+  StocktakeCubit(
+    this._repository, {
+    Duration loadTimeout = const Duration(seconds: 15),
+  }) : _loadTimeout = loadTimeout,
+       super(const StocktakeInitial());
 
   Future<void> load() async {
-    if (_isLoading) {
+    final generation = ++_loadGeneration;
+    await _linesSubscription?.cancel();
+    _linesSubscription = null;
+    if (isClosed || generation != _loadGeneration) {
       return;
     }
-
-    _isLoading = true;
     emit(const StocktakeLoading());
     try {
-      final session = await _repository.fetchOpenStocktake();
+      final session = await _repository.fetchOpenStocktake().timeout(
+        _loadTimeout,
+      );
+      if (isClosed || generation != _loadGeneration) {
+        return;
+      }
       if (session == null) {
-        await _linesSubscription?.cancel();
-        _linesSubscription = null;
         emit(const StocktakeReady(session: null, lines: []));
         return;
       }
-      await _watchLines(session);
+      await _watchLines(session, generation: generation);
+    } on TimeoutException {
+      if (!isClosed && generation == _loadGeneration) {
+        emit(
+          const StocktakeFailure(
+            session: null,
+            lines: [],
+            message: 'استغرق تحميل الجرد وقتًا أطول من المتوقع. حاول مرة أخرى.',
+          ),
+        );
+      }
     } on StocktakeRepositoryFailure catch (failure) {
-      emit(
-        StocktakeFailure(
-          session: null,
-          lines: const [],
-          message: failure.message,
-        ),
-      );
+      if (!isClosed && generation == _loadGeneration) {
+        emit(
+          StocktakeFailure(
+            session: null,
+            lines: const [],
+            message: failure.message,
+          ),
+        );
+      }
     } catch (_) {
-      emit(
-        const StocktakeFailure(
-          session: null,
-          lines: [],
-          message: 'تعذر تحميل جلسة الجرد الآن.',
-        ),
-      );
-    } finally {
-      _isLoading = false;
+      if (!isClosed && generation == _loadGeneration) {
+        emit(
+          const StocktakeFailure(
+            session: null,
+            lines: [],
+            message: 'تعذر تحميل جلسة الجرد الآن.',
+          ),
+        );
+      }
     }
   }
 
@@ -80,7 +101,7 @@ class StocktakeCubit extends Cubit<StocktakeState> {
     );
     try {
       final session = await _repository.startStocktake(draft);
-      await _watchLines(session);
+      await _watchLines(session, generation: _loadGeneration);
       return true;
     } on StocktakeRepositoryFailure catch (failure) {
       emit(
@@ -233,26 +254,118 @@ class StocktakeCubit extends Cubit<StocktakeState> {
     }
   }
 
-  Future<void> _watchLines(StocktakeSession session) async {
+  Future<bool> cancelStocktake() async {
+    final readyState = _readyState;
+    final session = readyState?.session;
+    if (_isActing || readyState == null || session == null) {
+      return false;
+    }
+
+    _isActing = true;
+    emit(
+      StocktakeActionInProgress(
+        session: session,
+        lines: readyState.lines,
+        action: StocktakeAction.cancelling,
+      ),
+    );
+    try {
+      await _repository.cancelStocktake(session.id);
+      await _linesSubscription?.cancel();
+      _linesSubscription = null;
+      emit(StocktakeCancelled(stocktakeNumber: session.stocktakeNumber));
+      return true;
+    } on StocktakeRepositoryFailure catch (failure) {
+      emit(
+        StocktakeFailure(
+          session: session,
+          lines: readyState.lines,
+          message: failure.message,
+        ),
+      );
+      return false;
+    } catch (_) {
+      emit(
+        StocktakeFailure(
+          session: session,
+          lines: readyState.lines,
+          message: 'تعذر إلغاء جلسة الجرد الآن.',
+        ),
+      );
+      return false;
+    } finally {
+      _isActing = false;
+    }
+  }
+
+  Future<void> _watchLines(
+    StocktakeSession session, {
+    required int generation,
+  }) async {
     await _linesSubscription?.cancel();
-    emit(StocktakeReady(session: session, lines: const []));
-    _linesSubscription = _repository
+    final firstSnapshot = Completer<void>();
+    late final StreamSubscription<List<StocktakeLine>> subscription;
+    subscription = _repository
         .watchLines(session.id)
         .listen(
-          (lines) => emit(StocktakeReady(session: session, lines: lines)),
-          onError: (Object error) {
-            final message = error is StocktakeRepositoryFailure
-                ? error.message
-                : 'تعذر تحميل أصناف جلسة الجرد.';
-            emit(
-              StocktakeFailure(
-                session: session,
-                lines: const [],
-                message: message,
-              ),
-            );
+          (lines) {
+            if (!firstSnapshot.isCompleted) {
+              firstSnapshot.complete();
+            }
+            if (!isClosed && generation == _loadGeneration) {
+              emit(StocktakeReady(session: session, lines: lines));
+            }
+          },
+          onError: (Object error, StackTrace stackTrace) {
+            if (!firstSnapshot.isCompleted) {
+              firstSnapshot.completeError(error, stackTrace);
+            }
+            if (!isClosed && generation == _loadGeneration) {
+              final message = error is StocktakeRepositoryFailure
+                  ? error.message
+                  : 'تعذر تحميل أصناف جلسة الجرد.';
+              emit(
+                StocktakeFailure(
+                  session: session,
+                  lines: _currentLinesFor(session),
+                  message: message,
+                ),
+              );
+            }
+          },
+          onDone: () {
+            if (!firstSnapshot.isCompleted) {
+              firstSnapshot.completeError(
+                const StocktakeRepositoryFailure(
+                  'انقطع الاتصال بجلسة الجرد قبل تحميل الأصناف.',
+                ),
+              );
+            } else if (!isClosed && generation == _loadGeneration) {
+              emit(
+                StocktakeFailure(
+                  session: session,
+                  lines: _currentLinesFor(session),
+                  message: 'انقطع الاتصال بتحديثات جلسة الجرد.',
+                ),
+              );
+            }
           },
         );
+    _linesSubscription = subscription;
+    try {
+      await firstSnapshot.future.timeout(_loadTimeout);
+    } on TimeoutException {
+      if (identical(_linesSubscription, subscription)) {
+        await subscription.cancel();
+        _linesSubscription = null;
+      }
+      rethrow;
+    }
+  }
+
+  List<StocktakeLine> _currentLinesFor(StocktakeSession session) {
+    final readyState = _readyState;
+    return readyState?.session?.id == session.id ? readyState!.lines : const [];
   }
 
   StocktakeReady? get _readyState {
@@ -287,6 +400,7 @@ class StocktakeCubit extends Cubit<StocktakeState> {
 
   @override
   Future<void> close() async {
+    _loadGeneration += 1;
     await _linesSubscription?.cancel();
     return super.close();
   }

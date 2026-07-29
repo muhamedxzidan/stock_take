@@ -21,13 +21,13 @@ class QuickActionBar extends StatelessWidget {
         title: 'وارد جديد',
         icon: Icons.input,
         color: AppColors.success,
-        route: AppRoutes.inboundEntry,
+        route: AppRoutes.newInboundMovement,
       ),
       _QuickAction(
         title: 'منصرف جديد',
         icon: Icons.output,
         color: AppColors.error,
-        route: AppRoutes.outboundEntry,
+        route: AppRoutes.newOutboundMovement,
       ),
       _QuickAction(
         title: 'مرتجع',

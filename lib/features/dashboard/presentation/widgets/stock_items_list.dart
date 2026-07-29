@@ -134,7 +134,7 @@ class StockItemsList extends StatelessWidget {
                     children: [
                       Text('الرصيد الإجمالي:', style: AppTextStyles.caption),
                       Text(
-                        '${item.currentStockBalance} ${AppStrings.piecesCount}',
+                        item.formattedCartonStock,
                         style: AppTextStyles.heading2.copyWith(
                           color: isLowStock
                               ? AppColors.error
@@ -147,7 +147,7 @@ class StockItemsList extends StatelessWidget {
                 ),
                 Expanded(
                   child: Text(
-                    item.formattedCartonStock,
+                    '${item.currentStockBalance} ${AppStrings.piecesCount} إجمالي',
                     textAlign: TextAlign.end,
                     style: AppTextStyles.bodyMedium.copyWith(
                       fontWeight: FontWeight.bold,

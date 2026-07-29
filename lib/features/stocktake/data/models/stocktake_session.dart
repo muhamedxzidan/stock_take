@@ -1,4 +1,4 @@
-enum StocktakeStatus { open, completed }
+enum StocktakeStatus { open, completed, cancelled }
 
 class StocktakeSession {
   final String id;
@@ -8,6 +8,7 @@ class StocktakeSession {
   final DateTime periodTo;
   final DateTime startedAt;
   final DateTime? completedAt;
+  final DateTime? cancelledAt;
   final String notes;
 
   const StocktakeSession({
@@ -18,6 +19,7 @@ class StocktakeSession {
     required this.periodTo,
     required this.startedAt,
     required this.completedAt,
+    this.cancelledAt,
     required this.notes,
   });
 }

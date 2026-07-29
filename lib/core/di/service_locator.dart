@@ -14,6 +14,9 @@ import '../../features/items/cubit/items_cubit.dart';
 import '../../features/items/cubit/item_catalog_cubit.dart';
 import '../../features/items/data/repositories/items_repository.dart';
 import '../../features/items/data/repositories/items_repository_base.dart';
+import '../../features/printing/cubit/printer_cubit.dart';
+import '../../features/printing/data/repositories/bluetooth_printer_repository.dart';
+import '../../features/printing/data/repositories/printer_repository_base.dart';
 import '../../features/returns/cubit/returns_cubit.dart';
 import '../../features/returns/cubit/return_resolution_cubit.dart';
 import '../../features/returns/data/repositories/returns_repository.dart';
@@ -35,6 +38,7 @@ Future<void> configureDependencies({
   ReturnsRepositoryBase? returnsRepository,
   StocktakeRepositoryBase? stocktakeRepository,
   TransactionsRepositoryBase? transactionsRepository,
+  PrinterRepositoryBase? printerRepository,
   bool reset = false,
 }) async {
   if (reset) {
@@ -108,6 +112,13 @@ Future<void> configureDependencies({
       ),
     );
   }
+  if (printerRepository != null) {
+    serviceLocator.registerSingleton<PrinterRepositoryBase>(printerRepository);
+  } else {
+    serviceLocator.registerLazySingleton<PrinterRepositoryBase>(
+      BluetoothPrinterRepository.new,
+    );
+  }
 
   serviceLocator.registerFactory<LoginCubit>(
     () => LoginCubit(serviceLocator<AuthRepository>()),
@@ -133,6 +144,9 @@ Future<void> configureDependencies({
   serviceLocator.registerFactory<MovementHistoryCubit>(
     () => MovementHistoryCubit(serviceLocator<TransactionsRepositoryBase>()),
   );
+  serviceLocator.registerFactory<PrinterCubit>(
+    () => PrinterCubit(serviceLocator<PrinterRepositoryBase>()),
+  );
   serviceLocator.registerFactory<StocktakeCubit>(
     () => StocktakeCubit(serviceLocator<StocktakeRepositoryBase>()),
   );
@@ -146,6 +160,7 @@ Future<void> configureDependencies({
       authRepository: serviceLocator<AuthRepository>(),
       authSessionNotifier: serviceLocator<AuthSessionNotifier>(),
       createLoginCubit: () => serviceLocator<LoginCubit>(),
+      createStocktakeCubit: () => serviceLocator<StocktakeCubit>(),
     ),
     dispose: (router) => router.dispose(),
   );

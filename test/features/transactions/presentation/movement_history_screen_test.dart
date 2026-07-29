@@ -3,10 +3,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:stock_take/features/transactions/cubit/movement_history_cubit.dart';
+import 'package:stock_take/features/printing/cubit/printer_cubit.dart';
 import 'package:stock_take/features/transactions/data/models/movement_record.dart';
 import 'package:stock_take/features/transactions/presentation/screens/transaction_history_screen.dart';
 
 import '../../../support/fake_transactions_repository.dart';
+import '../../../support/fake_printer_repository.dart';
 
 void main() {
   testWidgets('shows unified movement totals and filters the live source', (
@@ -29,16 +31,23 @@ void main() {
       ],
     );
     final cubit = MovementHistoryCubit(repository);
+    final printerRepository = FakePrinterRepository();
+    final printerCubit = PrinterCubit(printerRepository)..initialize();
     addTearDown(() async {
       await cubit.close();
+      await printerCubit.close();
+      await printerRepository.close();
       await repository.close();
     });
 
     await tester.pumpWidget(
       ScreenUtilInit(
         designSize: const Size(375, 812),
-        builder: (context, child) => BlocProvider.value(
-          value: cubit,
+        builder: (context, child) => MultiBlocProvider(
+          providers: [
+            BlocProvider.value(value: cubit),
+            BlocProvider.value(value: printerCubit),
+          ],
           child: const MaterialApp(home: TransactionHistoryScreen()),
         ),
       ),
@@ -59,6 +68,10 @@ void main() {
     expect(find.byKey(const Key('movement-record-in')), findsNothing);
     expect(find.byKey(const Key('movement-record-out')), findsOneWidget);
     expect(find.text('الحركات: 1 حركة'), findsOneWidget);
+
+    await tester.tap(find.byKey(const Key('movement-record-out')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('print-movement-out')), findsOneWidget);
 
     await tester.pumpWidget(const SizedBox.shrink());
     await tester.pump();

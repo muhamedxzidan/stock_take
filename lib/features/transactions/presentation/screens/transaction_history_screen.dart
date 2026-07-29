@@ -7,6 +7,7 @@ import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/app_text_styles.dart';
 import '../../../../core/shared_widgets/custom_app_bar.dart';
 import '../../../../core/shared_widgets/custom_text_field.dart';
+import '../../../printing/presentation/widgets/printer_setup_button.dart';
 import '../../cubit/movement_history_cubit.dart';
 import '../../cubit/movement_history_state.dart';
 import '../../data/models/movement_report_summary.dart';
@@ -54,7 +55,10 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: AppStrings.transactionHistoryTitle),
+      appBar: const CustomAppBar(
+        title: AppStrings.transactionHistoryTitle,
+        actions: [PrinterSetupButton()],
+      ),
       body: BlocBuilder<MovementHistoryCubit, MovementHistoryState>(
         builder: (context, state) {
           if (state is MovementHistoryInitial ||

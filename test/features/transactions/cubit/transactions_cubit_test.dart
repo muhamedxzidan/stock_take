@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:stock_take/features/transactions/cubit/transactions_cubit.dart';
 import 'package:stock_take/features/transactions/cubit/transactions_state.dart';
@@ -77,6 +79,27 @@ void main() {
         contains('المتاح 25 قطعة فقط'),
       );
       expect(limitedRepository.outboundDrafts, isEmpty);
+    },
+  );
+
+  test(
+    'ignores a duplicate movement while the first save is pending',
+    () async {
+      final gate = Completer<void>();
+      repository.saveDelay = gate.future;
+
+      final firstSave = cubit.createInboundMovement(_validDraft());
+      await Future<void>.delayed(Duration.zero);
+
+      expect(cubit.state, isA<InventoryMovementSaving>());
+      final duplicateSave = await cubit.createInboundMovement(_validDraft());
+
+      expect(duplicateSave, isNull);
+      expect(repository.inboundDrafts, isEmpty);
+
+      gate.complete();
+      expect(await firstSave, isNotNull);
+      expect(repository.inboundDrafts, hasLength(1));
     },
   );
 }

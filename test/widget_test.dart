@@ -8,15 +8,19 @@ import 'package:stock_take/core/di/service_locator.dart';
 import 'package:stock_take/core/theme/app_theme.dart';
 import 'package:stock_take/features/auth/data/repositories/auth_repository.dart';
 import 'package:stock_take/features/items/cubit/item_catalog_cubit.dart';
+import 'package:stock_take/features/printing/cubit/printer_cubit.dart';
 import 'package:stock_take/features/returns/cubit/return_resolution_cubit.dart';
 import 'package:stock_take/features/returns/cubit/returns_cubit.dart';
 import 'package:stock_take/features/returns/data/models/return_resolution.dart';
 import 'package:stock_take/features/returns/presentation/screens/warehouse_return_screen.dart';
 import 'package:stock_take/features/transactions/cubit/transactions_cubit.dart';
 import 'package:stock_take/features/transactions/presentation/screens/new_movement_screen.dart';
+import 'package:stock_take/features/transactions/presentation/widgets/movement_type_selector.dart';
+import 'package:stock_take/features/transactions/presentation/widgets/movement_ui_types.dart';
 import 'package:stock_take/main.dart';
 
 import 'support/fake_items_repository.dart';
+import 'support/fake_printer_repository.dart';
 import 'support/fake_returns_repository.dart';
 import 'support/fake_stocktake_repository.dart';
 import 'support/fake_transactions_repository.dart';
@@ -119,6 +123,51 @@ void main() {
     expect(find.byKey(const Key('open-warehouse-return')), findsOneWidget);
   });
 
+  testWidgets('dashboard movement shortcuts use the canonical movement route', (
+    WidgetTester tester,
+  ) async {
+    tester.view.physicalSize = const Size(1280, 900);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+
+    await tester.pumpWidget(const StockTakeApp());
+    await tester.pumpAndSettle();
+
+    serviceLocator<GoRouter>().go(AppRoutes.dashboard);
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('منصرف جديد'));
+    await tester.pumpAndSettle();
+
+    expect(
+      serviceLocator<GoRouter>().routeInformationProvider.value.uri.toString(),
+      AppRoutes.newOutboundMovement,
+    );
+    expect(
+      tester
+          .widget<MovementTypeSelector>(find.byType(MovementTypeSelector))
+          .selectedKind,
+      MovementKind.outbound,
+    );
+
+    serviceLocator<GoRouter>().go(AppRoutes.dashboard);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('وارد جديد'));
+    await tester.pumpAndSettle();
+
+    expect(
+      serviceLocator<GoRouter>().routeInformationProvider.value.uri.toString(),
+      AppRoutes.newInboundMovement,
+    );
+    expect(
+      tester
+          .widget<MovementTypeSelector>(find.byType(MovementTypeSelector))
+          .selectedKind,
+      MovementKind.inbound,
+    );
+  });
+
   testWidgets('warehouse return saves through its feature cubit', (
     WidgetTester tester,
   ) async {
@@ -163,33 +212,31 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('inventory-item-option-1')));
     await tester.pumpAndSettle();
+    expect(find.text('كود الصنف: ITM-001'), findsOneWidget);
+    expect(
+      find.byKey(const Key('return-original-voucher-field')),
+      findsNothing,
+    );
+    expect(find.byKey(const Key('return-returned-by-field')), findsNothing);
+    expect(find.byKey(const Key('return-received-by-field')), findsNothing);
+    expect(find.byKey(const Key('return-reason-field')), findsNothing);
     await tester.enterText(
       find.byKey(const Key('return-quantity-cartons-field')),
       '١',
     );
     await tester.pump();
 
-    expect(find.text('الإجمالي: 12 قطعة • الكرتونة = 12 قطعة'), findsOneWidget);
+    expect(
+      find.text(
+        'الكمية: 1 كرتونة • الإجمالي المكافئ: 12 قطعة'
+        ' • الكرتونة = 12 قطعة',
+      ),
+      findsOneWidget,
+    );
 
     await tester.enterText(
       find.byKey(const Key('return-source-field')),
       'فرع مدينة نصر',
-    );
-    await tester.ensureVisible(
-      find.byKey(const Key('return-returned-by-field')),
-    );
-    await tester.enterText(
-      find.byKey(const Key('return-returned-by-field')),
-      'مسؤول الفرع',
-    );
-    await tester.enterText(
-      find.byKey(const Key('return-received-by-field')),
-      'أمين المخزن',
-    );
-    await tester.ensureVisible(find.byKey(const Key('return-reason-field')));
-    await tester.enterText(
-      find.byKey(const Key('return-reason-field')),
-      'كمية زائدة',
     );
     tester.testTextInput.hide();
     await tester.pumpAndSettle();
@@ -243,7 +290,7 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    expect(find.text('عدد الكراتين'), findsOneWidget);
+    expect(find.text('الكراتين (الأساسي)'), findsOneWidget);
     await tester.enterText(
       find.byKey(const Key('item-quantity-cartons-field')),
       '١',
@@ -275,7 +322,16 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.textContaining('تم حفظ إذن الوارد IN-'), findsOneWidget);
+    expect(
+      find.textContaining('يمكن إعادة الطباعة من سجل الحركات'),
+      findsOneWidget,
+    );
+    expect(find.widgetWithText(SnackBarAction, 'طباعة'), findsNothing);
     expect(find.text('الإذن الحالي: فارغ'), findsOneWidget);
+
+    await tester.pump(const Duration(seconds: 4));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('movement-saved-snackbar')), findsNothing);
   });
 
   testWidgets('new movement UI shows a persistent voucher on desktop', (
@@ -347,6 +403,10 @@ Future<void> _pumpMovementScreen(
             ),
             BlocProvider<TransactionsCubit>(
               create: (context) => TransactionsCubit(transactionsRepository),
+            ),
+            BlocProvider<PrinterCubit>(
+              create: (context) =>
+                  PrinterCubit(FakePrinterRepository())..initialize(),
             ),
           ],
           child: MaterialApp(

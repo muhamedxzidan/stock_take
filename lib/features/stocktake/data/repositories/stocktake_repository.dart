@@ -11,6 +11,7 @@ import 'stocktake_repository_failure.dart';
 class StocktakeRepository implements StocktakeRepositoryBase {
   static const _stocktakeCounterId = 'stocktakeNumber';
   static const _adjustmentCounterId = 'stocktakeAdjustmentVoucher';
+  static const _inventoryControlId = 'primaryWarehouse';
   static const _maximumSessionItems = 450;
   static const _maximumAdjustmentItems = 50;
 
@@ -35,6 +36,10 @@ class StocktakeRepository implements StocktakeRepositoryBase {
   CollectionReference<Map<String, dynamic>> get _counters =>
       _firestore.collection(FirestoreCollections.counters);
 
+  DocumentReference<Map<String, dynamic>> get _inventoryControl => _firestore
+      .collection(FirestoreCollections.inventoryControl)
+      .doc(_inventoryControlId);
+
   @override
   Future<StocktakeSession?> fetchOpenStocktake() async {
     try {
@@ -46,6 +51,7 @@ class StocktakeRepository implements StocktakeRepositoryBase {
         return null;
       }
       final document = snapshot.docs.single;
+      await _claimLegacyOpenSession(document.id);
       return _mapSession(id: document.id, data: document.data());
     } on FirebaseException catch (error) {
       throw StocktakeRepositoryFailure(_readFailureMessage(error));
@@ -113,7 +119,9 @@ class StocktakeRepository implements StocktakeRepositoryBase {
 
     try {
       return await _firestore.runTransaction((transaction) async {
+        final controlSnapshot = await transaction.get(_inventoryControl);
         final counterSnapshot = await transaction.get(counterReference);
+        _requireNoActiveStocktake(controlSnapshot);
         final itemSnapshots = <DocumentSnapshot<Map<String, dynamic>>>[];
         for (final itemDocument in activeItemsSnapshot.docs) {
           itemSnapshots.add(await transaction.get(itemDocument.reference));
@@ -156,9 +164,16 @@ class StocktakeRepository implements StocktakeRepositoryBase {
           'completedAt': null,
           'completedBy': '',
           'completionMovementId': '',
+          'cancelledAt': null,
+          'cancelledBy': '',
           'notes': draft.notes,
           'createdAt': FieldValue.serverTimestamp(),
           'createdBy': user.uid,
+          'updatedAt': FieldValue.serverTimestamp(),
+          'updatedBy': user.uid,
+        });
+        transaction.set(_inventoryControl, {
+          'activeStocktakeId': stocktakeReference.id,
           'updatedAt': FieldValue.serverTimestamp(),
           'updatedBy': user.uid,
         });
@@ -270,6 +285,7 @@ class StocktakeRepository implements StocktakeRepositoryBase {
 
     try {
       return await _firestore.runTransaction((transaction) async {
+        final controlSnapshot = await transaction.get(_inventoryControl);
         final stocktakeSnapshot = await transaction.get(stocktakeReference);
         final lineSnapshots = <DocumentSnapshot<Map<String, dynamic>>>[];
         for (final lineDocument in lineQuerySnapshot.docs) {
@@ -282,6 +298,10 @@ class StocktakeRepository implements StocktakeRepositoryBase {
             'تم اعتماد جلسة الجرد من قبل.',
           );
         }
+        _requireActiveStocktake(
+          controlSnapshot: controlSnapshot,
+          stocktakeId: stocktakeId,
+        );
 
         final session = _mapSession(
           id: stocktakeSnapshot.id,
@@ -416,6 +436,11 @@ class StocktakeRepository implements StocktakeRepositoryBase {
           'updatedAt': FieldValue.serverTimestamp(),
           'updatedBy': user.uid,
         });
+        transaction.set(_inventoryControl, {
+          'activeStocktakeId': '',
+          'updatedAt': FieldValue.serverTimestamp(),
+          'updatedBy': user.uid,
+        });
 
         return SavedStocktakeCompletion(
           stocktakeNumber: session.stocktakeNumber,
@@ -435,6 +460,88 @@ class StocktakeRepository implements StocktakeRepositoryBase {
       );
     } on FirebaseException catch (error) {
       throw StocktakeRepositoryFailure(_writeFailureMessage(error));
+    }
+  }
+
+  @override
+  Future<void> cancelStocktake(String stocktakeId) async {
+    final user = _requireUser();
+    final stocktakeReference = _stocktakes.doc(stocktakeId);
+    try {
+      await _firestore.runTransaction((transaction) async {
+        final controlSnapshot = await transaction.get(_inventoryControl);
+        final stocktakeSnapshot = await transaction.get(stocktakeReference);
+        if (!stocktakeSnapshot.exists ||
+            stocktakeSnapshot.data()?['status'] != 'open') {
+          throw const StocktakeRepositoryFailure('جلسة الجرد لم تعد مفتوحة.');
+        }
+        _requireActiveStocktake(
+          controlSnapshot: controlSnapshot,
+          stocktakeId: stocktakeId,
+        );
+
+        transaction.update(stocktakeReference, {
+          'status': 'cancelled',
+          'cancelledAt': FieldValue.serverTimestamp(),
+          'cancelledBy': user.uid,
+          'updatedAt': FieldValue.serverTimestamp(),
+          'updatedBy': user.uid,
+        });
+        transaction.set(_inventoryControl, {
+          'activeStocktakeId': '',
+          'updatedAt': FieldValue.serverTimestamp(),
+          'updatedBy': user.uid,
+        });
+      });
+    } on StocktakeRepositoryFailure {
+      rethrow;
+    } on FirebaseException catch (error) {
+      throw StocktakeRepositoryFailure(_writeFailureMessage(error));
+    }
+  }
+
+  Future<void> _claimLegacyOpenSession(String stocktakeId) async {
+    final user = _requireUser();
+    await _firestore.runTransaction((transaction) async {
+      final controlSnapshot = await transaction.get(_inventoryControl);
+      final activeStocktakeId =
+          controlSnapshot.data()?['activeStocktakeId'] as String?;
+      if (activeStocktakeId == stocktakeId) {
+        return;
+      }
+      if (activeStocktakeId != null && activeStocktakeId.isNotEmpty) {
+        throw const StocktakeRepositoryFailure(
+          'يوجد تعارض في قفل جلسة الجرد. تواصل مع مسؤول النظام.',
+        );
+      }
+      transaction.set(_inventoryControl, {
+        'activeStocktakeId': stocktakeId,
+        'updatedAt': FieldValue.serverTimestamp(),
+        'updatedBy': user.uid,
+      });
+    });
+  }
+
+  void _requireNoActiveStocktake(
+    DocumentSnapshot<Map<String, dynamic>> controlSnapshot,
+  ) {
+    final activeStocktakeId =
+        controlSnapshot.data()?['activeStocktakeId'] as String?;
+    if (activeStocktakeId != null && activeStocktakeId.isNotEmpty) {
+      throw const StocktakeRepositoryFailure(
+        'توجد جلسة جرد مفتوحة بالفعل. أكملها أو ألغها قبل بدء جلسة جديدة.',
+      );
+    }
+  }
+
+  void _requireActiveStocktake({
+    required DocumentSnapshot<Map<String, dynamic>> controlSnapshot,
+    required String stocktakeId,
+  }) {
+    if (controlSnapshot.data()?['activeStocktakeId'] != stocktakeId) {
+      throw const StocktakeRepositoryFailure(
+        'قفل جلسة الجرد غير متطابق. أعد تحميل الصفحة قبل المتابعة.',
+      );
     }
   }
 
@@ -493,6 +600,7 @@ class StocktakeRepository implements StocktakeRepositoryBase {
     final periodTo = data['periodTo'];
     final startedAt = data['startedAt'];
     final completedAt = data['completedAt'];
+    final cancelledAt = data['cancelledAt'];
     final notes = data['notes'];
     if (stocktakeNumber is! String ||
         status is! String ||
@@ -500,6 +608,7 @@ class StocktakeRepository implements StocktakeRepositoryBase {
         periodTo is! Timestamp ||
         startedAt is! Timestamp ||
         completedAt is! Timestamp? ||
+        cancelledAt is! Timestamp? ||
         notes is! String) {
       throw const FormatException('Malformed stocktake session.');
     }
@@ -512,6 +621,7 @@ class StocktakeRepository implements StocktakeRepositoryBase {
       periodTo: periodTo.toDate(),
       startedAt: startedAt.toDate(),
       completedAt: completedAt?.toDate(),
+      cancelledAt: cancelledAt?.toDate(),
       notes: notes,
     );
   }

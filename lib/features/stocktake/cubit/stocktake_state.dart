@@ -20,7 +20,7 @@ class StocktakeReady extends StocktakeState {
   const StocktakeReady({required this.session, required this.lines});
 }
 
-enum StocktakeAction { starting, savingCount, completing }
+enum StocktakeAction { starting, savingCount, completing, cancelling }
 
 class StocktakeActionInProgress extends StocktakeReady {
   final StocktakeAction action;
@@ -48,5 +48,12 @@ class StocktakeCompleted extends StocktakeReady {
   final SavedStocktakeCompletion completion;
 
   const StocktakeCompleted({required this.completion})
+    : super(session: null, lines: const []);
+}
+
+class StocktakeCancelled extends StocktakeReady {
+  final String stocktakeNumber;
+
+  const StocktakeCancelled({required this.stocktakeNumber})
     : super(session: null, lines: const []);
 }

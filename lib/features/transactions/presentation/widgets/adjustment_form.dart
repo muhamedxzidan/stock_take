@@ -104,8 +104,8 @@ class _AdjustmentFormState extends State<AdjustmentForm> {
                   borderRadius: BorderRadius.circular(AppSizes.r12),
                 ),
                 child: Text(
-                  'رصيد النظام: ${item.currentStockPieces} قطعة'
-                  ' • ${item.formattedCartonStock}',
+                  'رصيد النظام: ${item.formattedCartonStock}'
+                  ' • ${item.currentStockPieces} قطعة إجمالي',
                   style: AppTextStyles.bodyLarge.copyWith(
                     fontWeight: FontWeight.w700,
                   ),

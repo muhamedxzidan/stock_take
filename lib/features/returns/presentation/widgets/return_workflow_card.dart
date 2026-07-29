@@ -4,10 +4,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../../../core/models/carton_piece_quantity.dart';
 import '../../cubit/return_resolution_cubit.dart';
 import '../../cubit/return_resolution_state.dart';
 import '../../data/models/return_resolution.dart';
-import '../../data/models/warehouse_return_draft.dart';
 import '../../data/models/warehouse_return_record.dart';
 
 class ReturnWorkflowCard extends StatelessWidget {
@@ -157,7 +157,7 @@ class _PendingReturnTile extends StatelessWidget {
                 ),
               ),
               Text(
-                '${warehouseReturn.quantityPieces} قطعة',
+                _formattedQuantity(warehouseReturn),
                 style: AppTextStyles.bodyMedium.copyWith(
                   color: AppColors.secondary,
                   fontWeight: FontWeight.w700,
@@ -172,7 +172,7 @@ class _PendingReturnTile extends StatelessWidget {
           ),
           SizedBox(height: AppSizes.h4),
           Text(
-            '${warehouseReturn.sourceName} • ${_conditionLabel(warehouseReturn.condition)}',
+            'من: ${warehouseReturn.sourceName}',
             style: AppTextStyles.bodySmall,
           ),
           SizedBox(height: AppSizes.h12),
@@ -212,12 +212,16 @@ class _PendingReturnTile extends StatelessWidget {
     );
   }
 
-  String _conditionLabel(ReturnItemCondition condition) {
-    return switch (condition) {
-      ReturnItemCondition.readyForStock => 'صالح للمخزون',
-      ReturnItemCondition.damaged => 'تالف',
-      ReturnItemCondition.needsInspection => 'يحتاج فحص',
-    };
+  String _formattedQuantity(WarehouseReturnRecord warehouseReturn) {
+    final itemsPerCarton = warehouseReturn.itemsPerCarton;
+    if (itemsPerCarton == null) {
+      return '${warehouseReturn.quantityPieces} قطعة';
+    }
+
+    return CartonPieceQuantity.fromTotalPieces(
+      totalPieces: warehouseReturn.quantityPieces,
+      itemsPerCarton: itemsPerCarton,
+    ).cartonFirstLabel;
   }
 }
 

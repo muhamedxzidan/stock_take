@@ -5,4 +5,5 @@ abstract final class FirestoreCollections {
   static const String stocktakes = 'stocktakes';
   static const String stocktakeLines = 'lines';
   static const String counters = 'counters';
+  static const String inventoryControl = 'inventoryControl';
 }

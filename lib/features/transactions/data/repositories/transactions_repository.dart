@@ -39,6 +39,8 @@ enum _InventoryMovementWriteKind {
 }
 
 class TransactionsRepository implements TransactionsRepositoryBase {
+  static const _inventoryControlId = 'primaryWarehouse';
+
   final FirebaseFirestore _firestore;
   final FirebaseAuth _firebaseAuth;
 
@@ -105,6 +107,13 @@ class TransactionsRepository implements TransactionsRepositoryBase {
   CollectionReference<Map<String, dynamic>> get _counters =>
       _firestore.collection(FirestoreCollections.counters);
 
+  CollectionReference<Map<String, dynamic>> get _stocktakes =>
+      _firestore.collection(FirestoreCollections.stocktakes);
+
+  DocumentReference<Map<String, dynamic>> get _inventoryControl => _firestore
+      .collection(FirestoreCollections.inventoryControl)
+      .doc(_inventoryControlId);
+
   @override
   Stream<List<MovementRecord>> watchMovements() async* {
     try {
@@ -170,7 +179,10 @@ class TransactionsRepository implements TransactionsRepositoryBase {
     }
 
     try {
+      await _ensureNoLegacyOpenStocktake();
       return await _firestore.runTransaction((transaction) async {
+        final controlSnapshot = await transaction.get(_inventoryControl);
+        _ensureInventoryIsUnlocked(controlSnapshot);
         final counterSnapshot = await transaction.get(counterReference);
         final itemSnapshots =
             <String, DocumentSnapshot<Map<String, dynamic>>>{};
@@ -295,6 +307,30 @@ class TransactionsRepository implements TransactionsRepositoryBase {
     } on FirebaseException catch (error) {
       throw TransactionsRepositoryFailure(
         _writeFailureMessage(error, kind: kind),
+      );
+    }
+  }
+
+  Future<void> _ensureNoLegacyOpenStocktake() async {
+    final snapshot = await _stocktakes
+        .where('status', isEqualTo: 'open')
+        .limit(1)
+        .get();
+    if (snapshot.docs.isNotEmpty) {
+      throw const TransactionsRepositoryFailure(
+        'لا يمكن تسجيل حركة مخزون أثناء وجود جلسة جرد مفتوحة.',
+      );
+    }
+  }
+
+  void _ensureInventoryIsUnlocked(
+    DocumentSnapshot<Map<String, dynamic>> controlSnapshot,
+  ) {
+    final activeStocktakeId =
+        controlSnapshot.data()?['activeStocktakeId'] as String?;
+    if (activeStocktakeId != null && activeStocktakeId.isNotEmpty) {
+      throw const TransactionsRepositoryFailure(
+        'لا يمكن تسجيل حركة مخزون أثناء وجود جلسة جرد مفتوحة.',
       );
     }
   }

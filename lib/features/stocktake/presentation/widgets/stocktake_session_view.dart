@@ -14,12 +14,14 @@ class StocktakeSessionView extends StatelessWidget {
   final List<StocktakeLine> lines;
   final String? savingItemId;
   final bool isCompleting;
+  final bool isCancelling;
   final Future<bool> Function({
     required String itemId,
     required int actualQuantityPieces,
   })
   onSaveCount;
   final Future<SavedStocktakeCompletion?> Function() onComplete;
+  final Future<bool> Function() onCancel;
 
   const StocktakeSessionView({
     super.key,
@@ -27,8 +29,10 @@ class StocktakeSessionView extends StatelessWidget {
     required this.lines,
     required this.savingItemId,
     required this.isCompleting,
+    required this.isCancelling,
     required this.onSaveCount,
     required this.onComplete,
+    required this.onCancel,
   });
 
   @override
@@ -37,8 +41,9 @@ class StocktakeSessionView extends StatelessWidget {
     final netDifference = lines
         .where((line) => line.counted)
         .fold<int>(0, (total, line) => total + line.differencePieces);
+    final isBusy = isCompleting || isCancelling || savingItemId != null;
     final canComplete =
-        lines.isNotEmpty && countedItems == lines.length && !isCompleting;
+        lines.isNotEmpty && countedItems == lines.length && !isBusy;
 
     return Column(
       children: [
@@ -85,6 +90,22 @@ class StocktakeSessionView extends StatelessWidget {
               : AppColors.textLight,
           isLoading: isCompleting,
           onPressed: canComplete ? onComplete : () {},
+        ),
+        SizedBox(height: AppSizes.h8),
+        SizedBox(
+          width: double.infinity,
+          child: OutlinedButton.icon(
+            key: const Key('cancel-stocktake'),
+            onPressed: isBusy ? null : onCancel,
+            icon: isCancelling
+                ? const SizedBox.square(
+                    dimension: 18,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  )
+                : const Icon(Icons.cancel_outlined),
+            label: const Text('إلغاء الجرد دون تعديل المخزون'),
+            style: OutlinedButton.styleFrom(foregroundColor: AppColors.error),
+          ),
         ),
       ],
     );
@@ -226,7 +247,8 @@ class _StocktakeLineCardState extends State<_StocktakeLineCard> {
             SizedBox(height: AppSizes.h12),
             Text(
               'رصيد النظام المثبّت: '
-              '${widget.line.systemQuantityPieces} قطعة',
+              '${CartonPieceQuantity.fromTotalPieces(totalPieces: widget.line.systemQuantityPieces, itemsPerCarton: widget.line.itemsPerCarton).cartonFirstLabel}'
+              ' • ${widget.line.systemQuantityPieces} قطعة إجمالي',
               style: AppTextStyles.bodyLarge.copyWith(
                 fontWeight: FontWeight.w700,
               ),
@@ -240,7 +262,7 @@ class _StocktakeLineCardState extends State<_StocktakeLineCard> {
             ),
             SizedBox(height: AppSizes.h12),
             Text(
-              'الفرق: ${difference > 0 ? '+' : ''}$difference قطعة',
+              'الفرق: ${_signedCartonFirstQuantity(difference, widget.line.itemsPerCarton)}',
               textAlign: TextAlign.center,
               style: AppTextStyles.heading3.copyWith(
                 color: difference < 0
@@ -265,7 +287,8 @@ class _StocktakeLineCardState extends State<_StocktakeLineCard> {
                     SnackBar(
                       content: Text(
                         'تم حفظ ${widget.line.itemCodeSnapshot}: '
-                        '$actualPieces قطعة.',
+                        '${_actualQuantity.cartonFirstLabel}'
+                        ' • $actualPieces قطعة إجمالي.',
                       ),
                       backgroundColor: AppColors.success,
                     ),
@@ -278,6 +301,19 @@ class _StocktakeLineCardState extends State<_StocktakeLineCard> {
       ),
     );
   }
+}
+
+String _signedCartonFirstQuantity(int totalPieces, int itemsPerCarton) {
+  final sign = totalPieces > 0
+      ? '+'
+      : totalPieces < 0
+      ? '-'
+      : '';
+  final quantity = CartonPieceQuantity.fromTotalPieces(
+    totalPieces: totalPieces.abs(),
+    itemsPerCarton: itemsPerCarton,
+  );
+  return '$sign${quantity.cartonFirstLabel}';
 }
 
 String _formatDate(DateTime date) {

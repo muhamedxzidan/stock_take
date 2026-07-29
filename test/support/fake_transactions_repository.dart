@@ -13,6 +13,7 @@ class FakeTransactionsRepository implements TransactionsRepositoryBase {
   final List<InventoryMovementDraft> inboundDrafts = [];
   final List<InventoryMovementDraft> outboundDrafts = [];
   final Map<String, int> availableStockByItemId;
+  Future<void>? saveDelay;
   int _nextInboundVoucherNumber = 1;
   int _nextOutboundVoucherNumber = 1;
 
@@ -33,6 +34,10 @@ class FakeTransactionsRepository implements TransactionsRepositoryBase {
   Future<SavedInventoryMovement> createInboundMovement(
     InventoryMovementDraft draft,
   ) async {
+    final delay = saveDelay;
+    if (delay != null) {
+      await delay;
+    }
     inboundDrafts.add(draft);
     final sequence = _nextInboundVoucherNumber++;
     final savedMovement = SavedInventoryMovement(
@@ -52,6 +57,10 @@ class FakeTransactionsRepository implements TransactionsRepositoryBase {
   Future<SavedInventoryMovement> createOutboundMovement(
     InventoryMovementDraft draft,
   ) async {
+    final delay = saveDelay;
+    if (delay != null) {
+      await delay;
+    }
     for (final line in draft.lines) {
       final availableStock = availableStockByItemId[line.itemId];
       if (availableStock != null && line.totalPieces > availableStock) {

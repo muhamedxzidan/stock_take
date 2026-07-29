@@ -15,7 +15,8 @@ class ItemsCubit extends Cubit<ItemsState> {
   Future<void> submitNewItem({
     required String name,
     required String itemsPerCartonStr,
-    required String initialBalanceStr,
+    required int openingStockCartons,
+    required int openingStockPieces,
   }) async {
     if (state is ItemsLoading) {
       return;
@@ -33,11 +34,12 @@ class ItemsCubit extends Cubit<ItemsState> {
       return;
     }
 
-    final initialBalance = int.tryParse(initialBalanceStr.trim());
-    if (initialBalance == null || initialBalance < 0) {
+    if (openingStockCartons < 0 || openingStockPieces < 0) {
       emit(ItemsFailure('الرصيد الافتتاحي يجب أن يكون صفرًا أو أكبر.'));
       return;
     }
+    final openingStockTotalPieces =
+        (openingStockCartons * itemsPerCarton) + openingStockPieces;
 
     emit(ItemsLoading());
     try {
@@ -45,7 +47,7 @@ class ItemsCubit extends Cubit<ItemsState> {
         NewInventoryItemDraft(
           name: normalizedName,
           itemsPerCarton: itemsPerCarton,
-          openingStockPieces: initialBalance,
+          openingStockPieces: openingStockTotalPieces,
         ),
       );
       emit(ItemsSuccess(savedItem));

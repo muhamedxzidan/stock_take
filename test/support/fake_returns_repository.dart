@@ -12,6 +12,8 @@ class FakeReturnsRepository implements ReturnsRepositoryBase {
   final List<WarehouseReturnRecord> _pendingReturns;
   final List<WarehouseReturnDraft> drafts = [];
   final List<ReturnResolutionDraft> resolutions = [];
+  Future<void>? createDelay;
+  Future<void>? resolutionDelay;
   int _nextReturnNumber = 1;
 
   FakeReturnsRepository({List<WarehouseReturnRecord> pendingReturns = const []})
@@ -27,12 +29,16 @@ class FakeReturnsRepository implements ReturnsRepositoryBase {
   Future<SavedWarehouseReturn> createCustomerReturn(
     WarehouseReturnDraft draft,
   ) async {
+    final delay = createDelay;
+    if (delay != null) {
+      await delay;
+    }
     drafts.add(draft);
     final sequence = _nextReturnNumber++;
     final savedReturn = SavedWarehouseReturn(
       returnId: 'return-$sequence',
       returnNumber:
-          'RET-${draft.receivedAt.year}-${sequence.toString().padLeft(6, '0')}',
+          'RET-${DateTime.now().year}-${sequence.toString().padLeft(6, '0')}',
       itemCode: draft.itemCode,
       quantityPieces: draft.quantityPieces,
     );
@@ -40,19 +46,14 @@ class FakeReturnsRepository implements ReturnsRepositoryBase {
       WarehouseReturnRecord(
         id: savedReturn.returnId,
         returnNumber: savedReturn.returnNumber,
-        originalVoucherNumber: draft.originalVoucherNumber,
         itemId: draft.itemId,
         itemName: draft.itemName,
         itemCode: draft.itemCode,
+        itemsPerCarton: 12,
         quantityPieces: draft.quantityPieces,
         sourceName: draft.sourceName,
-        returnedBy: draft.returnedBy,
-        receivedBy: draft.receivedBy,
-        reason: draft.reason,
-        notes: draft.notes,
-        condition: draft.condition,
         status: WarehouseReturnStatus.pendingSupplierResolution,
-        receivedAt: draft.receivedAt,
+        receivedAt: DateTime.now(),
       ),
     );
     _controller.add(_visiblePendingReturns);
@@ -63,6 +64,10 @@ class FakeReturnsRepository implements ReturnsRepositoryBase {
   Future<SavedReturnResolution> resolveReturn(
     ReturnResolutionDraft draft,
   ) async {
+    final delay = resolutionDelay;
+    if (delay != null) {
+      await delay;
+    }
     final index = _pendingReturns.indexWhere(
       (warehouseReturn) => warehouseReturn.id == draft.returnId,
     );

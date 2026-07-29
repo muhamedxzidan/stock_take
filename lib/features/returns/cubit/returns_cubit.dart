@@ -50,28 +50,8 @@ class ReturnsCubit extends Cubit<ReturnsState> {
     if (draft.quantityPieces <= 0) {
       return 'اكتب كمية مرتجعة صحيحة.';
     }
-    if (draft.originalVoucherNumber.length > 80 ||
-        draft.sourceName.trim().isEmpty ||
-        draft.sourceName.length > 200 ||
-        draft.returnedBy.trim().isEmpty ||
-        draft.returnedBy.length > 150 ||
-        draft.receivedBy.trim().isEmpty ||
-        draft.receivedBy.length > 150 ||
-        draft.reason.trim().isEmpty ||
-        draft.reason.length > 500 ||
-        draft.notes.length > 1000) {
-      return 'راجع بيانات المرتجع والحقول المطلوبة.';
-    }
-
-    final today = DateTime.now();
-    final todayOnly = DateTime(today.year, today.month, today.day);
-    final receivedDateOnly = DateTime(
-      draft.receivedAt.year,
-      draft.receivedAt.month,
-      draft.receivedAt.day,
-    );
-    if (receivedDateOnly.isAfter(todayOnly)) {
-      return 'لا يمكن تسجيل مرتجع بتاريخ مستقبلي.';
+    if (draft.sourceName.trim().isEmpty || draft.sourceName.length > 200) {
+      return 'اكتب اسم الجهة أو الشخص الذي أعاد الصنف.';
     }
     return null;
   }

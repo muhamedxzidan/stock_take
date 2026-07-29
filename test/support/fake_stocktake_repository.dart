@@ -11,19 +11,36 @@ class FakeStocktakeRepository implements StocktakeRepositoryBase {
   List<StocktakeLine> _lines;
   int _nextNumber = 1;
   int completeCalls = 0;
+  int cancelCalls = 0;
+  int fetchCalls = 0;
+  int activeLineListeners = 0;
+  final Future<StocktakeSession?> Function(int call)? onFetchOpenStocktake;
+  final bool emitInitialLinesOnListen;
 
   FakeStocktakeRepository({
     StocktakeSession? openSession,
     List<StocktakeLine> lines = const [],
+    this.onFetchOpenStocktake,
+    this.emitInitialLinesOnListen = true,
   }) : _openSession = openSession,
        _lines = [...lines] {
     _linesController = StreamController<List<StocktakeLine>>.broadcast(
-      onListen: () => _linesController.add(List.unmodifiable(_lines)),
+      onListen: () {
+        activeLineListeners += 1;
+        if (emitInitialLinesOnListen) {
+          _linesController.add(List.unmodifiable(_lines));
+        }
+      },
+      onCancel: () => activeLineListeners -= 1,
     );
   }
 
   @override
-  Future<StocktakeSession?> fetchOpenStocktake() async => _openSession;
+  Future<StocktakeSession?> fetchOpenStocktake() async {
+    fetchCalls += 1;
+    final handler = onFetchOpenStocktake;
+    return handler == null ? _openSession : handler(fetchCalls);
+  }
 
   @override
   Stream<List<StocktakeLine>> watchLines(String stocktakeId) =>
@@ -104,6 +121,17 @@ class FakeStocktakeRepository implements StocktakeRepositoryBase {
         (total, line) => total + line.differencePieces,
       ),
     );
+  }
+
+  @override
+  Future<void> cancelStocktake(String stocktakeId) async {
+    final session = _openSession;
+    if (session == null || session.id != stocktakeId) {
+      throw const StocktakeRepositoryFailure('جلسة الجرد لم تعد مفتوحة.');
+    }
+    cancelCalls += 1;
+    _openSession = null;
+    _lines = [];
   }
 
   Future<void> close() => _linesController.close();

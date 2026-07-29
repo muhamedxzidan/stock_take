@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../../printing/presentation/widgets/thermal_receipt_dialog.dart';
+import '../../data/mappers/movement_receipt_mapper.dart';
 import '../../data/models/movement_record.dart';
 
 class TransactionListItem extends StatelessWidget {
@@ -158,6 +160,15 @@ class _MovementRecordDetailsDialog extends StatelessWidget {
         ),
       ),
       actions: [
+        OutlinedButton.icon(
+          key: Key('print-movement-${movement.id}'),
+          onPressed: () => ThermalReceiptDialog.show(
+            context,
+            receipt: MovementReceiptMapper.fromMovementRecord(movement),
+          ),
+          icon: const Icon(Icons.print_rounded),
+          label: const Text('طباعة الإذن'),
+        ),
         FilledButton(
           onPressed: () => Navigator.pop(context),
           child: const Text('إغلاق'),

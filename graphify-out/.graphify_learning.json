@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T11:59:30.550987+00:00",
+  "generated_at": "2026-07-29T00:15:46.581631+00:00",
   "nodes": {
     "cubit": {
       "code_fingerprint": "",
@@ -12,13 +12,13 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.965439638,
+      "score": 0.954101557,
       "source_file": "",
       "status": "tentative",
       "uses": 1
     },
     "lib_core_constants_app_router_approuter": {
-      "code_fingerprint": "6e3d9114e108cb3b5d362584e041971eef52a8f3c86aec689f20026c5781a9cf",
+      "code_fingerprint": "59c615fbc408dcb8ecac8a5867bc2e35d804da927831b8e0476f92c6585cb6e0",
       "label": "AppRouter",
       "last": "2026-07-28T10:28:52.480697+00:00",
       "provenance": [
@@ -33,24 +33,24 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 1.98128258,
+      "score": 1.958014484,
       "source_file": "lib/core/constants/app_router.dart",
       "status": "preferred",
       "uses": 2
     },
-    "lib_core_constants_app_router_router": {
-      "code_fingerprint": "6e3d9114e108cb3b5d362584e041971eef52a8f3c86aec689f20026c5781a9cf",
-      "label": "router",
-      "last": "2026-07-26T23:43:08.088908+00:00",
+    "lib_core_constants_firestore_collections_firestorecollections": {
+      "code_fingerprint": "933870173561d324dff4aeaa333a317248641ed2acc2c78092d79f5e98529b6d",
+      "label": "FirestoreCollections",
+      "last": "2026-07-28T22:50:11.771153+00:00",
       "provenance": [
         {
-          "date": "2026-07-26T23:43:08.088908+00:00",
+          "date": "2026-07-28T22:50:11.771153+00:00",
           "outcome": "useful",
-          "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
+          "q": "يعني اي مشكله لازم احط الايميل في الرولز"
         }
       ],
-      "score": 0.965682584,
-      "source_file": "lib/core/constants/app_router.dart",
+      "score": 0.998627802,
+      "source_file": "lib/core/constants/firestore_collections.dart",
       "status": "tentative",
       "uses": 1
     },
@@ -75,13 +75,13 @@
           "q": "اضافه اسم السائق في الاستلام والتسليم"
         }
       ],
-      "score": 2.930612136,
+      "score": 2.896195155,
       "source_file": "lib/core/shared_widgets/pdf_voucher_dialog.dart",
       "status": "preferred",
       "uses": 3
     },
     "lib_core_shared_widgets_tablet_navigation_rail_tabletnavigationrail": {
-      "code_fingerprint": "89149abd081b0294a669c4d67be2e27513aee079d538fd94c7663a66ac54f6e9",
+      "code_fingerprint": "cad9b8be214d426c4730697d201393a4bf2a3deb73b5f136b83267eb9b83e976",
       "label": "TabletNavigationRail",
       "last": "2026-07-28T10:40:02.815211+00:00",
       "provenance": [
@@ -91,13 +91,13 @@
           "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
         }
       ],
-      "score": 0.998725835,
+      "score": 0.986996842,
       "source_file": "lib/core/shared_widgets/tablet_navigation_rail.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_core_shared_widgets_worker_bottom_navigation_workerbottomnavigation": {
-      "code_fingerprint": "bc80e0e2beeef8c703dc31d47616d5fc770930e4f2878b0f375572a3cc3ebbf0",
+      "code_fingerprint": "5a57152e5ce626fada1ea1fa52a42e2b42a682ea0da4f74d0b711d04ea49c730",
       "label": "WorkerBottomNavigation",
       "last": "2026-07-28T10:40:02.815211+00:00",
       "provenance": [
@@ -112,13 +112,138 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 1.981461595,
+      "score": 1.958191397,
       "source_file": "lib/core/shared_widgets/worker_bottom_navigation.dart",
       "status": "preferred",
       "uses": 2
     },
+    "lib_features_auth_cubit_login_login_cubit_logincubit": {
+      "code_fingerprint": "ae24ce7b53f043754b17db10098a59370662d2668d30b9f8f9bbeb700a1756cd",
+      "label": "LoginCubit",
+      "last": "2026-07-28T22:54:45.604703+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T22:54:45.604703+00:00",
+          "outcome": "useful",
+          "q": "اصلحه لاضافه اي ايميل يدوي يسجل دخول"
+        },
+        {
+          "date": "2026-07-28T22:50:11.771153+00:00",
+          "outcome": "useful",
+          "q": "يعني اي مشكله لازم احط الايميل في الرولز"
+        },
+        {
+          "date": "2026-07-28T22:44:38.885279+00:00",
+          "outcome": "useful",
+          "q": "لايسجل"
+        },
+        {
+          "date": "2026-07-28T22:12:10.228837+00:00",
+          "outcome": "useful",
+          "q": "تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
+        }
+      ],
+      "score": 3.993886343,
+      "source_file": "lib/features/auth/cubit/login/login_cubit.dart",
+      "status": "preferred",
+      "uses": 4
+    },
+    "lib_features_auth_data_repositories_auth_failure_authfailure": {
+      "code_fingerprint": "08cb813f7ab21849e55498af59cf5a3f67a89809f9bf829ff22f4c484de34c84",
+      "label": "AuthFailure",
+      "last": "2026-07-28T22:12:10.228837+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T22:12:10.228837+00:00",
+          "outcome": "useful",
+          "q": "تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
+        }
+      ],
+      "score": 0.9980187,
+      "source_file": "lib/features/auth/data/repositories/auth_failure.dart",
+      "status": "tentative",
+      "uses": 1
+    },
+    "lib_features_auth_data_repositories_firebase_auth_repository_firebaseauthrepository": {
+      "code_fingerprint": "6eeb1cc24223a9a90ae5ffb2447ff01bfb40ff37f62b3caaba70b6ef0c504564",
+      "label": "FirebaseAuthRepository",
+      "last": "2026-07-28T22:54:45.604703+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T22:54:45.604703+00:00",
+          "outcome": "useful",
+          "q": "اصلحه لاضافه اي ايميل يدوي يسجل دخول"
+        },
+        {
+          "date": "2026-07-28T22:50:11.771153+00:00",
+          "outcome": "useful",
+          "q": "يعني اي مشكله لازم احط الايميل في الرولز"
+        },
+        {
+          "date": "2026-07-28T22:44:38.885279+00:00",
+          "outcome": "useful",
+          "q": "لايسجل"
+        },
+        {
+          "date": "2026-07-28T22:12:10.228837+00:00",
+          "outcome": "useful",
+          "q": "تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
+        }
+      ],
+      "score": 3.993886343,
+      "source_file": "lib/features/auth/data/repositories/firebase_auth_repository.dart",
+      "status": "preferred",
+      "uses": 4
+    },
+    "lib_features_auth_presentation_routing_auth_session_notifier_authsessionnotifier": {
+      "code_fingerprint": "527e51bbb9ecd6c85597f0eb199814d8728509ebcc4c67b18018cda5c0dadb83",
+      "label": "AuthSessionNotifier",
+      "last": "2026-07-28T22:54:45.604703+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T22:54:45.604703+00:00",
+          "outcome": "useful",
+          "q": "اصلحه لاضافه اي ايميل يدوي يسجل دخول"
+        },
+        {
+          "date": "2026-07-28T22:50:11.771153+00:00",
+          "outcome": "useful",
+          "q": "يعني اي مشكله لازم احط الايميل في الرولز"
+        },
+        {
+          "date": "2026-07-28T22:44:38.885279+00:00",
+          "outcome": "useful",
+          "q": "لايسجل"
+        }
+      ],
+      "score": 2.995867643,
+      "source_file": "lib/features/auth/presentation/routing/auth_session_notifier.dart",
+      "status": "preferred",
+      "uses": 3
+    },
+    "lib_features_auth_presentation_screens_login_screen_loginscreen": {
+      "code_fingerprint": "59b90d8ba8a3d7d9daa899910a662f3d60124e6f57f6c9836a641754cf4ad43d",
+      "label": "LoginScreen",
+      "last": "2026-07-28T22:44:38.885279+00:00",
+      "provenance": [
+        {
+          "date": "2026-07-28T22:44:38.885279+00:00",
+          "outcome": "useful",
+          "q": "لايسجل"
+        },
+        {
+          "date": "2026-07-28T22:12:10.228837+00:00",
+          "outcome": "useful",
+          "q": "تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
+        }
+      ],
+      "score": 1.996557609,
+      "source_file": "lib/features/auth/presentation/screens/login_screen.dart",
+      "status": "preferred",
+      "uses": 2
+    },
     "lib_features_dashboard_cubit_dashboard_cubit_dashboardcubit": {
-      "code_fingerprint": "76572f519b86fa6cb5f34980409ef69efd0458a459eda70016f682213e38da04",
+      "code_fingerprint": "32d965096960c7d876e0140d4d81244ec5fd5de1aa2e6efe9fb5056f134acc88",
       "label": "DashboardCubit",
       "last": "2026-07-26T23:27:27.197460+00:00",
       "provenance": [
@@ -128,13 +253,13 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.965439638,
+      "score": 0.954101557,
       "source_file": "lib/features/dashboard/cubit/dashboard_cubit.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_dashboard_data_repositories_dashboard_repository_dashboardrepository": {
-      "code_fingerprint": "2e73a0df4f8a184845a7918c7b8b829a2212e5e09f510b9a7ec4d08ca3415a73",
+      "code_fingerprint": "34baae9e87d12f560de6dd293fc48fa77d1fb805edd090a07128edff0805fab6",
       "label": "DashboardRepository",
       "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
@@ -149,13 +274,13 @@
           "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
         }
       ],
-      "score": 1.981915442,
+      "score": 1.958639914,
       "source_file": "lib/features/dashboard/data/repositories/dashboard_repository.dart",
       "status": "preferred",
       "uses": 2
     },
     "lib_features_dashboard_presentation_screens_dashboard_screen_dashboardscreen": {
-      "code_fingerprint": "3b725040d8e319a2f0afe830de73c904f60bccca31d7b6bea808a40f7c8c5b77",
+      "code_fingerprint": "25d0689c793b951a11757714bd85642d9c4363f0d8e81cf85ddfd2ab5ae5c3b3",
       "label": "DashboardScreen",
       "last": "2026-07-27T17:34:43.991563+00:00",
       "provenance": [
@@ -165,13 +290,13 @@
           "q": "اعمل الخطه ك ui. بس"
         }
       ],
-      "score": 0.982429973,
+      "score": 0.970892358,
       "source_file": "lib/features/dashboard/presentation/screens/dashboard_screen.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_dashboard_presentation_widgets_stock_items_list_stockitemslist": {
-      "code_fingerprint": "7d7138d43ec49f9baa252dea5995b838907dbd81abcf4a180424799ed2cbce16",
+      "code_fingerprint": "c98806478f0dcecd131fddc465ceb7937395c88b29843a9a590192296e2226ca",
       "label": "StockItemsList",
       "last": "2026-07-27T17:34:43.991563+00:00",
       "provenance": [
@@ -186,13 +311,13 @@
           "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
         }
       ],
-      "score": 1.964698323,
+      "score": 1.941624992,
       "source_file": "lib/features/dashboard/presentation/widgets/stock_items_list.dart",
       "status": "preferred",
       "uses": 2
     },
     "lib_features_items_cubit_items_cubit_itemscubit": {
-      "code_fingerprint": "1df64c9976b22e6ec4f53994f965776c4848f7a3a70eb64cabfc9c61579fe520",
+      "code_fingerprint": "932fdeda3d290d7096e28e7900578c4e854ea46501a62503a777c8e69312c217",
       "label": "ItemsCubit",
       "last": "2026-07-26T23:27:27.197460+00:00",
       "provenance": [
@@ -202,13 +327,13 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.965439638,
+      "score": 0.954101557,
       "source_file": "lib/features/items/cubit/items_cubit.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_returns_data_models_warehouse_return_draft_warehousereturndraft": {
-      "code_fingerprint": "95cef2a38a0b95a27998cc7c1bf1b2b8b5f4079427d7025dbcc7801d0dbdc92f",
+      "code_fingerprint": "28d7de1e305dcd0f9c516f7eea748d4904055344291ccb38c7f8f7951ad1e723",
       "label": "WarehouseReturnDraft",
       "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
@@ -228,13 +353,13 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 2.963120731,
+      "score": 2.928321972,
       "source_file": "lib/features/returns/data/models/warehouse_return_draft.dart",
       "status": "preferred",
       "uses": 3
     },
     "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreen": {
-      "code_fingerprint": "bb4970c3d647727a6d1313db2029b6f0a6d5fd9a1b4349a3ad2589e7ffa88eb0",
+      "code_fingerprint": "cf234ab2bc4b8e9b2c6d3f1a11d8e9cbfcada9e14073f272d423536b264df91e",
       "label": "WarehouseReturnScreen",
       "last": "2026-07-28T10:40:02.815211+00:00",
       "provenance": [
@@ -254,13 +379,13 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 2.962955238,
+      "score": 2.928158422,
       "source_file": "lib/features/returns/presentation/screens/warehouse_return_screen.dart",
       "status": "preferred",
       "uses": 3
     },
     "lib_features_returns_presentation_widgets_return_workflow_card": {
-      "code_fingerprint": "be332b45b8b5a61ff474324b01de40c11ab486d38c189615342b9dc4cfca857a",
+      "code_fingerprint": "b09fe1589c3dc96ff7517eb32c3ee5b8714873df18e80cec9c959810c15ab68d",
       "label": "return_workflow_card.dart",
       "last": "2026-07-26T23:43:08.088908+00:00",
       "provenance": [
@@ -270,13 +395,13 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.965682584,
+      "score": 0.95434165,
       "source_file": "lib/features/returns/presentation/widgets/return_workflow_card.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_returns_presentation_widgets_warehouse_return_form": {
-      "code_fingerprint": "0f911c944a59e2f7573a0d166255f1f2949f21e12716d95ccf5b58db436605a8",
+      "code_fingerprint": "24d0813cda56db0e2be87ec0d70d9b68d25448e01209ddb2432a4b305ed6b069",
       "label": "warehouse_return_form.dart",
       "last": "2026-07-26T23:43:08.088908+00:00",
       "provenance": [
@@ -286,13 +411,13 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.965682584,
+      "score": 0.95434165,
       "source_file": "lib/features/returns/presentation/widgets/warehouse_return_form.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnform": {
-      "code_fingerprint": "0f911c944a59e2f7573a0d166255f1f2949f21e12716d95ccf5b58db436605a8",
+      "code_fingerprint": "24d0813cda56db0e2be87ec0d70d9b68d25448e01209ddb2432a4b305ed6b069",
       "label": "WarehouseReturnForm",
       "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
@@ -307,13 +432,13 @@
           "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
         }
       ],
-      "score": 1.997438148,
+      "score": 1.973980322,
       "source_file": "lib/features/returns/presentation/widgets/warehouse_return_form.dart",
       "status": "preferred",
       "uses": 2
     },
     "lib_features_transactions_cubit_transactions_cubit_transactionscubit": {
-      "code_fingerprint": "beca1e3dd0b0a067706829285285ce905cfdc47de6eee4f8518f04af24834021",
+      "code_fingerprint": "3dc1a9ee9c349c3cb3c3ca8a89a2227c2bd213806861cf094f88e58ff0c602f4",
       "label": "TransactionsCubit",
       "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
@@ -343,7 +468,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 4.928170249,
+      "score": 4.870294034,
       "source_file": "lib/features/transactions/cubit/transactions_cubit.dart",
       "status": "preferred",
       "uses": 5
@@ -369,13 +494,13 @@
           "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
         }
       ],
-      "score": 2.964183792,
+      "score": 2.929372547,
       "source_file": "lib/features/transactions/data/models/transaction_model.dart",
       "status": "preferred",
       "uses": 3
     },
     "lib_features_transactions_data_repositories_transactions_repository_transactionsrepository": {
-      "code_fingerprint": "1662c03412a07619fc6f55833acc596c455e0b0562dee489edf89c88d967d38c",
+      "code_fingerprint": "cbf5cdd9fb8ad7f2df9c273b20fd2872e6a8125ff555e2ea60712f61ec0077f3",
       "label": "TransactionsRepository",
       "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
@@ -390,13 +515,13 @@
           "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
         }
       ],
-      "score": 1.981915442,
+      "score": 1.958639914,
       "source_file": "lib/features/transactions/data/repositories/transactions_repository.dart",
       "status": "preferred",
       "uses": 2
     },
     "lib_features_transactions_presentation_screens_new_movement_screen_newmovementscreen": {
-      "code_fingerprint": "c0ce79f0e2aa0ab2a08f062da2481f03cb49b40ef2dfd669c88c02eef36654a5",
+      "code_fingerprint": "af0bd802de964786a6470f00c93a9b665e954a528e144e9fd93d838573bec329",
       "label": "NewMovementScreen",
       "last": "2026-07-28T10:40:02.815211+00:00",
       "provenance": [
@@ -421,13 +546,13 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 3.963032528,
+      "score": 3.916490848,
       "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
       "status": "preferred",
       "uses": 4
     },
     "lib_features_transactions_presentation_screens_stock_adjustment_screen_stockadjustmentscreen": {
-      "code_fingerprint": "3c20132d23f6f4c8819c78d4af530bf2a1de9383875f1ae9dc7e584066e1274d",
+      "code_fingerprint": "701a7ec0e2e58a4de878e375e10c515bbec02377a5c554bd7269bb82145c0aef",
       "label": "StockAdjustmentScreen",
       "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
@@ -447,13 +572,13 @@
           "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
         }
       ],
-      "score": 2.996163982,
+      "score": 2.960977164,
       "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
       "status": "preferred",
       "uses": 3
     },
     "lib_features_transactions_presentation_screens_transaction_history_screen_transactionhistoryscreen": {
-      "code_fingerprint": "c649e35a1327484c02a1de7de76f435afbab4019a8a85e43330905f03868e418",
+      "code_fingerprint": "22537e8124ad7384b973eec7b716103f9f9a8e4ad0b0255c677b5d4d7c670078",
       "label": "TransactionHistoryScreen",
       "last": "2026-07-27T17:34:43.991563+00:00",
       "provenance": [
@@ -463,13 +588,13 @@
           "q": "اعمل الخطه ك ui. بس"
         }
       ],
-      "score": 0.982429973,
+      "score": 0.970892358,
       "source_file": "lib/features/transactions/presentation/screens/transaction_history_screen.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_transactions_presentation_widgets_adjustment_form_adjustmentform": {
-      "code_fingerprint": "0c98d992ccde286f74ca99875851e62e5e992d556d630ec966f3271604b95396",
+      "code_fingerprint": "22324afb026cedad0db863d4864e4862f0f21a4f7c2a342dd6c0998e9804a029",
       "label": "AdjustmentForm",
       "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
@@ -484,7 +609,7 @@
           "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
         }
       ],
-      "score": 1.997438148,
+      "score": 1.973980322,
       "source_file": "lib/features/transactions/presentation/widgets/adjustment_form.dart",
       "status": "preferred",
       "uses": 2
@@ -500,13 +625,13 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 0.98273576,
+      "score": 0.971194555,
       "source_file": "lib/features/transactions/presentation/widgets/current_voucher_panel.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_transactions_presentation_widgets_inbound_form": {
-      "code_fingerprint": "a06db88c3417d5abdf60c5bdee2a68f3f410b6be76f5bcdccebe67e533e653af",
+      "code_fingerprint": "07ad20c48374d9907207f1bbbeb34a537a80252043a7ab7c56fc4002dc91d1a7",
       "label": "inbound_form.dart",
       "last": "2026-07-26T23:58:03.382506+00:00",
       "provenance": [
@@ -516,13 +641,13 @@
           "q": "اضافه اسم السائق في الاستلام والتسليم"
         }
       ],
-      "score": 0.965913813,
+      "score": 0.954570163,
       "source_file": "lib/features/transactions/presentation/widgets/inbound_form.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_transactions_presentation_widgets_inbound_form_inboundform": {
-      "code_fingerprint": "a06db88c3417d5abdf60c5bdee2a68f3f410b6be76f5bcdccebe67e533e653af",
+      "code_fingerprint": "07ad20c48374d9907207f1bbbeb34a537a80252043a7ab7c56fc4002dc91d1a7",
       "label": "InboundForm",
       "last": "2026-07-27T17:34:43.991563+00:00",
       "provenance": [
@@ -537,13 +662,13 @@
           "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
         }
       ],
-      "score": 1.964698323,
+      "score": 1.941624992,
       "source_file": "lib/features/transactions/presentation/widgets/inbound_form.dart",
       "status": "preferred",
       "uses": 2
     },
     "lib_features_transactions_presentation_widgets_item_quantity_sheet_itemquantitysheet": {
-      "code_fingerprint": "6a0e2fd2069aec7c7a20448f20bbfbe4b0656bc4028e45855af61f32252e17cf",
+      "code_fingerprint": "d9fefe5ee2d4b3d2cc412a5f701cc06efc766025005a8c190cf0691c2ff57240",
       "label": "ItemQuantitySheet",
       "last": "2026-07-28T10:50:22.410550+00:00",
       "provenance": [
@@ -558,7 +683,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 1.981627088,
+      "score": 1.958354947,
       "source_file": "lib/features/transactions/presentation/widgets/item_quantity_sheet.dart",
       "status": "preferred",
       "uses": 2
@@ -574,7 +699,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 0.98273576,
+      "score": 0.971194555,
       "source_file": "lib/features/transactions/presentation/widgets/movement_details_sheet.dart",
       "status": "tentative",
       "uses": 1
@@ -590,13 +715,13 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 0.98273576,
+      "score": 0.971194555,
       "source_file": "lib/features/transactions/presentation/widgets/movement_type_selector.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_transactions_presentation_widgets_movement_voucher_preview_dialog_movementvoucherpreviewdialog": {
-      "code_fingerprint": "9d567c37ca53eb3e0164eb00487a9a48e3dffa398b3296931c569d21ce1ffde8",
+      "code_fingerprint": "2e21195a6899fea9aef739ef4a1de00e1acf968f3696a64aae1e579fb0dab4d3",
       "label": "MovementVoucherPreviewDialog",
       "last": "2026-07-27T18:12:24.811771+00:00",
       "provenance": [
@@ -611,13 +736,13 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 1.965759874,
+      "score": 1.942674076,
       "source_file": "lib/features/transactions/presentation/widgets/movement_voucher_preview_dialog.dart",
       "status": "preferred",
       "uses": 2
     },
     "lib_features_transactions_presentation_widgets_outbound_form": {
-      "code_fingerprint": "316780505347167b1c58cf2d2069fd96ca5b788a340d2d00704a0c5b5e69eee9",
+      "code_fingerprint": "f26dbc328fe17383a8990a481ba7cae431474bb994a295b209bade91ad1452ae",
       "label": "outbound_form.dart",
       "last": "2026-07-26T23:58:03.382506+00:00",
       "provenance": [
@@ -627,13 +752,13 @@
           "q": "اضافه اسم السائق في الاستلام والتسليم"
         }
       ],
-      "score": 0.965913813,
+      "score": 0.954570163,
       "source_file": "lib/features/transactions/presentation/widgets/outbound_form.dart",
       "status": "tentative",
       "uses": 1
     },
     "lib_features_transactions_presentation_widgets_outbound_form_outboundform": {
-      "code_fingerprint": "316780505347167b1c58cf2d2069fd96ca5b788a340d2d00704a0c5b5e69eee9",
+      "code_fingerprint": "f26dbc328fe17383a8990a481ba7cae431474bb994a295b209bade91ad1452ae",
       "label": "OutboundForm",
       "last": "2026-07-27T17:34:43.991563+00:00",
       "provenance": [
@@ -648,7 +773,7 @@
           "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
         }
       ],
-      "score": 1.964698323,
+      "score": 1.941624992,
       "source_file": "lib/features/transactions/presentation/widgets/outbound_form.dart",
       "status": "preferred",
       "uses": 2
@@ -664,7 +789,7 @@
           "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
         }
       ],
-      "score": 0.998725835,
+      "score": 0.986996842,
       "source_file": "lib/features/transactions/presentation/widgets/secondary_operations_bar.dart",
       "status": "tentative",
       "uses": 1
@@ -680,7 +805,7 @@
           "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
         }
       ],
-      "score": 0.998891328,
+      "score": 0.987160392,
       "source_file": "lib/firebase_options.dart",
       "status": "tentative",
       "uses": 1
@@ -696,7 +821,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.965439638,
+      "score": 0.954101557,
       "source_file": "",
       "status": "tentative",
       "uses": 1
@@ -712,7 +837,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.965439638,
+      "score": 0.954101557,
       "source_file": "",
       "status": "tentative",
       "uses": 1

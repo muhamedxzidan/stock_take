@@ -9,11 +9,11 @@ import '../../features/auth/presentation/screens/login_screen.dart';
 import '../../features/dashboard/presentation/screens/dashboard_screen.dart';
 import '../../features/items/presentation/screens/add_item_screen.dart';
 import '../../features/returns/presentation/screens/warehouse_return_screen.dart';
-import '../../features/transactions/presentation/screens/inbound_entry_screen.dart';
+import '../../features/stocktake/cubit/stocktake_cubit.dart';
 import '../../features/transactions/presentation/screens/new_movement_screen.dart';
-import '../../features/transactions/presentation/screens/outbound_entry_screen.dart';
 import '../../features/transactions/presentation/screens/stock_adjustment_screen.dart';
 import '../../features/transactions/presentation/screens/transaction_history_screen.dart';
+import '../../features/transactions/presentation/widgets/movement_ui_types.dart';
 import '../shared_widgets/main_shell_screen.dart';
 import 'app_routes.dart';
 
@@ -25,6 +25,7 @@ class AppRouter {
     required AuthRepository authRepository,
     required AuthSessionNotifier authSessionNotifier,
     required LoginCubit Function() createLoginCubit,
+    required StocktakeCubit Function() createStocktakeCubit,
   }) {
     return GoRouter(
       initialLocation: AppRoutes.newMovement,
@@ -61,8 +62,16 @@ class AppRouter {
           routes: [
             GoRoute(
               path: AppRoutes.newMovement,
-              builder: (BuildContext context, GoRouterState state) =>
-                  const NewMovementScreen(),
+              builder: (BuildContext context, GoRouterState state) {
+                final initialMovementKind =
+                    state.uri.queryParameters['type'] == 'outbound'
+                    ? MovementKind.outbound
+                    : MovementKind.inbound;
+                return NewMovementScreen(
+                  key: ValueKey(initialMovementKind),
+                  initialMovementKind: initialMovementKind,
+                );
+              },
             ),
             GoRoute(
               path: AppRoutes.dashboard,
@@ -76,13 +85,13 @@ class AppRouter {
             ),
             GoRoute(
               path: AppRoutes.inboundEntry,
-              builder: (BuildContext context, GoRouterState state) =>
-                  const InboundEntryScreen(),
+              redirect: (BuildContext context, GoRouterState state) =>
+                  AppRoutes.newInboundMovement,
             ),
             GoRoute(
               path: AppRoutes.outboundEntry,
-              builder: (BuildContext context, GoRouterState state) =>
-                  const OutboundEntryScreen(),
+              redirect: (BuildContext context, GoRouterState state) =>
+                  AppRoutes.newOutboundMovement,
             ),
             GoRoute(
               path: AppRoutes.warehouseReturn,
@@ -91,8 +100,12 @@ class AppRouter {
             ),
             GoRoute(
               path: AppRoutes.stockAdjustment,
-              builder: (BuildContext context, GoRouterState state) =>
-                  const StockAdjustmentScreen(),
+              builder: (BuildContext context, GoRouterState state) {
+                return BlocProvider<StocktakeCubit>(
+                  create: (_) => createStocktakeCubit()..load(),
+                  child: const StockAdjustmentScreen(),
+                );
+              },
             ),
             GoRoute(
               path: AppRoutes.transactionHistory,

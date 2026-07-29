@@ -147,8 +147,17 @@ class _ItemQuantitySheetState extends State<ItemQuantitySheet> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'الإجمالي: $_totalPieces قطعة',
+                          'الكمية: '
+                          '${CartonPieceQuantity(cartons: _cartons, pieces: _pieces).cartonFirstLabel}',
                           style: AppTextStyles.heading2.copyWith(
+                            color: _exceedsAvailableStock
+                                ? AppColors.error
+                                : AppColors.info,
+                          ),
+                        ),
+                        Text(
+                          'الإجمالي المكافئ: $_totalPieces قطعة',
+                          style: AppTextStyles.bodySmall.copyWith(
                             color: _exceedsAvailableStock
                                 ? AppColors.error
                                 : AppColors.info,

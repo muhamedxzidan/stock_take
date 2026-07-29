@@ -28,7 +28,7 @@ class FirebaseAuthRepository implements AuthRepository {
         password: password,
       );
     } on FirebaseAuthException catch (error) {
-      throw _mapFirebaseFailure(error);
+      throw mapFirebaseAuthFailureCode(error.code);
     } catch (_) {
       throw const AuthFailure(
         'تعذر تسجيل الدخول الآن. تحقق من الاتصال وحاول مرة أخرى.',
@@ -46,22 +46,32 @@ class FirebaseAuthRepository implements AuthRepository {
       throw const AuthFailure('تعذر تسجيل الخروج. حاول مرة أخرى.');
     }
   }
+}
 
-  AuthFailure _mapFirebaseFailure(FirebaseAuthException error) {
-    return switch (error.code) {
-      'invalid-email' => const AuthFailure('صيغة البريد الإلكتروني غير صحيحة.'),
-      'user-disabled' => const AuthFailure(
-        'هذا الحساب موقوف. راجع مسؤول النظام.',
-      ),
-      'too-many-requests' => const AuthFailure(
-        'تم إيقاف المحاولات مؤقتًا. انتظر قليلًا ثم حاول مرة أخرى.',
-      ),
-      'network-request-failed' => const AuthFailure(
-        'لا يوجد اتصال مستقر بالإنترنت.',
-      ),
-      'invalid-credential' || 'user-not-found' || 'wrong-password' =>
-        const AuthFailure('البريد الإلكتروني أو كلمة المرور غير صحيحة.'),
-      _ => const AuthFailure('تعذر تسجيل الدخول الآن. حاول مرة أخرى.'),
-    };
-  }
+AuthFailure mapFirebaseAuthFailureCode(String code) {
+  final normalizedCode = code
+      .trim()
+      .toLowerCase()
+      .replaceAll('_', '-')
+      .replaceFirst(RegExp(r'^auth/'), '');
+
+  return switch (normalizedCode) {
+    'invalid-email' => const AuthFailure('صيغة البريد الإلكتروني غير صحيحة.'),
+    'user-disabled' => const AuthFailure(
+      'هذا الحساب موقوف. راجع مسؤول النظام.',
+    ),
+    'too-many-requests' => const AuthFailure(
+      'تم إيقاف المحاولات مؤقتًا. انتظر قليلًا ثم حاول مرة أخرى.',
+    ),
+    'network-request-failed' => const AuthFailure(
+      'لا يوجد اتصال مستقر بالإنترنت.',
+    ),
+    'invalid-credential' ||
+    'invalid-login-credentials' ||
+    'user-not-found' ||
+    'wrong-password' => const AuthFailure(
+      'البريد الإلكتروني أو كلمة المرور غير صحيحة.',
+    ),
+    _ => const AuthFailure('تعذر تسجيل الدخول الآن. حاول مرة أخرى.'),
+  };
 }

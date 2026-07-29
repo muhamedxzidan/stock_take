@@ -78,9 +78,10 @@ class _CartonPieceQuantityFieldsState extends State<CartonPieceQuantityFields> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
+              flex: 3,
               child: CustomTextField(
                 fieldKey: Key('${widget.keyPrefix}-cartons-field'),
-                label: 'عدد الكراتين',
+                label: 'الكراتين (الأساسي)',
                 hint: '0',
                 controller: _cartonsController,
                 keyboardType: TextInputType.number,
@@ -91,9 +92,10 @@ class _CartonPieceQuantityFieldsState extends State<CartonPieceQuantityFields> {
             ),
             SizedBox(width: AppSizes.p12),
             Expanded(
+              flex: 2,
               child: CustomTextField(
                 fieldKey: Key('${widget.keyPrefix}-pieces-field'),
-                label: 'عدد القطع',
+                label: 'قطع مفردة (اختياري)',
                 hint: '0',
                 controller: _piecesController,
                 keyboardType: TextInputType.number,
@@ -112,7 +114,8 @@ class _CartonPieceQuantityFieldsState extends State<CartonPieceQuantityFields> {
             borderRadius: BorderRadius.circular(AppSizes.r12),
           ),
           child: Text(
-            'الإجمالي: $totalPieces قطعة'
+            'الكمية: ${_value.cartonFirstLabel}'
+            ' • الإجمالي المكافئ: $totalPieces قطعة'
             ' • الكرتونة = ${widget.itemsPerCarton} قطعة',
             style: AppTextStyles.bodyLarge.copyWith(
               color: AppColors.info,

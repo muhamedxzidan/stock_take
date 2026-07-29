@@ -15,4 +15,6 @@ abstract class StocktakeRepositoryBase {
   });
 
   Future<SavedStocktakeCompletion> completeStocktake(String stocktakeId);
+
+  Future<void> cancelStocktake(String stocktakeId);
 }

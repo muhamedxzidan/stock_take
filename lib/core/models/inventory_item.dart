@@ -1,4 +1,5 @@
 import '../extensions/inventory_number_parsing.dart';
+import 'carton_piece_quantity.dart';
 
 class InventoryItem {
   final String id;
@@ -57,9 +58,10 @@ class InventoryItem {
   }
 
   String get formattedCartonStock {
-    final cartons = currentStockPieces ~/ itemsPerCarton;
-    final pieces = currentStockPieces % itemsPerCarton;
-    return '$cartons كرتونة ($pieces قطعة)';
+    return CartonPieceQuantity.fromTotalPieces(
+      totalPieces: currentStockPieces,
+      itemsPerCarton: itemsPerCarton,
+    ).cartonFirstLabel;
   }
 
   factory InventoryItem.fromMap({

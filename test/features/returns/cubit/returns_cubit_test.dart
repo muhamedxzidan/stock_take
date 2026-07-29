@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:stock_take/features/returns/cubit/returns_cubit.dart';
 import 'package:stock_take/features/returns/cubit/returns_state.dart';
@@ -23,7 +25,7 @@ void main() {
     final savedReturn = await cubit.createCustomerReturn(_validDraft());
 
     expect(savedReturn, isNotNull);
-    expect(savedReturn!.returnNumber, 'RET-2026-000001');
+    expect(savedReturn!.returnNumber, 'RET-${DateTime.now().year}-000001');
     expect(cubit.state, isA<ReturnsSaved>());
     expect(repository.drafts, hasLength(1));
     expect(repository.drafts.single.quantityPieces, 12);
@@ -31,18 +33,11 @@ void main() {
 
   test('rejects missing required return data before persistence', () async {
     final draft = WarehouseReturnDraft(
-      originalVoucherNumber: '',
       sourceName: '',
       itemId: 'S-N-1',
       itemName: 'صنف اختبار',
       itemCode: 'S-N-1',
       quantityPieces: 12,
-      returnedBy: '',
-      receivedBy: '',
-      receivedAt: DateTime(2026, 7, 28),
-      reason: '',
-      notes: '',
-      condition: ReturnItemCondition.needsInspection,
     );
 
     final savedReturn = await cubit.createCustomerReturn(draft);
@@ -51,21 +46,32 @@ void main() {
     expect(cubit.state, isA<ReturnsFailure>());
     expect(repository.drafts, isEmpty);
   });
+
+  test('ignores a duplicate save while the first return is pending', () async {
+    final gate = Completer<void>();
+    repository.createDelay = gate.future;
+
+    final firstSave = cubit.createCustomerReturn(_validDraft());
+    await Future<void>.delayed(Duration.zero);
+
+    expect(cubit.state, isA<ReturnsSaving>());
+    final duplicateSave = await cubit.createCustomerReturn(_validDraft());
+
+    expect(duplicateSave, isNull);
+    expect(repository.drafts, isEmpty);
+
+    gate.complete();
+    expect(await firstSave, isNotNull);
+    expect(repository.drafts, hasLength(1));
+  });
 }
 
 WarehouseReturnDraft _validDraft() {
   return WarehouseReturnDraft(
-    originalVoucherNumber: 'OUT-2026-000001',
     sourceName: 'فرع مدينة نصر',
     itemId: 'S-N-1',
     itemName: 'صنف اختبار',
     itemCode: 'S-N-1',
     quantityPieces: 12,
-    returnedBy: 'مسؤول الفرع',
-    receivedBy: 'أمين المخزن',
-    receivedAt: DateTime(2026, 7, 28),
-    reason: 'كمية زائدة',
-    notes: '',
-    condition: ReturnItemCondition.needsInspection,
   );
 }

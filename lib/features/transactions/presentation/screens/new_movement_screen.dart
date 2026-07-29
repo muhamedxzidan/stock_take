@@ -11,6 +11,7 @@ import '../../../../core/models/inventory_item.dart';
 import '../../../../core/shared_widgets/custom_app_bar.dart';
 import '../../../items/cubit/item_catalog_cubit.dart';
 import '../../../items/cubit/item_catalog_state.dart';
+import '../../../printing/presentation/widgets/printer_setup_button.dart';
 import '../../data/models/inventory_movement.dart';
 import '../widgets/current_voucher_panel.dart';
 import '../widgets/item_quantity_sheet.dart';
@@ -22,15 +23,22 @@ import '../widgets/secondary_operations_bar.dart';
 import '../widgets/selectable_item_card.dart';
 
 class NewMovementScreen extends StatefulWidget {
-  const NewMovementScreen({super.key});
+  final MovementKind initialMovementKind;
+
+  const NewMovementScreen({
+    super.key,
+    this.initialMovementKind = MovementKind.inbound,
+  });
 
   @override
   State<NewMovementScreen> createState() => _NewMovementScreenState();
 }
 
 class _NewMovementScreenState extends State<NewMovementScreen> {
-  MovementKind _movementKind = MovementKind.inbound;
+  late MovementKind _movementKind;
   final Map<String, MovementLineViewData> _lines = {};
+  ScaffoldFeatureController<SnackBar, SnackBarClosedReason>?
+  _movementSavedSnackBar;
   String _searchQuery = '';
 
   List<MovementLineViewData> get _orderedLines =>
@@ -39,7 +47,14 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
   @override
   void initState() {
     super.initState();
+    _movementKind = widget.initialMovementKind;
     context.read<ItemCatalogCubit>().loadItems();
+  }
+
+  @override
+  void dispose() {
+    _movementSavedSnackBar?.close();
+    super.dispose();
   }
 
   Future<void> _changeMovementKind(MovementKind nextKind) async {
@@ -164,15 +179,26 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
     if (savedMovement == null || !mounted) return;
 
     setState(() => _lines.clear());
-    ScaffoldMessenger.of(context).showSnackBar(
+    final messenger = ScaffoldMessenger.of(context);
+    messenger.hideCurrentSnackBar();
+    final controller = messenger.showSnackBar(
       SnackBar(
+        key: const Key('movement-saved-snackbar'),
+        duration: const Duration(seconds: 4),
         content: Text(
           'تم حفظ إذن ${_movementKind.voucherLabel} '
-          '${savedMovement.voucherNumber}.',
+          '${savedMovement.voucherNumber}. '
+          'يمكن إعادة الطباعة من سجل الحركات.',
         ),
         backgroundColor: AppColors.success,
       ),
     );
+    _movementSavedSnackBar = controller;
+    controller.closed.whenComplete(() {
+      if (identical(_movementSavedSnackBar, controller)) {
+        _movementSavedSnackBar = null;
+      }
+    });
   }
 
   void _openMobileVoucher() {
@@ -209,7 +235,10 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: AppStrings.newMovementTitle),
+      appBar: const CustomAppBar(
+        title: AppStrings.newMovementTitle,
+        actions: [PrinterSetupButton()],
+      ),
       body: Padding(
         padding: EdgeInsets.all(AppSizes.p16),
         child: Column(

@@ -27,6 +27,27 @@ service cloud.firestore {
       ];
     }
 
+    function inventoryControlPath() {
+      return /databases/$(database)/documents/inventoryControl/primaryWarehouse;
+    }
+
+    function inventoryWasUnlocked() {
+      return !exists(inventoryControlPath())
+        || get(inventoryControlPath()).data.activeStocktakeId == '';
+    }
+
+    function movementRespectsStocktakeLock() {
+      return (
+          request.resource.data.type == 'stocktakeAdjustment'
+          && exists(inventoryControlPath())
+          && get(inventoryControlPath()).data.activeStocktakeId
+            == request.resource.data.stocktakeId
+        ) || (
+          request.resource.data.type != 'stocktakeAdjustment'
+          && inventoryWasUnlocked()
+        );
+    }
+
     function isValidItemState(data) {
       return isNonEmptyString(data.code, 50)
         && isNonEmptyString(data.name, 200)
@@ -162,6 +183,7 @@ service cloud.firestore {
       allow read: if isSignedIn();
 
       allow create: if isSignedIn()
+        && inventoryWasUnlocked()
         && request.resource.data.code == itemId
         && request.resource.data.keys().hasAll([
           'code',
@@ -313,7 +335,8 @@ service cloud.firestore {
         && isOptionalString(request.resource.data.returnId, 128)
         && isOptionalString(request.resource.data.stocktakeId, 128)
         && request.resource.data.createdAt == request.time
-        && request.resource.data.createdBy == request.auth.uid;
+        && request.resource.data.createdBy == request.auth.uid
+        && movementRespectsStocktakeLock();
 
       allow update, delete: if false;
     }
@@ -361,17 +384,12 @@ service cloud.firestore {
       allow create: if isSignedIn()
         && request.resource.data.keys().hasAll([
           'returnNumber',
-          'originalVoucherNumber',
           'itemId',
           'itemNameSnapshot',
           'itemCodeSnapshot',
+          'itemsPerCartonSnapshot',
           'quantityPieces',
           'sourceName',
-          'returnedBy',
-          'receivedBy',
-          'reason',
-          'notes',
-          'condition',
           'status',
           'supplierName',
           'receiptMovementId',
@@ -386,17 +404,12 @@ service cloud.firestore {
         ])
         && request.resource.data.keys().hasOnly([
           'returnNumber',
-          'originalVoucherNumber',
           'itemId',
           'itemNameSnapshot',
           'itemCodeSnapshot',
+          'itemsPerCartonSnapshot',
           'quantityPieces',
           'sourceName',
-          'returnedBy',
-          'receivedBy',
-          'reason',
-          'notes',
-          'condition',
           'status',
           'supplierName',
           'receiptMovementId',
@@ -410,25 +423,16 @@ service cloud.firestore {
           'updatedBy'
         ])
         && isNonEmptyString(request.resource.data.returnNumber, 80)
-        && isOptionalString(
-          request.resource.data.originalVoucherNumber,
-          80
-        )
         && isNonEmptyString(request.resource.data.itemId, 128)
         && isNonEmptyString(request.resource.data.itemNameSnapshot, 200)
         && isOptionalString(request.resource.data.itemCodeSnapshot, 50)
+        && request.resource.data.itemsPerCartonSnapshot is int
+        && request.resource.data.itemsPerCartonSnapshot > 0
+        && request.resource.data.itemsPerCartonSnapshot
+          == get(itemPath()).data.itemsPerCarton
         && request.resource.data.quantityPieces is int
         && request.resource.data.quantityPieces > 0
         && isNonEmptyString(request.resource.data.sourceName, 200)
-        && isNonEmptyString(request.resource.data.returnedBy, 150)
-        && isNonEmptyString(request.resource.data.receivedBy, 150)
-        && isNonEmptyString(request.resource.data.reason, 500)
-        && isOptionalString(request.resource.data.notes, 1000)
-        && request.resource.data.condition in [
-          'readyForStock',
-          'damaged',
-          'needsInspection'
-        ]
         && request.resource.data.status == 'pendingSupplierResolution'
         && request.resource.data.supplierName == ''
         && request.resource.data.resolutionMovementId == ''
@@ -503,6 +507,8 @@ service cloud.firestore {
           'completedAt',
           'completedBy',
           'completionMovementId',
+          'cancelledAt',
+          'cancelledBy',
           'notes',
           'createdAt',
           'createdBy',
@@ -518,6 +524,8 @@ service cloud.firestore {
           'completedAt',
           'completedBy',
           'completionMovementId',
+          'cancelledAt',
+          'cancelledBy',
           'notes',
           'createdAt',
           'createdBy',
@@ -533,11 +541,15 @@ service cloud.firestore {
         && request.resource.data.completedAt == null
         && request.resource.data.completedBy == ''
         && request.resource.data.completionMovementId == ''
+        && request.resource.data.cancelledAt == null
+        && request.resource.data.cancelledBy == ''
         && isOptionalString(request.resource.data.notes, 1000)
         && request.resource.data.createdAt == request.time
         && request.resource.data.createdBy == request.auth.uid
         && request.resource.data.updatedAt == request.time
-        && request.resource.data.updatedBy == request.auth.uid;
+        && request.resource.data.updatedBy == request.auth.uid
+        && getAfter(inventoryControlPath()).data.activeStocktakeId
+          == stocktakeId;
 
       allow update: if isSignedIn()
         && resource.data.status == 'open'
@@ -554,7 +566,26 @@ service cloud.firestore {
         && request.resource.data.completedBy == request.auth.uid
         && request.resource.data.updatedAt == request.time
         && request.resource.data.updatedBy == request.auth.uid
+        && get(inventoryControlPath()).data.activeStocktakeId == stocktakeId
+        && getAfter(inventoryControlPath()).data.activeStocktakeId == ''
         && completionMovementMatches();
+
+      allow update: if isSignedIn()
+        && resource.data.status == 'open'
+        && request.resource.data.status == 'cancelled'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'status',
+          'cancelledAt',
+          'cancelledBy',
+          'updatedAt',
+          'updatedBy'
+        ])
+        && request.resource.data.cancelledAt == request.time
+        && request.resource.data.cancelledBy == request.auth.uid
+        && request.resource.data.updatedAt == request.time
+        && request.resource.data.updatedBy == request.auth.uid
+        && get(inventoryControlPath()).data.activeStocktakeId == stocktakeId
+        && getAfter(inventoryControlPath()).data.activeStocktakeId == '';
 
       allow delete: if false;
 
@@ -562,7 +593,9 @@ service cloud.firestore {
         function stocktakeIsOpen() {
           return getAfter(
             /databases/$(database)/documents/stocktakes/$(stocktakeId)
-          ).data.status == 'open';
+          ).data.status == 'open'
+            && getAfter(inventoryControlPath()).data.activeStocktakeId
+              == stocktakeId;
         }
 
         function isValidLine(data) {
@@ -640,6 +673,62 @@ service cloud.firestore {
 
         allow delete: if false;
       }
+    }
+
+    match /inventoryControl/{controlId} {
+      function hasValidControlShape() {
+        return request.resource.data.keys().hasAll([
+            'activeStocktakeId',
+            'updatedAt',
+            'updatedBy'
+          ])
+          && request.resource.data.keys().hasOnly([
+            'activeStocktakeId',
+            'updatedAt',
+            'updatedBy'
+          ])
+          && isOptionalString(request.resource.data.activeStocktakeId, 128)
+          && request.resource.data.updatedAt == request.time
+          && request.resource.data.updatedBy == request.auth.uid;
+      }
+
+      function referencedStocktakeIsOpen() {
+        let stocktakeId = request.resource.data.activeStocktakeId;
+        return stocktakeId != ''
+          && getAfter(
+            /databases/$(database)/documents/stocktakes/$(stocktakeId)
+          ).data.status == 'open';
+      }
+
+      function previousStocktakeIsClosed() {
+        let stocktakeId = resource.data.activeStocktakeId;
+        return stocktakeId != ''
+          && getAfter(
+            /databases/$(database)/documents/stocktakes/$(stocktakeId)
+          ).data.status in ['completed', 'cancelled'];
+      }
+
+      allow read: if isSignedIn() && controlId == 'primaryWarehouse';
+
+      allow create: if isSignedIn()
+        && controlId == 'primaryWarehouse'
+        && hasValidControlShape()
+        && referencedStocktakeIsOpen();
+
+      allow update: if isSignedIn()
+        && controlId == 'primaryWarehouse'
+        && hasValidControlShape()
+        && (
+          (
+            resource.data.activeStocktakeId == ''
+            && referencedStocktakeIsOpen()
+          ) || (
+            request.resource.data.activeStocktakeId == ''
+            && previousStocktakeIsClosed()
+          )
+        );
+
+      allow delete: if false;
     }
 
     match /counters/{counterId} {

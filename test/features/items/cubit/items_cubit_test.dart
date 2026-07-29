@@ -24,7 +24,8 @@ void main() {
       await cubit.submitNewItem(
         name: '  مياه معدنية  ',
         itemsPerCartonStr: '24',
-        initialBalanceStr: '48',
+        openingStockCartons: 2,
+        openingStockPieces: 3,
       );
 
       expect(cubit.state, isA<ItemsSuccess>());
@@ -33,7 +34,7 @@ void main() {
       expect(items.single.id, 'S-N-1');
       expect(items.single.code, 'S-N-1');
       expect(items.single.name, 'مياه معدنية');
-      expect(items.single.currentStockPieces, 48);
+      expect(items.single.currentStockPieces, 51);
     },
   );
 
@@ -43,7 +44,8 @@ void main() {
       await cubit.submitNewItem(
         name: 'صنف اختبار',
         itemsPerCartonStr: '0',
-        initialBalanceStr: '10',
+        openingStockCartons: 1,
+        openingStockPieces: 0,
       );
 
       expect(cubit.state, isA<ItemsFailure>());
@@ -58,13 +60,15 @@ void main() {
     await cubit.submitNewItem(
       name: 'الصنف الأول',
       itemsPerCartonStr: '12',
-      initialBalanceStr: '0',
+      openingStockCartons: 0,
+      openingStockPieces: 0,
     );
 
     await cubit.submitNewItem(
       name: 'الصنف الثاني',
       itemsPerCartonStr: '12',
-      initialBalanceStr: '0',
+      openingStockCartons: 0,
+      openingStockPieces: 0,
     );
 
     expect(repository.items.map((item) => item.code), ['S-N-1', 'S-N-2']);

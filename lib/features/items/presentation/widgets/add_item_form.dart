@@ -5,6 +5,8 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_routes.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
+import '../../../../core/models/carton_piece_quantity.dart';
+import '../../../../core/shared_widgets/carton_piece_quantity_fields.dart';
 import '../../../../core/shared_widgets/custom_button.dart';
 import '../../../../core/shared_widgets/custom_text_field.dart';
 import '../../cubit/items_cubit.dart';
@@ -20,13 +22,15 @@ class AddItemForm extends StatefulWidget {
 class _AddItemFormState extends State<AddItemForm> {
   final _nameController = TextEditingController();
   final _itemsPerCartonController = TextEditingController(text: '12');
-  final _initialBalanceController = TextEditingController(text: '0');
+  CartonPieceQuantity _openingStock = const CartonPieceQuantity(
+    cartons: 0,
+    pieces: 0,
+  );
 
   @override
   void dispose() {
     _nameController.dispose();
     _itemsPerCartonController.dispose();
-    _initialBalanceController.dispose();
     super.dispose();
   }
 
@@ -89,14 +93,22 @@ class _AddItemFormState extends State<AddItemForm> {
               keyboardType: TextInputType.number,
               controller: _itemsPerCartonController,
               prefixIcon: Icons.grid_view,
+              onChanged: (_) => setState(() {}),
             ),
             SizedBox(height: AppSizes.h16),
-            CustomTextField(
-              label: '${AppStrings.initialBalance} بالقطعة',
-              hint: '0',
-              keyboardType: TextInputType.number,
-              controller: _initialBalanceController,
-              prefixIcon: Icons.input_sharp,
+            Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: Text(
+                AppStrings.initialBalance,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+            ),
+            SizedBox(height: AppSizes.h8),
+            CartonPieceQuantityFields(
+              keyPrefix: 'opening-stock',
+              itemsPerCarton:
+                  int.tryParse(_itemsPerCartonController.text.trim()) ?? 1,
+              onChanged: (value) => _openingStock = value,
             ),
             SizedBox(height: AppSizes.h32),
             CustomButton(
@@ -107,7 +119,8 @@ class _AddItemFormState extends State<AddItemForm> {
                 context.read<ItemsCubit>().submitNewItem(
                   name: _nameController.text,
                   itemsPerCartonStr: _itemsPerCartonController.text,
-                  initialBalanceStr: _initialBalanceController.text,
+                  openingStockCartons: _openingStock.cartons,
+                  openingStockPieces: _openingStock.pieces,
                 );
               },
             ),

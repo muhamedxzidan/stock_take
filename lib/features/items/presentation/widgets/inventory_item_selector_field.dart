@@ -152,7 +152,7 @@ class _InventoryItemPickerSheetState extends State<_InventoryItemPickerSheet> {
                           subtitle: Text(
                             '${item.code} • ${item.itemsPerCarton} قطعة/كرتونة',
                           ),
-                          trailing: Text('${item.currentStockPieces} قطعة'),
+                          trailing: Text(item.formattedCartonStock),
                           onTap: () => Navigator.pop(context, item),
                         );
                       },

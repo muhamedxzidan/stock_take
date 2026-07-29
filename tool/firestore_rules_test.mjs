@@ -400,10 +400,31 @@ await expectStatus({
         createStocktakeWrite({
           stocktakeId: 'stocktake-1',
         }),
+        writeInventoryControl({
+          activeStocktakeId: 'stocktake-1',
+          exists: false,
+        }),
         createStocktakeLineWrite({
           stocktakeId: 'stocktake-1',
           itemId: 'ITM-001',
           systemQuantityPieces: 14,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'inventory movements are blocked while stocktake is open',
+  expected: [401, 403],
+  request: () =>
+    commit(
+      [
+        createMovementWrite({
+          movementId: 'blocked-inbound-during-stocktake',
+          itemId: 'ITM-001',
+          delta: 1,
+          type: 'inbound',
         }),
       ],
       workerToken,
@@ -454,9 +475,54 @@ await expectStatus({
           stocktakeId: 'stocktake-1',
           movementId: 'stocktake-adjustment-1',
         }),
+        writeInventoryControl({
+          activeStocktakeId: '',
+          exists: true,
+        }),
       ],
       workerToken,
     ),
+});
+
+await expectStatus({
+  name: 'an open stocktake can be cancelled and releases the inventory lock',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        updateCounterWrite({
+          counterId: 'stocktakeNumber',
+          value: 2,
+        }),
+        createStocktakeWrite({
+          stocktakeId: 'stocktake-2',
+        }),
+        writeInventoryControl({
+          activeStocktakeId: 'stocktake-2',
+          exists: true,
+        }),
+        createStocktakeLineWrite({
+          stocktakeId: 'stocktake-2',
+          itemId: 'ITM-001',
+          systemQuantityPieces: 12,
+        }),
+      ],
+      workerToken,
+    ).then(async (startResponse) => {
+      if (startResponse.status !== 200) {
+        return startResponse;
+      }
+      return commit(
+        [
+          cancelStocktakeWrite({ stocktakeId: 'stocktake-2' }),
+          writeInventoryControl({
+            activeStocktakeId: '',
+            exists: true,
+          }),
+        ],
+        workerToken,
+      );
+    }),
 });
 
 await expectIntegerField({
@@ -498,6 +564,284 @@ await expectStatus({
       ],
       workerToken,
     ),
+});
+
+await expectStatus({
+  name: 'integration flow starts an independent item at 100 pieces',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createItemWrite({
+          itemId: 'FLOW-001',
+          openingStockPieces: 100,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'integration flow inbound adds 20 pieces',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createMovementWrite({
+          movementId: 'flow-inbound-20',
+          itemId: 'FLOW-001',
+          delta: 20,
+          type: 'inbound',
+        }),
+        updateItemStockWrite({
+          itemId: 'FLOW-001',
+          currentStockPieces: 120,
+          totalInboundPieces: 20,
+          lastMovementId: 'flow-inbound-20',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'integration flow outbound deducts 15 pieces',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createMovementWrite({
+          movementId: 'flow-outbound-15',
+          itemId: 'FLOW-001',
+          delta: -15,
+          type: 'outbound',
+        }),
+        updateItemOutboundStockWrite({
+          itemId: 'FLOW-001',
+          currentStockPieces: 105,
+          totalOutboundPieces: 15,
+          lastMovementId: 'flow-outbound-15',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'integration flow customer return adds 5 pieces',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createMovementWrite({
+          movementId: 'flow-customer-return-5',
+          itemId: 'FLOW-001',
+          delta: 5,
+          type: 'customerReturn',
+        }),
+        updateItemCustomerReturnStockWrite({
+          itemId: 'FLOW-001',
+          currentStockPieces: 110,
+          totalCustomerReturnPieces: 5,
+          lastMovementId: 'flow-customer-return-5',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'integration flow supplier return deducts 3 pieces',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        createMovementWrite({
+          movementId: 'flow-supplier-return-3',
+          itemId: 'FLOW-001',
+          delta: -3,
+          type: 'supplierReturn',
+        }),
+        updateItemSupplierReturnStockWrite({
+          itemId: 'FLOW-001',
+          currentStockPieces: 107,
+          totalSupplierReturnPieces: 3,
+          lastMovementId: 'flow-supplier-return-3',
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectIntegerField({
+  name: 'integration flow reaches the expected 107-piece balance',
+  collection: 'items',
+  documentId: 'FLOW-001',
+  field: 'currentStockPieces',
+  expected: 107,
+  token: workerToken,
+});
+
+await expectStatus({
+  name: 'integration stocktake snapshots the exact 107-piece balance',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        updateCounterWrite({
+          counterId: 'stocktakeNumber',
+          value: 3,
+        }),
+        createStocktakeWrite({
+          stocktakeId: 'flow-stocktake-1',
+        }),
+        writeInventoryControl({
+          activeStocktakeId: 'flow-stocktake-1',
+          exists: true,
+        }),
+        createStocktakeLineWrite({
+          stocktakeId: 'flow-stocktake-1',
+          itemId: 'FLOW-001',
+          systemQuantityPieces: 107,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectIntegerField({
+  name: 'integration stocktake line stores system quantity as pieces',
+  collection: 'stocktakes/flow-stocktake-1/lines',
+  documentId: 'FLOW-001',
+  field: 'systemQuantityPieces',
+  expected: 107,
+  token: workerToken,
+});
+
+await expectStatus({
+  name: 'new inventory items are blocked while stocktake is open',
+  expected: [401, 403],
+  request: () =>
+    commit(
+      [
+        createItemWrite({
+          itemId: 'BLOCKED-DURING-STOCKTAKE',
+          openingStockPieces: 1,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'a second integration stocktake cannot open concurrently',
+  expected: [401, 403],
+  request: () =>
+    commit(
+      [
+        createStocktakeWrite({
+          stocktakeId: 'flow-stocktake-duplicate',
+        }),
+        writeInventoryControl({
+          activeStocktakeId: 'flow-stocktake-duplicate',
+          exists: true,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectStatus({
+  name: 'cancelling integration stocktake releases lock without stock write',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        cancelStocktakeWrite({ stocktakeId: 'flow-stocktake-1' }),
+        writeInventoryControl({
+          activeStocktakeId: '',
+          exists: true,
+        }),
+      ],
+      workerToken,
+    ),
+});
+
+await expectIntegerField({
+  name: 'integration cancellation preserves the 107-piece balance',
+  collection: 'items',
+  documentId: 'FLOW-001',
+  field: 'currentStockPieces',
+  expected: 107,
+  token: workerToken,
+});
+
+await expectStatus({
+  name: 'new integration stocktake re-snapshots and completes without a delta',
+  expected: [200],
+  request: () =>
+    commit(
+      [
+        updateCounterWrite({
+          counterId: 'stocktakeNumber',
+          value: 4,
+        }),
+        createStocktakeWrite({
+          stocktakeId: 'flow-stocktake-2',
+        }),
+        writeInventoryControl({
+          activeStocktakeId: 'flow-stocktake-2',
+          exists: true,
+        }),
+        createStocktakeLineWrite({
+          stocktakeId: 'flow-stocktake-2',
+          itemId: 'FLOW-001',
+          systemQuantityPieces: 107,
+        }),
+      ],
+      workerToken,
+    ).then(async (startResponse) => {
+      if (startResponse.status !== 200) {
+        return startResponse;
+      }
+      return commit(
+        [
+          countStocktakeLineWrite({
+            stocktakeId: 'flow-stocktake-2',
+            itemId: 'FLOW-001',
+            actualQuantityPieces: 107,
+            systemQuantityPieces: 107,
+          }),
+        ],
+        workerToken,
+      );
+    }).then(async (countResponse) => {
+      if (countResponse.status !== 200) {
+        return countResponse;
+      }
+      return commit(
+        [
+          completeStocktakeWrite({
+            stocktakeId: 'flow-stocktake-2',
+            movementId: '',
+          }),
+          writeInventoryControl({
+            activeStocktakeId: '',
+            exists: true,
+          }),
+        ],
+        workerToken,
+      );
+    }),
+});
+
+await expectIntegerField({
+  name: 'zero-difference integration completion keeps 107 pieces',
+  collection: 'items',
+  documentId: 'FLOW-001',
+  field: 'currentStockPieces',
+  expected: 107,
+  token: workerToken,
 });
 
 await expectStatus({
@@ -793,6 +1137,8 @@ function createStocktakeWrite({ stocktakeId }) {
         completedAt: nullValue(),
         completedBy: stringValue(''),
         completionMovementId: stringValue(''),
+        cancelledAt: nullValue(),
+        cancelledBy: stringValue(''),
         notes: stringValue('جرد اختبار'),
         createdBy: stringValue('warehouse-worker'),
         updatedBy: stringValue('warehouse-worker'),
@@ -806,6 +1152,45 @@ function createStocktakeWrite({ stocktakeId }) {
       serverTimestampTransform('createdAt'),
       serverTimestampTransform('updatedAt'),
     ],
+  };
+}
+
+function cancelStocktakeWrite({ stocktakeId }) {
+  return {
+    update: {
+      name: documentName('stocktakes', stocktakeId),
+      fields: {
+        status: stringValue('cancelled'),
+        cancelledBy: stringValue('warehouse-worker'),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    updateMask: {
+      fieldPaths: ['status', 'cancelledBy', 'updatedBy'],
+    },
+    currentDocument: {
+      exists: true,
+    },
+    updateTransforms: [
+      serverTimestampTransform('cancelledAt'),
+      serverTimestampTransform('updatedAt'),
+    ],
+  };
+}
+
+function writeInventoryControl({ activeStocktakeId, exists }) {
+  return {
+    update: {
+      name: documentName('inventoryControl', 'primaryWarehouse'),
+      fields: {
+        activeStocktakeId: stringValue(activeStocktakeId),
+        updatedBy: stringValue('warehouse-worker'),
+      },
+    },
+    currentDocument: {
+      exists,
+    },
+    updateTransforms: [serverTimestampTransform('updatedAt')],
   };
 }
 
@@ -917,17 +1302,12 @@ function createCustomerReturnWrite({
       name: documentName('returns', returnId),
       fields: {
         returnNumber: stringValue(returnNumber),
-        originalVoucherNumber: stringValue('OUT-2026-000001'),
         itemId: stringValue(itemId),
         itemNameSnapshot: stringValue('صنف اختبار'),
         itemCodeSnapshot: stringValue(itemId),
+        itemsPerCartonSnapshot: integerValue(12),
         quantityPieces: integerValue(quantityPieces),
         sourceName: stringValue('فرع اختبار'),
-        returnedBy: stringValue('مسؤول الفرع'),
-        receivedBy: stringValue('أمين المخزن'),
-        reason: stringValue('كمية زائدة'),
-        notes: stringValue(''),
-        condition: stringValue('needsInspection'),
         status: stringValue('pendingSupplierResolution'),
         supplierName: stringValue(''),
         receiptMovementId: stringValue(movementId),
