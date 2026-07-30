@@ -3,7 +3,6 @@ import 'dart:typed_data';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../data/models/printer_connection_profile.dart';
 import '../data/models/printer_discovery_snapshot.dart';
 import '../data/models/saved_printer.dart';
 import '../data/repositories/printer_repository_base.dart';
@@ -121,12 +120,9 @@ class PrinterCubit extends Cubit<PrinterState> {
         emit(
           state.copyWith(
             isConnecting: false,
-            message: _isWebBluetooth
-                ? 'تعذر الاتصال بـ ${printer.displayName} عبر Web Bluetooth. '
-                      'قد تكون الطابعة Bluetooth Classic فقط؛ وقتها نستخدم '
-                      'خيار الربط المحلي.'
-                : 'تعذر الاتصال بـ ${printer.displayName}. '
-                      'تأكد أنها تعمل ومقترنة بالتابلت.',
+            message:
+                'تعذر الاتصال بـ ${printer.displayName}. '
+                'تأكد أنها تعمل ومقترنة بالتابلت.',
           ),
         );
         return false;
@@ -199,12 +195,9 @@ class PrinterCubit extends Cubit<PrinterState> {
         state.copyWith(
           isPrinting: false,
           printingProgress: null,
-          message: _isWebBluetooth
-              ? 'تعذر إرسال الإيصال عبر Web Bluetooth. قد لا تدعم '
-                    '${printer.displayName} خدمة طباعة BLE المطلوبة؛ '
-                    'وقتها نستخدم خيار الربط المحلي.'
-              : 'تعذر إرسال الإيصال. تأكد أن ${printer.displayName} تعمل '
-                    'وقريبة ثم حاول مرة أخرى.',
+          message:
+              'تعذر إرسال الإيصال. تأكد أن ${printer.displayName} تعمل '
+              'وقريبة ثم حاول مرة أخرى.',
         ),
       );
       return false;
@@ -223,10 +216,6 @@ class PrinterCubit extends Cubit<PrinterState> {
       _printInProgress = false;
     }
   }
-
-  bool get _isWebBluetooth =>
-      _repository.connectionProfile.mode ==
-      PrinterConnectionMode.webBluetoothLowEnergy;
 
   @override
   Future<void> close() async {

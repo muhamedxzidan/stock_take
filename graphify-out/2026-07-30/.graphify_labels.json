@@ -96,7 +96,6 @@
   "94": "item_catalog_cubit.dart",
   "95": "String?",
   "96": "../../../../core/models/inventory_item.dart",
-  "97": "auth_repository.dart",
   "98": "bluetooth_printer_repository.dart",
   "99": "thermal_receipt_content.dart",
   "100": "dashboard_screen.dart",
@@ -104,12 +103,9 @@
   "102": "firestore_collections.dart",
   "103": "stock_summary_model.dart",
   "104": "inbound_entry_screen.dart",
-  "105": "login_cubit.dart",
   "106": "Q: تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29",
   "107": "AppRoutes.transactionHistory",
   "108": "AuthSessionNotifier",
-  "109": "item_catalog_cubit.dart",
   "110": "../../../../core/shared_widgets/custom_app_bar.dart",
-  "111": "String?",
-  "112": "PrinterRepositoryBase"
+  "111": "String?"
 }

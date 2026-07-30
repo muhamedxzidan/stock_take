@@ -99,8 +99,8 @@ class _ThermalReceiptDialogState extends State<ThermalReceiptDialog> {
                 ],
               ),
               Text(
-                'الإيصال مصمم داخل عرض الطباعة الفعلي 72mm '
-                '(576 نقطة) لطابعة XP-P802A.',
+                'إيصال حراري 80mm لطابعة XP-P802A '
+                '(عرض طباعة فعلي 72mm / 576 نقطة).',
                 style: AppTextStyles.bodySmall,
               ),
               SizedBox(height: AppSizes.h12),

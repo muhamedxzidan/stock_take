@@ -16,10 +16,7 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
 
   @override
   PrinterConnectionProfile get connectionProfile {
-    if (kIsWeb) {
-      return PrinterConnectionProfile.webBluetooth;
-    }
-    if (defaultTargetPlatform == TargetPlatform.android) {
+    if (!kIsWeb && defaultTargetPlatform == TargetPlatform.android) {
       return PrinterConnectionProfile.androidBluetooth;
     }
     return PrinterConnectionProfile.unsupported;
@@ -75,7 +72,7 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
     if (!connectionProfile.isSupported) {
       yield const PrinterDiscoverySnapshot(
         availability: PrinterDiscoveryAvailability.unsupported,
-        message: 'اتصال الطابعة المباشر غير مدعوم على هذا الجهاز.',
+        message: 'الطباعة بالبلوتوث متاحة من تطبيق Android فقط.',
       );
       return;
     }
@@ -240,25 +237,12 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
   }
 
   String get _permissionMessage {
-    if (connectionProfile.mode == PrinterConnectionMode.webBluetoothLowEnergy) {
-      return 'اسمح لموقع المخزن بالوصول إلى أجهزة البلوتوث من Chrome.';
-    }
     return 'اسمح للتطبيق بالوصول إلى أجهزة البلوتوث القريبة.';
   }
 
-  String get _unsupportedMessage {
-    if (connectionProfile.mode == PrinterConnectionMode.webBluetoothLowEnergy) {
-      return 'Web Bluetooth غير متاح هنا. افتح الموقع من Chrome على Android '
-          'ومن خلال رابط HTTPS.';
-    }
-    return 'هذا الجهاز لا يدعم اتصال الطابعة بالبلوتوث.';
-  }
+  String get _unsupportedMessage =>
+      'الطباعة بالبلوتوث متاحة من تطبيق Android فقط.';
 
-  String get _searchFailureMessage {
-    if (connectionProfile.mode == PrinterConnectionMode.webBluetoothLowEnergy) {
-      return 'تعذر فتح بحث البلوتوث من Chrome. أعد المحاولة من زر البحث، '
-          'وتأكد أن الموقع يعمل عبر HTTPS.';
-    }
-    return 'تعذر البحث عن الطابعات. تحقق من صلاحية البلوتوث.';
-  }
+  String get _searchFailureMessage =>
+      'تعذر البحث عن الطابعات. تحقق من صلاحية البلوتوث.';
 }

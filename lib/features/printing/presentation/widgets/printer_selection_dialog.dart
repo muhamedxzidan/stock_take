@@ -8,7 +8,6 @@ import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_text_styles.dart';
 import '../../cubit/printer_cubit.dart';
 import '../../cubit/printer_state.dart';
-import '../../data/models/printer_connection_profile.dart';
 import '../../data/models/printer_discovery_snapshot.dart';
 import '../../data/models/saved_printer.dart';
 
@@ -45,9 +44,7 @@ class _PrinterSelectionDialogState extends State<PrinterSelectionDialog> {
     }
     _started = true;
     _cubit = context.read<PrinterCubit>();
-    if (!_cubit.state.connectionProfile.requiresUserGestureForDiscovery) {
-      unawaited(_cubit.startDiscovery());
-    }
+    unawaited(_cubit.startDiscovery());
   }
 
   @override
@@ -67,9 +64,6 @@ class _PrinterSelectionDialogState extends State<PrinterSelectionDialog> {
   Widget build(BuildContext context) {
     final sheetHeight = MediaQuery.sizeOf(context).height * 0.78;
     final state = context.watch<PrinterCubit>().state;
-    final isWebBluetooth =
-        state.connectionProfile.mode ==
-        PrinterConnectionMode.webBluetoothLowEnergy;
     return SizedBox(
       height: sheetHeight,
       child: Padding(
@@ -83,9 +77,7 @@ class _PrinterSelectionDialogState extends State<PrinterSelectionDialog> {
                 SizedBox(width: AppSizes.p8),
                 Expanded(
                   child: Text(
-                    isWebBluetooth
-                        ? 'تجربة الطابعة من Chrome'
-                        : 'اختيار طابعة البلوتوث',
+                    'اختيار طابعة البلوتوث',
                     style: AppTextStyles.heading2,
                   ),
                 ),
@@ -98,13 +90,9 @@ class _PrinterSelectionDialogState extends State<PrinterSelectionDialog> {
             ),
             SizedBox(height: AppSizes.h8),
             Text(
-              isWebBluetooth
-                  ? 'اضغط زر البحث ليعرض Chrome أجهزة BLE القريبة. '
-                        'لو ظهرت XP-P802A واخترتها سيستمر الاعتماد عليها '
-                        'طوال جلسة العمل. لو لم تظهر فالغالب أن وحدتها '
-                        'Bluetooth Classic وسنستخدم خيار الربط المحلي.'
-                  : 'شغّل الطابعة واقرنها من إعدادات Android أول مرة. '
-                        'بعد اختيارها هنا سيحفظها التطبيق ويستخدمها تلقائيًا.',
+              'شغّل طابعة XP-P802A واقرنها من إعدادات Android أول مرة. '
+              'قد تظهر باسم print001-57bb. بعد اختيارها هنا سيحفظ التطبيق '
+              'عنوانها ويستخدمها تلقائيًا.',
               style: AppTextStyles.bodySmall,
             ),
             SizedBox(height: AppSizes.h12),
@@ -143,7 +131,6 @@ class _PrinterSelectionDialogState extends State<PrinterSelectionDialog> {
                         child: _PrinterResults(
                           state: state,
                           printers: printers,
-                          isWebBluetooth: isWebBluetooth,
                           onSelect: _select,
                         ),
                       ),
@@ -167,9 +154,8 @@ class _PrinterSelectionDialogState extends State<PrinterSelectionDialog> {
                     : Icons.refresh_rounded,
               ),
               label: Text(
-                state.availability == PrinterDiscoveryAvailability.idle &&
-                        isWebBluetooth
-                    ? 'بدء البحث من Chrome'
+                state.availability == PrinterDiscoveryAvailability.idle
+                    ? 'البحث عن الطابعة'
                     : 'إعادة البحث',
               ),
             ),
@@ -200,13 +186,11 @@ class _PrinterSelectionDialogState extends State<PrinterSelectionDialog> {
 class _PrinterResults extends StatelessWidget {
   final PrinterState state;
   final List<SavedPrinter> printers;
-  final bool isWebBluetooth;
   final ValueChanged<SavedPrinter> onSelect;
 
   const _PrinterResults({
     required this.state,
     required this.printers,
-    required this.isWebBluetooth,
     required this.onSelect,
   });
 
@@ -233,7 +217,7 @@ class _PrinterResults extends StatelessWidget {
     if (printers.isEmpty) {
       return Center(
         child: Text(
-          _emptyMessage(state.availability, isWebBluetooth),
+          _emptyMessage(state.availability),
           textAlign: TextAlign.center,
           style: AppTextStyles.bodyMedium,
         ),
@@ -267,31 +251,20 @@ class _PrinterResults extends StatelessWidget {
     );
   }
 
-  String _emptyMessage(
-    PrinterDiscoveryAvailability availability,
-    bool isWebBluetooth,
-  ) {
+  String _emptyMessage(PrinterDiscoveryAvailability availability) {
     return switch (availability) {
-      PrinterDiscoveryAvailability.idle =>
-        isWebBluetooth
-            ? 'ابدأ البحث من الزر بالأسفل، ثم اختر XP-P802A من قائمة Chrome.'
-            : 'جارٍ تجهيز البحث عن الطابعة.',
+      PrinterDiscoveryAvailability.idle => 'جارٍ تجهيز البحث عن الطابعة.',
       PrinterDiscoveryAvailability.bluetoothDisabled =>
         'البلوتوث مغلق. شغّله ثم اضغط إعادة البحث.',
       PrinterDiscoveryAvailability.permissionDenied =>
         'صلاحية أجهزة البلوتوث القريبة مطلوبة للبحث والاتصال.',
       PrinterDiscoveryAvailability.unsupported =>
-        isWebBluetooth
-            ? 'Web Bluetooth غير متاح. استخدم Chrome على Android ورابط HTTPS.'
-            : 'اتصال الطابعة المباشر غير مدعوم على هذا الجهاز.',
+        'الطباعة بالبلوتوث متاحة من تطبيق Android فقط.',
       PrinterDiscoveryAvailability.failure =>
         'تعذر البحث. تحقق من تشغيل البلوتوث ثم أعد المحاولة.',
       _ =>
-        isWebBluetooth
-            ? 'لم تُختر طابعة BLE. أعد البحث واختر XP-P802A إن ظهرت. '
-                  'عدم ظهورها يعني غالبًا أن إصدارها Bluetooth Classic.'
-            : 'لم تظهر طابعات. اقترن بـ XP-P802A من إعدادات Android '
-                  'ثم أعد البحث. رمز الاقتران المعتاد 0000.',
+        'لم تظهر طابعات. اقترن بـ XP-P802A من إعدادات Android '
+            'ثم أعد البحث. قد تظهر باسم print001-57bb.',
     };
   }
 }

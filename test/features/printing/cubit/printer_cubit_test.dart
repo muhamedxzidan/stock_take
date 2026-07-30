@@ -3,13 +3,15 @@ import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:stock_take/features/printing/cubit/printer_cubit.dart';
-import 'package:stock_take/features/printing/data/models/printer_connection_profile.dart';
 import 'package:stock_take/features/printing/data/models/saved_printer.dart';
 
 import '../../../support/fake_printer_repository.dart';
 
 void main() {
-  const printer = SavedPrinter(address: '00:11:22:33:44:55', name: 'XP-P802A');
+  const printer = SavedPrinter(
+    address: '00:11:22:33:44:55',
+    name: 'print001-57bb',
+  );
 
   test('loads the saved printer without reconnecting on startup', () async {
     final repository = FakePrinterRepository(selectedPrinter: printer);
@@ -94,12 +96,11 @@ void main() {
   );
 
   test(
-    'Web print failure points to the isolated local bridge fallback',
+    'Android print failure keeps the saved movement outside the flow',
     () async {
       final repository = FakePrinterRepository(
         selectedPrinter: printer,
         printResult: false,
-        connectionProfile: PrinterConnectionProfile.webBluetooth,
       );
       final cubit = PrinterCubit(repository);
       addTearDown(() async {
@@ -112,7 +113,8 @@ void main() {
 
       expect(printed, isFalse);
       expect(repository.printCalls, 1);
-      expect(cubit.state.message, contains('الربط المحلي'));
+      expect(cubit.state.message, contains('print001-57bb'));
+      expect(cubit.state.message, contains('قريبة'));
     },
   );
 }

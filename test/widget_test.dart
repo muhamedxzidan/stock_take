@@ -322,16 +322,9 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.textContaining('تم حفظ إذن الوارد IN-'), findsOneWidget);
-    expect(
-      find.textContaining('يمكن إعادة الطباعة من سجل الحركات'),
-      findsOneWidget,
-    );
-    expect(find.widgetWithText(SnackBarAction, 'طباعة'), findsNothing);
+    expect(find.textContaining('طباعة IN-'), findsOneWidget);
+    expect(find.byKey(const Key('receipt-select-printer')), findsOneWidget);
     expect(find.text('الإذن الحالي: فارغ'), findsOneWidget);
-
-    await tester.pump(const Duration(seconds: 4));
-    await tester.pumpAndSettle();
-    expect(find.byKey(const Key('movement-saved-snackbar')), findsNothing);
   });
 
   testWidgets('new movement UI shows a persistent voucher on desktop', (

@@ -25,12 +25,9 @@ class AppStrings {
   static const String dashboardTitle = 'رصيد المخزن';
   static const String newMovementTitle = 'حركة جديدة';
   static const String addItemTitle = 'تعريف صنف جديد';
-  static const String inboundTitle = 'تسجيل وارد جديد';
-  static const String outboundTitle = 'تسجيل منصرف جديد';
   static const String warehouseReturnTitle = 'تسجيل مرتجع للمخزن';
   static const String adjustmentTitle = 'تسوية جردية لتصحيح الرصيد';
   static const String transactionHistoryTitle = 'سجل الحركات والعمليات';
-  static const String printVoucherTitle = 'معاينة وطباعة الإذن';
   static const String otherOperations = 'عمليات أخرى';
   static const String warehouseReturn = 'مرتجع للمخزن';
   static const String warehouseReturnHint = 'إرجاع صنف سبق صرفه';
@@ -76,7 +73,6 @@ class AppStrings {
   // Action Buttons
   static const String save = 'حفظ البيانات';
   static const String cancel = 'إلغاء';
-  static const String printPdf = 'طباعة PDF';
   static const String searchHint = 'بحث بالاسم أو الكود أو الرقم...';
   static const String filterAll = 'الكل';
   static const String filterInbound = 'وارد';

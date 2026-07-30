@@ -5,13 +5,13 @@
     "semantic_hash": "9dc190436f637c201c437fef74ba0bd6"
   },
   "lib/core/constants/app_router.dart": {
-    "mtime": 1785364480.3787103,
-    "ast_hash": "9eff0c69884c71e3907e8fc32ea19624",
+    "mtime": 1785403690.8769965,
+    "ast_hash": "d49774218a37d3814077e4836ed0b036",
     "semantic_hash": ""
   },
   "lib/core/constants/app_routes.dart": {
-    "mtime": 1785363712.823295,
-    "ast_hash": "c8e2e22bc26cfc71e086d48dc8750b06",
+    "mtime": 1785403691.41719,
+    "ast_hash": "a2e3acf87c25d5178493b024f0076c30",
     "semantic_hash": ""
   },
   "lib/core/constants/app_sizes.dart": {
@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "lib/core/constants/app_strings.dart": {
-    "mtime": 1785270416.4226344,
-    "ast_hash": "20bc7a718f93740e151e8bfacb926d87",
+    "mtime": 1785403691.9694035,
+    "ast_hash": "fb5acb7986add897afc93d8e41e4e40d",
     "semantic_hash": ""
   },
   "lib/core/constants/app_text_styles.dart": {
@@ -52,11 +52,6 @@
   "lib/core/shared_widgets/main_shell_screen.dart": {
     "mtime": 1785363714.5982816,
     "ast_hash": "f5f8d290fb3beba49d7248a21295cce7",
-    "semantic_hash": ""
-  },
-  "lib/core/shared_widgets/pdf_voucher_dialog.dart": {
-    "mtime": 1785110228.37857,
-    "ast_hash": "fadb3de11761bc43119ff9b7ace0885e",
     "semantic_hash": ""
   },
   "lib/core/shared_widgets/status_badge.dart": {
@@ -174,16 +169,6 @@
     "ast_hash": "2e2859b373a620a5a38a702ea7edeabf",
     "semantic_hash": ""
   },
-  "lib/features/transactions/presentation/screens/inbound_entry_screen.dart": {
-    "mtime": 1785243063.892922,
-    "ast_hash": "d1febf554c5f65bd7f239880b3ecc905",
-    "semantic_hash": ""
-  },
-  "lib/features/transactions/presentation/screens/outbound_entry_screen.dart": {
-    "mtime": 1785243064.9232745,
-    "ast_hash": "b5da68e84a88703f58a0727c63e6804d",
-    "semantic_hash": ""
-  },
   "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart": {
     "mtime": 1785364481.9979076,
     "ast_hash": "428ff742f4c5e8ff05104c217d843192",
@@ -197,16 +182,6 @@
   "lib/features/transactions/presentation/widgets/adjustment_form.dart": {
     "mtime": 1785270277.0770543,
     "ast_hash": "d9a6bc9a5e6b11ef3b6d9099529b90a8",
-    "semantic_hash": ""
-  },
-  "lib/features/transactions/presentation/widgets/inbound_form.dart": {
-    "mtime": 1785243076.9605918,
-    "ast_hash": "223124758ad77611f78c27a4aa78b9ee",
-    "semantic_hash": ""
-  },
-  "lib/features/transactions/presentation/widgets/outbound_form.dart": {
-    "mtime": 1785243076.983044,
-    "ast_hash": "579222c48d72fd55046ce2aaaf96c0e6",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/transaction_filter_bar.dart": {
@@ -270,8 +245,8 @@
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/screens/new_movement_screen.dart": {
-    "mtime": 1785364687.2680652,
-    "ast_hash": "386d9b8df54883d6dad8712ea9160b15",
+    "mtime": 1785403664.1079586,
+    "ast_hash": "06a69bc7b298bf54befeada3874b3371",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/current_voucher_panel.dart": {
@@ -565,8 +540,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/cubit/printer_cubit.dart": {
-    "mtime": 1785275946.3955147,
-    "ast_hash": "6a3f5cd4bb2e9047680a2008fbf46698",
+    "mtime": 1785403753.279348,
+    "ast_hash": "650f2a4028866d1a796d9ccb04ef51d4",
     "semantic_hash": ""
   },
   "lib/features/printing/cubit/printer_state.dart": {
@@ -585,8 +560,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/data/repositories/bluetooth_printer_repository.dart": {
-    "mtime": 1785275653.723857,
-    "ast_hash": "054b675133f90d214dcf486d17edb103",
+    "mtime": 1785403753.291575,
+    "ast_hash": "5012d317e34cbae7c3bdacfd46ccc84a",
     "semantic_hash": ""
   },
   "lib/features/printing/data/repositories/printer_repository_base.dart": {
@@ -595,8 +570,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/printer_selection_dialog.dart": {
-    "mtime": 1785275395.1999571,
-    "ast_hash": "1d575c85c08e4aa19ba1bb6401e98987",
+    "mtime": 1785403753.302823,
+    "ast_hash": "aa001ff5c14ac25d6686c6b677435b81",
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/printer_setup_button.dart": {
@@ -610,8 +585,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart": {
-    "mtime": 1785275654.3668692,
-    "ast_hash": "b390bb66e55cea50f344c843412c59db",
+    "mtime": 1785403643.8609028,
+    "ast_hash": "1b9da31a4332afecb52ff7d61845bc8d",
     "semantic_hash": ""
   },
   "lib/features/transactions/data/mappers/movement_receipt_mapper.dart": {
@@ -620,8 +595,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/data/models/printer_connection_profile.dart": {
-    "mtime": 1785275385.2362263,
-    "ast_hash": "8d3a2edecedf71079759a9b2c1d6c03b",
+    "mtime": 1785403753.283349,
+    "ast_hash": "5682139331b2825868adcce7c20bf002",
     "semantic_hash": ""
   },
   "graphify-out/memory/query_20260728_221210_\u062a\u0634\u062e\u064a\u0635_\u0641\u0634\u0644_\u062a\u0633\u062c\u064a\u0644_\u0627\u0644\u062f\u062e\u0648\u0644_\u0627\u0644\u0638\u0627\u0647\u0631_\u0641\u064a_screenshot_2026_0.md": {

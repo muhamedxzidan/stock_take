@@ -3145,8 +3145,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_carton_piece_quantity_fields_cartonpiecequantityfields",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "cartonpiecequantityfields"
     },
     {
@@ -3167,8 +3167,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_carton_piece_quantity_fields_cartonpiecequantityfieldsstate",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_cartonpiecequantityfieldsstate"
     },
     {
@@ -4443,8 +4443,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit",
-      "community": 105,
-      "community_name": "login_cubit.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "login_cubit.dart"
     },
     {
@@ -4465,8 +4465,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "cubit"
     },
     {
@@ -4476,8 +4476,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_authrepository",
-      "community": 105,
-      "community_name": "login_cubit.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "_authrepository"
     },
     {
@@ -4487,8 +4487,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_signin",
-      "community": 105,
-      "community_name": "login_cubit.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "signin"
     },
     {
@@ -4498,8 +4498,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_isvalidemail",
-      "community": 105,
-      "community_name": "login_cubit.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "_isvalidemail"
     },
     {
@@ -4509,8 +4509,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_auth_failure_dart",
-      "community": 105,
-      "community_name": "login_cubit.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "../../data/repositories/auth_failure.dart"
     },
     {
@@ -4520,8 +4520,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_auth_repository_dart",
-      "community": 105,
-      "community_name": "login_cubit.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "../../data/repositories/auth_repository.dart"
     },
     {
@@ -4531,8 +4531,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "login_state_dart",
-      "community": 105,
-      "community_name": "login_cubit.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "login_state.dart"
     },
     {
@@ -4674,8 +4674,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository",
-      "community": 97,
-      "community_name": "auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "auth_repository.dart"
     },
     {
@@ -4685,8 +4685,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_authrepository",
-      "community": 97,
-      "community_name": "auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "authrepository"
     },
     {
@@ -4696,8 +4696,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_issignedin",
-      "community": 97,
-      "community_name": "auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "issignedin"
     },
     {
@@ -4707,8 +4707,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "bool_get",
-      "community": 97,
-      "community_name": "auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "bool get"
     },
     {
@@ -4718,8 +4718,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_watchauthentication",
-      "community": 97,
-      "community_name": "auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "watchauthentication"
     },
     {
@@ -4729,8 +4729,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signinwithemailandpassword",
-      "community": 97,
-      "community_name": "auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "signinwithemailandpassword"
     },
     {
@@ -4740,8 +4740,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signout",
-      "community": 97,
-      "community_name": "auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "signout"
     },
     {
@@ -4762,8 +4762,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_firebase_auth_repository_firebaseauthrepository",
-      "community": 97,
-      "community_name": "auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "firebaseauthrepository"
     },
     {
@@ -4916,8 +4916,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "streamsubscription",
-      "community": 109,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "streamsubscription"
     },
     {
@@ -6027,8 +6027,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit",
-      "community": 109,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "item_catalog_cubit.dart"
     },
     {
@@ -6038,8 +6038,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_itemcatalogcubit",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 72,
+      "community_name": "_NewMovementScreenState",
       "norm_label": "itemcatalogcubit"
     },
     {
@@ -6049,8 +6049,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_repository",
-      "community": 109,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "_repository"
     },
     {
@@ -6060,8 +6060,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_subscription",
-      "community": 109,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "_subscription"
     },
     {
@@ -6071,8 +6071,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_loaditems",
-      "community": 109,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "loaditems"
     },
     {
@@ -6082,8 +6082,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_close",
-      "community": 109,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "close"
     },
     {
@@ -6104,8 +6104,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "item_catalog_state_dart",
-      "community": 109,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "item_catalog_state.dart"
     },
     {
@@ -7226,8 +7226,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "dart_typed_data",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "dart:typed_data"
     },
     {
@@ -7589,8 +7589,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot_printerdiscoverysnapshot",
-      "community": 112,
-      "community_name": "PrinterRepositoryBase",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "printerdiscoverysnapshot"
     },
     {
@@ -7743,8 +7743,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_bluetoothprinterrepository",
-      "community": 112,
-      "community_name": "PrinterRepositoryBase",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "bluetoothprinterrepository"
     },
     {
@@ -7875,8 +7875,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_printer_connection_profile_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "../models/printer_connection_profile.dart"
     },
     {
@@ -7886,8 +7886,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_printer_discovery_snapshot_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "../models/printer_discovery_snapshot.dart"
     },
     {
@@ -7897,8 +7897,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_saved_printer_dart",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "../models/saved_printer.dart"
     },
     {
@@ -7919,8 +7919,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "printer_repository_base.dart"
     },
     {
@@ -7930,8 +7930,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_printerrepositorybase",
-      "community": 112,
-      "community_name": "PrinterRepositoryBase",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "printerrepositorybase"
     },
     {
@@ -7941,8 +7941,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_connectionprofile",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "connectionprofile"
     },
     {
@@ -7952,8 +7952,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "printerconnectionprofile_get",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "printerconnectionprofile get"
     },
     {
@@ -7963,8 +7963,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_loadselectedprinter",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "loadselectedprinter"
     },
     {
@@ -7974,8 +7974,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_saveselectedprinter",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "saveselectedprinter"
     },
     {
@@ -7985,8 +7985,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_discoverprinters",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "discoverprinters"
     },
     {
@@ -7996,8 +7996,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_connect",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "connect"
     },
     {
@@ -8007,8 +8007,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_printreceiptpng",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "printreceiptpng"
     },
     {
@@ -9283,8 +9283,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "warehouse_return_record.dart"
     },
     {
@@ -9294,8 +9294,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_warehousereturnstatus",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "warehousereturnstatus"
     },
     {
@@ -9305,8 +9305,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_warehousereturnrecord",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "warehousereturnrecord"
     },
     {
@@ -9316,8 +9316,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_id",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "id"
     },
     {
@@ -9327,8 +9327,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_returnnumber",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "returnnumber"
     },
     {
@@ -9338,8 +9338,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_itemid",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "itemid"
     },
     {
@@ -9349,8 +9349,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_itemname",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "itemname"
     },
     {
@@ -9360,8 +9360,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_itemcode",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "itemcode"
     },
     {
@@ -9371,8 +9371,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_itemspercarton",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "itemspercarton"
     },
     {
@@ -9382,8 +9382,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "int",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "int?"
     },
     {
@@ -9393,8 +9393,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_quantitypieces",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "quantitypieces"
     },
     {
@@ -9404,8 +9404,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_sourcename",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "sourcename"
     },
     {
@@ -9415,8 +9415,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_status",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "status"
     },
     {
@@ -9426,8 +9426,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_receivedat",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "receivedat"
     },
     {
@@ -9437,8 +9437,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "datetime",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "datetime"
     },
     {
@@ -9921,8 +9921,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_build",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "build"
     },
     {
@@ -9932,8 +9932,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_newmovement",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "approutes.newmovement"
     },
     {
@@ -10020,8 +10020,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_returnresolutiondialog",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_returnresolutiondialog"
     },
     {
@@ -10031,8 +10031,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_returnresolutiondialogstate",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_returnresolutiondialogstate"
     },
     {
@@ -10372,8 +10372,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "stocktake_cubit.dart"
     },
     {
@@ -10394,8 +10394,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_repository",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_repository"
     },
     {
@@ -10405,8 +10405,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_loadtimeout",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_loadtimeout"
     },
     {
@@ -10416,8 +10416,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "duration",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "duration"
     },
     {
@@ -10427,8 +10427,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_linessubscription",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_linessubscription"
     },
     {
@@ -10438,8 +10438,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_isacting",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_isacting"
     },
     {
@@ -10449,8 +10449,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_loadgeneration",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_loadgeneration"
     },
     {
@@ -10460,8 +10460,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_load",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "load"
     },
     {
@@ -10471,8 +10471,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_startstocktake",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "startstocktake"
     },
     {
@@ -10482,8 +10482,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_savecount",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "savecount"
     },
     {
@@ -10493,8 +10493,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_completestocktake",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "completestocktake"
     },
     {
@@ -10504,8 +10504,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_cancelstocktake",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "cancelstocktake"
     },
     {
@@ -10515,9 +10515,20 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_watchlines",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_watchlines"
+    },
+    {
+      "label": "_currentLinesFor",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/cubit/stocktake_cubit.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_cubit_stocktake_cubit_currentlinesfor",
+      "community": 69,
+      "community_name": "StatelessWidget",
+      "norm_label": "_currentlinesfor"
     },
     {
       "label": "_validateStartDraft",
@@ -10526,8 +10537,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_validatestartdraft",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_validatestartdraft"
     },
     {
@@ -10537,8 +10548,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_close",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "close"
     },
     {
@@ -10570,8 +10581,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_stocktake_repository_base_dart",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "../data/repositories/stocktake_repository_base.dart"
     },
     {
@@ -10581,8 +10592,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_stocktake_repository_failure_dart",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "../data/repositories/stocktake_repository_failure.dart"
     },
     {
@@ -10592,8 +10603,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "stocktake_state_dart",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "stocktake_state.dart"
     },
     {
@@ -10790,8 +10801,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "stocktake_line.dart"
     },
     {
@@ -10801,8 +10812,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_stocktakeline",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "stocktakeline"
     },
     {
@@ -10812,8 +10823,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_itemid",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "itemid"
     },
     {
@@ -10823,8 +10834,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_itemnamesnapshot",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "itemnamesnapshot"
     },
     {
@@ -10834,8 +10845,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_itemcodesnapshot",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "itemcodesnapshot"
     },
     {
@@ -10845,8 +10856,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_unit",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "unit"
     },
     {
@@ -10856,8 +10867,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_itemspercarton",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "itemspercarton"
     },
     {
@@ -10867,8 +10878,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_systemquantitypieces",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "systemquantitypieces"
     },
     {
@@ -10878,8 +10889,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_actualquantitypieces",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "actualquantitypieces"
     },
     {
@@ -10889,8 +10900,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_differencepieces",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "differencepieces"
     },
     {
@@ -10900,8 +10911,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_counted",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "counted"
     },
     {
@@ -10911,8 +10922,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_countedat",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "countedat"
     },
     {
@@ -10922,8 +10933,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_copywith",
-      "community": 22,
-      "community_name": "status_badge.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "copywith"
     },
     {
@@ -11857,8 +11868,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecard",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_stocktakelinecard"
     },
     {
@@ -11868,8 +11879,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecardstate",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_stocktakelinecardstate"
     },
     {
@@ -14420,8 +14431,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_newmovementscreen",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "newmovementscreen"
     },
     {
@@ -14431,8 +14442,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_newmovementscreenstate",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "_newmovementscreenstate"
     },
     {
@@ -14442,8 +14453,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_itemspane",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 72,
+      "community_name": "_NewMovementScreenState",
       "norm_label": "_itemspane"
     },
     {
@@ -14585,8 +14596,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_initstate",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 72,
+      "community_name": "_NewMovementScreenState",
       "norm_label": "initstate"
     },
     {
@@ -14827,8 +14838,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_outbound_entry_screen",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 92,
+      "community_name": "build",
       "norm_label": "outbound_entry_screen.dart"
     },
     {
@@ -14838,8 +14849,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_outbound_entry_screen_outboundentryscreen",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 92,
+      "community_name": "build",
       "norm_label": "outboundentryscreen"
     },
     {
@@ -14849,8 +14860,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_outbound_entry_screen_outboundentryscreenstate",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 92,
+      "community_name": "build",
       "norm_label": "_outboundentryscreenstate"
     },
     {
@@ -14860,8 +14871,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_outbound_entry_screen_createstate",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 92,
+      "community_name": "build",
       "norm_label": "createstate"
     },
     {
@@ -14871,8 +14882,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_outbound_entry_screen_initstate",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 92,
+      "community_name": "build",
       "norm_label": "initstate"
     },
     {
@@ -14882,8 +14893,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_outbound_entry_screen_build",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 92,
+      "community_name": "build",
       "norm_label": "build"
     },
     {
@@ -14893,8 +14904,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_outbound_form_dart",
-      "community": 84,
-      "community_name": "outbound_entry_screen.dart",
+      "community": 92,
+      "community_name": "build",
       "norm_label": "../widgets/outbound_form.dart"
     },
     {
@@ -14904,8 +14915,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "stock_adjustment_screen.dart"
     },
     {
@@ -14915,8 +14926,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stockadjustmentscreen",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "stockadjustmentscreen"
     },
     {
@@ -14926,8 +14937,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stocktakeloadfailure",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_stocktakeloadfailure"
     },
     {
@@ -14937,8 +14948,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_message",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "message"
     },
     {
@@ -14948,8 +14959,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_build",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "build"
     },
     {
@@ -14959,8 +14970,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_confirmcancellation",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "_confirmcancellation"
     },
     {
@@ -14970,8 +14981,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "stocktake_cubit_stocktake_cubit_dart",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "../../../stocktake/cubit/stocktake_cubit.dart"
     },
     {
@@ -14981,8 +14992,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "stocktake_cubit_stocktake_state_dart",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "../../../stocktake/cubit/stocktake_state.dart"
     },
     {
@@ -14992,8 +15003,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "stocktake_presentation_widgets_start_stocktake_card_dart",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "../../../stocktake/presentation/widgets/start_stocktake_card.dart"
     },
     {
@@ -15003,8 +15014,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "stocktake_presentation_widgets_stocktake_session_view_dart",
-      "community": 92,
-      "community_name": "build",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "../../../stocktake/presentation/widgets/stocktake_session_view.dart"
     },
     {
@@ -15729,8 +15740,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_item_quantity_sheet_itemquantitysheet",
-      "community": 26,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "itemquantitysheet"
     },
     {
@@ -15740,8 +15751,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_item_quantity_sheet_itemquantitysheetstate",
-      "community": 26,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_itemquantitysheetstate"
     },
     {
@@ -17269,8 +17280,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_main_stocktakeapp",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 49,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeapp"
     },
     {
@@ -36551,6 +36562,17 @@
       "_origin": "ast",
       "source": "lib_features_stocktake_cubit_stocktake_cubit",
       "target": "lib_features_stocktake_cubit_stocktake_cubit_completestocktake"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/cubit/stocktake_cubit.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_cubit_stocktake_cubit",
+      "target": "lib_features_stocktake_cubit_stocktake_cubit_currentlinesfor"
     },
     {
       "relation": "defines",

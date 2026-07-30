@@ -12,6 +12,8 @@ import '../../../../core/shared_widgets/custom_app_bar.dart';
 import '../../../items/cubit/item_catalog_cubit.dart';
 import '../../../items/cubit/item_catalog_state.dart';
 import '../../../printing/presentation/widgets/printer_setup_button.dart';
+import '../../../printing/presentation/widgets/thermal_receipt_dialog.dart';
+import '../../data/mappers/movement_receipt_mapper.dart';
 import '../../data/models/inventory_movement.dart';
 import '../widgets/current_voucher_panel.dart';
 import '../widgets/item_quantity_sheet.dart';
@@ -178,6 +180,14 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
     );
     if (savedMovement == null || !mounted) return;
 
+    final receipt = MovementReceiptMapper.fromSavedMovement(
+      savedMovement: savedMovement,
+      draft: movementDraft,
+      movementLabel: 'إذن ${_movementKind.label}',
+      partyLabel: _movementKind == MovementKind.inbound
+          ? 'المورد'
+          : 'الجهة المستلمة',
+    );
     setState(() => _lines.clear());
     final messenger = ScaffoldMessenger.of(context);
     messenger.hideCurrentSnackBar();
@@ -199,6 +209,8 @@ class _NewMovementScreenState extends State<NewMovementScreen> {
         _movementSavedSnackBar = null;
       }
     });
+
+    await ThermalReceiptDialog.show(context, receipt: receipt);
   }
 
   void _openMobileVoucher() {

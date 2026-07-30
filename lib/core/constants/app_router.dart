@@ -84,16 +84,6 @@ class AppRouter {
                   const AddItemScreen(),
             ),
             GoRoute(
-              path: AppRoutes.inboundEntry,
-              redirect: (BuildContext context, GoRouterState state) =>
-                  AppRoutes.newInboundMovement,
-            ),
-            GoRoute(
-              path: AppRoutes.outboundEntry,
-              redirect: (BuildContext context, GoRouterState state) =>
-                  AppRoutes.newOutboundMovement,
-            ),
-            GoRoute(
               path: AppRoutes.warehouseReturn,
               builder: (BuildContext context, GoRouterState state) =>
                   const WarehouseReturnScreen(),
