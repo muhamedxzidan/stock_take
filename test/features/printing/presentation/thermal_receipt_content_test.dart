@@ -8,6 +8,7 @@ void main() {
     tester,
   ) async {
     const receipt = ThermalReceiptData(
+      documentTitle: 'إذن حركة مخزن',
       voucherNumber: 'IN-2026-000001',
       movementLabel: 'إذن وارد',
       date: '2026-07-29',
@@ -32,6 +33,13 @@ void main() {
           loosePieces: 0,
           totalPieces: 36,
         ),
+        ThermalReceiptLine(
+          itemName: 'صنف رصيده صفر',
+          itemCode: 'S-N-000000',
+          cartons: 0,
+          loosePieces: 0,
+          totalPieces: 0,
+        ),
       ],
     );
 
@@ -50,6 +58,7 @@ void main() {
     expect(find.text('IN-2026-000001'), findsOneWidget);
     expect(find.byKey(const Key('receipt-brand-logo')), findsOneWidget);
     expect(find.text('الكمية: 2 كرتونة + 3 قطعة مفردة'), findsOneWidget);
+    expect(find.text('الكمية: 0 قطعة'), findsOneWidget);
     expect(find.text('إجمالي الكراتين'), findsOneWidget);
     expect(find.text('5 كرتونة'), findsOneWidget);
     expect(find.text('إجمالي القطع'), findsOneWidget);

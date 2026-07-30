@@ -9,6 +9,7 @@ import 'package:stock_take/core/theme/app_theme.dart';
 import 'package:stock_take/features/auth/data/repositories/auth_repository.dart';
 import 'package:stock_take/features/items/cubit/item_catalog_cubit.dart';
 import 'package:stock_take/features/printing/cubit/printer_cubit.dart';
+import 'package:stock_take/features/printing/presentation/widgets/thermal_receipt_content.dart';
 import 'package:stock_take/features/returns/cubit/return_resolution_cubit.dart';
 import 'package:stock_take/features/returns/cubit/returns_cubit.dart';
 import 'package:stock_take/features/returns/data/models/return_resolution.dart';
@@ -167,6 +168,42 @@ void main() {
       MovementKind.inbound,
     );
   });
+
+  testWidgets(
+    'stock balance printing includes all items even when search is active',
+    (WidgetTester tester) async {
+      tester.view.physicalSize = const Size(1280, 900);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+
+      await tester.pumpWidget(const StockTakeApp());
+      await tester.pumpAndSettle();
+
+      serviceLocator<GoRouter>().go(AppRoutes.dashboard);
+      await tester.pumpAndSettle();
+
+      await tester.enterText(find.byType(TextFormField), 'أرز');
+      await tester.pump(const Duration(milliseconds: 350));
+      await tester.pumpAndSettle();
+
+      await tester.tap(find.byKey(const Key('print-stock-balance')));
+      await tester.pumpAndSettle();
+
+      expect(find.text('كشف رصيد المخزن'), findsOneWidget);
+      final receiptContent = find.byType(ThermalReceiptContent);
+      expect(receiptContent, findsOneWidget);
+      for (final item in sampleInventoryItems) {
+        expect(
+          find.descendant(
+            of: receiptContent,
+            matching: find.textContaining(item.name),
+          ),
+          findsOneWidget,
+        );
+      }
+    },
+  );
 
   testWidgets('warehouse return saves through its feature cubit', (
     WidgetTester tester,

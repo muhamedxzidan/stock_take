@@ -60,6 +60,7 @@ class DashboardCubit extends Cubit<DashboardState> {
       DashboardSuccess(
         summary: _buildSummary(_allItems),
         items: List.unmodifiable(visibleItems),
+        allItems: List.unmodifiable(_allItems),
       ),
     );
   }

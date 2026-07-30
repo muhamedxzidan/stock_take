@@ -107,5 +107,11 @@
   "105": "build",
   "106": "Q: تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29",
   "107": "AppRoutes.transactionHistory",
-  "108": "AuthSessionNotifier"
+  "108": "AuthSessionNotifier",
+  "109": "stock_balance_receipt_mapper.dart",
+  "110": "../../../../core/models/inventory_item.dart",
+  "111": "Q: إضافة شعار EL SAUDI أعلى الريسيت وإجمالي الكراتين ثم القطع وتحسين وضوح الطباعة",
+  "112": "Q: خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل",
+  "113": "PrinterRepositoryBase",
+  "114": "_NewMovementScreenState"
 }

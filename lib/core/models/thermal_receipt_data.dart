@@ -15,6 +15,7 @@ class ThermalReceiptLine {
 }
 
 class ThermalReceiptData {
+  final String documentTitle;
   final String voucherNumber;
   final String movementLabel;
   final String date;
@@ -27,6 +28,7 @@ class ThermalReceiptData {
   final List<ThermalReceiptLine> lines;
 
   const ThermalReceiptData({
+    required this.documentTitle,
     required this.voucherNumber,
     required this.movementLabel,
     required this.date,

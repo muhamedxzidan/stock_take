@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "lib/core/constants/app_strings.dart": {
-    "mtime": 1785403691.9694035,
-    "ast_hash": "fb5acb7986add897afc93d8e41e4e40d",
+    "mtime": 1785408547.2181723,
+    "ast_hash": "0088f62a2f26090a007722d978fa7449",
     "semantic_hash": ""
   },
   "lib/core/constants/app_text_styles.dart": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "lib/core/models/thermal_receipt_data.dart": {
-    "mtime": 1785273491.867401,
-    "ast_hash": "3ebb12a65cc2de7605ebe3714e2f59a3",
+    "mtime": 1785408577.7986054,
+    "ast_hash": "6b0006c9e82785f9e91730a8c5424f09",
     "semantic_hash": ""
   },
   "lib/features/printing/cubit/printer_cubit.dart": {
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/thermal_receipt_content.dart": {
-    "mtime": 1785274243.1928422,
-    "ast_hash": "b304e1ab1a9cfc98401241c2c1e16d91",
+    "mtime": 1785408548.9702573,
+    "ast_hash": "8f3ac843b6d84e955dbd8c4c05c8bb41",
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart": {
@@ -622,6 +622,16 @@
   "graphify-out/memory/query_20260729_003633_\u0627\u0646\u0627_\u0639\u0645\u0644\u062a_\u0627\u0644\u0631\u0648\u0644\u0632_allow_read__write_if_true_\u0648\u0644\u0645_\u064a\u0633\u062c\u0644.md": {
     "mtime": 1785285393.8643284,
     "ast_hash": "34875d53cf776a4031db9fe0c5958e9b",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md": {
+    "mtime": 1785406318.1428015,
+    "ast_hash": "c35e706ae2a4ae47246f186c81079d99",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md": {
+    "mtime": 1785407650.2351289,
+    "ast_hash": "92b0ee7973323860a38922c6d6bf18bd",
     "semantic_hash": ""
   }
 }

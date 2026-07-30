@@ -70,13 +70,13 @@
     "semantic_hash": "fa04793234284f06dad97908c26902de"
   },
   "lib/features/dashboard/cubit/dashboard_cubit.dart": {
-    "mtime": 1785255695.2468472,
-    "ast_hash": "855239273da5d9dd5d8180b8f9ded7da",
+    "mtime": 1785418795.4341347,
+    "ast_hash": "1729ac931056cddb694dd0aae667f051",
     "semantic_hash": ""
   },
   "lib/features/dashboard/cubit/dashboard_state.dart": {
-    "mtime": 1785242444.4766417,
-    "ast_hash": "dad0fa732bc07aed77a9ca1d5d5b8757",
+    "mtime": 1785418794.5188549,
+    "ast_hash": "249b7d6294c808b5c4d18ee0fb09eac2",
     "semantic_hash": ""
   },
   "lib/features/dashboard/data/models/stock_summary_model.dart": {
@@ -95,13 +95,13 @@
     "semantic_hash": ""
   },
   "lib/features/dashboard/presentation/screens/dashboard_screen.dart": {
-    "mtime": 1785244934.7192428,
-    "ast_hash": "f757d1bc5d7df8ee42fb233ab85414f9",
+    "mtime": 1785418797.1218262,
+    "ast_hash": "4350f6c5d7e4b27624d99333f1d9be88",
     "semantic_hash": ""
   },
   "lib/features/dashboard/presentation/widgets/quick_action_bar.dart": {
-    "mtime": 1785363715.5456622,
-    "ast_hash": "5597ee39f67dba31dc38b643d64018db",
+    "mtime": 1785418796.2812219,
+    "ast_hash": "1388e3b41b6afaa5596528ee338f7f90",
     "semantic_hash": ""
   },
   "lib/features/dashboard/presentation/widgets/stock_items_list.dart": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "lib/core/models/thermal_receipt_data.dart": {
-    "mtime": 1785408577.7986054,
-    "ast_hash": "6b0006c9e82785f9e91730a8c5424f09",
+    "mtime": 1785418789.7396321,
+    "ast_hash": "37d5d7fe004cbbb7fdd625eab59e3414",
     "semantic_hash": ""
   },
   "lib/features/printing/cubit/printer_cubit.dart": {
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/thermal_receipt_content.dart": {
-    "mtime": 1785408548.9702573,
-    "ast_hash": "8f3ac843b6d84e955dbd8c4c05c8bb41",
+    "mtime": 1785418791.4189596,
+    "ast_hash": "132669f01aec7688d60f4ff167436481",
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart": {
@@ -590,8 +590,8 @@
     "semantic_hash": ""
   },
   "lib/features/transactions/data/mappers/movement_receipt_mapper.dart": {
-    "mtime": 1785273495.7528741,
-    "ast_hash": "4dd6da4bc11a5b7dfcdb7a39fea2887c",
+    "mtime": 1785418790.5797374,
+    "ast_hash": "0c43d48bee8b1a943447f7132fc4a524",
     "semantic_hash": ""
   },
   "lib/features/printing/data/models/printer_connection_profile.dart": {
@@ -632,6 +632,21 @@
   "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md": {
     "mtime": 1785407650.2351289,
     "ast_hash": "92b0ee7973323860a38922c6d6bf18bd",
+    "semantic_hash": ""
+  },
+  "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart": {
+    "mtime": 1785418845.1687114,
+    "ast_hash": "dde4d452a40fc7d65587c290008afc40",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md": {
+    "mtime": 1785408865.2836556,
+    "ast_hash": "91b22187afcc549aa7db176d11766af7",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md": {
+    "mtime": 1785417383.810479,
+    "ast_hash": "347959b5d7d9c4a92e22f20dc0b458a7",
     "semantic_hash": ""
   }
 }

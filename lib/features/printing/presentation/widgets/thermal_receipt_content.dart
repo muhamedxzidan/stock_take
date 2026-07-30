@@ -30,10 +30,13 @@ class ThermalReceiptContent extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 12),
-              const Text(
-                'إذن حركة مخزن',
+              Text(
+                receipt.documentTitle,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 34, fontWeight: FontWeight.w900),
+                style: const TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.w900,
+                ),
               ),
               const SizedBox(height: 8),
               Text(
@@ -125,6 +128,9 @@ class _ReceiptItem extends StatelessWidget {
       if (line.cartons > 0) '${line.cartons} كرتونة',
       if (line.loosePieces > 0) '${line.loosePieces} قطعة مفردة',
     ];
+    final quantityLabel = quantities.isEmpty
+        ? '0 قطعة'
+        : quantities.join(' + ');
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
@@ -142,7 +148,7 @@ class _ReceiptItem extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'الكمية: ${quantities.join(' + ')}',
+            'الكمية: $quantityLabel',
             style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 4),

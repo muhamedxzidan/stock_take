@@ -6,8 +6,10 @@ import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/shared_widgets/custom_app_bar.dart';
 import '../../../../core/shared_widgets/custom_text_field.dart';
+import '../../../printing/presentation/widgets/thermal_receipt_dialog.dart';
 import '../../cubit/dashboard_cubit.dart';
 import '../../cubit/dashboard_state.dart';
+import '../../data/mappers/stock_balance_receipt_mapper.dart';
 import '../widgets/quick_action_bar.dart';
 import '../widgets/stock_items_list.dart';
 import '../widgets/stock_summary_card.dart';
@@ -24,6 +26,28 @@ class _DashboardScreenState extends State<DashboardScreen> {
   void initState() {
     super.initState();
     context.read<DashboardCubit>().loadDashboardData();
+  }
+
+  Future<void> _printStockBalance() async {
+    final state = context.read<DashboardCubit>().state;
+    if (state is! DashboardSuccess) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('انتظر حتى يكتمل تحميل رصيد المخزن.')),
+      );
+      return;
+    }
+    if (state.allItems.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('لا توجد أصناف لطباعة رصيدها.')),
+      );
+      return;
+    }
+
+    final receipt = StockBalanceReceiptMapper.fromItems(
+      items: state.allItems,
+      generatedAt: DateTime.now(),
+    );
+    await ThermalReceiptDialog.show(context, receipt: receipt);
   }
 
   @override
@@ -57,7 +81,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   },
                 ),
                 SizedBox(height: AppSizes.h20),
-                const QuickActionBar(),
+                QuickActionBar(onPrintStockBalance: _printStockBalance),
                 SizedBox(height: AppSizes.h20),
                 CustomTextField(
                   label: 'بحث سريع بالأصناف',

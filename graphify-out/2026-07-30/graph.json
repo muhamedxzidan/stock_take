@@ -285,8 +285,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_material_dart",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "package:flutter/material.dart"
     },
     {
@@ -307,8 +307,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_app_router_approuter",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "approuter"
     },
     {
@@ -2397,8 +2397,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 104,
+      "community_name": "String?",
       "norm_label": "inventory_number_parsing.dart"
     },
     {
@@ -2408,8 +2408,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing_inventorynumberparsing",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 104,
+      "community_name": "String?",
       "norm_label": "inventorynumberparsing"
     },
     {
@@ -2419,8 +2419,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "string",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 104,
+      "community_name": "String?",
       "norm_label": "string?"
     },
     {
@@ -2430,8 +2430,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing_toinventoryinteger",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 104,
+      "community_name": "String?",
       "norm_label": "toinventoryinteger"
     },
     {
@@ -2518,8 +2518,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_models_inventory_item_inventoryitem",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "inventoryitem"
     },
     {
@@ -2683,8 +2683,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "int_get",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "int get"
     },
     {
@@ -2738,8 +2738,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "extensions_inventory_number_parsing_dart",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "../extensions/inventory_number_parsing.dart"
     },
     {
@@ -2958,9 +2958,20 @@
       "source_location": null,
       "_origin": "ast",
       "id": "list",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "list"
+    },
+    {
+      "label": "totalCartons",
+      "file_type": "code",
+      "source_file": "lib/core/models/thermal_receipt_data.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_core_models_thermal_receipt_data_totalcartons",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
+      "norm_label": "totalcartons"
     },
     {
       "label": "responsive_layout.dart",
@@ -2969,8 +2980,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_responsive_responsive_layout",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 86,
+      "community_name": "responsive_layout.dart",
       "norm_label": "responsive_layout.dart"
     },
     {
@@ -2980,8 +2991,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_responsive_responsive_layout_responsivelayout",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 86,
+      "community_name": "responsive_layout.dart",
       "norm_label": "responsivelayout"
     },
     {
@@ -3002,8 +3013,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_responsive_responsive_layout_mobilelayout",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 86,
+      "community_name": "responsive_layout.dart",
       "norm_label": "mobilelayout"
     },
     {
@@ -3013,8 +3024,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widget",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 86,
+      "community_name": "responsive_layout.dart",
       "norm_label": "widget"
     },
     {
@@ -3024,8 +3035,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_responsive_responsive_layout_tabletlayout",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 86,
+      "community_name": "responsive_layout.dart",
       "norm_label": "tabletlayout"
     },
     {
@@ -3035,8 +3046,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_responsive_responsive_layout_ismobile",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 86,
+      "community_name": "responsive_layout.dart",
       "norm_label": "ismobile"
     },
     {
@@ -3046,8 +3057,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_responsive_responsive_layout_istablet",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 86,
+      "community_name": "responsive_layout.dart",
       "norm_label": "istablet"
     },
     {
@@ -3057,8 +3068,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_responsive_responsive_layout_build",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 86,
+      "community_name": "responsive_layout.dart",
       "norm_label": "build"
     },
     {
@@ -3167,8 +3178,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "valuechanged",
-      "community": 37,
-      "community_name": "movement_type_selector.dart",
+      "community": 65,
+      "community_name": "inventory_item_selector_field.dart",
       "norm_label": "valuechanged"
     },
     {
@@ -3189,8 +3200,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "texteditingcontroller",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 21,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "texteditingcontroller"
     },
     {
@@ -3288,8 +3299,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "constants_app_colors_dart",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "../constants/app_colors.dart"
     },
     {
@@ -3299,8 +3310,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "constants_app_sizes_dart",
-      "community": 102,
-      "community_name": "firestore_collections.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "../constants/app_sizes.dart"
     },
     {
@@ -3354,8 +3365,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_app_bar_customappbar",
-      "community": 99,
-      "community_name": "thermal_receipt_content.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "customappbar"
     },
     {
@@ -3365,8 +3376,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "preferredsizewidget",
-      "community": 99,
-      "community_name": "thermal_receipt_content.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "preferredsizewidget"
     },
     {
@@ -3486,8 +3497,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "voidcallback",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "voidcallback"
     },
     {
@@ -4058,8 +4069,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail",
-      "community": 102,
-      "community_name": "firestore_collections.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "tablet_navigation_rail.dart"
     },
     {
@@ -4069,8 +4080,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_tabletnavigationrail",
-      "community": 102,
-      "community_name": "firestore_collections.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "tabletnavigationrail"
     },
     {
@@ -4080,8 +4091,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_currentroute",
-      "community": 102,
-      "community_name": "firestore_collections.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "currentroute"
     },
     {
@@ -4091,8 +4102,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_onlogout",
-      "community": 102,
-      "community_name": "firestore_collections.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "onlogout"
     },
     {
@@ -4102,8 +4113,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_build",
-      "community": 102,
-      "community_name": "firestore_collections.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "build"
     },
     {
@@ -4113,8 +4124,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_buildnavitem",
-      "community": 102,
-      "community_name": "firestore_collections.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "_buildnavitem"
     },
     {
@@ -4124,8 +4135,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_issecondarymovementroute",
-      "community": 102,
-      "community_name": "firestore_collections.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "_issecondarymovementroute"
     },
     {
@@ -4201,8 +4212,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "app_theme.dart"
     },
     {
@@ -4212,8 +4223,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme_apptheme",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "apptheme"
     },
     {
@@ -4234,8 +4245,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_logincubit",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "logincubit"
     },
     {
@@ -4245,8 +4256,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "cubit"
     },
     {
@@ -4300,8 +4311,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_auth_repository_dart",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "../../data/repositories/auth_repository.dart"
     },
     {
@@ -4322,8 +4333,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "login_state.dart"
     },
     {
@@ -4333,8 +4344,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginstate",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "loginstate"
     },
     {
@@ -4344,8 +4355,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_logininitial",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "logininitial"
     },
     {
@@ -4355,8 +4366,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginsubmitting",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "loginsubmitting"
     },
     {
@@ -4366,8 +4377,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginsuccess",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "loginsuccess"
     },
     {
@@ -4377,8 +4388,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginfailure",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "loginfailure"
     },
     {
@@ -4388,8 +4399,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_message",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "message"
     },
     {
@@ -4454,8 +4465,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository",
-      "community": 48,
-      "community_name": "firebase_auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "auth_repository.dart"
     },
     {
@@ -4465,8 +4476,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_authrepository",
-      "community": 48,
-      "community_name": "firebase_auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "authrepository"
     },
     {
@@ -4476,8 +4487,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_issignedin",
-      "community": 48,
-      "community_name": "firebase_auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "issignedin"
     },
     {
@@ -4487,8 +4498,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "bool_get",
-      "community": 48,
-      "community_name": "firebase_auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "bool get"
     },
     {
@@ -4498,8 +4509,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_watchauthentication",
-      "community": 48,
-      "community_name": "firebase_auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "watchauthentication"
     },
     {
@@ -4509,8 +4520,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signinwithemailandpassword",
-      "community": 48,
-      "community_name": "firebase_auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "signinwithemailandpassword"
     },
     {
@@ -4520,8 +4531,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signout",
-      "community": 48,
-      "community_name": "firebase_auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "signout"
     },
     {
@@ -4542,8 +4553,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_firebase_auth_repository_firebaseauthrepository",
-      "community": 48,
-      "community_name": "firebase_auth_repository.dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "firebaseauthrepository"
     },
     {
@@ -4652,8 +4663,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_routing_auth_session_notifier",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "auth_session_notifier.dart"
     },
     {
@@ -4685,8 +4696,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_routing_auth_session_notifier_subscription",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "_subscription"
     },
     {
@@ -4696,8 +4707,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "streamsubscription",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "streamsubscription"
     },
     {
@@ -4707,8 +4718,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_routing_auth_session_notifier_dispose",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "dispose"
     },
     {
@@ -4729,8 +4740,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_foundation_dart",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "package:flutter/foundation.dart"
     },
     {
@@ -4883,8 +4894,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_colors_dart",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "../../../../core/constants/app_colors.dart"
     },
     {
@@ -4916,8 +4927,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_text_styles_dart",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "../../../../core/constants/app_text_styles.dart"
     },
     {
@@ -4927,8 +4938,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_button_dart",
-      "community": 41,
-      "community_name": "../../../../core/constants/app_colors.dart",
+      "community": 70,
+      "community_name": "return_resolution.dart",
       "norm_label": "../../../../core/shared_widgets/custom_button.dart"
     },
     {
@@ -4938,8 +4949,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_text_field_dart",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 70,
+      "community_name": "return_resolution.dart",
       "norm_label": "../../../../core/shared_widgets/custom_text_field.dart"
     },
     {
@@ -5268,8 +5279,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 92,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "stock_summary_model.dart"
     },
     {
@@ -5279,8 +5290,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_stocksummarymodel",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 92,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "stocksummarymodel"
     },
     {
@@ -5290,8 +5301,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_totalitemscount",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 92,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "totalitemscount"
     },
     {
@@ -5301,8 +5312,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_totalinboundcount",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 92,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "totalinboundcount"
     },
     {
@@ -5312,8 +5323,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_totaloutboundcount",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 92,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "totaloutboundcount"
     },
     {
@@ -5323,8 +5334,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_lowstockitemscount",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 92,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "lowstockitemscount"
     },
     {
@@ -5334,8 +5345,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_fromjson",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 92,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "fromjson"
     },
     {
@@ -5345,8 +5356,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_tojson",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 92,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "tojson"
     },
     {
@@ -5455,7 +5466,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen",
-      "community": 100,
+      "community": 95,
       "community_name": "dashboard_screen.dart",
       "norm_label": "dashboard_screen.dart"
     },
@@ -5466,7 +5477,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_dashboardscreen",
-      "community": 100,
+      "community": 95,
       "community_name": "dashboard_screen.dart",
       "norm_label": "dashboardscreen"
     },
@@ -5477,7 +5488,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_dashboardscreenstate",
-      "community": 100,
+      "community": 95,
       "community_name": "dashboard_screen.dart",
       "norm_label": "_dashboardscreenstate"
     },
@@ -5488,7 +5499,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_createstate",
-      "community": 100,
+      "community": 95,
       "community_name": "dashboard_screen.dart",
       "norm_label": "createstate"
     },
@@ -5499,7 +5510,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_initstate",
-      "community": 100,
+      "community": 89,
       "community_name": "dashboard_screen.dart",
       "norm_label": "initstate"
     },
@@ -5510,8 +5521,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_build",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 41,
+      "community_name": "../../../../core/constants/app_colors.dart",
       "norm_label": "build"
     },
     {
@@ -5521,8 +5532,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_transactionhistory",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 41,
+      "community_name": "../../../../core/constants/app_colors.dart",
       "norm_label": "approutes.transactionhistory"
     },
     {
@@ -5532,8 +5543,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_routes_dart",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "../../../../core/constants/app_routes.dart"
     },
     {
@@ -5554,8 +5565,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_dashboard_cubit_dart",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "../../cubit/dashboard_cubit.dart"
     },
     {
@@ -5565,8 +5576,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_dashboard_state_dart",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "../../cubit/dashboard_state.dart"
     },
     {
@@ -5576,7 +5587,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_quick_action_bar_dart",
-      "community": 100,
+      "community": 95,
       "community_name": "dashboard_screen.dart",
       "norm_label": "../widgets/quick_action_bar.dart"
     },
@@ -5587,7 +5598,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_stock_items_list_dart",
-      "community": 100,
+      "community": 95,
       "community_name": "dashboard_screen.dart",
       "norm_label": "../widgets/stock_items_list.dart"
     },
@@ -5598,7 +5609,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_stock_summary_card_dart",
-      "community": 100,
+      "community": 95,
       "community_name": "dashboard_screen.dart",
       "norm_label": "../widgets/stock_summary_card.dart"
     },
@@ -5708,8 +5719,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "stock_items_list.dart"
     },
     {
@@ -5719,8 +5730,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_stockitemslist",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "stockitemslist"
     },
     {
@@ -5730,8 +5741,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_build",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "build"
     },
     {
@@ -5741,8 +5752,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_builditemcard",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "_builditemcard"
     },
     {
@@ -5818,8 +5829,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_itemcatalogcubit",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "itemcatalogcubit"
     },
     {
@@ -5895,8 +5906,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "item_catalog_state.dart"
     },
     {
@@ -5906,8 +5917,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcatalogstate",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "itemcatalogstate"
     },
     {
@@ -5917,8 +5928,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcataloginitial",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "itemcataloginitial"
     },
     {
@@ -5928,8 +5939,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcatalogloading",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "itemcatalogloading"
     },
     {
@@ -5939,8 +5950,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcatalogsuccess",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "itemcatalogsuccess"
     },
     {
@@ -5950,8 +5961,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcatalogfailure",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "itemcatalogfailure"
     },
     {
@@ -5961,8 +5972,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_items",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "items"
     },
     {
@@ -5972,8 +5983,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_message",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "message"
     },
     {
@@ -5994,8 +6005,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_cubit_itemscubit",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "itemscubit"
     },
     {
@@ -6060,8 +6071,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "items_state.dart"
     },
     {
@@ -6071,8 +6082,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsstate",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "itemsstate"
     },
     {
@@ -6082,8 +6093,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsinitial",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "itemsinitial"
     },
     {
@@ -6093,8 +6104,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsloading",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "itemsloading"
     },
     {
@@ -6104,8 +6115,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemssuccess",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "itemssuccess"
     },
     {
@@ -6115,8 +6126,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsfailure",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "itemsfailure"
     },
     {
@@ -6126,8 +6137,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_item",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "item"
     },
     {
@@ -6137,8 +6148,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_message",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "message"
     },
     {
@@ -6214,8 +6225,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_itemsrepository",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 96,
+      "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "itemsrepository"
     },
     {
@@ -6357,8 +6368,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_new_inventory_item_draft_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 96,
+      "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "../models/new_inventory_item_draft.dart"
     },
     {
@@ -6390,8 +6401,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 96,
+      "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "items_repository_base.dart"
     },
     {
@@ -6401,8 +6412,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_itemsrepositorybase",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 96,
+      "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "itemsrepositorybase"
     },
     {
@@ -6412,8 +6423,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_watchactiveitems",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 96,
+      "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "watchactiveitems"
     },
     {
@@ -6423,8 +6434,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_additem",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 96,
+      "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "additem"
     },
     {
@@ -6610,8 +6621,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_build",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 70,
+      "community_name": "return_resolution.dart",
       "norm_label": "build"
     },
     {
@@ -6621,8 +6632,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_dashboard",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 70,
+      "community_name": "return_resolution.dart",
       "norm_label": "approutes.dashboard"
     },
     {
@@ -6632,8 +6643,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_models_carton_piece_quantity_dart",
-      "community": 70,
-      "community_name": "return_resolution.dart",
+      "community": 26,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "../../../../core/models/carton_piece_quantity.dart"
     },
     {
@@ -6643,8 +6654,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_carton_piece_quantity_fields_dart",
-      "community": 70,
-      "community_name": "return_resolution.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "../../../../core/shared_widgets/carton_piece_quantity_fields.dart"
     },
     {
@@ -6687,8 +6698,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_inventory_item_selector_field_inventoryitemselectorfield",
-      "community": 65,
-      "community_name": "inventory_item_selector_field.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "inventoryitemselectorfield"
     },
     {
@@ -7006,8 +7017,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_printer_discovery_snapshot_dart",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 94,
+      "community_name": "item_catalog_cubit.dart",
       "norm_label": "../../data/models/printer_discovery_snapshot.dart"
     },
     {
@@ -7215,8 +7226,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_connection_profile",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "printer_connection_profile.dart"
     },
     {
@@ -7226,8 +7237,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_connection_profile_printerconnectionmode",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "printerconnectionmode"
     },
     {
@@ -7237,8 +7248,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_connection_profile_printerconnectionprofile",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "printerconnectionprofile"
     },
     {
@@ -7248,8 +7259,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_connection_profile_mode",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "mode"
     },
     {
@@ -7259,8 +7270,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_connection_profile_issupported",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "issupported"
     },
     {
@@ -7270,8 +7281,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_connection_profile_persistsselectionacrosssessions",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "persistsselectionacrosssessions"
     },
     {
@@ -7281,8 +7292,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_connection_profile_androidbluetooth",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "androidbluetooth"
     },
     {
@@ -7292,8 +7303,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "static_const",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "static const"
     },
     {
@@ -7303,8 +7314,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_connection_profile_unsupported",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 72,
+      "community_name": "printer_connection_profile.dart",
       "norm_label": "unsupported"
     },
     {
@@ -7314,8 +7325,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "printer_discovery_snapshot.dart"
     },
     {
@@ -7325,8 +7336,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot_printerdiscoveryavailability",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "printerdiscoveryavailability"
     },
     {
@@ -7347,8 +7358,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot_availability",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "availability"
     },
     {
@@ -7358,8 +7369,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot_devices",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "devices"
     },
     {
@@ -7369,8 +7380,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot_message",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "message"
     },
     {
@@ -7380,8 +7391,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "saved_printer_dart",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "saved_printer.dart"
     },
     {
@@ -7391,8 +7402,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "saved_printer.dart"
     },
     {
@@ -7402,8 +7413,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_savedprinter",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "savedprinter"
     },
     {
@@ -7413,8 +7424,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_address",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "address"
     },
     {
@@ -7424,8 +7435,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_name",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "name"
     },
     {
@@ -7435,8 +7446,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_displayname",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "displayname"
     },
     {
@@ -7446,8 +7457,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "string_get",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "string get"
     },
     {
@@ -7457,8 +7468,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_operator",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "operator"
     },
     {
@@ -7468,8 +7479,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_hashcode",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 62,
+      "community_name": "saved_printer.dart",
       "norm_label": "hashcode"
     },
     {
@@ -8018,8 +8029,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_printer_cubit_dart",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "../../cubit/printer_cubit.dart"
     },
     {
@@ -8029,8 +8040,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_printer_state_dart",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "../../cubit/printer_state.dart"
     },
     {
@@ -8040,8 +8051,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_setup_button",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "printer_setup_button.dart"
     },
     {
@@ -8051,8 +8062,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_setup_button_printersetupbutton",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "printersetupbutton"
     },
     {
@@ -8062,8 +8073,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_setup_button_build",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "build"
     },
     {
@@ -8073,8 +8084,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "printer_selection_dialog_dart",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
       "norm_label": "printer_selection_dialog.dart"
     },
     {
@@ -8109,6 +8120,17 @@
       "community": 99,
       "community_name": "thermal_receipt_content.dart",
       "norm_label": "_receiptitem"
+    },
+    {
+      "label": "_ReceiptTotal",
+      "file_type": "code",
+      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_content.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_presentation_widgets_thermal_receipt_content_receipttotal",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
+      "norm_label": "_receipttotal"
     },
     {
       "label": "_ReceiptDetail",
@@ -9217,8 +9239,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_returnsrepository",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "returnsrepository"
     },
     {
@@ -9459,8 +9481,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_return_resolution_dart",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "../models/return_resolution.dart"
     },
     {
@@ -9470,8 +9492,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_warehouse_return_draft_dart",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "../models/warehouse_return_draft.dart"
     },
     {
@@ -9481,8 +9503,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_warehouse_return_record_dart",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "../models/warehouse_return_record.dart"
     },
     {
@@ -9514,8 +9536,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "returns_repository_base.dart"
     },
     {
@@ -9525,8 +9547,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_returnsrepositorybase",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "returnsrepositorybase"
     },
     {
@@ -9536,8 +9558,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_watchpendingreturns",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "watchpendingreturns"
     },
     {
@@ -9547,8 +9569,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_createcustomerreturn",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "createcustomerreturn"
     },
     {
@@ -9558,8 +9580,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_resolvereturn",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "resolvereturn"
     },
     {
@@ -9624,8 +9646,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreen",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "warehousereturnscreen"
     },
     {
@@ -9635,8 +9657,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreenstate",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_warehousereturnscreenstate"
     },
     {
@@ -9976,8 +9998,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "warehouse_return_form.dart"
     },
     {
@@ -9987,8 +10009,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnform",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "warehousereturnform"
     },
     {
@@ -9998,8 +10020,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnformstate",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_warehousereturnformstate"
     },
     {
@@ -10009,8 +10031,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_returnsourcecontroller",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_returnsourcecontroller"
     },
     {
@@ -10020,8 +10042,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_selecteditem",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_selecteditem"
     },
     {
@@ -10031,8 +10053,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_quantity",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_quantity"
     },
     {
@@ -10042,8 +10064,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_createstate",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "createstate"
     },
     {
@@ -10053,8 +10075,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_dispose",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "dispose"
     },
     {
@@ -10075,8 +10097,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_showvalidationmessage",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_showvalidationmessage"
     },
     {
@@ -10086,8 +10108,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_build",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "build"
     },
     {
@@ -10097,8 +10119,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "items_presentation_widgets_inventory_item_selector_field_dart",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 41,
+      "community_name": "../../../../core/constants/app_colors.dart",
       "norm_label": "../../../items/presentation/widgets/inventory_item_selector_field.dart"
     },
     {
@@ -10108,8 +10130,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_returns_cubit_dart",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "../../cubit/returns_cubit.dart"
     },
     {
@@ -10119,8 +10141,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_returns_state_dart",
-      "community": 7,
-      "community_name": "add_item_form.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "../../cubit/returns_state.dart"
     },
     {
@@ -10141,8 +10163,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_stocktakecubit",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakecubit"
     },
     {
@@ -10383,8 +10405,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakestate",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakestate"
     },
     {
@@ -10394,8 +10416,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeinitial",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeinitial"
     },
     {
@@ -10405,8 +10427,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeloading",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeloading"
     },
     {
@@ -10416,8 +10438,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeready",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeready"
     },
     {
@@ -10438,8 +10460,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeactioninprogress",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeactioninprogress"
     },
     {
@@ -10449,8 +10471,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakefailure",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakefailure"
     },
     {
@@ -10460,8 +10482,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakecompleted",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakecompleted"
     },
     {
@@ -10471,8 +10493,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakecancelled",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakecancelled"
     },
     {
@@ -10724,8 +10746,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_stocktakesession",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "stocktakesession"
     },
     {
@@ -10746,8 +10768,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_savedstocktakecompletion",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "savedstocktakecompletion"
     },
     {
@@ -11626,8 +11648,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecard",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 34,
+      "community_name": "movement_ui_types.dart",
       "norm_label": "_stocktakelinecard"
     },
     {
@@ -11637,8 +11659,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecardstate",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 34,
+      "community_name": "movement_ui_types.dart",
       "norm_label": "_stocktakelinecardstate"
     },
     {
@@ -11857,8 +11879,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_cubit_movementhistorycubit",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "movementhistorycubit"
     },
     {
@@ -12143,8 +12165,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistorystate",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "movementhistorystate"
     },
     {
@@ -12165,8 +12187,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistoryloading",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "movementhistoryloading"
     },
     {
@@ -12176,8 +12198,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistorysuccess",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "movementhistorysuccess"
     },
     {
@@ -12187,8 +12209,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistoryfailure",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "movementhistoryfailure"
     },
     {
@@ -12792,8 +12814,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_models_inventory_movement_inventorymovementdraft",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 45,
+      "community_name": "login_screen.dart",
       "norm_label": "inventorymovementdraft"
     },
     {
@@ -14134,8 +14156,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_itemspane",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "_itemspane"
     },
     {
@@ -14277,8 +14299,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_initstate",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "initstate"
     },
     {
@@ -14354,8 +14376,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_build",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 105,
+      "community_name": "build",
       "norm_label": "build"
     },
     {
@@ -14365,8 +14387,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_warehousereturn",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 105,
+      "community_name": "build",
       "norm_label": "approutes.warehousereturn"
     },
     {
@@ -14376,8 +14398,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_stockadjustment",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 105,
+      "community_name": "build",
       "norm_label": "approutes.stockadjustment"
     },
     {
@@ -14387,8 +14409,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_additem",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 105,
+      "community_name": "build",
       "norm_label": "approutes.additem"
     },
     {
@@ -14684,8 +14706,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_datefilterbar",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "_datefilterbar"
     },
     {
@@ -14805,8 +14827,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_initstate",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "initstate"
     },
     {
@@ -14816,8 +14838,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_selectdaterange",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "_selectdaterange"
     },
     {
@@ -14827,8 +14849,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_build",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "build"
     },
     {
@@ -14915,8 +14937,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_adjustment_form_adjustmentform",
-      "community": 41,
-      "community_name": "../../../../core/constants/app_colors.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "adjustmentform"
     },
     {
@@ -14926,8 +14948,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_adjustment_form_adjustmentformstate",
-      "community": 41,
-      "community_name": "../../../../core/constants/app_colors.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_adjustmentformstate"
     },
     {
@@ -15003,8 +15025,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_adjustment_form_build",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 41,
+      "community_name": "../../../../core/constants/app_colors.dart",
       "norm_label": "build"
     },
     {
@@ -15168,8 +15190,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "movement_ui_types_dart",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "movement_ui_types.dart"
     },
     {
@@ -15190,8 +15212,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_item_quantity_sheet_itemquantitysheet",
-      "community": 26,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "itemquantitysheet"
     },
     {
@@ -15201,8 +15223,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_item_quantity_sheet_itemquantitysheetstate",
-      "community": 26,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_itemquantitysheetstate"
     },
     {
@@ -15509,8 +15531,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_type_selector_movementtypeselector",
-      "community": 99,
-      "community_name": "thermal_receipt_content.dart",
+      "community": 37,
+      "community_name": "movement_type_selector.dart",
       "norm_label": "movementtypeselector"
     },
     {
@@ -15520,8 +15542,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_type_selector_movementtypebutton",
-      "community": 99,
-      "community_name": "thermal_receipt_content.dart",
+      "community": 37,
+      "community_name": "movement_type_selector.dart",
       "norm_label": "_movementtypebutton"
     },
     {
@@ -15641,8 +15663,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "movement_ui_types.dart"
     },
     {
@@ -15652,8 +15674,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_movementkind",
-      "community": 26,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 38,
+      "community_name": "current_voucher_panel.dart",
       "norm_label": "movementkind"
     },
     {
@@ -15674,8 +15696,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_movementlineviewdata",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "movementlineviewdata"
     },
     {
@@ -15685,8 +15707,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_movementvoucherdetails",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "movementvoucherdetails"
     },
     {
@@ -15696,8 +15718,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_outbound",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "outbound"
     },
     {
@@ -15707,8 +15729,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_label",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "label"
     },
     {
@@ -15718,8 +15740,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_voucherlabel",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "voucherlabel"
     },
     {
@@ -15729,8 +15751,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_actionlabel",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "actionlabel"
     },
     {
@@ -15740,8 +15762,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_cartons",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "cartons"
     },
     {
@@ -15751,8 +15773,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_pieces",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "pieces"
     },
     {
@@ -15762,8 +15784,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_item",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "item"
     },
     {
@@ -15773,8 +15795,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_totalpieces",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "totalpieces"
     },
     {
@@ -15784,8 +15806,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_partyname",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "partyname"
     },
     {
@@ -15795,8 +15817,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_deliveredby",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "deliveredby"
     },
     {
@@ -15806,8 +15828,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_receivedby",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "receivedby"
     },
     {
@@ -15817,8 +15839,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_drivername",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "drivername"
     },
     {
@@ -15828,8 +15850,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_date",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "date"
     },
     {
@@ -15839,8 +15861,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_notes",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "notes"
     },
     {
@@ -15850,8 +15872,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_totalpiecesfor",
-      "community": 57,
-      "community_name": "dashboard_screen.dart",
+      "community": 7,
+      "community_name": "add_item_form.dart",
       "norm_label": "totalpiecesfor"
     },
     {
@@ -16158,8 +16180,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_selectable_item_card",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "selectable_item_card.dart"
     },
     {
@@ -16169,8 +16191,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_selectable_item_card_selectableitemcard",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "selectableitemcard"
     },
     {
@@ -16180,8 +16202,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_selectable_item_card_item",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "item"
     },
     {
@@ -16191,8 +16213,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_selectable_item_card_selectedline",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "selectedline"
     },
     {
@@ -16202,8 +16224,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_selectable_item_card_ontap",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "ontap"
     },
     {
@@ -16213,8 +16235,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_selectable_item_card_build",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 63,
+      "community_name": "login_cubit.dart",
       "norm_label": "build"
     },
     {
@@ -16279,8 +16301,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_transactionlistitem",
-      "community": 99,
-      "community_name": "thermal_receipt_content.dart",
+      "community": 75,
+      "community_name": "LoginCubit",
       "norm_label": "transactionlistitem"
     },
     {
@@ -16301,8 +16323,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_detailtext",
-      "community": 99,
-      "community_name": "thermal_receipt_content.dart",
+      "community": 75,
+      "community_name": "LoginCubit",
       "norm_label": "_detailtext"
     },
     {
@@ -16433,8 +16455,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_firebase_options",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "firebase_options.dart"
     },
     {
@@ -16444,8 +16466,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_firebase_options_defaultfirebaseoptions",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "defaultfirebaseoptions"
     },
     {
@@ -16455,8 +16477,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_firebase_options_web",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "web"
     },
     {
@@ -16466,8 +16488,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "static_const_firebaseoptions",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "static const firebaseoptions"
     },
     {
@@ -16477,8 +16499,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_firebase_options_android",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "android"
     },
     {
@@ -16488,8 +16510,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_firebase_options_ios",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "ios"
     },
     {
@@ -16499,8 +16521,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_firebase_options_macos",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "macos"
     },
     {
@@ -16510,8 +16532,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_firebase_options_windows",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "windows"
     },
     {
@@ -16521,8 +16543,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_firebase_core_firebase_core_dart",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "package:firebase_core/firebase_core.dart"
     },
     {
@@ -16543,8 +16565,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_main_stocktakeapp",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "stocktakeapp"
     },
     {
@@ -17447,6 +17469,116 @@
       "id": "graphify_out_memory_query_20260729_003633_\u0627\u0646\u0627_\u0639\u0645\u0644\u062a_\u0627\u0644\u0631\u0648\u0644\u0632_allow_read_write_if_true_\u0648\u0644\u0645_\u064a\u0633\u062c\u0644_source_nodes",
       "community": 91,
       "community_name": "responsive_layout.dart",
+      "norm_label": "source nodes"
+    },
+    {
+      "label": "query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645",
+      "community": 101,
+      "community_name": "Q: \u062e\u0637\u0647 \u0639\u0645\u0644 \u0644\u0644\u0645\u0631\u062a\u062c\u0639 \u0627\u0644\u0644\u064a \u0647\u064a\u062a\u0645 \u0631\u062c\u0648\u0639\u0647 \u0644\u0644\u0645\u0648\u0631\u062f \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u0645\u0631\u062a\u064a\u062d \u0627\u0644\u0645\u062e\u0632\u0646 \u0645\u0638\u0628\u0648\u0637 \u0648\u0628\u064a\u0631\u062c\u0639 \u0644\u0644\u0645\u062e\u0632\u0646 \u0643 \u0631\u0635\u064a\u062f \u0627\u0632\u0627\u064a \u0627\u0639\u0645\u0644 \u0628\u0642\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u064a\u0627\u062e\u062f \u0628\u0636\u0627\u0639\u0647 \u0648\u062a\u062a\u0633\u062c\u0628 \u0627\u0646\u0647\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0648\u062a\u0646\u0642\u0635 \u0645\u0646 \u0631\u0635\u064a\u062f \u0645\u062e\u0632\u0646 \u0647\u0644 \u0647\u064a \u0645\u0648\u062c\u0648\u062f\u0647 \u0628\u0634\u0643\u0644 \u062a\u0627\u0646\u064a \u061f",
+      "norm_label": "query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md"
+    },
+    {
+      "label": "Q: \u062e\u0637\u0647 \u0639\u0645\u0644 \u0644\u0644\u0645\u0631\u062a\u062c\u0639 \u0627\u0644\u0644\u064a \u0647\u064a\u062a\u0645 \u0631\u062c\u0648\u0639\u0647 \u0644\u0644\u0645\u0648\u0631\u062f \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u0645\u0631\u062a\u064a\u062d \u0627\u0644\u0645\u062e\u0632\u0646 \u0645\u0638\u0628\u0648\u0637 \u0648\u0628\u064a\u0631\u062c\u0639 \u0644\u0644\u0645\u062e\u0632\u0646 \u0643 \u0631\u0635\u064a\u062f \u0627\u0632\u0627\u064a \u0627\u0639\u0645\u0644 \u0628\u0642\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u064a\u0627\u062e\u062f \u0628\u0636\u0627\u0639\u0647 \u0648\u062a\u062a\u0633\u062c\u0628 \u0627\u0646\u0647\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0648\u062a\u0646\u0642\u0635 \u0645\u0646 \u0631\u0635\u064a\u062f \u0645\u062e\u0632\u0646 \u0647\u0644 \u0647\u064a \u0645\u0648\u062c\u0648\u062f\u0647 \u0628\u0634\u0643\u0644 \u062a\u0627\u0646\u064a \u061f",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_q_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645\u0631\u062a\u064a\u062d_\u0627\u0644\u0645\u062e\u0632\u0646_\u0645\u0638\u0628\u0648\u0637_\u0648\u0628\u064a\u0631\u062c\u0639_\u0644\u0644\u0645\u062e\u0632\u0646_\u0643_\u0631\u0635\u064a\u062f_\u0627\u0632\u0627\u064a_\u0627\u0639\u0645\u0644_\u0628\u0642\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u064a\u0627\u062e\u062f_\u0628\u0636\u0627\u0639\u0647_\u0648\u062a\u062a\u0633\u062c\u0628_\u0627\u0646\u0647\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0648\u062a\u0646\u0642\u0635_\u0645\u0646_\u0631\u0635\u064a\u062f_\u0645\u062e\u0632\u0646_\u0647\u0644_\u0647\u064a_\u0645\u0648\u062c\u0648\u062f\u0647_\u0628\u0634\u0643\u0644_\u062a\u0627\u0646\u064a",
+      "community": 101,
+      "community_name": "Q: \u062e\u0637\u0647 \u0639\u0645\u0644 \u0644\u0644\u0645\u0631\u062a\u062c\u0639 \u0627\u0644\u0644\u064a \u0647\u064a\u062a\u0645 \u0631\u062c\u0648\u0639\u0647 \u0644\u0644\u0645\u0648\u0631\u062f \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u0645\u0631\u062a\u064a\u062d \u0627\u0644\u0645\u062e\u0632\u0646 \u0645\u0638\u0628\u0648\u0637 \u0648\u0628\u064a\u0631\u062c\u0639 \u0644\u0644\u0645\u062e\u0632\u0646 \u0643 \u0631\u0635\u064a\u062f \u0627\u0632\u0627\u064a \u0627\u0639\u0645\u0644 \u0628\u0642\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u064a\u0627\u062e\u062f \u0628\u0636\u0627\u0639\u0647 \u0648\u062a\u062a\u0633\u062c\u0628 \u0627\u0646\u0647\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0648\u062a\u0646\u0642\u0635 \u0645\u0646 \u0631\u0635\u064a\u062f \u0645\u062e\u0632\u0646 \u0647\u0644 \u0647\u064a \u0645\u0648\u062c\u0648\u062f\u0647 \u0628\u0634\u0643\u0644 \u062a\u0627\u0646\u064a \u061f",
+      "norm_label": "q: \u062e\u0637\u0647 \u0639\u0645\u0644 \u0644\u0644\u0645\u0631\u062a\u062c\u0639 \u0627\u0644\u0644\u064a \u0647\u064a\u062a\u0645 \u0631\u062c\u0648\u0639\u0647 \u0644\u0644\u0645\u0648\u0631\u062f \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u0645\u0631\u062a\u064a\u062d \u0627\u0644\u0645\u062e\u0632\u0646 \u0645\u0638\u0628\u0648\u0637 \u0648\u0628\u064a\u0631\u062c\u0639 \u0644\u0644\u0645\u062e\u0632\u0646 \u0643 \u0631\u0635\u064a\u062f \u0627\u0632\u0627\u064a \u0627\u0639\u0645\u0644 \u0628\u0642\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u064a\u0627\u062e\u062f \u0628\u0636\u0627\u0639\u0647 \u0648\u062a\u062a\u0633\u062c\u0628 \u0627\u0646\u0647\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0648\u062a\u0646\u0642\u0635 \u0645\u0646 \u0631\u0635\u064a\u062f \u0645\u062e\u0632\u0646 \u0647\u0644 \u0647\u064a \u0645\u0648\u062c\u0648\u062f\u0647 \u0628\u0634\u0643\u0644 \u062a\u0627\u0646\u064a \u061f"
+    },
+    {
+      "label": "Answer",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_answer",
+      "community": 101,
+      "community_name": "Q: \u062e\u0637\u0647 \u0639\u0645\u0644 \u0644\u0644\u0645\u0631\u062a\u062c\u0639 \u0627\u0644\u0644\u064a \u0647\u064a\u062a\u0645 \u0631\u062c\u0648\u0639\u0647 \u0644\u0644\u0645\u0648\u0631\u062f \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u0645\u0631\u062a\u064a\u062d \u0627\u0644\u0645\u062e\u0632\u0646 \u0645\u0638\u0628\u0648\u0637 \u0648\u0628\u064a\u0631\u062c\u0639 \u0644\u0644\u0645\u062e\u0632\u0646 \u0643 \u0631\u0635\u064a\u062f \u0627\u0632\u0627\u064a \u0627\u0639\u0645\u0644 \u0628\u0642\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u064a\u0627\u062e\u062f \u0628\u0636\u0627\u0639\u0647 \u0648\u062a\u062a\u0633\u062c\u0628 \u0627\u0646\u0647\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0648\u062a\u0646\u0642\u0635 \u0645\u0646 \u0631\u0635\u064a\u062f \u0645\u062e\u0632\u0646 \u0647\u0644 \u0647\u064a \u0645\u0648\u062c\u0648\u062f\u0647 \u0628\u0634\u0643\u0644 \u062a\u0627\u0646\u064a \u061f",
+      "norm_label": "answer"
+    },
+    {
+      "label": "Outcome",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_outcome",
+      "community": 101,
+      "community_name": "Q: \u062e\u0637\u0647 \u0639\u0645\u0644 \u0644\u0644\u0645\u0631\u062a\u062c\u0639 \u0627\u0644\u0644\u064a \u0647\u064a\u062a\u0645 \u0631\u062c\u0648\u0639\u0647 \u0644\u0644\u0645\u0648\u0631\u062f \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u0645\u0631\u062a\u064a\u062d \u0627\u0644\u0645\u062e\u0632\u0646 \u0645\u0638\u0628\u0648\u0637 \u0648\u0628\u064a\u0631\u062c\u0639 \u0644\u0644\u0645\u062e\u0632\u0646 \u0643 \u0631\u0635\u064a\u062f \u0627\u0632\u0627\u064a \u0627\u0639\u0645\u0644 \u0628\u0642\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u064a\u0627\u062e\u062f \u0628\u0636\u0627\u0639\u0647 \u0648\u062a\u062a\u0633\u062c\u0628 \u0627\u0646\u0647\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0648\u062a\u0646\u0642\u0635 \u0645\u0646 \u0631\u0635\u064a\u062f \u0645\u062e\u0632\u0646 \u0647\u0644 \u0647\u064a \u0645\u0648\u062c\u0648\u062f\u0647 \u0628\u0634\u0643\u0644 \u062a\u0627\u0646\u064a \u061f",
+      "norm_label": "outcome"
+    },
+    {
+      "label": "Source Nodes",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_source_nodes",
+      "community": 101,
+      "community_name": "Q: \u062e\u0637\u0647 \u0639\u0645\u0644 \u0644\u0644\u0645\u0631\u062a\u062c\u0639 \u0627\u0644\u0644\u064a \u0647\u064a\u062a\u0645 \u0631\u062c\u0648\u0639\u0647 \u0644\u0644\u0645\u0648\u0631\u062f \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u0645\u0631\u062a\u064a\u062d \u0627\u0644\u0645\u062e\u0632\u0646 \u0645\u0638\u0628\u0648\u0637 \u0648\u0628\u064a\u0631\u062c\u0639 \u0644\u0644\u0645\u062e\u0632\u0646 \u0643 \u0631\u0635\u064a\u062f \u0627\u0632\u0627\u064a \u0627\u0639\u0645\u0644 \u0628\u0642\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0646\u0641\u0633\u0647 \u064a\u0639\u0646\u064a \u064a\u0627\u062e\u062f \u0628\u0636\u0627\u0639\u0647 \u0648\u062a\u062a\u0633\u062c\u0628 \u0627\u0646\u0647\u0627 \u0645\u0631\u062a\u062d\u0639 \u0644\u0644\u0645\u0648\u062f\u0631 \u0648\u062a\u0646\u0642\u0635 \u0645\u0646 \u0631\u0635\u064a\u062f \u0645\u062e\u0632\u0646 \u0647\u0644 \u0647\u064a \u0645\u0648\u062c\u0648\u062f\u0647 \u0628\u0634\u0643\u0644 \u062a\u0627\u0646\u064a \u061f",
+      "norm_label": "source nodes"
+    },
+    {
+      "label": "query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648",
+      "community": 102,
+      "community_name": "firestore_collections.dart",
+      "norm_label": "query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md"
+    },
+    {
+      "label": "Q: \u062f\u064a \u0647\u062a\u0643\u0648\u0646 \u0627\u064a\u0642\u0648\u0646\u0627\u062a \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u0648\u0639\u0627\u0648\u0632 \u0627\u062d\u0637 \u0644\u0648\u062c\u0648 \u0645\u0646\u0647\u0645 \u0641\u064a \u0627\u0648\u0644 \u0631\u064a\u0633\u064a\u062a \u0627\u0644\u0637\u0628\u0627\u0639\u0647 \u0645\u0646 \u0641\u0648\u0642 \u0628\u0634\u0643\u0644 \u0627\u062d\u062a\u0631\u0627\u0641\u064a \u0648\u064a\u0648\u062c\u0648\u062f \u062a\u0634\u0648\u064a\u0634 \u0641\u064a \u0627\u0644\u0637\u0628\u0627\u0639\u0647 \u0647\u0644 \u0644\u0647\u0627 \u0645\u0646 \u062d\u0644 \u0627\u0645 \u0644\u0627 \u0648\u0641\u064a \u0627\u0633\u0641\u0644 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0639\u0646\u062f \u0627\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0642\u0637\u0639 \u064a\u0643\u0648\u0646 \u0627\u062c\u0645\u0627\u0644\u064a \u0643\u0645 \u0643\u0631\u062a\u0648\u0646\u0647 \u0648\u062a\u062d\u062a\u0647\u0645 \u0643\u0627\u0645 \u0642\u0637\u0639\u0647 \u0627\u0639\u0645\u0644 \u0627\u0644\u062e\u0637\u0647",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_q_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648\u0644_\u0631\u064a\u0633\u064a\u062a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0645\u0646_\u0641\u0648\u0642_\u0628\u0634\u0643\u0644_\u0627\u062d\u062a\u0631\u0627\u0641\u064a_\u0648\u064a\u0648\u062c\u0648\u062f_\u062a\u0634\u0648\u064a\u0634_\u0641\u064a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0647\u0644_\u0644\u0647\u0627_\u0645\u0646_\u062d\u0644_\u0627\u0645_\u0644\u0627_\u0648\u0641\u064a_\u0627\u0633\u0641\u0644_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0639\u0646\u062f_\u0627\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0642\u0637\u0639_\u064a\u0643\u0648\u0646_\u0627\u062c\u0645\u0627\u0644\u064a_\u0643\u0645_\u0643\u0631\u062a\u0648\u0646\u0647_\u0648\u062a\u062d\u062a\u0647\u0645_\u0643\u0627\u0645_\u0642\u0637\u0639\u0647_\u0627\u0639\u0645\u0644_\u0627\u0644\u062e\u0637\u0647",
+      "community": 102,
+      "community_name": "firestore_collections.dart",
+      "norm_label": "q: \u062f\u064a \u0647\u062a\u0643\u0648\u0646 \u0627\u064a\u0642\u0648\u0646\u0627\u062a \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u0648\u0639\u0627\u0648\u0632 \u0627\u062d\u0637 \u0644\u0648\u062c\u0648 \u0645\u0646\u0647\u0645 \u0641\u064a \u0627\u0648\u0644 \u0631\u064a\u0633\u064a\u062a \u0627\u0644\u0637\u0628\u0627\u0639\u0647 \u0645\u0646 \u0641\u0648\u0642 \u0628\u0634\u0643\u0644 \u0627\u062d\u062a\u0631\u0627\u0641\u064a \u0648\u064a\u0648\u062c\u0648\u062f \u062a\u0634\u0648\u064a\u0634 \u0641\u064a \u0627\u0644\u0637\u0628\u0627\u0639\u0647 \u0647\u0644 \u0644\u0647\u0627 \u0645\u0646 \u062d\u0644 \u0627\u0645 \u0644\u0627 \u0648\u0641\u064a \u0627\u0633\u0641\u0644 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0639\u0646\u062f \u0627\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0642\u0637\u0639 \u064a\u0643\u0648\u0646 \u0627\u062c\u0645\u0627\u0644\u064a \u0643\u0645 \u0643\u0631\u062a\u0648\u0646\u0647 \u0648\u062a\u062d\u062a\u0647\u0645 \u0643\u0627\u0645 \u0642\u0637\u0639\u0647 \u0627\u0639\u0645\u0644 \u0627\u0644\u062e\u0637\u0647"
+    },
+    {
+      "label": "Answer",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_answer",
+      "community": 102,
+      "community_name": "firestore_collections.dart",
+      "norm_label": "answer"
+    },
+    {
+      "label": "Outcome",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_outcome",
+      "community": 102,
+      "community_name": "firestore_collections.dart",
+      "norm_label": "outcome"
+    },
+    {
+      "label": "Source Nodes",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_source_nodes",
+      "community": 102,
+      "community_name": "firestore_collections.dart",
       "norm_label": "source nodes"
     }
   ],
@@ -22186,6 +22318,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_core_models_thermal_receipt_data",
+      "target": "lib_core_models_thermal_receipt_data_totalcartons"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/core/models/thermal_receipt_data.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_core_models_thermal_receipt_data",
       "target": "lib_core_models_thermal_receipt_data_totalpieces"
     },
     {
@@ -22819,6 +22962,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_presentation_widgets_thermal_receipt_content_receiptitem",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_content.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_presentation_widgets_thermal_receipt_content_receipttotal",
       "target": "statelesswidget"
     },
     {
@@ -32159,6 +32313,17 @@
       "_origin": "ast",
       "source": "lib_features_printing_presentation_widgets_thermal_receipt_content",
       "target": "lib_features_printing_presentation_widgets_thermal_receipt_content_receiptitem"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_content.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_presentation_widgets_thermal_receipt_content",
+      "target": "lib_features_printing_presentation_widgets_thermal_receipt_content_receipttotal"
     },
     {
       "relation": "defines",
@@ -43099,8 +43264,96 @@
       "source": "graphify_out_memory_query_20260729_003633_\u0627\u0646\u0627_\u0639\u0645\u0644\u062a_\u0627\u0644\u0631\u0648\u0644\u0632_allow_read_write_if_true_\u0648\u0644\u0645_\u064a\u0633\u062c\u0644_q_\u0627\u0646\u0627_\u0639\u0645\u0644\u062a_\u0627\u0644\u0631\u0648\u0644\u0632_allow_read_write_if_true_\u0648\u0644\u0645_\u064a\u0633\u062c\u0644_\u062e\u0627\u0644\u0635_\u0639\u0627\u0648\u0632_\u062d\u0644",
       "target": "graphify_out_memory_query_20260729_003633_\u0627\u0646\u0627_\u0639\u0645\u0644\u062a_\u0627\u0644\u0631\u0648\u0644\u0632_allow_read_write_if_true_\u0648\u0644\u0645_\u064a\u0633\u062c\u0644_source_nodes",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645",
+      "target": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_q_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645\u0631\u062a\u064a\u062d_\u0627\u0644\u0645\u062e\u0632\u0646_\u0645\u0638\u0628\u0648\u0637_\u0648\u0628\u064a\u0631\u062c\u0639_\u0644\u0644\u0645\u062e\u0632\u0646_\u0643_\u0631\u0635\u064a\u062f_\u0627\u0632\u0627\u064a_\u0627\u0639\u0645\u0644_\u0628\u0642\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u064a\u0627\u062e\u062f_\u0628\u0636\u0627\u0639\u0647_\u0648\u062a\u062a\u0633\u062c\u0628_\u0627\u0646\u0647\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0648\u062a\u0646\u0642\u0635_\u0645\u0646_\u0631\u0635\u064a\u062f_\u0645\u062e\u0632\u0646_\u0647\u0644_\u0647\u064a_\u0645\u0648\u062c\u0648\u062f\u0647_\u0628\u0634\u0643\u0644_\u062a\u0627\u0646\u064a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_q_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645\u0631\u062a\u064a\u062d_\u0627\u0644\u0645\u062e\u0632\u0646_\u0645\u0638\u0628\u0648\u0637_\u0648\u0628\u064a\u0631\u062c\u0639_\u0644\u0644\u0645\u062e\u0632\u0646_\u0643_\u0631\u0635\u064a\u062f_\u0627\u0632\u0627\u064a_\u0627\u0639\u0645\u0644_\u0628\u0642\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u064a\u0627\u062e\u062f_\u0628\u0636\u0627\u0639\u0647_\u0648\u062a\u062a\u0633\u062c\u0628_\u0627\u0646\u0647\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0648\u062a\u0646\u0642\u0635_\u0645\u0646_\u0631\u0635\u064a\u062f_\u0645\u062e\u0632\u0646_\u0647\u0644_\u0647\u064a_\u0645\u0648\u062c\u0648\u062f\u0647_\u0628\u0634\u0643\u0644_\u062a\u0627\u0646\u064a",
+      "target": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_q_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645\u0631\u062a\u064a\u062d_\u0627\u0644\u0645\u062e\u0632\u0646_\u0645\u0638\u0628\u0648\u0637_\u0648\u0628\u064a\u0631\u062c\u0639_\u0644\u0644\u0645\u062e\u0632\u0646_\u0643_\u0631\u0635\u064a\u062f_\u0627\u0632\u0627\u064a_\u0627\u0639\u0645\u0644_\u0628\u0642\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u064a\u0627\u062e\u062f_\u0628\u0636\u0627\u0639\u0647_\u0648\u062a\u062a\u0633\u062c\u0628_\u0627\u0646\u0647\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0648\u062a\u0646\u0642\u0635_\u0645\u0646_\u0631\u0635\u064a\u062f_\u0645\u062e\u0632\u0646_\u0647\u0644_\u0647\u064a_\u0645\u0648\u062c\u0648\u062f\u0647_\u0628\u0634\u0643\u0644_\u062a\u0627\u0646\u064a",
+      "target": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_outcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_q_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645\u0631\u062a\u064a\u062d_\u0627\u0644\u0645\u062e\u0632\u0646_\u0645\u0638\u0628\u0648\u0637_\u0648\u0628\u064a\u0631\u062c\u0639_\u0644\u0644\u0645\u062e\u0632\u0646_\u0643_\u0631\u0635\u064a\u062f_\u0627\u0632\u0627\u064a_\u0627\u0639\u0645\u0644_\u0628\u0642\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u064a\u0627\u062e\u062f_\u0628\u0636\u0627\u0639\u0647_\u0648\u062a\u062a\u0633\u062c\u0628_\u0627\u0646\u0647\u0627_\u0645\u0631\u062a\u062d\u0639_\u0644\u0644\u0645\u0648\u062f\u0631_\u0648\u062a\u0646\u0642\u0635_\u0645\u0646_\u0631\u0635\u064a\u062f_\u0645\u062e\u0632\u0646_\u0647\u0644_\u0647\u064a_\u0645\u0648\u062c\u0648\u062f\u0647_\u0628\u0634\u0643\u0644_\u062a\u0627\u0646\u064a",
+      "target": "graphify_out_memory_query_20260730_101158_\u062e\u0637\u0647_\u0639\u0645\u0644_\u0644\u0644\u0645\u0631\u062a\u062c\u0639_\u0627\u0644\u0644\u064a_\u0647\u064a\u062a\u0645_\u0631\u062c\u0648\u0639\u0647_\u0644\u0644\u0645\u0648\u0631\u062f_\u0646\u0641\u0633\u0647_\u064a\u0639\u0646\u064a_\u0645_source_nodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648",
+      "target": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_q_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648\u0644_\u0631\u064a\u0633\u064a\u062a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0645\u0646_\u0641\u0648\u0642_\u0628\u0634\u0643\u0644_\u0627\u062d\u062a\u0631\u0627\u0641\u064a_\u0648\u064a\u0648\u062c\u0648\u062f_\u062a\u0634\u0648\u064a\u0634_\u0641\u064a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0647\u0644_\u0644\u0647\u0627_\u0645\u0646_\u062d\u0644_\u0627\u0645_\u0644\u0627_\u0648\u0641\u064a_\u0627\u0633\u0641\u0644_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0639\u0646\u062f_\u0627\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0642\u0637\u0639_\u064a\u0643\u0648\u0646_\u0627\u062c\u0645\u0627\u0644\u064a_\u0643\u0645_\u0643\u0631\u062a\u0648\u0646\u0647_\u0648\u062a\u062d\u062a\u0647\u0645_\u0643\u0627\u0645_\u0642\u0637\u0639\u0647_\u0627\u0639\u0645\u0644_\u0627\u0644\u062e\u0637\u0647",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_q_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648\u0644_\u0631\u064a\u0633\u064a\u062a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0645\u0646_\u0641\u0648\u0642_\u0628\u0634\u0643\u0644_\u0627\u062d\u062a\u0631\u0627\u0641\u064a_\u0648\u064a\u0648\u062c\u0648\u062f_\u062a\u0634\u0648\u064a\u0634_\u0641\u064a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0647\u0644_\u0644\u0647\u0627_\u0645\u0646_\u062d\u0644_\u0627\u0645_\u0644\u0627_\u0648\u0641\u064a_\u0627\u0633\u0641\u0644_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0639\u0646\u062f_\u0627\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0642\u0637\u0639_\u064a\u0643\u0648\u0646_\u0627\u062c\u0645\u0627\u0644\u064a_\u0643\u0645_\u0643\u0631\u062a\u0648\u0646\u0647_\u0648\u062a\u062d\u062a\u0647\u0645_\u0643\u0627\u0645_\u0642\u0637\u0639\u0647_\u0627\u0639\u0645\u0644_\u0627\u0644\u062e\u0637\u0647",
+      "target": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_q_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648\u0644_\u0631\u064a\u0633\u064a\u062a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0645\u0646_\u0641\u0648\u0642_\u0628\u0634\u0643\u0644_\u0627\u062d\u062a\u0631\u0627\u0641\u064a_\u0648\u064a\u0648\u062c\u0648\u062f_\u062a\u0634\u0648\u064a\u0634_\u0641\u064a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0647\u0644_\u0644\u0647\u0627_\u0645\u0646_\u062d\u0644_\u0627\u0645_\u0644\u0627_\u0648\u0641\u064a_\u0627\u0633\u0641\u0644_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0639\u0646\u062f_\u0627\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0642\u0637\u0639_\u064a\u0643\u0648\u0646_\u0627\u062c\u0645\u0627\u0644\u064a_\u0643\u0645_\u0643\u0631\u062a\u0648\u0646\u0647_\u0648\u062a\u062d\u062a\u0647\u0645_\u0643\u0627\u0645_\u0642\u0637\u0639\u0647_\u0627\u0639\u0645\u0644_\u0627\u0644\u062e\u0637\u0647",
+      "target": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_outcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_q_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648\u0644_\u0631\u064a\u0633\u064a\u062a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0645\u0646_\u0641\u0648\u0642_\u0628\u0634\u0643\u0644_\u0627\u062d\u062a\u0631\u0627\u0641\u064a_\u0648\u064a\u0648\u062c\u0648\u062f_\u062a\u0634\u0648\u064a\u0634_\u0641\u064a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0647\u0644_\u0644\u0647\u0627_\u0645\u0646_\u062d\u0644_\u0627\u0645_\u0644\u0627_\u0648\u0641\u064a_\u0627\u0633\u0641\u0644_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0639\u0646\u062f_\u0627\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0642\u0637\u0639_\u064a\u0643\u0648\u0646_\u0627\u062c\u0645\u0627\u0644\u064a_\u0643\u0645_\u0643\u0631\u062a\u0648\u0646\u0647_\u0648\u062a\u062d\u062a\u0647\u0645_\u0643\u0627\u0645_\u0642\u0637\u0639\u0647_\u0627\u0639\u0645\u0644_\u0627\u0644\u062e\u0637\u0647",
+      "target": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_source_nodes",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6e13c2402afa33af7db042a8a0b713db903e84f8"
+  "built_at_commit": "816a80aaf54e2fa6e8c3ed2dc5ab53798b13a540"
 }

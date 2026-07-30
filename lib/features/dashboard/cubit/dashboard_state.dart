@@ -10,8 +10,13 @@ class DashboardLoading extends DashboardState {}
 class DashboardSuccess extends DashboardState {
   final StockSummaryModel summary;
   final List<InventoryItem> items;
+  final List<InventoryItem> allItems;
 
-  DashboardSuccess({required this.summary, required this.items});
+  DashboardSuccess({
+    required this.summary,
+    required this.items,
+    required this.allItems,
+  });
 }
 
 class DashboardFailure extends DashboardState {

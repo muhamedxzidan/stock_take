@@ -12,6 +12,7 @@ class MovementReceiptMapper {
     required String partyLabel,
   }) {
     return ThermalReceiptData(
+      documentTitle: 'إذن حركة مخزن',
       voucherNumber: savedMovement.voucherNumber,
       movementLabel: movementLabel,
       date: _formatDate(draft.businessDate),
@@ -37,6 +38,7 @@ class MovementReceiptMapper {
 
   static ThermalReceiptData fromMovementRecord(MovementRecord movement) {
     return ThermalReceiptData(
+      documentTitle: 'إذن حركة مخزن',
       voucherNumber: movement.voucherNumber,
       movementLabel: _movementLabel(movement.type),
       date: _formatDate(movement.businessAt),

@@ -285,8 +285,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_material_dart",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "package:flutter/material.dart"
     },
     {
@@ -307,8 +307,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_app_router_approuter",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "approuter"
     },
     {
@@ -538,8 +538,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "static_const_string",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "static const string"
     },
     {
@@ -1924,8 +1924,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "firestore_collections.dart"
     },
     {
@@ -1935,8 +1935,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections_firestorecollections",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "firestorecollections"
     },
     {
@@ -1946,8 +1946,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections_items",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "items"
     },
     {
@@ -1957,8 +1957,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections_movements",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "movements"
     },
     {
@@ -1968,8 +1968,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections_returns",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "returns"
     },
     {
@@ -1979,8 +1979,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections_stocktakes",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "stocktakes"
     },
     {
@@ -1990,8 +1990,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections_stocktakelines",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "stocktakelines"
     },
     {
@@ -2001,8 +2001,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections_counters",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "counters"
     },
     {
@@ -2012,8 +2012,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_constants_firestore_collections_inventorycontrol",
-      "community": 25,
-      "community_name": "app_routes.dart",
+      "community": 73,
+      "community_name": "add_item_form.dart",
       "norm_label": "inventorycontrol"
     },
     {
@@ -2738,8 +2738,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "extensions_inventory_number_parsing_dart",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "../extensions/inventory_number_parsing.dart"
     },
     {
@@ -2840,6 +2840,17 @@
       "community": 53,
       "community_name": "adjustment_form.dart",
       "norm_label": "totalpieces"
+    },
+    {
+      "label": "documentTitle",
+      "file_type": "code",
+      "source_file": "lib/core/models/thermal_receipt_data.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_core_models_thermal_receipt_data_documenttitle",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
+      "norm_label": "documenttitle"
     },
     {
       "label": "voucherNumber",
@@ -3090,8 +3101,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_carton_piece_quantity_fields_cartonpiecequantityfields",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "cartonpiecequantityfields"
     },
     {
@@ -3112,8 +3123,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_carton_piece_quantity_fields_cartonpiecequantityfieldsstate",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_cartonpiecequantityfieldsstate"
     },
     {
@@ -3200,8 +3211,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "texteditingcontroller",
-      "community": 21,
-      "community_name": "package:flutter/material.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "texteditingcontroller"
     },
     {
@@ -3299,8 +3310,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "constants_app_colors_dart",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "../constants/app_colors.dart"
     },
     {
@@ -3453,8 +3464,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "custom_button.dart"
     },
     {
@@ -3464,8 +3475,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_custombutton",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "custombutton"
     },
     {
@@ -3475,8 +3486,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_text",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "text"
     },
     {
@@ -3486,8 +3497,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_onpressed",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "onpressed"
     },
     {
@@ -3508,8 +3519,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_icon",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "icon"
     },
     {
@@ -3519,8 +3530,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "icondata",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "icondata"
     },
     {
@@ -3530,8 +3541,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_backgroundcolor",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "backgroundcolor"
     },
     {
@@ -3552,8 +3563,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_isloading",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "isloading"
     },
     {
@@ -3563,8 +3574,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_build",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "build"
     },
     {
@@ -3607,8 +3618,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "key",
-      "community": 18,
-      "community_name": "dashboard_repository.dart",
+      "community": 61,
+      "community_name": "stock_summary_model.dart",
       "norm_label": "key"
     },
     {
@@ -4212,8 +4223,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "app_theme.dart"
     },
     {
@@ -4223,8 +4234,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme_apptheme",
-      "community": 81,
-      "community_name": "start_stocktake_card.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "apptheme"
     },
     {
@@ -4245,8 +4256,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_logincubit",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "logincubit"
     },
     {
@@ -4256,8 +4267,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "cubit"
     },
     {
@@ -4311,8 +4322,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_auth_repository_dart",
-      "community": 40,
-      "community_name": "selectable_item_card.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "../../data/repositories/auth_repository.dart"
     },
     {
@@ -4333,8 +4344,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "login_state.dart"
     },
     {
@@ -4344,8 +4355,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginstate",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "loginstate"
     },
     {
@@ -4355,8 +4366,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_logininitial",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "logininitial"
     },
     {
@@ -4366,8 +4377,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginsubmitting",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "loginsubmitting"
     },
     {
@@ -4377,8 +4388,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginsuccess",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "loginsuccess"
     },
     {
@@ -4388,8 +4399,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginfailure",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "loginfailure"
     },
     {
@@ -4399,8 +4410,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_message",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "message"
     },
     {
@@ -4465,8 +4476,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 48,
+      "community_name": "firebase_auth_repository.dart",
       "norm_label": "auth_repository.dart"
     },
     {
@@ -4476,8 +4487,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_authrepository",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 48,
+      "community_name": "firebase_auth_repository.dart",
       "norm_label": "authrepository"
     },
     {
@@ -4487,8 +4498,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_issignedin",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 48,
+      "community_name": "firebase_auth_repository.dart",
       "norm_label": "issignedin"
     },
     {
@@ -4498,8 +4509,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "bool_get",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 48,
+      "community_name": "firebase_auth_repository.dart",
       "norm_label": "bool get"
     },
     {
@@ -4509,8 +4520,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_watchauthentication",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 48,
+      "community_name": "firebase_auth_repository.dart",
       "norm_label": "watchauthentication"
     },
     {
@@ -4520,8 +4531,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signinwithemailandpassword",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 48,
+      "community_name": "firebase_auth_repository.dart",
       "norm_label": "signinwithemailandpassword"
     },
     {
@@ -4531,8 +4542,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signout",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 48,
+      "community_name": "firebase_auth_repository.dart",
       "norm_label": "signout"
     },
     {
@@ -4553,8 +4564,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_firebase_auth_repository_firebaseauthrepository",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 48,
+      "community_name": "firebase_auth_repository.dart",
       "norm_label": "firebaseauthrepository"
     },
     {
@@ -4663,8 +4674,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_routing_auth_session_notifier",
-      "community": 40,
-      "community_name": "selectable_item_card.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "auth_session_notifier.dart"
     },
     {
@@ -4674,8 +4685,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_routing_auth_session_notifier_authsessionnotifier",
-      "community": 40,
-      "community_name": "selectable_item_card.dart",
+      "community": 30,
+      "community_name": "TransactionsCubit",
       "norm_label": "authsessionnotifier"
     },
     {
@@ -4685,8 +4696,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "changenotifier",
-      "community": 40,
-      "community_name": "selectable_item_card.dart",
+      "community": 30,
+      "community_name": "TransactionsCubit",
       "norm_label": "changenotifier"
     },
     {
@@ -4696,8 +4707,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_routing_auth_session_notifier_subscription",
-      "community": 40,
-      "community_name": "selectable_item_card.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "_subscription"
     },
     {
@@ -4707,8 +4718,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "streamsubscription",
-      "community": 40,
-      "community_name": "selectable_item_card.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "streamsubscription"
     },
     {
@@ -4718,8 +4729,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_routing_auth_session_notifier_dispose",
-      "community": 40,
-      "community_name": "selectable_item_card.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "dispose"
     },
     {
@@ -4740,8 +4751,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_foundation_dart",
-      "community": 40,
-      "community_name": "selectable_item_card.dart",
+      "community": 84,
+      "community_name": "firebase_options.dart",
       "norm_label": "package:flutter/foundation.dart"
     },
     {
@@ -4927,8 +4938,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_text_styles_dart",
-      "community": 93,
-      "community_name": "../../../../core/constants/app_text_styles.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../../../core/constants/app_text_styles.dart"
     },
     {
@@ -4938,8 +4949,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_button_dart",
-      "community": 70,
-      "community_name": "return_resolution.dart",
+      "community": 41,
+      "community_name": "../../../../core/constants/app_colors.dart",
       "norm_label": "../../../../core/shared_widgets/custom_button.dart"
     },
     {
@@ -4949,8 +4960,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_text_field_dart",
-      "community": 70,
-      "community_name": "return_resolution.dart",
+      "community": 95,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../../../core/shared_widgets/custom_text_field.dart"
     },
     {
@@ -5136,7 +5147,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_models_inventory_item_dart",
-      "community": 96,
+      "community": 110,
       "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "../../../../core/models/inventory_item.dart"
     },
@@ -5147,8 +5158,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_stock_summary_model_dart",
-      "community": 60,
-      "community_name": "auth_session_notifier.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../data/models/stock_summary_model.dart"
     },
     {
@@ -5262,6 +5273,17 @@
       "norm_label": "items"
     },
     {
+      "label": "allItems",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/cubit/dashboard_state.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_cubit_dashboard_state_allitems",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
+      "norm_label": "allitems"
+    },
+    {
       "label": "message",
       "file_type": "code",
       "source_file": "lib/features/dashboard/cubit/dashboard_state.dart",
@@ -5271,6 +5293,105 @@
       "community": 89,
       "community_name": "dashboard_screen.dart",
       "norm_label": "message"
+    },
+    {
+      "label": "stock_balance_receipt_mapper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "community": 109,
+      "community_name": "stock_balance_receipt_mapper.dart",
+      "norm_label": "stock_balance_receipt_mapper.dart"
+    },
+    {
+      "label": "StockBalanceReceiptMapper",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_stockbalancereceiptmapper",
+      "community": 109,
+      "community_name": "stock_balance_receipt_mapper.dart",
+      "norm_label": "stockbalancereceiptmapper"
+    },
+    {
+      "label": "_",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "users_mohamedzidan_project_stock_take_stock_take_lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "community": 109,
+      "community_name": "stock_balance_receipt_mapper.dart",
+      "norm_label": "_"
+    },
+    {
+      "label": "fromItems",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_fromitems",
+      "community": 109,
+      "community_name": "stock_balance_receipt_mapper.dart",
+      "norm_label": "fromitems"
+    },
+    {
+      "label": "_buildReference",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_buildreference",
+      "community": 109,
+      "community_name": "stock_balance_receipt_mapper.dart",
+      "norm_label": "_buildreference"
+    },
+    {
+      "label": "_formatDateTime",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_formatdatetime",
+      "community": 109,
+      "community_name": "stock_balance_receipt_mapper.dart",
+      "norm_label": "_formatdatetime"
+    },
+    {
+      "label": "_twoDigits",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_twodigits",
+      "community": 109,
+      "community_name": "stock_balance_receipt_mapper.dart",
+      "norm_label": "_twodigits"
+    },
+    {
+      "label": "../../../../core/models/carton_piece_quantity.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "core_models_carton_piece_quantity_dart",
+      "community": 109,
+      "community_name": "stock_balance_receipt_mapper.dart",
+      "norm_label": "../../../../core/models/carton_piece_quantity.dart"
+    },
+    {
+      "label": "../../../../core/models/thermal_receipt_data.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "core_models_thermal_receipt_data_dart",
+      "community": 2,
+      "community_name": "app_router.dart",
+      "norm_label": "../../../../core/models/thermal_receipt_data.dart"
     },
     {
       "label": "stock_summary_model.dart",
@@ -5433,7 +5554,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_repositories_dashboard_repository_base",
-      "community": 96,
+      "community": 110,
       "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "dashboard_repository_base.dart"
     },
@@ -5455,7 +5576,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_repositories_dashboard_repository_base_watchitems",
-      "community": 96,
+      "community": 110,
       "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "watchitems"
     },
@@ -5477,8 +5598,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_dashboardscreen",
-      "community": 95,
-      "community_name": "dashboard_screen.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "dashboardscreen"
     },
     {
@@ -5488,8 +5609,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_dashboardscreenstate",
-      "community": 95,
-      "community_name": "dashboard_screen.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_dashboardscreenstate"
     },
     {
@@ -5510,9 +5631,20 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_initstate",
-      "community": 89,
+      "community": 95,
       "community_name": "dashboard_screen.dart",
       "norm_label": "initstate"
+    },
+    {
+      "label": "_printStockBalance",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/presentation/screens/dashboard_screen.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_presentation_screens_dashboard_screen_printstockbalance",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
+      "norm_label": "_printstockbalance"
     },
     {
       "label": "build",
@@ -5521,8 +5653,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_build",
-      "community": 41,
-      "community_name": "../../../../core/constants/app_colors.dart",
+      "community": 95,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "build"
     },
     {
@@ -5532,8 +5664,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_transactionhistory",
-      "community": 41,
-      "community_name": "../../../../core/constants/app_colors.dart",
+      "community": 95,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "approutes.transactionhistory"
     },
     {
@@ -5559,14 +5691,25 @@
       "norm_label": "../../../../core/shared_widgets/custom_app_bar.dart"
     },
     {
+      "label": "../../../printing/presentation/widgets/thermal_receipt_dialog.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "printing_presentation_widgets_thermal_receipt_dialog_dart",
+      "community": 95,
+      "community_name": "dashboard_screen.dart",
+      "norm_label": "../../../printing/presentation/widgets/thermal_receipt_dialog.dart"
+    },
+    {
       "label": "../../cubit/dashboard_cubit.dart",
       "file_type": "code",
       "source_file": null,
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_dashboard_cubit_dart",
-      "community": 93,
-      "community_name": "../../../../core/constants/app_text_styles.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../cubit/dashboard_cubit.dart"
     },
     {
@@ -5576,9 +5719,20 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_dashboard_state_dart",
-      "community": 93,
-      "community_name": "../../../../core/constants/app_text_styles.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../cubit/dashboard_state.dart"
+    },
+    {
+      "label": "../../data/mappers/stock_balance_receipt_mapper.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "data_mappers_stock_balance_receipt_mapper_dart",
+      "community": 95,
+      "community_name": "dashboard_screen.dart",
+      "norm_label": "../../data/mappers/stock_balance_receipt_mapper.dart"
     },
     {
       "label": "../widgets/quick_action_bar.dart",
@@ -5647,6 +5801,17 @@
       "norm_label": "_quickaction"
     },
     {
+      "label": "onPrintStockBalance",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_onprintstockbalance",
+      "community": 61,
+      "community_name": "stock_summary_model.dart",
+      "norm_label": "onprintstockbalance"
+    },
+    {
       "label": "title",
       "file_type": "code",
       "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
@@ -5680,15 +5845,26 @@
       "norm_label": "color"
     },
     {
-      "label": "route",
+      "label": "onTap",
       "file_type": "code",
       "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
       "source_location": null,
       "_origin": "ast",
-      "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_route",
+      "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_ontap",
       "community": 61,
       "community_name": "stock_summary_model.dart",
-      "norm_label": "route"
+      "norm_label": "ontap"
+    },
+    {
+      "label": "key",
+      "file_type": "code",
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_key",
+      "community": 61,
+      "community_name": "stock_summary_model.dart",
+      "norm_label": "key"
     },
     {
       "label": "build",
@@ -5697,9 +5873,64 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_quick_action_bar_build",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 105,
+      "community_name": "build",
       "norm_label": "build"
+    },
+    {
+      "label": "AppRoutes.addItem",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "route_approutes_additem",
+      "community": 105,
+      "community_name": "build",
+      "norm_label": "approutes.additem"
+    },
+    {
+      "label": "AppRoutes.newInboundMovement",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "route_approutes_newinboundmovement",
+      "community": 105,
+      "community_name": "build",
+      "norm_label": "approutes.newinboundmovement"
+    },
+    {
+      "label": "AppRoutes.newOutboundMovement",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "route_approutes_newoutboundmovement",
+      "community": 105,
+      "community_name": "build",
+      "norm_label": "approutes.newoutboundmovement"
+    },
+    {
+      "label": "AppRoutes.warehouseReturn",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "route_approutes_warehousereturn",
+      "community": 105,
+      "community_name": "build",
+      "norm_label": "approutes.warehousereturn"
+    },
+    {
+      "label": "AppRoutes.stockAdjustment",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "route_approutes_stockadjustment",
+      "community": 105,
+      "community_name": "build",
+      "norm_label": "approutes.stockadjustment"
     },
     {
       "label": "_buildActionButton",
@@ -5719,8 +5950,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list",
-      "community": 93,
-      "community_name": "../../../../core/constants/app_text_styles.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "stock_items_list.dart"
     },
     {
@@ -5730,8 +5961,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_stockitemslist",
-      "community": 93,
-      "community_name": "../../../../core/constants/app_text_styles.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "stockitemslist"
     },
     {
@@ -5741,8 +5972,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_build",
-      "community": 93,
-      "community_name": "../../../../core/constants/app_text_styles.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "build"
     },
     {
@@ -5752,8 +5983,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_builditemcard",
-      "community": 93,
-      "community_name": "../../../../core/constants/app_text_styles.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "_builditemcard"
     },
     {
@@ -6368,7 +6599,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_new_inventory_item_draft_dart",
-      "community": 96,
+      "community": 110,
       "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "../models/new_inventory_item_draft.dart"
     },
@@ -6401,7 +6632,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base",
-      "community": 96,
+      "community": 110,
       "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "items_repository_base.dart"
     },
@@ -6423,7 +6654,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_watchactiveitems",
-      "community": 96,
+      "community": 110,
       "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "watchactiveitems"
     },
@@ -6434,7 +6665,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_additem",
-      "community": 96,
+      "community": 110,
       "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "additem"
     },
@@ -6621,8 +6852,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_build",
-      "community": 70,
-      "community_name": "return_resolution.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "build"
     },
     {
@@ -6632,20 +6863,9 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_dashboard",
-      "community": 70,
-      "community_name": "return_resolution.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "approutes.dashboard"
-    },
-    {
-      "label": "../../../../core/models/carton_piece_quantity.dart",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "core_models_carton_piece_quantity_dart",
-      "community": 26,
-      "community_name": "tablet_navigation_rail.dart",
-      "norm_label": "../../../../core/models/carton_piece_quantity.dart"
     },
     {
       "label": "../../../../core/shared_widgets/carton_piece_quantity_fields.dart",
@@ -6654,8 +6874,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_carton_piece_quantity_fields_dart",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 70,
+      "community_name": "return_resolution.dart",
       "norm_label": "../../../../core/shared_widgets/carton_piece_quantity_fields.dart"
     },
     {
@@ -6709,8 +6929,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_inventory_item_selector_field_inventoryitempickersheet",
-      "community": 65,
-      "community_name": "inventory_item_selector_field.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_inventoryitempickersheet"
     },
     {
@@ -6720,8 +6940,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_inventory_item_selector_field_inventoryitempickersheetstate",
-      "community": 65,
-      "community_name": "inventory_item_selector_field.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_inventoryitempickersheetstate"
     },
     {
@@ -7006,8 +7226,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "dart_typed_data",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "dart:typed_data"
     },
     {
@@ -7017,8 +7237,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_printer_discovery_snapshot_dart",
-      "community": 94,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 68,
+      "community_name": "package:go_router/go_router.dart",
       "norm_label": "../../data/models/printer_discovery_snapshot.dart"
     },
     {
@@ -7347,8 +7567,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot_printerdiscoverysnapshot",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 113,
+      "community_name": "PrinterRepositoryBase",
       "norm_label": "printerdiscoverysnapshot"
     },
     {
@@ -7501,8 +7721,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_bluetoothprinterrepository",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 113,
+      "community_name": "PrinterRepositoryBase",
       "norm_label": "bluetoothprinterrepository"
     },
     {
@@ -7655,8 +7875,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_printer_connection_profile_dart",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "../models/printer_connection_profile.dart"
     },
     {
@@ -7666,8 +7886,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_printer_discovery_snapshot_dart",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "../models/printer_discovery_snapshot.dart"
     },
     {
@@ -7677,8 +7897,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_saved_printer_dart",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "../models/saved_printer.dart"
     },
     {
@@ -7699,8 +7919,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "printer_repository_base.dart"
     },
     {
@@ -7710,8 +7930,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_printerrepositorybase",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 113,
+      "community_name": "PrinterRepositoryBase",
       "norm_label": "printerrepositorybase"
     },
     {
@@ -7721,8 +7941,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_connectionprofile",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "connectionprofile"
     },
     {
@@ -7732,8 +7952,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "printerconnectionprofile_get",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "printerconnectionprofile get"
     },
     {
@@ -7743,8 +7963,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_loadselectedprinter",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "loadselectedprinter"
     },
     {
@@ -7754,8 +7974,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_saveselectedprinter",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "saveselectedprinter"
     },
     {
@@ -7765,8 +7985,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_discoverprinters",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "discoverprinters"
     },
     {
@@ -7776,8 +7996,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_connect",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "connect"
     },
     {
@@ -7787,8 +8007,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_printreceiptpng",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 40,
+      "community_name": "selectable_item_card.dart",
       "norm_label": "printreceiptpng"
     },
     {
@@ -8221,17 +8441,6 @@
       "norm_label": "build"
     },
     {
-      "label": "../../../../core/models/thermal_receipt_data.dart",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "core_models_thermal_receipt_data_dart",
-      "community": 2,
-      "community_name": "app_router.dart",
-      "norm_label": "../../../../core/models/thermal_receipt_data.dart"
-    },
-    {
       "label": "thermal_receipt_dialog.dart",
       "file_type": "code",
       "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart",
@@ -8392,8 +8601,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "return_resolution_cubit.dart"
     },
     {
@@ -8414,8 +8623,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_repository",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "_repository"
     },
     {
@@ -8425,8 +8634,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_subscription",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "_subscription"
     },
     {
@@ -8436,8 +8645,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_pendingreturns",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "_pendingreturns"
     },
     {
@@ -8447,8 +8656,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_resolvingreturnid",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "_resolvingreturnid"
     },
     {
@@ -8458,8 +8667,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_loadpendingreturns",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "loadpendingreturns"
     },
     {
@@ -8469,8 +8678,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_resolvereturn",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "resolvereturn"
     },
     {
@@ -8480,8 +8689,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_close",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "close"
     },
     {
@@ -8502,8 +8711,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_warehouse_return_record_dart",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "../../data/models/warehouse_return_record.dart"
     },
     {
@@ -8535,8 +8744,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "return_resolution_state_dart",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 49,
+      "community_name": "MovementHistoryCubit",
       "norm_label": "return_resolution_state.dart"
     },
     {
@@ -8854,8 +9063,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "return_resolution.dart"
     },
     {
@@ -8865,8 +9074,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_returnresolutionkind",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "returnresolutionkind"
     },
     {
@@ -8876,8 +9085,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_returnresolutiondraft",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "returnresolutiondraft"
     },
     {
@@ -8887,8 +9096,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_savedreturnresolution",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "savedreturnresolution"
     },
     {
@@ -8898,8 +9107,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_returnid",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "returnid"
     },
     {
@@ -8909,8 +9118,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_suppliername",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "suppliername"
     },
     {
@@ -8920,8 +9129,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_kind",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "kind"
     },
     {
@@ -8931,8 +9140,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_returnnumber",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "returnnumber"
     },
     {
@@ -8942,8 +9151,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_movementid",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 93,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "movementid"
     },
     {
@@ -9063,8 +9272,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "warehouse_return_record.dart"
     },
     {
@@ -9074,8 +9283,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_warehousereturnstatus",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "warehousereturnstatus"
     },
     {
@@ -9085,8 +9294,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_warehousereturnrecord",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "warehousereturnrecord"
     },
     {
@@ -9096,8 +9305,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_id",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "id"
     },
     {
@@ -9107,8 +9316,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_returnnumber",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "returnnumber"
     },
     {
@@ -9118,8 +9327,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_itemid",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "itemid"
     },
     {
@@ -9129,8 +9338,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_itemname",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "itemname"
     },
     {
@@ -9140,8 +9349,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_itemcode",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "itemcode"
     },
     {
@@ -9151,8 +9360,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_itemspercarton",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "itemspercarton"
     },
     {
@@ -9162,8 +9371,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "int",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "int?"
     },
     {
@@ -9173,8 +9382,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_quantitypieces",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "quantitypieces"
     },
     {
@@ -9184,8 +9393,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_sourcename",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "sourcename"
     },
     {
@@ -9195,8 +9404,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_status",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "status"
     },
     {
@@ -9206,8 +9415,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_warehouse_return_record_receivedat",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "receivedat"
     },
     {
@@ -9217,8 +9426,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "datetime",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "datetime"
     },
     {
@@ -9239,8 +9448,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_returnsrepository",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "returnsrepository"
     },
     {
@@ -9481,8 +9690,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_return_resolution_dart",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "../models/return_resolution.dart"
     },
     {
@@ -9492,8 +9701,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_warehouse_return_draft_dart",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "../models/warehouse_return_draft.dart"
     },
     {
@@ -9503,8 +9712,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_warehouse_return_record_dart",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "../models/warehouse_return_record.dart"
     },
     {
@@ -9536,8 +9745,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "returns_repository_base.dart"
     },
     {
@@ -9547,8 +9756,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_returnsrepositorybase",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "returnsrepositorybase"
     },
     {
@@ -9558,8 +9767,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_watchpendingreturns",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "watchpendingreturns"
     },
     {
@@ -9569,8 +9778,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_createcustomerreturn",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "createcustomerreturn"
     },
     {
@@ -9580,8 +9789,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_resolvereturn",
-      "community": 73,
-      "community_name": "add_item_form.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "resolvereturn"
     },
     {
@@ -9646,8 +9855,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreen",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "warehousereturnscreen"
     },
     {
@@ -9657,8 +9866,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreenstate",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "_warehousereturnscreenstate"
     },
     {
@@ -9690,8 +9899,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_initstate",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "initstate"
     },
     {
@@ -9767,8 +9976,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "return_workflow_card.dart"
     },
     {
@@ -9822,8 +10031,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_countbadge",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_countbadge"
     },
     {
@@ -9833,8 +10042,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_emptypendingreturns",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_emptypendingreturns"
     },
     {
@@ -9844,8 +10053,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_warehousereturn",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "warehousereturn"
     },
     {
@@ -9855,8 +10064,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_isresolving",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "isresolving"
     },
     {
@@ -9866,8 +10075,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_returnnumber",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "returnnumber"
     },
     {
@@ -9877,8 +10086,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_kind",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "kind"
     },
     {
@@ -9888,8 +10097,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_suppliercontroller",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_suppliercontroller"
     },
     {
@@ -9899,8 +10108,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_errortext",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_errortext"
     },
     {
@@ -9910,8 +10119,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_count",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "count"
     },
     {
@@ -9921,8 +10130,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_build",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "build"
     },
     {
@@ -9943,8 +10152,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_formattedquantity",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_formattedquantity"
     },
     {
@@ -9954,8 +10163,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_createstate",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "createstate"
     },
     {
@@ -9965,8 +10174,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_dispose",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "dispose"
     },
     {
@@ -9976,8 +10185,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_confirm",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_confirm"
     },
     {
@@ -9987,8 +10196,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_return_resolution_state_dart",
-      "community": 54,
-      "community_name": "../constants/app_colors.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "../../cubit/return_resolution_state.dart"
     },
     {
@@ -9998,8 +10207,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "warehouse_return_form.dart"
     },
     {
@@ -10009,8 +10218,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnform",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "warehousereturnform"
     },
     {
@@ -10020,8 +10229,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnformstate",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "_warehousereturnformstate"
     },
     {
@@ -10031,8 +10240,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_returnsourcecontroller",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "_returnsourcecontroller"
     },
     {
@@ -10042,8 +10251,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_selecteditem",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "_selecteditem"
     },
     {
@@ -10053,8 +10262,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_quantity",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "_quantity"
     },
     {
@@ -10064,8 +10273,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_createstate",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "createstate"
     },
     {
@@ -10075,8 +10284,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_dispose",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "dispose"
     },
     {
@@ -10097,8 +10306,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_showvalidationmessage",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "_showvalidationmessage"
     },
     {
@@ -10108,8 +10317,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_build",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "build"
     },
     {
@@ -10119,8 +10328,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "items_presentation_widgets_inventory_item_selector_field_dart",
-      "community": 41,
-      "community_name": "../../../../core/constants/app_colors.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "../../../items/presentation/widgets/inventory_item_selector_field.dart"
     },
     {
@@ -10130,8 +10339,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_returns_cubit_dart",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "../../cubit/returns_cubit.dart"
     },
     {
@@ -10141,8 +10350,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_returns_state_dart",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 15,
+      "community_name": "inbound_form.dart",
       "norm_label": "../../cubit/returns_state.dart"
     },
     {
@@ -10163,8 +10372,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_stocktakecubit",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakecubit"
     },
     {
@@ -10405,8 +10614,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakestate",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakestate"
     },
     {
@@ -10416,8 +10625,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeinitial",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakeinitial"
     },
     {
@@ -10427,8 +10636,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeloading",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakeloading"
     },
     {
@@ -10438,8 +10647,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeready",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakeready"
     },
     {
@@ -10460,8 +10669,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeactioninprogress",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakeactioninprogress"
     },
     {
@@ -10471,8 +10680,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakefailure",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakefailure"
     },
     {
@@ -10482,8 +10691,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakecompleted",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakecompleted"
     },
     {
@@ -10493,8 +10702,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakecancelled",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakecancelled"
     },
     {
@@ -10581,8 +10790,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "stocktake_line.dart"
     },
     {
@@ -10592,8 +10801,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_stocktakeline",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "stocktakeline"
     },
     {
@@ -10603,8 +10812,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_itemid",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "itemid"
     },
     {
@@ -10614,8 +10823,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_itemnamesnapshot",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "itemnamesnapshot"
     },
     {
@@ -10625,8 +10834,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_itemcodesnapshot",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "itemcodesnapshot"
     },
     {
@@ -10636,8 +10845,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_unit",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "unit"
     },
     {
@@ -10647,8 +10856,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_itemspercarton",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "itemspercarton"
     },
     {
@@ -10658,8 +10867,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_systemquantitypieces",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "systemquantitypieces"
     },
     {
@@ -10669,8 +10878,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_actualquantitypieces",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "actualquantitypieces"
     },
     {
@@ -10680,8 +10889,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_differencepieces",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "differencepieces"
     },
     {
@@ -10691,8 +10900,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_counted",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "counted"
     },
     {
@@ -10702,8 +10911,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_countedat",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "countedat"
     },
     {
@@ -10713,8 +10922,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_line_copywith",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "copywith"
     },
     {
@@ -10746,8 +10955,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_stocktakesession",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakesession"
     },
     {
@@ -10768,8 +10977,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_savedstocktakecompletion",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "savedstocktakecompletion"
     },
     {
@@ -11648,8 +11857,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecard",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_stocktakelinecard"
     },
     {
@@ -11659,8 +11868,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecardstate",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "_stocktakelinecardstate"
     },
     {
@@ -11879,8 +12088,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_cubit_movementhistorycubit",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "movementhistorycubit"
     },
     {
@@ -12165,8 +12374,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistorystate",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementhistorystate"
     },
     {
@@ -12187,8 +12396,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistoryloading",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementhistoryloading"
     },
     {
@@ -12198,8 +12407,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistorysuccess",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementhistorysuccess"
     },
     {
@@ -12209,8 +12418,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistoryfailure",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementhistoryfailure"
     },
     {
@@ -12506,8 +12715,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_inventory_movement_dart",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 45,
+      "community_name": "login_screen.dart",
       "norm_label": "../../data/models/inventory_movement.dart"
     },
     {
@@ -12517,8 +12726,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_transaction_model_dart",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 11,
+      "community_name": "item_model.dart",
       "norm_label": "../data/models/transaction_model.dart"
     },
     {
@@ -12781,8 +12990,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_movement_record_dart",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "../models/movement_record.dart"
     },
     {
@@ -12814,8 +13023,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_models_inventory_movement_inventorymovementdraft",
-      "community": 45,
-      "community_name": "login_screen.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "inventorymovementdraft"
     },
     {
@@ -12825,8 +13034,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_models_inventory_movement_savedinventorymovement",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 57,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "savedinventorymovement"
     },
     {
@@ -13463,8 +13672,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_models_transaction_model_transactiontype",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 10,
+      "community_name": "transactions_cubit.dart",
       "norm_label": "transactiontype"
     },
     {
@@ -13672,8 +13881,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_repositories_transactions_repository_transactionsrepository",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "transactionsrepository"
     },
     {
@@ -13969,8 +14178,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_transaction_model_dart",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "../models/transaction_model.dart"
     },
     {
@@ -14002,8 +14211,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_repositories_transactions_repository_base",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "transactions_repository_base.dart"
     },
     {
@@ -14013,8 +14222,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_repositories_transactions_repository_base_transactionsrepositorybase",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "transactionsrepositorybase"
     },
     {
@@ -14024,8 +14233,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_repositories_transactions_repository_base_watchmovements",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "watchmovements"
     },
     {
@@ -14035,8 +14244,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_repositories_transactions_repository_base_createinboundmovement",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "createinboundmovement"
     },
     {
@@ -14046,8 +14255,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_repositories_transactions_repository_base_createoutboundmovement",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "createoutboundmovement"
     },
     {
@@ -14057,8 +14266,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_repositories_transactions_repository_base_createtransaction",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "createtransaction"
     },
     {
@@ -14068,8 +14277,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_repositories_transactions_repository_base_fetchtransactions",
-      "community": 15,
-      "community_name": "inbound_form.dart",
+      "community": 2,
+      "community_name": "app_router.dart",
       "norm_label": "fetchtransactions"
     },
     {
@@ -14134,8 +14343,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_newmovementscreen",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 114,
+      "community_name": "_NewMovementScreenState",
       "norm_label": "newmovementscreen"
     },
     {
@@ -14145,8 +14354,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_newmovementscreenstate",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 114,
+      "community_name": "_NewMovementScreenState",
       "norm_label": "_newmovementscreenstate"
     },
     {
@@ -14381,39 +14590,6 @@
       "norm_label": "build"
     },
     {
-      "label": "AppRoutes.warehouseReturn",
-      "file_type": "concept",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "route_approutes_warehousereturn",
-      "community": 105,
-      "community_name": "build",
-      "norm_label": "approutes.warehousereturn"
-    },
-    {
-      "label": "AppRoutes.stockAdjustment",
-      "file_type": "concept",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "route_approutes_stockadjustment",
-      "community": 105,
-      "community_name": "build",
-      "norm_label": "approutes.stockadjustment"
-    },
-    {
-      "label": "AppRoutes.addItem",
-      "file_type": "concept",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "route_approutes_additem",
-      "community": 105,
-      "community_name": "build",
-      "norm_label": "approutes.additem"
-    },
-    {
       "label": "_itemCountLabel",
       "file_type": "code",
       "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
@@ -14445,17 +14621,6 @@
       "community": 83,
       "community_name": "transaction_history_screen.dart",
       "norm_label": "../../../printing/presentation/widgets/printer_setup_button.dart"
-    },
-    {
-      "label": "../../../printing/presentation/widgets/thermal_receipt_dialog.dart",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "printing_presentation_widgets_thermal_receipt_dialog_dart",
-      "community": 75,
-      "community_name": "LoginCubit",
-      "norm_label": "../../../printing/presentation/widgets/thermal_receipt_dialog.dart"
     },
     {
       "label": "../../data/mappers/movement_receipt_mapper.dart",
@@ -14706,8 +14871,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_datefilterbar",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "_datefilterbar"
     },
     {
@@ -14827,8 +14992,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_initstate",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "initstate"
     },
     {
@@ -14838,8 +15003,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_selectdaterange",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "_selectdaterange"
     },
     {
@@ -14849,8 +15014,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_build",
-      "community": 49,
-      "community_name": "MovementHistoryCubit",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "build"
     },
     {
@@ -14937,8 +15102,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_adjustment_form_adjustmentform",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 41,
+      "community_name": "../../../../core/constants/app_colors.dart",
       "norm_label": "adjustmentform"
     },
     {
@@ -14948,8 +15113,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_adjustment_form_adjustmentformstate",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 41,
+      "community_name": "../../../../core/constants/app_colors.dart",
       "norm_label": "_adjustmentformstate"
     },
     {
@@ -15025,8 +15190,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_adjustment_form_build",
-      "community": 41,
-      "community_name": "../../../../core/constants/app_colors.dart",
+      "community": 95,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "build"
     },
     {
@@ -15212,8 +15377,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_item_quantity_sheet_itemquantitysheet",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 26,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "itemquantitysheet"
     },
     {
@@ -15223,8 +15388,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_item_quantity_sheet_itemquantitysheetstate",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 26,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "_itemquantitysheetstate"
     },
     {
@@ -17579,6 +17744,116 @@
       "id": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_source_nodes",
       "community": 102,
       "community_name": "firestore_collections.dart",
+      "norm_label": "source nodes"
+    },
+    {
+      "label": "query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646",
+      "community": 111,
+      "community_name": "Q: \u0625\u0636\u0627\u0641\u0629 \u0634\u0639\u0627\u0631 EL SAUDI \u0623\u0639\u0644\u0649 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0648\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646 \u062b\u0645 \u0627\u0644\u0642\u0637\u0639 \u0648\u062a\u062d\u0633\u064a\u0646 \u0648\u0636\u0648\u062d \u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "norm_label": "query_20260730_105425_\u0627\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0627\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0627\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md"
+    },
+    {
+      "label": "Q: \u0625\u0636\u0627\u0641\u0629 \u0634\u0639\u0627\u0631 EL SAUDI \u0623\u0639\u0644\u0649 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0648\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646 \u062b\u0645 \u0627\u0644\u0642\u0637\u0639 \u0648\u062a\u062d\u0633\u064a\u0646 \u0648\u0636\u0648\u062d \u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_q_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_\u062b\u0645_\u0627\u0644\u0642\u0637\u0639_\u0648\u062a\u062d\u0633\u064a\u0646_\u0648\u0636\u0648\u062d_\u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "community": 111,
+      "community_name": "Q: \u0625\u0636\u0627\u0641\u0629 \u0634\u0639\u0627\u0631 EL SAUDI \u0623\u0639\u0644\u0649 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0648\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646 \u062b\u0645 \u0627\u0644\u0642\u0637\u0639 \u0648\u062a\u062d\u0633\u064a\u0646 \u0648\u0636\u0648\u062d \u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "norm_label": "q: \u0627\u0636\u0627\u0641\u0629 \u0634\u0639\u0627\u0631 el saudi \u0627\u0639\u0644\u0649 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0648\u0627\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646 \u062b\u0645 \u0627\u0644\u0642\u0637\u0639 \u0648\u062a\u062d\u0633\u064a\u0646 \u0648\u0636\u0648\u062d \u0627\u0644\u0637\u0628\u0627\u0639\u0629"
+    },
+    {
+      "label": "Answer",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_answer",
+      "community": 111,
+      "community_name": "Q: \u0625\u0636\u0627\u0641\u0629 \u0634\u0639\u0627\u0631 EL SAUDI \u0623\u0639\u0644\u0649 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0648\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646 \u062b\u0645 \u0627\u0644\u0642\u0637\u0639 \u0648\u062a\u062d\u0633\u064a\u0646 \u0648\u0636\u0648\u062d \u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "norm_label": "answer"
+    },
+    {
+      "label": "Outcome",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_outcome",
+      "community": 111,
+      "community_name": "Q: \u0625\u0636\u0627\u0641\u0629 \u0634\u0639\u0627\u0631 EL SAUDI \u0623\u0639\u0644\u0649 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0648\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646 \u062b\u0645 \u0627\u0644\u0642\u0637\u0639 \u0648\u062a\u062d\u0633\u064a\u0646 \u0648\u0636\u0648\u062d \u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "norm_label": "outcome"
+    },
+    {
+      "label": "Source Nodes",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_source_nodes",
+      "community": 111,
+      "community_name": "Q: \u0625\u0636\u0627\u0641\u0629 \u0634\u0639\u0627\u0631 EL SAUDI \u0623\u0639\u0644\u0649 \u0627\u0644\u0631\u064a\u0633\u064a\u062a \u0648\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646 \u062b\u0645 \u0627\u0644\u0642\u0637\u0639 \u0648\u062a\u062d\u0633\u064a\u0646 \u0648\u0636\u0648\u062d \u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "norm_label": "source nodes"
+    },
+    {
+      "label": "query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627",
+      "community": 112,
+      "community_name": "Q: \u062e\u0637\u0629 \u0622\u0645\u0646\u0629 \u0644\u062a\u0639\u062f\u064a\u0644 \u0648\u062d\u0630\u0641 \u0627\u0644\u0623\u0635\u0646\u0627\u0641 \u0645\u0639 \u0633\u062c\u0644 \u062a\u062f\u0642\u064a\u0642 \u0648\u0637\u0628\u0627\u0639\u0629 \u0627\u0644\u062d\u0631\u0643\u0627\u062a \u0648\u0637\u0628\u0627\u0639\u0629 \u0631\u0635\u064a\u062f \u0627\u0644\u0645\u062e\u0632\u0646 \u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "norm_label": "query_20260730_131623_\u062e\u0637\u0629_\u0627\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0627\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md"
+    },
+    {
+      "label": "Q: \u062e\u0637\u0629 \u0622\u0645\u0646\u0629 \u0644\u062a\u0639\u062f\u064a\u0644 \u0648\u062d\u0630\u0641 \u0627\u0644\u0623\u0635\u0646\u0627\u0641 \u0645\u0639 \u0633\u062c\u0644 \u062a\u062f\u0642\u064a\u0642 \u0648\u0637\u0628\u0627\u0639\u0629 \u0627\u0644\u062d\u0631\u0643\u0627\u062a \u0648\u0637\u0628\u0627\u0639\u0629 \u0631\u0635\u064a\u062f \u0627\u0644\u0645\u062e\u0632\u0646 \u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_q_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627\u0644\u062d\u0631\u0643\u0627\u062a_\u0648\u0637\u0628\u0627\u0639\u0629_\u0631\u0635\u064a\u062f_\u0627\u0644\u0645\u062e\u0632\u0646_\u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "community": 112,
+      "community_name": "Q: \u062e\u0637\u0629 \u0622\u0645\u0646\u0629 \u0644\u062a\u0639\u062f\u064a\u0644 \u0648\u062d\u0630\u0641 \u0627\u0644\u0623\u0635\u0646\u0627\u0641 \u0645\u0639 \u0633\u062c\u0644 \u062a\u062f\u0642\u064a\u0642 \u0648\u0637\u0628\u0627\u0639\u0629 \u0627\u0644\u062d\u0631\u0643\u0627\u062a \u0648\u0637\u0628\u0627\u0639\u0629 \u0631\u0635\u064a\u062f \u0627\u0644\u0645\u062e\u0632\u0646 \u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "norm_label": "q: \u062e\u0637\u0629 \u0627\u0645\u0646\u0629 \u0644\u062a\u0639\u062f\u064a\u0644 \u0648\u062d\u0630\u0641 \u0627\u0644\u0627\u0635\u0646\u0627\u0641 \u0645\u0639 \u0633\u062c\u0644 \u062a\u062f\u0642\u064a\u0642 \u0648\u0637\u0628\u0627\u0639\u0629 \u0627\u0644\u062d\u0631\u0643\u0627\u062a \u0648\u0637\u0628\u0627\u0639\u0629 \u0631\u0635\u064a\u062f \u0627\u0644\u0645\u062e\u0632\u0646 \u0628\u0627\u0644\u0643\u0627\u0645\u0644"
+    },
+    {
+      "label": "Answer",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_answer",
+      "community": 112,
+      "community_name": "Q: \u062e\u0637\u0629 \u0622\u0645\u0646\u0629 \u0644\u062a\u0639\u062f\u064a\u0644 \u0648\u062d\u0630\u0641 \u0627\u0644\u0623\u0635\u0646\u0627\u0641 \u0645\u0639 \u0633\u062c\u0644 \u062a\u062f\u0642\u064a\u0642 \u0648\u0637\u0628\u0627\u0639\u0629 \u0627\u0644\u062d\u0631\u0643\u0627\u062a \u0648\u0637\u0628\u0627\u0639\u0629 \u0631\u0635\u064a\u062f \u0627\u0644\u0645\u062e\u0632\u0646 \u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "norm_label": "answer"
+    },
+    {
+      "label": "Outcome",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_outcome",
+      "community": 112,
+      "community_name": "Q: \u062e\u0637\u0629 \u0622\u0645\u0646\u0629 \u0644\u062a\u0639\u062f\u064a\u0644 \u0648\u062d\u0630\u0641 \u0627\u0644\u0623\u0635\u0646\u0627\u0641 \u0645\u0639 \u0633\u062c\u0644 \u062a\u062f\u0642\u064a\u0642 \u0648\u0637\u0628\u0627\u0639\u0629 \u0627\u0644\u062d\u0631\u0643\u0627\u062a \u0648\u0637\u0628\u0627\u0639\u0629 \u0631\u0635\u064a\u062f \u0627\u0644\u0645\u062e\u0632\u0646 \u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "norm_label": "outcome"
+    },
+    {
+      "label": "Source Nodes",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_source_nodes",
+      "community": 112,
+      "community_name": "Q: \u062e\u0637\u0629 \u0622\u0645\u0646\u0629 \u0644\u062a\u0639\u062f\u064a\u0644 \u0648\u062d\u0630\u0641 \u0627\u0644\u0623\u0635\u0646\u0627\u0641 \u0645\u0639 \u0633\u062c\u0644 \u062a\u062f\u0642\u064a\u0642 \u0648\u0637\u0628\u0627\u0639\u0629 \u0627\u0644\u062d\u0631\u0643\u0627\u062a \u0648\u0637\u0628\u0627\u0639\u0629 \u0631\u0635\u064a\u062f \u0627\u0644\u0645\u062e\u0632\u0646 \u0628\u0627\u0644\u0643\u0627\u0645\u0644",
       "norm_label": "source nodes"
     }
   ],
@@ -22186,6 +22461,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_core_models_thermal_receipt_data",
+      "target": "lib_core_models_thermal_receipt_data_documenttitle"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/core/models/thermal_receipt_data.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_core_models_thermal_receipt_data",
       "target": "lib_core_models_thermal_receipt_data_drivername"
     },
     {
@@ -24483,6 +24769,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar",
+      "target": "voidcallback"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/start_stocktake_card.dart",
       "source_location": null,
       "weight": 1.0,
@@ -24928,6 +25226,18 @@
       "_origin": "ast",
       "source": "lib_core_shared_widgets_custom_text_field",
       "target": "textinputtype"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar",
+      "target": "key"
     },
     {
       "relation": "references",
@@ -27935,6 +28245,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/screens/dashboard_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "bloc_lookup",
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_screens_dashboard_screen_printstockbalance",
+      "target": "lib_features_dashboard_cubit_dashboard_cubit_dashboardcubit"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/dashboard/presentation/widgets/stock_items_list.dart",
       "source_location": null,
       "weight": 1.0,
@@ -28000,6 +28322,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_dashboard_cubit_dashboard_state",
+      "target": "core_models_inventory_item_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
       "target": "core_models_inventory_item_dart"
     },
     {
@@ -28231,6 +28564,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_dashboard_cubit_dashboard_state",
+      "target": "lib_features_dashboard_cubit_dashboard_state_allitems"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/cubit/dashboard_state.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_cubit_dashboard_state",
       "target": "lib_features_dashboard_cubit_dashboard_state_dashboardfailure"
     },
     {
@@ -28365,6 +28709,193 @@
       "_origin": "ast",
       "source": "lib_features_dashboard_cubit_dashboard_state_dashboardsuccess",
       "target": "lib_features_dashboard_cubit_dashboard_state_dashboardstate"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "target": "core_models_carton_piece_quantity_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "target": "core_models_thermal_receipt_data_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "target": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_buildreference"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "target": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_formatdatetime"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "target": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_fromitems"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "target": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_stockbalancereceiptmapper"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "target": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_twodigits"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper",
+      "target": "users_mohamedzidan_project_stock_take_stock_take_lib_features_dashboard_data_mappers_stock_balance_receipt_mapper"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/items/presentation/widgets/add_item_form.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_items_presentation_widgets_add_item_form",
+      "target": "core_models_carton_piece_quantity_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/returns/presentation/widgets/return_workflow_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_returns_presentation_widgets_return_workflow_card",
+      "target": "core_models_carton_piece_quantity_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/returns/presentation/widgets/warehouse_return_form.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_returns_presentation_widgets_warehouse_return_form",
+      "target": "core_models_carton_piece_quantity_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
+      "target": "core_models_carton_piece_quantity_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/widgets/adjustment_form.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_widgets_adjustment_form",
+      "target": "core_models_carton_piece_quantity_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/widgets/item_quantity_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_widgets_item_quantity_sheet",
+      "target": "core_models_carton_piece_quantity_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_content.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_presentation_widgets_thermal_receipt_content",
+      "target": "core_models_thermal_receipt_data_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_presentation_widgets_thermal_receipt_dialog",
+      "target": "core_models_thermal_receipt_data_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/data/mappers/movement_receipt_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_transactions_data_mappers_movement_receipt_mapper",
+      "target": "core_models_thermal_receipt_data_dart"
     },
     {
       "relation": "defines",
@@ -28600,6 +29131,17 @@
       "target": "cubit_dashboard_state_dart"
     },
     {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/screens/dashboard_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_screens_dashboard_screen",
+      "target": "data_mappers_stock_balance_receipt_mapper_dart"
+    },
+    {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -28653,6 +29195,28 @@
       "_origin": "ast",
       "source": "lib_features_dashboard_presentation_screens_dashboard_screen",
       "target": "lib_features_dashboard_presentation_screens_dashboard_screen_initstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/screens/dashboard_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_screens_dashboard_screen",
+      "target": "lib_features_dashboard_presentation_screens_dashboard_screen_printstockbalance"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/screens/dashboard_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_screens_dashboard_screen",
+      "target": "printing_presentation_widgets_thermal_receipt_dialog_dart"
     },
     {
       "relation": "imports",
@@ -28847,6 +29411,28 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_screens_new_movement_screen",
+      "target": "printing_presentation_widgets_thermal_receipt_dialog_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/widgets/transaction_list_item.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_widgets_transaction_list_item",
+      "target": "printing_presentation_widgets_thermal_receipt_dialog_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/dashboard/presentation/widgets/stock_items_list.dart",
       "source_location": null,
       "weight": 1.0,
@@ -28918,6 +29504,39 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_dashboard_presentation_widgets_quick_action_bar",
+      "target": "lib_features_dashboard_presentation_widgets_quick_action_bar_key"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar",
+      "target": "lib_features_dashboard_presentation_widgets_quick_action_bar_onprintstockbalance"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar",
+      "target": "lib_features_dashboard_presentation_widgets_quick_action_bar_ontap"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar",
       "target": "lib_features_dashboard_presentation_widgets_quick_action_bar_quickaction"
     },
     {
@@ -28940,18 +29559,103 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_dashboard_presentation_widgets_quick_action_bar",
-      "target": "lib_features_dashboard_presentation_widgets_quick_action_bar_route"
+      "target": "lib_features_dashboard_presentation_widgets_quick_action_bar_title"
     },
     {
-      "relation": "defines",
+      "relation": "navigates",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
       "source_location": null,
       "weight": 1.0,
+      "context": "route_const",
       "_origin": "ast",
-      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar",
-      "target": "lib_features_dashboard_presentation_widgets_quick_action_bar_title"
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar_build",
+      "target": "route_approutes_additem"
+    },
+    {
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_const",
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar_build",
+      "target": "route_approutes_newinboundmovement"
+    },
+    {
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_const",
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar_build",
+      "target": "route_approutes_newoutboundmovement"
+    },
+    {
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_const",
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar_build",
+      "target": "route_approutes_stockadjustment"
+    },
+    {
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/dashboard/presentation/widgets/quick_action_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_const",
+      "_origin": "ast",
+      "source": "lib_features_dashboard_presentation_widgets_quick_action_bar_build",
+      "target": "route_approutes_warehousereturn"
+    },
+    {
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_const",
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_screens_new_movement_screen_build",
+      "target": "route_approutes_additem"
+    },
+    {
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_const",
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_screens_new_movement_screen_build",
+      "target": "route_approutes_warehousereturn"
+    },
+    {
+      "relation": "navigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "route_const",
+      "_origin": "ast",
+      "source": "lib_features_transactions_presentation_screens_new_movement_screen_build",
+      "target": "route_approutes_stockadjustment"
     },
     {
       "relation": "defines",
@@ -30144,17 +30848,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_items_presentation_widgets_add_item_form",
-      "target": "core_models_carton_piece_quantity_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/items/presentation/widgets/add_item_form.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_items_presentation_widgets_add_item_form",
       "target": "core_shared_widgets_carton_piece_quantity_fields_dart"
     },
     {
@@ -30289,61 +30982,6 @@
       "_origin": "ast",
       "source": "lib_features_items_presentation_widgets_add_item_form_build",
       "target": "route_approutes_dashboard"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/returns/presentation/widgets/return_workflow_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_returns_presentation_widgets_return_workflow_card",
-      "target": "core_models_carton_piece_quantity_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/returns/presentation/widgets/warehouse_return_form.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_returns_presentation_widgets_warehouse_return_form",
-      "target": "core_models_carton_piece_quantity_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "core_models_carton_piece_quantity_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/widgets/adjustment_form.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_widgets_adjustment_form",
-      "target": "core_models_carton_piece_quantity_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/widgets/item_quantity_sheet.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_widgets_item_quantity_sheet",
-      "target": "core_models_carton_piece_quantity_dart"
     },
     {
       "relation": "imports",
@@ -32216,17 +32854,6 @@
       "target": "printer_selection_dialog_dart"
     },
     {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_content.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_printing_presentation_widgets_thermal_receipt_content",
-      "target": "core_models_thermal_receipt_data_dart"
-    },
-    {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -32346,28 +32973,6 @@
       "_origin": "ast",
       "source": "lib_features_printing_presentation_widgets_thermal_receipt_content",
       "target": "lib_features_printing_presentation_widgets_thermal_receipt_content_value"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_printing_presentation_widgets_thermal_receipt_dialog",
-      "target": "core_models_thermal_receipt_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/data/mappers/movement_receipt_mapper.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_data_mappers_movement_receipt_mapper",
-      "target": "core_models_thermal_receipt_data_dart"
     },
     {
       "relation": "defines",
@@ -40215,17 +40820,6 @@
       "target": "printing_presentation_widgets_printer_setup_button_dart"
     },
     {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_new_movement_screen",
-      "target": "printing_presentation_widgets_thermal_receipt_dialog_dart"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -40337,42 +40931,6 @@
       "target": "lib_features_transactions_presentation_screens_new_movement_screen_newmovementscreen"
     },
     {
-      "relation": "navigates",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "route_const",
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_new_movement_screen_build",
-      "target": "route_approutes_additem"
-    },
-    {
-      "relation": "navigates",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "route_const",
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_new_movement_screen_build",
-      "target": "route_approutes_stockadjustment"
-    },
-    {
-      "relation": "navigates",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "route_const",
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_new_movement_screen_build",
-      "target": "route_approutes_warehousereturn"
-    },
-    {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -40382,17 +40940,6 @@
       "_origin": "ast",
       "source": "lib_features_transactions_presentation_screens_transaction_history_screen",
       "target": "printing_presentation_widgets_printer_setup_button_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/widgets/transaction_list_item.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_widgets_transaction_list_item",
-      "target": "printing_presentation_widgets_thermal_receipt_dialog_dart"
     },
     {
       "relation": "imports",
@@ -43352,8 +43899,96 @@
       "source": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_q_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648\u0644_\u0631\u064a\u0633\u064a\u062a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0645\u0646_\u0641\u0648\u0642_\u0628\u0634\u0643\u0644_\u0627\u062d\u062a\u0631\u0627\u0641\u064a_\u0648\u064a\u0648\u062c\u0648\u062f_\u062a\u0634\u0648\u064a\u0634_\u0641\u064a_\u0627\u0644\u0637\u0628\u0627\u0639\u0647_\u0647\u0644_\u0644\u0647\u0627_\u0645\u0646_\u062d\u0644_\u0627\u0645_\u0644\u0627_\u0648\u0641\u064a_\u0627\u0633\u0641\u0644_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0639\u0646\u062f_\u0627\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0642\u0637\u0639_\u064a\u0643\u0648\u0646_\u0627\u062c\u0645\u0627\u0644\u064a_\u0643\u0645_\u0643\u0631\u062a\u0648\u0646\u0647_\u0648\u062a\u062d\u062a\u0647\u0645_\u0643\u0627\u0645_\u0642\u0637\u0639\u0647_\u0627\u0639\u0645\u0644_\u0627\u0644\u062e\u0637\u0647",
       "target": "graphify_out_memory_query_20260730_103410_\u062f\u064a_\u0647\u062a\u0643\u0648\u0646_\u0627\u064a\u0642\u0648\u0646\u0627\u062a_\u0627\u0644\u062a\u0637\u0628\u064a\u0642_\u0648\u0639\u0627\u0648\u0632_\u0627\u062d\u0637_\u0644\u0648\u062c\u0648_\u0645\u0646\u0647\u0645_\u0641\u064a_\u0627\u0648_source_nodes",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646",
+      "target": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_q_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_\u062b\u0645_\u0627\u0644\u0642\u0637\u0639_\u0648\u062a\u062d\u0633\u064a\u0646_\u0648\u0636\u0648\u062d_\u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_q_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_\u062b\u0645_\u0627\u0644\u0642\u0637\u0639_\u0648\u062a\u062d\u0633\u064a\u0646_\u0648\u0636\u0648\u062d_\u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "target": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_q_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_\u062b\u0645_\u0627\u0644\u0642\u0637\u0639_\u0648\u062a\u062d\u0633\u064a\u0646_\u0648\u0636\u0648\u062d_\u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "target": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_outcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_q_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_\u062b\u0645_\u0627\u0644\u0642\u0637\u0639_\u0648\u062a\u062d\u0633\u064a\u0646_\u0648\u0636\u0648\u062d_\u0627\u0644\u0637\u0628\u0627\u0639\u0629",
+      "target": "graphify_out_memory_query_20260730_105425_\u0625\u0636\u0627\u0641\u0629_\u0634\u0639\u0627\u0631_el_saudi_\u0623\u0639\u0644\u0649_\u0627\u0644\u0631\u064a\u0633\u064a\u062a_\u0648\u0625\u062c\u0645\u0627\u0644\u064a_\u0627\u0644\u0643\u0631\u0627\u062a\u064a\u0646_source_nodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627",
+      "target": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_q_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627\u0644\u062d\u0631\u0643\u0627\u062a_\u0648\u0637\u0628\u0627\u0639\u0629_\u0631\u0635\u064a\u062f_\u0627\u0644\u0645\u062e\u0632\u0646_\u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_q_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627\u0644\u062d\u0631\u0643\u0627\u062a_\u0648\u0637\u0628\u0627\u0639\u0629_\u0631\u0635\u064a\u062f_\u0627\u0644\u0645\u062e\u0632\u0646_\u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "target": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_q_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627\u0644\u062d\u0631\u0643\u0627\u062a_\u0648\u0637\u0628\u0627\u0639\u0629_\u0631\u0635\u064a\u062f_\u0627\u0644\u0645\u062e\u0632\u0646_\u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "target": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_outcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_q_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627\u0644\u062d\u0631\u0643\u0627\u062a_\u0648\u0637\u0628\u0627\u0639\u0629_\u0631\u0635\u064a\u062f_\u0627\u0644\u0645\u062e\u0632\u0646_\u0628\u0627\u0644\u0643\u0627\u0645\u0644",
+      "target": "graphify_out_memory_query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627_source_nodes",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "816a80aaf54e2fa6e8c3ed2dc5ab53798b13a540"
+  "built_at_commit": "2b05d14e3a551f60835498ba496fe084c3fde6bb"
 }
