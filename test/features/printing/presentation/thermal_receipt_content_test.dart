@@ -25,6 +25,13 @@ void main() {
           loosePieces: 3,
           totalPieces: 27,
         ),
+        ThermalReceiptLine(
+          itemName: 'مناديل ورقية',
+          itemCode: 'S-N-654321',
+          cartons: 3,
+          loosePieces: 0,
+          totalPieces: 36,
+        ),
       ],
     );
 
@@ -41,9 +48,12 @@ void main() {
 
     expect(find.text('إذن حركة مخزن'), findsOneWidget);
     expect(find.text('IN-2026-000001'), findsOneWidget);
-    expect(find.textContaining('2 كرتونة'), findsOneWidget);
-    expect(find.textContaining('3 قطعة مفردة'), findsOneWidget);
-    expect(find.text('27 قطعة'), findsOneWidget);
+    expect(find.byKey(const Key('receipt-brand-logo')), findsOneWidget);
+    expect(find.text('الكمية: 2 كرتونة + 3 قطعة مفردة'), findsOneWidget);
+    expect(find.text('إجمالي الكراتين'), findsOneWidget);
+    expect(find.text('5 كرتونة'), findsOneWidget);
+    expect(find.text('إجمالي القطع'), findsOneWidget);
+    expect(find.text('63 قطعة'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 }

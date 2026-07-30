@@ -19,6 +19,17 @@ class ThermalReceiptContent extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              Center(
+                child: Image.asset(
+                  'assets/branding/el_saudi_receipt_mono.png',
+                  key: const Key('receipt-brand-logo'),
+                  width: 420,
+                  fit: BoxFit.contain,
+                  filterQuality: FilterQuality.none,
+                  semanticLabel: 'شعار EL SAUDI',
+                ),
+              ),
+              const SizedBox(height: 12),
               const Text(
                 'إذن حركة مخزن',
                 textAlign: TextAlign.center,
@@ -69,25 +80,19 @@ class ThermalReceiptContent extends StatelessWidget {
                 ),
               ),
               const _ReceiptDivider(),
-              Row(
-                children: [
-                  const Expanded(
-                    child: Text(
-                      'الإجمالي',
-                      style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
-                  ),
-                  Text(
-                    '${receipt.totalPieces} قطعة',
-                    style: const TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                ],
+              const Text(
+                'الإجمالي',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900),
+              ),
+              const SizedBox(height: 8),
+              _ReceiptTotal(
+                label: 'إجمالي الكراتين',
+                value: '${receipt.totalCartons} كرتونة',
+              ),
+              const SizedBox(height: 5),
+              _ReceiptTotal(
+                label: 'إجمالي القطع',
+                value: '${receipt.totalPieces} قطعة',
               ),
               if (receipt.notes.trim().isNotEmpty) ...[
                 const _ReceiptDivider(),
@@ -97,7 +102,7 @@ class ThermalReceiptContent extends StatelessWidget {
               const Text(
                 'تمت الطباعة من نظام المخزن',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
               ),
               const SizedBox(height: 12),
             ],
@@ -146,9 +151,35 @@ class _ReceiptItem extends StatelessWidget {
             style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 8),
-          const Divider(height: 1, thickness: 1, color: Colors.black),
+          const Divider(height: 2, thickness: 2, color: Colors.black),
         ],
       ),
+    );
+  }
+}
+
+class _ReceiptTotal extends StatelessWidget {
+  final String label;
+  final String value;
+
+  const _ReceiptTotal({required this.label, required this.value});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            label,
+            style: const TextStyle(fontSize: 27, fontWeight: FontWeight.w800),
+          ),
+        ),
+        Text(
+          value,
+          textDirection: TextDirection.rtl,
+          style: const TextStyle(fontSize: 27, fontWeight: FontWeight.w900),
+        ),
+      ],
     );
   }
 }

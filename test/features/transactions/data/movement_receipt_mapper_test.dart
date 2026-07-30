@@ -37,6 +37,7 @@ void main() {
     expect(receipt.lines.single.cartons, 2);
     expect(receipt.lines.single.loosePieces, 3);
     expect(receipt.lines.single.totalPieces, 27);
+    expect(receipt.totalCartons, 2);
     expect(receipt.totalPieces, 27);
   });
 
@@ -70,6 +71,7 @@ void main() {
 
     expect(receipt.movementLabel, 'مرتجع إلى المورد');
     expect(receipt.partyLabel, 'المورد');
+    expect(receipt.totalCartons, 1);
     expect(receipt.totalPieces, 12);
   });
 }

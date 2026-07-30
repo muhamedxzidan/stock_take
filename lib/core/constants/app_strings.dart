@@ -3,7 +3,7 @@ class AppStrings {
   AppStrings._();
 
   // General App Info
-  static const String appTitle = 'نظام إدارة المخزون';
+  static const String appTitle = 'Warehouse EL SAUDI';
   static const String singleWarehouseName = 'المخزن الرئيسي';
   static const String currency = 'ج.م';
   static const String email = 'البريد الإلكتروني';

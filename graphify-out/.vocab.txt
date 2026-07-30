@@ -11,6 +11,7 @@ adjusted
 adjustment
 affected
 all
+allow
 and
 android
 answer
@@ -41,6 +42,9 @@ business
 button
 callback
 cancel
+cancellation
+cancelled
+cancelling
 caption
 card
 carton
@@ -51,6 +55,7 @@ changed
 channel
 child
 chip
+claim
 class
 close
 cloud
@@ -73,6 +78,7 @@ const
 constants
 content
 continue
+control
 controller
 copy
 core
@@ -112,9 +118,11 @@ dispatched
 display
 dispose
 divider
+document
 double
 draft
 driver
+duration
 edit
 editing
 elevation
@@ -122,13 +130,14 @@ email
 emit
 empty
 enabled
+ensure
 entity
-entry
 error
 exceeds
 exception
 extensions
 failure
+feature
 features
 fetch
 field
@@ -148,7 +157,7 @@ formatted
 formatters
 foundation
 from
-gesture
+generation
 get
 has
 hash
@@ -184,6 +193,7 @@ label
 large
 layout
 leading
+legacy
 light
 line
 lines
@@ -249,7 +259,6 @@ panel
 parsing
 party
 password
-pdf
 pending
 per
 period
@@ -297,7 +306,6 @@ repositories
 repository
 require
 required
-requires
 reset
 resolution
 resolve
@@ -310,10 +318,10 @@ route
 router
 routes
 routing
-row
 save
 saved
 saving
+scaffold
 screen
 screens
 screenshot
@@ -343,6 +351,7 @@ single
 size
 sizes
 small
+snack
 snapshot
 source
 start
@@ -383,16 +392,19 @@ theme
 thermal
 tile
 time
+timeout
 timer
 title
 today
 total
 transaction
 transactions
+true
 type
 typed
 types
 unit
+unlocked
 unsupported
 user
 users
@@ -421,8 +433,10 @@ write
 ابسط
 اجعل
 احتياطي
+احط
 استخدم
 اسم
+اصلحه
 اضافه
 اظهر
 اعمل
@@ -431,8 +445,10 @@ write
 الاستكمال
 الاستلام
 الامور
+الايميل
 الخطه
 الدخول
+الرولز
 السائق
 السيس
 السيستم
@@ -447,6 +463,8 @@ write
 المخزن
 المرتجع
 المشروع
+انا
+ايميل
 باكدج
 بحيث
 برضو
@@ -461,6 +479,7 @@ write
 خالص
 خطة
 خليه
+دخول
 صحيح
 صورة
 طلبو
@@ -469,11 +488,15 @@ write
 عشان
 على
 علي
+عملت
 فشل
 فقط
 كام
 كمان
 كيوبت
+لازم
+لاضافه
+لايسجل
 لجرد
 لسه
 للتحكم
@@ -488,6 +511,7 @@ write
 مبسطه
 متعددة
 مدة
+مشكله
 مفيش
 منتج
 منها
@@ -510,6 +534,7 @@ write
 وحاجه
 وضيف
 ولا
+ولم
 ونسخ
 ويخصم
 يبسط
@@ -517,8 +542,10 @@ write
 يدوس
 يدوي
 يزيد
+يسجل
 يطبع
 يطلعلو
+يعني
 يفتخ
 يفرغ
 يكون

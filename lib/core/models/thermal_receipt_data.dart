@@ -39,6 +39,8 @@ class ThermalReceiptData {
     required this.lines,
   });
 
+  int get totalCartons => lines.fold(0, (total, line) => total + line.cartons);
+
   int get totalPieces =>
       lines.fold(0, (total, line) => total + line.totalPieces);
 }
