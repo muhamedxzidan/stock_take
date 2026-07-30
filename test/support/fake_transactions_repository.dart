@@ -2,14 +2,12 @@ import 'dart:async';
 
 import 'package:stock_take/features/transactions/data/models/inventory_movement.dart';
 import 'package:stock_take/features/transactions/data/models/movement_record.dart';
-import 'package:stock_take/features/transactions/data/models/transaction_model.dart';
 import 'package:stock_take/features/transactions/data/repositories/transactions_repository_base.dart';
 import 'package:stock_take/features/transactions/data/repositories/transactions_repository_failure.dart';
 
 class FakeTransactionsRepository implements TransactionsRepositoryBase {
   late final StreamController<List<MovementRecord>> _movementController;
   final List<MovementRecord> _movements;
-  final List<TransactionModel> _transactions = [];
   final List<InventoryMovementDraft> inboundDrafts = [];
   final List<InventoryMovementDraft> outboundDrafts = [];
   final Map<String, int> availableStockByItemId;
@@ -84,16 +82,6 @@ class FakeTransactionsRepository implements TransactionsRepositoryBase {
       type: MovementRecordType.outbound,
     );
     return savedMovement;
-  }
-
-  @override
-  Future<void> createTransaction(TransactionModel transaction) async {
-    _transactions.insert(0, transaction);
-  }
-
-  @override
-  Future<List<TransactionModel>> fetchTransactions() async {
-    return List.unmodifiable(_transactions);
   }
 
   void _addMovementRecord({

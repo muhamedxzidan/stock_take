@@ -3,9 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../core/constants/firestore_collections.dart';
 import '../../../../core/models/inventory_item.dart';
+import '../mappers/movement_record_firestore_mapper.dart';
 import '../models/inventory_movement.dart';
 import '../models/movement_record.dart';
-import '../models/transaction_model.dart';
 import 'transactions_repository_failure.dart';
 import 'transactions_repository_base.dart';
 
@@ -50,54 +50,6 @@ class TransactionsRepository implements TransactionsRepositoryBase {
   }) : _firestore = firestore,
        _firebaseAuth = firebaseAuth;
 
-  final List<TransactionModel> _logs = [
-    const TransactionModel(
-      id: '101',
-      voucherNumber: 'INV-2026-001',
-      type: TransactionType.inbound,
-      itemId: '1',
-      itemName: 'شامبو لوريال 400 مل',
-      itemCode: 'ITM-001',
-      quantity: 50,
-      unit: 'قطعة',
-      partyName: 'شركة النيل للتوريدات',
-      actorName: 'أحمد محمود (مندوب المورد)',
-      receiverName: 'محمد زيدان (أمين المخزن)',
-      date: '2026-07-24 10:30 ص',
-      notes: 'توريد دفعة شهر يوليو',
-    ),
-    const TransactionModel(
-      id: '102',
-      voucherNumber: 'OUT-2026-001',
-      type: TransactionType.outbound,
-      itemId: '2',
-      itemName: 'صابون دوف زهر 100جم',
-      itemCode: 'ITM-002',
-      quantity: 30,
-      unit: 'قطعة',
-      partyName: 'فرع الجيزة الرئيسي',
-      actorName: 'محمد زيدان (أمين المخزن)',
-      receiverName: 'محمود حسن (سائق النقل)',
-      date: '2026-07-24 02:15 م',
-      notes: 'صرف بضاعة لفرع الجيزة',
-    ),
-    const TransactionModel(
-      id: '103',
-      voucherNumber: 'ADJ-2026-001',
-      type: TransactionType.adjustment,
-      itemId: '3',
-      itemName: 'معجون أسنان سنسوداين 75مل',
-      itemCode: 'ITM-003',
-      quantity: -5,
-      unit: 'قطعة',
-      partyName: 'تعديل جرد دوري',
-      actorName: 'محمد زيدان',
-      receiverName: 'محمد زيدان',
-      date: '2026-07-25 09:00 ص',
-      notes: 'عجز جردي نتيجة تالف بضاعة',
-    ),
-  ];
-
   CollectionReference<Map<String, dynamic>> get _items =>
       _firestore.collection(FirestoreCollections.items);
 
@@ -121,8 +73,10 @@ class TransactionsRepository implements TransactionsRepositoryBase {
           in _movements.orderBy('businessAt', descending: true).snapshots()) {
         yield snapshot.docs
             .map(
-              (document) =>
-                  _mapMovementRecord(id: document.id, data: document.data()),
+              (document) => MovementRecordFirestoreMapper.fromMap(
+                id: document.id,
+                data: document.data(),
+              ),
             )
             .toList(growable: false);
       }
@@ -368,107 +322,5 @@ class TransactionsRepository implements TransactionsRepositoryBase {
       'unavailable' => 'تعذر تحميل سجل الحركات. تحقق من الإنترنت.',
       _ => 'تعذر تحميل سجل الحركات الآن.',
     };
-  }
-
-  MovementRecord _mapMovementRecord({
-    required String id,
-    required Map<String, dynamic> data,
-  }) {
-    final voucherNumber = data['voucherNumber'];
-    final type = data['type'];
-    final businessAt = data['businessAt'];
-    final partyName = data['partyName'];
-    final deliveredBy = data['deliveredBy'];
-    final receivedBy = data['receivedBy'];
-    final driverName = data['driverName'];
-    final notes = data['notes'];
-    final rawLines = data['lines'];
-    final rawItemDeltas = data['itemDeltas'];
-
-    if (voucherNumber is! String ||
-        type is! String ||
-        businessAt is! Timestamp ||
-        partyName is! String ||
-        deliveredBy is! String ||
-        receivedBy is! String ||
-        driverName is! String ||
-        notes is! String ||
-        rawLines is! List ||
-        rawItemDeltas is! Map) {
-      throw const FormatException('Malformed movement data.');
-    }
-
-    final lines = rawLines
-        .map((rawLine) {
-          if (rawLine is! Map) {
-            throw const FormatException('Malformed movement line.');
-          }
-
-          final line = Map<String, dynamic>.from(rawLine);
-          final itemId = line['itemId'];
-          final itemCode = line['itemCode'];
-          final itemName = line['itemName'];
-          final unit = line['unit'];
-          final itemsPerCarton = line['itemsPerCarton'];
-          final cartons = line['cartons'];
-          final pieces = line['pieces'];
-          final totalPieces = line['totalPieces'];
-          if (itemId is! String ||
-              itemCode is! String ||
-              itemName is! String ||
-              unit is! String ||
-              itemsPerCarton is! int ||
-              cartons is! int ||
-              pieces is! int ||
-              totalPieces is! int) {
-            throw const FormatException('Malformed movement line.');
-          }
-
-          return MovementRecordLine(
-            itemId: itemId,
-            itemCode: itemCode,
-            itemName: itemName,
-            unit: unit,
-            itemsPerCarton: itemsPerCarton,
-            cartons: cartons,
-            pieces: pieces,
-            totalPieces: totalPieces,
-          );
-        })
-        .toList(growable: false);
-
-    final itemDeltas = <String, int>{};
-    for (final entry in rawItemDeltas.entries) {
-      if (entry.key is! String || entry.value is! int) {
-        throw const FormatException('Malformed movement item deltas.');
-      }
-      itemDeltas[entry.key as String] = entry.value as int;
-    }
-
-    return MovementRecord(
-      id: id,
-      voucherNumber: voucherNumber,
-      type: MovementRecordType.values.byName(type),
-      businessAt: businessAt.toDate(),
-      partyName: partyName,
-      deliveredBy: deliveredBy,
-      receivedBy: receivedBy,
-      driverName: driverName,
-      notes: notes,
-      lines: lines,
-      itemDeltas: Map.unmodifiable(itemDeltas),
-    );
-  }
-
-  @override
-  Future<void> createTransaction(TransactionModel transaction) async {
-    await Future.delayed(const Duration(milliseconds: 300));
-    _logs.insert(0, transaction);
-  }
-
-  @override
-  Future<List<TransactionModel>> fetchTransactions() async {
-    await Future.delayed(const Duration(milliseconds: 300));
-    return List.unmodifiable(_logs);
   }
 }

@@ -145,28 +145,23 @@
     "semantic_hash": ""
   },
   "lib/features/transactions/cubit/transactions_cubit.dart": {
-    "mtime": 1785256198.6786766,
-    "ast_hash": "9ddd04dba1ea30ab272361487621a100",
+    "mtime": 1785419978.971306,
+    "ast_hash": "d9688a41922aad6441e3c1e6ebb88b16",
     "semantic_hash": ""
   },
   "lib/features/transactions/cubit/transactions_state.dart": {
-    "mtime": 1785256197.7836378,
-    "ast_hash": "c870a0c0e3ccee5c683ffd8ac908666f",
+    "mtime": 1785419608.138727,
+    "ast_hash": "18ac9db195cbe9393dffb5d16f72b09b",
     "semantic_hash": ""
   },
-  "lib/features/transactions/data/models/transaction_model.dart": {
-    "mtime": 1785245478.5826752,
-    "ast_hash": "a4986de8e26641e46cce065b65f97906",
-    "semantic_hash": "a4986de8e26641e46cce065b65f97906"
-  },
   "lib/features/transactions/data/repositories/transactions_repository.dart": {
-    "mtime": 1785364167.5105307,
-    "ast_hash": "9bdfcd0ac3b89b1eab7b66460d9ebb0d",
+    "mtime": 1785419978.98631,
+    "ast_hash": "d23ee27ccf9a69f351a70fe37244c73a",
     "semantic_hash": ""
   },
   "lib/features/transactions/data/repositories/transactions_repository_base.dart": {
-    "mtime": 1785257939.038542,
-    "ast_hash": "2e2859b373a620a5a38a702ea7edeabf",
+    "mtime": 1785419609.0480871,
+    "ast_hash": "26f3c3aa066917426554a8a6542f83a4",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart": {
@@ -177,11 +172,6 @@
   "lib/features/transactions/presentation/screens/transaction_history_screen.dart": {
     "mtime": 1785273528.9643698,
     "ast_hash": "1d6adb11aab896de583c6a8e56d069f7",
-    "semantic_hash": ""
-  },
-  "lib/features/transactions/presentation/widgets/adjustment_form.dart": {
-    "mtime": 1785270277.0770543,
-    "ast_hash": "d9a6bc9a5e6b11ef3b6d9099529b90a8",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/transaction_filter_bar.dart": {
@@ -245,8 +235,8 @@
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/screens/new_movement_screen.dart": {
-    "mtime": 1785403664.1079586,
-    "ast_hash": "06a69bc7b298bf54befeada3874b3371",
+    "mtime": 1785419993.3057334,
+    "ast_hash": "3a095ea350d6642c62ac167b983b33ed",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/widgets/current_voucher_panel.dart": {
@@ -435,8 +425,8 @@
     "semantic_hash": ""
   },
   "lib/features/returns/data/repositories/returns_repository.dart": {
-    "mtime": 1785364167.5336475,
-    "ast_hash": "e1af4853ab5b65bfc8c8d2eb59e0e9eb",
+    "mtime": 1785419979.0357876,
+    "ast_hash": "e38db25fc12f37903abc56501cbda513",
     "semantic_hash": ""
   },
   "lib/features/returns/data/repositories/returns_repository_base.dart": {
@@ -510,8 +500,8 @@
     "semantic_hash": ""
   },
   "lib/features/stocktake/data/repositories/stocktake_repository.dart": {
-    "mtime": 1785364167.459269,
-    "ast_hash": "c3f2358fd67129d46429cd5ca1ade57b",
+    "mtime": 1785419919.2798924,
+    "ast_hash": "d6b489c9f47436872cd14256a4b27084",
     "semantic_hash": ""
   },
   "lib/features/stocktake/data/repositories/stocktake_repository_base.dart": {
@@ -647,6 +637,26 @@
   "graphify-out/memory/query_20260730_131623_\u062e\u0637\u0629_\u0622\u0645\u0646\u0629_\u0644\u062a\u0639\u062f\u064a\u0644_\u0648\u062d\u0630\u0641_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0645\u0639_\u0633\u062c\u0644_\u062a\u062f\u0642\u064a\u0642_\u0648\u0637\u0628\u0627\u0639\u0629_\u0627.md": {
     "mtime": 1785417383.810479,
     "ast_hash": "347959b5d7d9c4a92e22f20dc0b458a7",
+    "semantic_hash": ""
+  },
+  "lib/features/returns/data/mappers/warehouse_return_firestore_mapper.dart": {
+    "mtime": 1785420098.4313433,
+    "ast_hash": "60e69881f208b4bc100ce8596620342b",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/data/mappers/stocktake_firestore_mapper.dart": {
+    "mtime": 1785420099.2874262,
+    "ast_hash": "36271cca31c9712f1a415d92bdb0c45c",
+    "semantic_hash": ""
+  },
+  "lib/features/transactions/data/mappers/movement_record_firestore_mapper.dart": {
+    "mtime": 1785420097.619615,
+    "ast_hash": "beb6cffc494769d07a553b395d9aee02",
+    "semantic_hash": ""
+  },
+  "lib/features/transactions/presentation/widgets/new_movement_view.dart": {
+    "mtime": 1785419760.190324,
+    "ast_hash": "1fdbd4ad20bbfcf59c7706377c93a63d",
     "semantic_hash": ""
   }
 }

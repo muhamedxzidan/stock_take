@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../core/constants/firestore_collections.dart';
 import '../../../../core/models/inventory_item.dart';
+import '../mappers/stocktake_firestore_mapper.dart';
 import '../models/stocktake_line.dart';
 import '../models/stocktake_session.dart';
 import 'stocktake_repository_base.dart';
@@ -52,7 +53,10 @@ class StocktakeRepository implements StocktakeRepositoryBase {
       }
       final document = snapshot.docs.single;
       await _claimLegacyOpenSession(document.id);
-      return _mapSession(id: document.id, data: document.data());
+      return StocktakeFirestoreMapper.sessionFromMap(
+        id: document.id,
+        data: document.data(),
+      );
     } on FirebaseException catch (error) {
       throw StocktakeRepositoryFailure(_readFailureMessage(error));
     } on FormatException {
@@ -73,8 +77,10 @@ class StocktakeRepository implements StocktakeRepositoryBase {
               .snapshots()) {
         yield snapshot.docs
             .map(
-              (document) =>
-                  _mapLine(itemId: document.id, data: document.data()),
+              (document) => StocktakeFirestoreMapper.lineFromMap(
+                itemId: document.id,
+                data: document.data(),
+              ),
             )
             .toList(growable: false);
       }
@@ -303,14 +309,16 @@ class StocktakeRepository implements StocktakeRepositoryBase {
           stocktakeId: stocktakeId,
         );
 
-        final session = _mapSession(
+        final session = StocktakeFirestoreMapper.sessionFromMap(
           id: stocktakeSnapshot.id,
           data: stocktakeSnapshot.data()!,
         );
         final lines = lineSnapshots
             .map(
-              (snapshot) =>
-                  _mapLine(itemId: snapshot.id, data: snapshot.data()!),
+              (snapshot) => StocktakeFirestoreMapper.lineFromMap(
+                itemId: snapshot.id,
+                data: snapshot.data()!,
+              ),
             )
             .toList(growable: false);
         if (lines.any((line) => !line.counted)) {
@@ -588,83 +596,6 @@ class StocktakeRepository implements StocktakeRepositoryBase {
     } else {
       transaction.set(reference, data);
     }
-  }
-
-  StocktakeSession _mapSession({
-    required String id,
-    required Map<String, dynamic> data,
-  }) {
-    final stocktakeNumber = data['stocktakeNumber'];
-    final status = data['status'];
-    final periodFrom = data['periodFrom'];
-    final periodTo = data['periodTo'];
-    final startedAt = data['startedAt'];
-    final completedAt = data['completedAt'];
-    final cancelledAt = data['cancelledAt'];
-    final notes = data['notes'];
-    if (stocktakeNumber is! String ||
-        status is! String ||
-        periodFrom is! Timestamp ||
-        periodTo is! Timestamp ||
-        startedAt is! Timestamp ||
-        completedAt is! Timestamp? ||
-        cancelledAt is! Timestamp? ||
-        notes is! String) {
-      throw const FormatException('Malformed stocktake session.');
-    }
-
-    return StocktakeSession(
-      id: id,
-      stocktakeNumber: stocktakeNumber,
-      status: StocktakeStatus.values.byName(status),
-      periodFrom: periodFrom.toDate(),
-      periodTo: periodTo.toDate(),
-      startedAt: startedAt.toDate(),
-      completedAt: completedAt?.toDate(),
-      cancelledAt: cancelledAt?.toDate(),
-      notes: notes,
-    );
-  }
-
-  StocktakeLine _mapLine({
-    required String itemId,
-    required Map<String, dynamic> data,
-  }) {
-    final storedItemId = data['itemId'];
-    final itemName = data['itemNameSnapshot'];
-    final itemCode = data['itemCodeSnapshot'];
-    final unit = data['unit'];
-    final itemsPerCarton = data['itemsPerCarton'];
-    final systemQuantity = data['systemQuantityPieces'];
-    final actualQuantity = data['actualQuantityPieces'];
-    final difference = data['differencePieces'];
-    final counted = data['counted'];
-    final countedAt = data['countedAt'];
-    if (storedItemId != itemId ||
-        itemName is! String ||
-        itemCode is! String ||
-        unit is! String ||
-        itemsPerCarton is! int ||
-        systemQuantity is! int ||
-        actualQuantity is! int ||
-        difference is! int ||
-        counted is! bool ||
-        countedAt is! Timestamp?) {
-      throw const FormatException('Malformed stocktake line.');
-    }
-
-    return StocktakeLine(
-      itemId: itemId,
-      itemNameSnapshot: itemName,
-      itemCodeSnapshot: itemCode,
-      unit: unit,
-      itemsPerCarton: itemsPerCarton,
-      systemQuantityPieces: systemQuantity,
-      actualQuantityPieces: actualQuantity,
-      differencePieces: difference,
-      counted: counted,
-      countedAt: countedAt?.toDate(),
-    );
   }
 
   String _readFailureMessage(FirebaseException error) {

@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../core/constants/firestore_collections.dart';
 import '../../../../core/models/inventory_item.dart';
+import '../mappers/warehouse_return_firestore_mapper.dart';
 import '../models/return_resolution.dart';
 import '../models/warehouse_return_draft.dart';
 import '../models/warehouse_return_record.dart';
@@ -54,7 +55,12 @@ class ReturnsRepository implements ReturnsRepositoryBase {
               .snapshots()) {
         final records =
             snapshot.docs
-                .map((document) => _mapReturn(document.id, document.data()))
+                .map(
+                  (document) => WarehouseReturnFirestoreMapper.fromMap(
+                    id: document.id,
+                    data: document.data(),
+                  ),
+                )
                 .toList()
               ..sort(
                 (first, second) =>
@@ -231,9 +237,9 @@ class ReturnsRepository implements ReturnsRepositoryBase {
           throw const ReturnsRepositoryFailure('المرتجع لم يعد موجودًا.');
         }
 
-        final warehouseReturn = _mapReturn(
-          returnSnapshot.id,
-          returnSnapshot.data()!,
+        final warehouseReturn = WarehouseReturnFirestoreMapper.fromMap(
+          id: returnSnapshot.id,
+          data: returnSnapshot.data()!,
         );
         if (warehouseReturn.status !=
             WarehouseReturnStatus.pendingSupplierResolution) {
@@ -405,43 +411,5 @@ class ReturnsRepository implements ReturnsRepositoryBase {
       'unavailable' => 'تعذر تحميل المرتجعات. تحقق من الإنترنت.',
       _ => 'تعذر تحميل المرتجعات الآن.',
     };
-  }
-
-  WarehouseReturnRecord _mapReturn(String id, Map<String, dynamic> data) {
-    final returnNumber = data['returnNumber'];
-    final itemId = data['itemId'];
-    final itemName = data['itemNameSnapshot'];
-    final itemCode = data['itemCodeSnapshot'];
-    final itemsPerCarton = data['itemsPerCartonSnapshot'];
-    final quantityPieces = data['quantityPieces'];
-    final sourceName = data['sourceName'];
-    final status = data['status'];
-    final receivedAt = data['receivedAt'];
-
-    if (returnNumber is! String ||
-        itemId is! String ||
-        itemName is! String ||
-        itemCode is! String ||
-        (itemsPerCarton != null &&
-            (itemsPerCarton is! int || itemsPerCarton <= 0)) ||
-        quantityPieces is! int ||
-        sourceName is! String ||
-        status is! String ||
-        receivedAt is! Timestamp) {
-      throw const FormatException('Malformed warehouse return data.');
-    }
-
-    return WarehouseReturnRecord(
-      id: id,
-      returnNumber: returnNumber,
-      itemId: itemId,
-      itemName: itemName,
-      itemCode: itemCode,
-      itemsPerCarton: itemsPerCarton as int?,
-      quantityPieces: quantityPieces,
-      sourceName: sourceName,
-      status: WarehouseReturnStatus.values.byName(status),
-      receivedAt: receivedAt.toDate(),
-    );
   }
 }
