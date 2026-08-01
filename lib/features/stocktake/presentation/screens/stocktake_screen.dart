@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../core/constants/app_routes.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/app_routes.dart';
 import '../../../../core/constants/app_sizes.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/shared_widgets/custom_app_bar.dart';
-import '../../../stocktake/cubit/stocktake_cubit.dart';
-import '../../../stocktake/cubit/stocktake_state.dart';
-import '../../../stocktake/presentation/widgets/start_stocktake_card.dart';
-import '../../../stocktake/presentation/widgets/stocktake_session_view.dart';
+import '../../cubit/stocktake_cubit.dart';
+import '../../cubit/stocktake_state.dart';
+import '../widgets/start_stocktake_card.dart';
+import '../widgets/stocktake_session_view.dart';
 
-class StockAdjustmentScreen extends StatelessWidget {
-  const StockAdjustmentScreen({super.key});
+/// Route-level coordinator for the stocktake workflow and its UI side effects.
+class StocktakeScreen extends StatelessWidget {
+  const StocktakeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

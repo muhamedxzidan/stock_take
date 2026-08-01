@@ -5,8 +5,8 @@
     "semantic_hash": "9dc190436f637c201c437fef74ba0bd6"
   },
   "lib/core/constants/app_router.dart": {
-    "mtime": 1785403690.8769965,
-    "ast_hash": "d49774218a37d3814077e4836ed0b036",
+    "mtime": 1785623946.1975322,
+    "ast_hash": "c9088479d671729dc98a95bef19079e8",
     "semantic_hash": ""
   },
   "lib/core/constants/app_routes.dart": {
@@ -162,11 +162,6 @@
   "lib/features/transactions/data/repositories/transactions_repository_base.dart": {
     "mtime": 1785419609.0480871,
     "ast_hash": "26f3c3aa066917426554a8a6542f83a4",
-    "semantic_hash": ""
-  },
-  "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart": {
-    "mtime": 1785364481.9979076,
-    "ast_hash": "428ff742f4c5e8ff05104c217d843192",
     "semantic_hash": ""
   },
   "lib/features/transactions/presentation/screens/transaction_history_screen.dart": {
@@ -480,8 +475,8 @@
     "semantic_hash": ""
   },
   "lib/features/stocktake/cubit/stocktake_cubit.dart": {
-    "mtime": 1785364991.2355855,
-    "ast_hash": "6f90b390fd57f0f7ca67d61698961581",
+    "mtime": 1785623948.269708,
+    "ast_hash": "3ce0687c78785afe8589ab50864469ec",
     "semantic_hash": ""
   },
   "lib/features/stocktake/cubit/stocktake_state.dart": {
@@ -500,8 +495,8 @@
     "semantic_hash": ""
   },
   "lib/features/stocktake/data/repositories/stocktake_repository.dart": {
-    "mtime": 1785419919.2798924,
-    "ast_hash": "d6b489c9f47436872cd14256a4b27084",
+    "mtime": 1785624039.464695,
+    "ast_hash": "5e74f21e25b5b8e72d2759010255ea94",
     "semantic_hash": ""
   },
   "lib/features/stocktake/data/repositories/stocktake_repository_base.dart": {
@@ -520,8 +515,8 @@
     "semantic_hash": ""
   },
   "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart": {
-    "mtime": 1785364020.5648444,
-    "ast_hash": "4291a27d6cb357524f56c5630a4a5293",
+    "mtime": 1785624031.9869754,
+    "ast_hash": "8753522603224321eb2d5bc6c239ebf4",
     "semantic_hash": ""
   },
   "lib/core/models/thermal_receipt_data.dart": {
@@ -692,6 +687,31 @@
   "lib/features/printing/presentation/widgets/printer_selection_dialog_content.dart": {
     "mtime": 1785623588.8084471,
     "ast_hash": "59fbc114a8648a648dc101bc6b8dc9c7",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/cubit/stocktake_draft_validator.dart": {
+    "mtime": 1785623947.6008847,
+    "ast_hash": "0a4206087b79a6beef2cdc8877bc56d9",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart": {
+    "mtime": 1785623949.0336215,
+    "ast_hash": "9a71e8f11a0103d888f83138cdedbe4e",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/presentation/screens/stocktake_screen.dart": {
+    "mtime": 1785623945.4764934,
+    "ast_hash": "0969ff5ecd4abf838d1ba82f4d8d7786",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart": {
+    "mtime": 1785624031.3651445,
+    "ast_hash": "cce4cb5b8ca552726278770344378b80",
+    "semantic_hash": ""
+  },
+  "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart": {
+    "mtime": 1785624030.7506115,
+    "ast_hash": "7176e977952688913fda7c267c5c1008",
     "semantic_hash": ""
   }
 }

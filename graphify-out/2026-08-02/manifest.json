@@ -560,8 +560,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/printer_selection_dialog.dart": {
-    "mtime": 1785403753.302823,
-    "ast_hash": "aa001ff5c14ac25d6686c6b677435b81",
+    "mtime": 1785623612.577148,
+    "ast_hash": "ef93daf5eb1e5ed7eb9bf9a0230f251e",
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/printer_setup_button.dart": {
@@ -687,6 +687,11 @@
   "lib/features/printing/data/services/thermal_receipt_print_job.dart": {
     "mtime": 1785623509.357377,
     "ast_hash": "2ed790f5e2dcf246149db59dab745d6d",
+    "semantic_hash": ""
+  },
+  "lib/features/printing/presentation/widgets/printer_selection_dialog_content.dart": {
+    "mtime": 1785623588.8084471,
+    "ast_hash": "59fbc114a8648a648dc101bc6b8dc9c7",
     "semantic_hash": ""
   }
 }

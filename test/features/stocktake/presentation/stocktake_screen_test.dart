@@ -7,7 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stock_take/features/stocktake/data/models/stocktake_session.dart';
 import 'package:stock_take/features/stocktake/cubit/stocktake_cubit.dart';
-import 'package:stock_take/features/transactions/presentation/screens/stock_adjustment_screen.dart';
+import 'package:stock_take/features/stocktake/presentation/screens/stocktake_screen.dart';
 
 import '../../../support/fake_stocktake_repository.dart';
 
@@ -27,7 +27,7 @@ void main() {
         designSize: const Size(375, 812),
         builder: (context, child) => BlocProvider.value(
           value: cubit,
-          child: const MaterialApp(home: StockAdjustmentScreen()),
+          child: const MaterialApp(home: StocktakeScreen()),
         ),
       ),
     );
@@ -110,7 +110,7 @@ void main() {
             path: '/stocktake',
             builder: (_, _) => BlocProvider(
               create: (_) => StocktakeCubit(repository)..load(),
-              child: const StockAdjustmentScreen(),
+              child: const StocktakeScreen(),
             ),
           ),
         ],

@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../core/constants/firestore_collections.dart';
 import '../../../../core/models/inventory_item.dart';
+import '../mappers/stocktake_firestore_failure_mapper.dart';
 import '../mappers/stocktake_firestore_mapper.dart';
 import '../models/stocktake_line.dart';
 import '../models/stocktake_session.dart';
@@ -58,7 +59,9 @@ class StocktakeRepository implements StocktakeRepositoryBase {
         data: document.data(),
       );
     } on FirebaseException catch (error) {
-      throw StocktakeRepositoryFailure(_readFailureMessage(error));
+      throw StocktakeRepositoryFailure(
+        StocktakeFirestoreFailureMapper.read(error),
+      );
     } on FormatException {
       throw const StocktakeRepositoryFailure(
         'بيانات جلسة الجرد المفتوحة غير صالحة.',
@@ -85,7 +88,9 @@ class StocktakeRepository implements StocktakeRepositoryBase {
             .toList(growable: false);
       }
     } on FirebaseException catch (error) {
-      throw StocktakeRepositoryFailure(_readFailureMessage(error));
+      throw StocktakeRepositoryFailure(
+        StocktakeFirestoreFailureMapper.read(error),
+      );
     } on FormatException {
       throw const StocktakeRepositoryFailure(
         'بيانات أحد أصناف جلسة الجرد غير صالحة.',
@@ -223,7 +228,9 @@ class StocktakeRepository implements StocktakeRepositoryBase {
         'بيانات أحد الأصناف غير صالحة. حدّث الصفحة وحاول مرة أخرى.',
       );
     } on FirebaseException catch (error) {
-      throw StocktakeRepositoryFailure(_writeFailureMessage(error));
+      throw StocktakeRepositoryFailure(
+        StocktakeFirestoreFailureMapper.write(error),
+      );
     }
   }
 
@@ -271,7 +278,9 @@ class StocktakeRepository implements StocktakeRepositoryBase {
     } on StocktakeRepositoryFailure {
       rethrow;
     } on FirebaseException catch (error) {
-      throw StocktakeRepositoryFailure(_writeFailureMessage(error));
+      throw StocktakeRepositoryFailure(
+        StocktakeFirestoreFailureMapper.write(error),
+      );
     }
   }
 
@@ -467,7 +476,9 @@ class StocktakeRepository implements StocktakeRepositoryBase {
         'بيانات جلسة الجرد غير صالحة. أعد تحميل الصفحة.',
       );
     } on FirebaseException catch (error) {
-      throw StocktakeRepositoryFailure(_writeFailureMessage(error));
+      throw StocktakeRepositoryFailure(
+        StocktakeFirestoreFailureMapper.write(error),
+      );
     }
   }
 
@@ -504,7 +515,9 @@ class StocktakeRepository implements StocktakeRepositoryBase {
     } on StocktakeRepositoryFailure {
       rethrow;
     } on FirebaseException catch (error) {
-      throw StocktakeRepositoryFailure(_writeFailureMessage(error));
+      throw StocktakeRepositoryFailure(
+        StocktakeFirestoreFailureMapper.write(error),
+      );
     }
   }
 
@@ -596,24 +609,5 @@ class StocktakeRepository implements StocktakeRepositoryBase {
     } else {
       transaction.set(reference, data);
     }
-  }
-
-  String _readFailureMessage(FirebaseException error) {
-    return switch (error.code) {
-      'permission-denied' =>
-        'لا توجد صلاحية لعرض جلسة الجرد. سجّل الدخول مرة أخرى.',
-      'unavailable' => 'تعذر تحميل جلسة الجرد. تحقق من الإنترنت.',
-      _ => 'تعذر تحميل جلسة الجرد الآن.',
-    };
-  }
-
-  String _writeFailureMessage(FirebaseException error) {
-    return switch (error.code) {
-      'permission-denied' =>
-        'تعذر حفظ جلسة الجرد بسبب الصلاحيات. سجّل الدخول مرة أخرى.',
-      'unavailable' => 'تعذر حفظ جلسة الجرد. تحقق من الإنترنت.',
-      'aborted' => 'تغير الرصيد أثناء الحفظ. أعد المحاولة.',
-      _ => 'تعذر حفظ جلسة الجرد الآن.',
-    };
   }
 }
