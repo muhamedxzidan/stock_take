@@ -104,14 +104,11 @@
   "102": "firestore_collections.dart",
   "103": "stock_summary_model.dart",
   "104": "PrinterRepositoryBase",
-  "105": "item_catalog_cubit.dart",
   "106": "Q: تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29",
   "107": "AppRoutes.transactionHistory",
   "108": "AuthSessionNotifier",
   "109": "../../../../core/constants/app_text_styles.dart",
   "110": "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?",
   "111": "Q: إضافة شعار EL SAUDI أعلى الريسيت وإجمالي الكراتين ثم القطع وتحسين وضوح الطباعة",
-  "112": "Q: خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل",
-  "113": "package:cloud_firestore/cloud_firestore.dart",
-  "114": "String?"
+  "112": "Q: خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل"
 }

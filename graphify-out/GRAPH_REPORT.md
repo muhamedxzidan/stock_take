@@ -1,16 +1,16 @@
 # Graph Report - stock_take  (2026-08-02)
 
 ## Corpus Check
-- 139 files · ~31,092 words
+- 143 files · ~31,208 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1659 nodes · 2367 edges · 115 communities
+- 1674 nodes · 2391 edges · 112 communities
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `43272dcc`
+- Built from commit: `4c222a68`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -120,7 +120,6 @@
 - firestore_collections.dart
 - stock_summary_model.dart
 - PrinterRepositoryBase
-- item_catalog_cubit.dart
 - Q: تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29
 - AppRoutes.transactionHistory
 - AuthSessionNotifier
@@ -128,8 +127,6 @@
 - Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?
 - Q: إضافة شعار EL SAUDI أعلى الريسيت وإجمالي الكراتين ثم القطع وتحسين وضوح الطباعة
 - Q: خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل
-- package:cloud_firestore/cloud_firestore.dart
-- String?
 
 ## God Nodes (most connected - your core abstractions)
 1. `ReturnResolutionCubit` - 18 edges
@@ -144,45 +141,45 @@
 10. `TransactionsCubit` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `_resolve` --references--> `ReturnResolutionCubit`  [EXTRACTED]
-  lib/features/returns/presentation/widgets/return_workflow_card.dart → lib/features/returns/cubit/return_resolution_cubit.dart
+- `_confirmCancellation` --references--> `StocktakeCubit`  [EXTRACTED]
+  lib/features/stocktake/presentation/screens/stocktake_screen.dart → lib/features/stocktake/cubit/stocktake_cubit.dart
 - `_confirm` --references--> `TransactionsCubit`  [EXTRACTED]
   lib/features/transactions/presentation/widgets/movement_voucher_preview_dialog.dart → lib/features/transactions/cubit/transactions_cubit.dart
 - `AppRouter` --references--> `LoginCubit`  [EXTRACTED]
   lib/core/constants/app_router.dart → lib/features/auth/cubit/login/login_cubit.dart
 - `_submit` --references--> `LoginCubit`  [EXTRACTED]
   lib/features/auth/presentation/screens/login_screen.dart → lib/features/auth/cubit/login/login_cubit.dart
-- `initState` --references--> `DashboardCubit`  [EXTRACTED]
-  lib/features/dashboard/presentation/screens/dashboard_screen.dart → lib/features/dashboard/cubit/dashboard_cubit.dart
+- `DashboardCubit` --calls--> `DashboardFailure`  [EXTRACTED]
+  lib/features/dashboard/cubit/dashboard_cubit.dart → lib/features/dashboard/cubit/dashboard_state.dart
 
 ## Import Cycles
 - None detected.
 
-## Communities (115 total, 0 thin omitted)
+## Communities (112 total, 0 thin omitted)
 
 ### Community 0 - "app_strings.dart"
 Cohesion: 0.03
 Nodes (70): actualCount, addItemTitle, adjustmentReason, adjustmentTitle, AppStrings, appTitle, authorizedUsersOnly, backToNewMovement (+62 more)
 
 ### Community 1 - "StatelessWidget"
-Cohesion: 0.08
-Nodes (23): DocumentReference, _counters, createCustomerReturn, _customerReturnCounterId, _ensureInventoryIsUnlocked, _ensureNoLegacyOpenStocktake, _firebaseAuth, _firestore (+15 more)
+Cohesion: 0.07
+Nodes (30): DocumentReference, createCustomerReturn, resolveReturn, ReturnsRepositoryBase, watchPendingReturns, _counters, createCustomerReturn, _customerReturnCounterId (+22 more)
 
 ### Community 2 - "app_router.dart"
 Cohesion: 0.09
 Nodes (20): ../../../../core/models/thermal_receipt_data.dart, _formatDate, fromMovementRecord, fromSavedMovement, _movementLabel, MovementReceiptMapper, _partyLabel, fromMap (+12 more)
 
 ### Community 3 - "TransactionsCubit"
-Cohesion: 0.19
-Nodes (13): dateFilterMode, dateFrom, dateTo, message, MovementDateFilterMode, MovementHistoryFailure, MovementHistoryInitial, MovementHistoryLoading (+5 more)
+Cohesion: 0.17
+Nodes (11): ../../data/models/movement_report_summary.dart, dateFilterMode, dateFrom, dateTo, message, MovementDateFilterMode, MovementHistoryInitial, movements (+3 more)
 
 ### Community 4 - "app_sizes.dart"
 Cohesion: 0.04
 Nodes (44): app_colors.dart, AppSizes, buttonHeight, cardElevation, h12, h16, h20, h24 (+36 more)
 
 ### Community 5 - "main.dart"
-Cohesion: 0.12
-Nodes (18): ../../../../core/constants/app_colors.dart, ../../cubit/printer_cubit.dart, ../../cubit/printer_state.dart, build, build, _controller, createState, _rasterizer (+10 more)
+Cohesion: 0.07
+Nodes (36): ../../cubit/printer_cubit.dart, ../../cubit/printer_state.dart, ThermalReceiptData, PrinterCubit, PrinterState, build, createState, _cubit (+28 more)
 
 ### Community 6 - "app_colors.dart"
 Cohesion: 0.08
@@ -194,7 +191,7 @@ Nodes (23): current_voucher_panel.dart, ../../../items/cubit/item_catalog_state.
 
 ### Community 8 - "DashboardCubit"
 Cohesion: 0.27
-Nodes (10): CartonPieceQuantityFields, _CartonPieceQuantityFieldsState, _ReturnResolutionDialog, _ReturnResolutionDialogState, _StocktakeLineCard, _StocktakeLineCardState, ItemQuantitySheet, _ItemQuantitySheetState (+2 more)
+Nodes (10): CartonPieceQuantityFields, _CartonPieceQuantityFieldsState, _ReturnResolutionDialog, _ReturnResolutionDialogState, ItemQuantitySheet, _ItemQuantitySheetState, MovementDetailsSheet, _MovementDetailsSheetState (+2 more)
 
 ### Community 9 - "transaction_model.dart"
 Cohesion: 0.12
@@ -209,12 +206,12 @@ Cohesion: 0.18
 Nodes (10): ../../data/models/inventory_movement.dart, ../data/repositories/transactions_repository_base.dart, ../data/repositories/transactions_repository_failure.dart, createInboundMovement, createOutboundMovement, _isSavingMovement, _repository, _saveMovement (+2 more)
 
 ### Community 12 - "package:flutter_bloc/flutter_bloc.dart"
-Cohesion: 0.05
-Nodes (48): ../../../../core/constants/app_routes.dart, ../../data/models/stocktake_line.dart, ../../data/models/stocktake_session.dart, AppRouter, build, StocktakeCubit, action, completion (+40 more)
+Cohesion: 0.17
+Nodes (19): AppRouter, StocktakeCubit, action, completion, itemId, lines, message, session (+11 more)
 
 ### Community 13 - "pdf_voucher_dialog.dart"
-Cohesion: 0.22
-Nodes (9): ../../../../core/shared_widgets/custom_app_bar.dart, ../../cubit/return_resolution_cubit.dart, ../../../items/cubit/item_catalog_cubit.dart, createState, _ReturnPersistenceNotice, WarehouseReturnScreen, _WarehouseReturnScreenState, ../widgets/return_workflow_card.dart (+1 more)
+Cohesion: 0.15
+Nodes (12): ../../../../core/shared_widgets/custom_app_bar.dart, ../../cubit/stocktake_cubit.dart, ../../cubit/stocktake_state.dart, build, build, _confirmCancellation, message, _StocktakeLoadFailure (+4 more)
 
 ### Community 14 - "adjustment_form.dart"
 Cohesion: 0.40
@@ -229,8 +226,8 @@ Cohesion: 0.14
 Nodes (13): int?, id, itemCode, itemId, itemName, itemsPerCarton, quantityPieces, receivedAt (+5 more)
 
 ### Community 17 - "stock_summary_card.dart"
-Cohesion: 0.15
-Nodes (17): PrinterCubit, PrinterState, build, createState, _cubit, didChangeDependencies, dispose, _filterPrinters (+9 more)
+Cohesion: 0.13
+Nodes (14): adjustedItemCount, cancelledAt, completedAt, id, movementVoucherNumber, netDifferencePieces, notes, periodFrom (+6 more)
 
 ### Community 18 - "dashboard_repository.dart"
 Cohesion: 0.17
@@ -245,8 +242,8 @@ Cohesion: 0.07
 Nodes (26): arabicLabel, counterId, _counters, createInboundMovement, _createInventoryMovement, createOutboundMovement, _ensureInventoryIsUnlocked, _ensureNoLegacyOpenStocktake (+18 more)
 
 ### Community 21 - "package:flutter/material.dart"
-Cohesion: 0.13
-Nodes (15): build, _continue, createState, _dateController, _deliveredByController, dispose, _driverController, initState (+7 more)
+Cohesion: 0.14
+Nodes (13): build, _continue, createState, _dateController, _deliveredByController, dispose, _driverController, initState (+5 more)
 
 ### Community 22 - "status_badge.dart"
 Cohesion: 0.12
@@ -254,11 +251,11 @@ Nodes (17): build, buttonKey, createState, date, _DateButton, dispose, _formatDa
 
 ### Community 23 - "custom_button.dart"
 Cohesion: 0.07
-Nodes (29): _adjustmentCounterId, cancelStocktake, _claimLegacyOpenSession, completeStocktake, _counters, fetchOpenStocktake, _firebaseAuth, _firestore (+21 more)
+Nodes (28): _adjustmentCounterId, cancelStocktake, _claimLegacyOpenSession, completeStocktake, _counters, fetchOpenStocktake, _firebaseAuth, _firestore (+20 more)
 
 ### Community 24 - "transaction_list_item.dart"
-Cohesion: 0.07
-Nodes (29): build, build, _changeMovementKind, createState, dispose, initialMovementKind, _lines, _movementKind (+21 more)
+Cohesion: 0.05
+Nodes (49): ../../../../core/constants/app_routes.dart, ../../cubit/return_resolution_cubit.dart, ../../../items/cubit/item_catalog_cubit.dart, build, ItemCatalogCubit, ItemCatalogFailure, ItemCatalogInitial, ItemCatalogLoading (+41 more)
 
 ### Community 25 - "app_routes.dart"
 Cohesion: 0.10
@@ -273,16 +270,16 @@ Cohesion: 0.20
 Nodes (9): Color, adjustment, backgroundColor, build, inbound, label, outbound, StatusBadge (+1 more)
 
 ### Community 28 - "package:flutter/material.dart"
-Cohesion: 0.12
-Nodes (16): actionLabel, cartons, date, deliveredBy, driverName, item, label, MovementVoucherDetails (+8 more)
+Cohesion: 0.18
+Nodes (11): _actualQuantity, build, createState, initState, isSaving, line, quantity, sign (+3 more)
 
 ### Community 29 - "transactions_state.dart"
-Cohesion: 0.13
-Nodes (13): fromMap, _statusFrom, WarehouseReturnFirestoreMapper, createCustomerReturn, resolveReturn, ReturnsRepositoryBase, watchPendingReturns, ReturnsRepository (+5 more)
+Cohesion: 0.17
+Nodes (10): fromMap, _statusFrom, WarehouseReturnFirestoreMapper, read, StocktakeFirestoreFailureMapper, write, ../models/warehouse_return_record.dart, package:cloud_firestore/cloud_firestore.dart (+2 more)
 
 ### Community 30 - "TransactionsCubit"
-Cohesion: 0.09
-Nodes (22): ChangeNotifier, ../constants/app_router.dart, ../../features/auth/data/repositories/firebase_auth_repository.dart, ../../features/dashboard/data/repositories/dashboard_repository_base.dart, ../../features/dashboard/data/repositories/dashboard_repository.dart, ../../features/items/data/repositories/items_repository_base.dart, ../../features/items/data/repositories/items_repository.dart, ../../features/printing/data/repositories/bluetooth_printer_repository.dart (+14 more)
+Cohesion: 0.10
+Nodes (20): ../constants/app_router.dart, ../../features/auth/data/repositories/firebase_auth_repository.dart, ../../features/dashboard/data/repositories/dashboard_repository_base.dart, ../../features/dashboard/data/repositories/dashboard_repository.dart, ../../features/items/data/repositories/items_repository_base.dart, ../../features/items/data/repositories/items_repository.dart, ../../features/printing/data/repositories/bluetooth_printer_repository.dart, ../../features/printing/data/repositories/printer_repository_base.dart (+12 more)
 
 ### Community 31 - "Q: استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
 Cohesion: 0.40
@@ -297,16 +294,16 @@ Cohesion: 0.08
 Nodes (25): ../../../../core/extensions/inventory_number_parsing.dart, affectedPieces, businessAt, cartons, deliveredBy, driverName, id, itemCode (+17 more)
 
 ### Community 34 - "movement_ui_types.dart"
-Cohesion: 0.10
-Nodes (20): _actualQuantity, build, countedItems, createState, _formatDate, initState, isCancelling, isCompleting (+12 more)
+Cohesion: 0.17
+Nodes (11): ../../../../core/shared_widgets/custom_button.dart, ../../data/models/stocktake_line.dart, build, isCancelling, isCompleting, lines, savingItemId, session (+3 more)
 
 ### Community 35 - "items_cubit.dart"
-Cohesion: 0.07
-Nodes (35): core/constants/app_strings.dart, ../../cubit/dashboard_cubit.dart, ../../cubit/dashboard_state.dart, ../../data/mappers/stock_balance_receipt_mapper.dart, ../../data/models/stock_summary_model.dart, DashboardCubit, allItems, DashboardFailure (+27 more)
+Cohesion: 0.20
+Nodes (13): ../../data/mappers/stock_balance_receipt_mapper.dart, DashboardCubit, build, createState, DashboardScreen, _DashboardScreenState, initState, _printStockBalance (+5 more)
 
 ### Community 36 - "../../../../core/models/inventory_item.dart"
 Cohesion: 0.10
-Nodes (20): _allMovements, close, _dateFilterMode, _dateFrom, _dateTo, _emitFilteredMovements, filterByType, loadMovements (+12 more)
+Nodes (19): _allMovements, close, _dateFilterMode, _dateFrom, _dateTo, _emitFilteredMovements, filterByType, loadMovements (+11 more)
 
 ### Community 37 - "movement_type_selector.dart"
 Cohesion: 0.15
@@ -317,16 +314,16 @@ Cohesion: 0.15
 Nodes (12): build, CurrentVoucherPanel, _EmptyVoucherState, _itemCountLabel, line, lines, movementKind, onContinue (+4 more)
 
 ### Community 39 - "movement_voucher_preview_dialog.dart"
-Cohesion: 0.10
-Nodes (19): carton_piece_quantity.dart, active, code, copyWith, currentStockBalance, currentStockPieces, fromMap, id (+11 more)
+Cohesion: 0.08
+Nodes (29): carton_piece_quantity.dart, Cubit, active, code, copyWith, currentStockBalance, currentStockPieces, fromMap (+21 more)
 
 ### Community 40 - "StatelessWidget"
 Cohesion: 0.12
 Nodes (15): custom_text_field.dart, ../extensions/inventory_number_parsing.dart, build, _cartonsController, createState, dispose, initialValue, initState (+7 more)
 
 ### Community 41 - "TransactionsCubit"
-Cohesion: 0.36
-Nodes (9): TransactionsCubit, InventoryMovementFailure, InventoryMovementSaved, InventoryMovementSaving, message, movement, TransactionsInitial, TransactionsState (+1 more)
+Cohesion: 0.31
+Nodes (10): TransactionsCubit, InventoryMovementFailure, InventoryMovementSaved, InventoryMovementSaving, message, movement, TransactionsInitial, TransactionsState (+2 more)
 
 ### Community 42 - "Q: اضافه اسم السائق في الاستلام والتسليم"
 Cohesion: 0.40
@@ -341,16 +338,16 @@ Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: اعمل الخطه ك ui. بس, Source Nodes
 
 ### Community 45 - "saved_printer.dart"
-Cohesion: 0.15
-Nodes (13): ../../../../core/shared_widgets/custom_text_field.dart, ../../cubit/returns_cubit.dart, ../../cubit/returns_state.dart, ../../../items/presentation/widgets/inventory_item_selector_field.dart, build, createState, dispose, _quantity (+5 more)
+Cohesion: 0.29
+Nodes (9): allItems, DashboardFailure, DashboardInitial, DashboardLoading, DashboardState, DashboardSuccess, items, message (+1 more)
 
 ### Community 46 - "item_model.dart"
-Cohesion: 0.12
-Nodes (22): ../../cubit/login/login_cubit.dart, ../../cubit/login/login_state.dart, FormState, LoginCubit, LoginFailure, LoginInitial, LoginState, LoginSubmitting (+14 more)
+Cohesion: 0.06
+Nodes (35): bool get, ../../cubit/login/login_cubit.dart, ../../cubit/login/login_state.dart, ../../data/repositories/auth_failure.dart, ../../data/repositories/auth_repository.dart, FormState, _authRepository, _isValidEmail (+27 more)
 
 ### Community 47 - "transaction_list_item.dart"
-Cohesion: 0.18
-Nodes (10): ../constants/app_colors.dart, ../constants/app_text_styles.dart, actions, build, leading, preferredSize, title, AppTheme (+2 more)
+Cohesion: 0.20
+Nodes (9): ../constants/app_text_styles.dart, actions, build, CustomAppBar, leading, preferredSize, title, PreferredSizeWidget (+1 more)
 
 ### Community 48 - "firebase_auth_repository.dart"
 Cohesion: 0.17
@@ -373,16 +370,16 @@ Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن, Source Nodes
 
 ### Community 53 - "adjustment_form.dart"
-Cohesion: 0.10
-Nodes (19): cartons, date, deliveredBy, documentTitle, driverName, itemCode, itemName, lines (+11 more)
+Cohesion: 0.05
+Nodes (42): int get, cartons, date, deliveredBy, documentTitle, driverName, itemCode, itemName (+34 more)
 
 ### Community 54 - "../constants/app_colors.dart"
-Cohesion: 0.12
-Nodes (16): ../../cubit/return_resolution_state.dart, build, _confirm, count, _CountBadge, createState, dispose, _EmptyPendingReturns (+8 more)
+Cohesion: 0.05
+Nodes (48): ../../cubit/return_resolution_state.dart, ../../data/models/return_resolution.dart, ../../data/models/warehouse_return_record.dart, close, loadPendingReturns, _pendingReturns, _repository, resolveReturn (+40 more)
 
 ### Community 55 - "../../../dashboard/data/models/item_model.dart"
 Cohesion: 0.22
-Nodes (15): ../../data/models/warehouse_return_record.dart, ReturnResolutionCubit, message, pendingReturns, resolution, returnId, ReturnResolutionFailure, ReturnResolutionInitial (+7 more)
+Nodes (8): StocktakeSession, build, countedItems, _formatDate, netDifference, session, StocktakeSessionHeader, totalItems
 
 ### Community 56 - "responsive_layout.dart"
 Cohesion: 0.25
@@ -401,16 +398,16 @@ Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه, Source Nodes
 
 ### Community 60 - "auth_session_notifier.dart"
-Cohesion: 0.14
-Nodes (13): dashboard_state.dart, ../data/repositories/dashboard_repository_base.dart, _allItems, _buildSummary, close, _debounceTimer, _emitFilteredItems, _itemsSubscription (+5 more)
+Cohesion: 0.13
+Nodes (14): dashboard_state.dart, ../../data/models/stock_summary_model.dart, ../data/repositories/dashboard_repository_base.dart, _allItems, _buildSummary, close, _debounceTimer, _emitFilteredItems (+6 more)
 
 ### Community 61 - "stock_summary_model.dart"
 Cohesion: 0.18
 Nodes (10): Key, _buildActionButton, color, icon, key, onPrintStockBalance, onTap, _QuickAction (+2 more)
 
 ### Community 62 - "LoginCubit"
-Cohesion: 0.22
-Nodes (8): IconData, backgroundColor, build, CustomButton, icon, isLoading, onPressed, text
+Cohesion: 0.11
+Nodes (19): ../constants/app_colors.dart, ../constants/app_sizes.dart, IconData, backgroundColor, build, CustomButton, icon, isLoading (+11 more)
 
 ### Community 63 - "login_cubit.dart"
 Cohesion: 0.20
@@ -421,12 +418,12 @@ Cohesion: 0.40
 Nodes (4): itemsPerCarton, name, NewInventoryItemDraft, openingStockPieces
 
 ### Community 65 - "inventory_item_selector_field.dart"
-Cohesion: 0.17
-Nodes (12): ../../cubit/item_catalog_cubit.dart, ../../cubit/item_catalog_state.dart, build, createState, _InventoryItemPickerSheet, _InventoryItemPickerSheetState, items, label (+4 more)
+Cohesion: 0.15
+Nodes (13): ../../cubit/item_catalog_cubit.dart, ../../cubit/item_catalog_state.dart, build, createState, _InventoryItemPickerSheet, _InventoryItemPickerSheetState, InventoryItemSelectorField, items (+5 more)
 
 ### Community 66 - "ItemsCubit"
 Cohesion: 0.31
-Nodes (10): ItemsCubit, item, ItemsFailure, ItemsInitial, ItemsLoading, ItemsState, ItemsSuccess, message (+2 more)
+Nodes (9): MovementHistoryCubit, MovementHistoryFailure, MovementHistoryLoading, MovementHistoryState, MovementHistorySuccess, build, _DateFilterBar, initState (+1 more)
 
 ### Community 67 - "inventory_number_parsing.dart"
 Cohesion: 0.20
@@ -441,8 +438,8 @@ Cohesion: 0.11
 Nodes (18): ../data/repositories/stocktake_repository_base.dart, ../data/repositories/stocktake_repository_failure.dart, Duration, cancelStocktake, close, completeStocktake, _currentLinesFor, _isActing (+10 more)
 
 ### Community 70 - "return_resolution.dart"
-Cohesion: 0.18
-Nodes (11): ../../../../core/shared_widgets/carton_piece_quantity_fields.dart, ../../../../core/shared_widgets/custom_button.dart, ../../cubit/items_cubit.dart, ../../cubit/items_state.dart, AddItemForm, _AddItemFormState, createState, dispose (+3 more)
+Cohesion: 0.15
+Nodes (13): ../../../../core/shared_widgets/carton_piece_quantity_fields.dart, ../../../../core/shared_widgets/custom_text_field.dart, ../../cubit/items_cubit.dart, ../../cubit/items_state.dart, AddItemForm, _AddItemFormState, build, createState (+5 more)
 
 ### Community 71 - "transaction_filter_bar.dart"
 Cohesion: 0.12
@@ -453,16 +450,16 @@ Cohesion: 0.22
 Nodes (8): androidBluetooth, isSupported, mode, persistsSelectionAcrossSessions, PrinterConnectionMode, PrinterConnectionProfile, unsupported, static const
 
 ### Community 73 - "package:flutter_bloc/flutter_bloc.dart"
-Cohesion: 0.22
-Nodes (13): Cubit, ItemCatalogCubit, ItemCatalogFailure, ItemCatalogInitial, ItemCatalogLoading, ItemCatalogState, ItemCatalogSuccess, items (+5 more)
+Cohesion: 0.25
+Nodes (7): fromJson, lowStockItemsCount, StockSummaryModel, toJson, totalInboundCount, totalItemsCount, totalOutboundCount
 
 ### Community 74 - "warehouse_return_screen.dart"
-Cohesion: 0.22
-Nodes (8): int get, address, displayName, hashCode, name, operator, SavedPrinter, String get
+Cohesion: 0.29
+Nodes (6): core/constants/app_strings.dart, ../../cubit/dashboard_cubit.dart, ../../cubit/dashboard_state.dart, build, _buildItemCard, StockItemsList
 
 ### Community 75 - "LoginCubit"
-Cohesion: 0.13
-Nodes (14): ../../data/mappers/movement_receipt_mapper.dart, MovementRecord, build, _formatDate, _itemsLabel, label, movement, _quantityLabel (+6 more)
+Cohesion: 0.12
+Nodes (15): ../../data/mappers/movement_receipt_mapper.dart, MovementRecord, build, _DetailText, _formatDate, _itemsLabel, label, movement (+7 more)
 
 ### Community 76 - "CartonPieceQuantity"
 Cohesion: 0.33
@@ -477,8 +474,8 @@ Cohesion: 0.12
 Nodes (16): core/di/service_locator.dart, core/theme/app_theme.dart, features/dashboard/cubit/dashboard_cubit.dart, features/items/cubit/item_catalog_cubit.dart, features/items/cubit/items_cubit.dart, features/printing/cubit/printer_cubit.dart, features/returns/cubit/return_resolution_cubit.dart, features/returns/cubit/returns_cubit.dart (+8 more)
 
 ### Community 79 - "warehouse_return_draft.dart"
-Cohesion: 0.09
-Nodes (26): ../../data/models/warehouse_return_draft.dart, ../data/repositories/returns_repository_base.dart, ../data/repositories/returns_repository_failure.dart, createCustomerReturn, _isSaving, _repository, ReturnsCubit, _validateDraft (+18 more)
+Cohesion: 0.06
+Nodes (38): ../../cubit/returns_cubit.dart, ../../cubit/returns_state.dart, ../../data/models/warehouse_return_draft.dart, ../data/repositories/returns_repository_base.dart, ../data/repositories/returns_repository_failure.dart, ../../../items/presentation/widgets/inventory_item_selector_field.dart, createCustomerReturn, _isSaving (+30 more)
 
 ### Community 80 - "outbound_entry_screen.dart"
 Cohesion: 0.29
@@ -489,12 +486,12 @@ Cohesion: 0.18
 Nodes (10): build, _emptyMessage, isError, message, onSelect, printers, PrinterSelectionMessage, PrinterSelectionResults (+2 more)
 
 ### Community 82 - "stocktake_session.dart"
-Cohesion: 0.20
-Nodes (9): ../../data/models/return_resolution.dart, close, loadPendingReturns, _pendingReturns, _repository, resolveReturn, _resolvingReturnId, _subscription (+1 more)
+Cohesion: 0.29
+Nodes (5): ../../../../core/models/inventory_item.dart, watchItems, addItem, watchActiveItems, ../models/new_inventory_item_draft.dart
 
 ### Community 83 - "transaction_history_screen.dart"
-Cohesion: 0.10
-Nodes (24): ../../data/models/movement_report_summary.dart, MovementHistoryCubit, build, color, createState, _DateFilterBar, initState, label (+16 more)
+Cohesion: 0.12
+Nodes (17): color, createState, label, _MovementReportSummaryBar, onSelectRange, _rangeLabel, _shortDate, state (+9 more)
 
 ### Community 84 - "firebase_options.dart"
 Cohesion: 0.40
@@ -505,24 +502,24 @@ Cohesion: 0.18
 Nodes (10): customerReturnPieces, fromMovements, inboundPieces, movementCount, MovementReportSummary, outboundPieces, stocktakeAdjustmentNetPieces, supplierReplacementCount (+2 more)
 
 ### Community 86 - "tablet_navigation_rail.dart"
-Cohesion: 0.08
-Nodes (25): ../constants/app_routes.dart, ../constants/app_sizes.dart, ../constants/app_strings.dart, GoRouterState, build, child, _confirmLogout, MainShellScreen (+17 more)
+Cohesion: 0.12
+Nodes (17): ../constants/app_routes.dart, ../constants/app_strings.dart, GoRouterState, build, child, _confirmLogout, MainShellScreen, state (+9 more)
 
 ### Community 87 - "stocktake_repository_base.dart"
-Cohesion: 0.18
-Nodes (10): dart:async, ../../data/repositories/auth_repository.dart, item_catalog_state.dart, dispose, _subscription, close, loadItems, _repository (+2 more)
+Cohesion: 0.15
+Nodes (12): ChangeNotifier, dart:async, item_catalog_state.dart, AuthSessionNotifier, dispose, _subscription, close, loadItems (+4 more)
 
 ### Community 88 - "LoginCubit"
-Cohesion: 0.20
-Nodes (9): android, DefaultFirebaseOptions, ios, macos, web, windows, package:firebase_core/firebase_core.dart, package:flutter/foundation.dart (+1 more)
+Cohesion: 0.22
+Nodes (8): android, DefaultFirebaseOptions, ios, macos, web, windows, package:firebase_core/firebase_core.dart, static const FirebaseOptions
 
 ### Community 89 - "dashboard_screen.dart"
-Cohesion: 0.25
-Nodes (7): bool get, AuthRepository, isSignedIn, signInWithEmailAndPassword, signOut, watchAuthentication, FirebaseAuthRepository
+Cohesion: 0.40
+Nodes (4): ../../data/models/stocktake_session.dart, StocktakeDraftValidator, validate, _
 
 ### Community 90 - "../../../../core/constants/app_colors.dart"
-Cohesion: 0.29
-Nodes (6): ../../cubit/movement_history_cubit.dart, ../../cubit/movement_history_state.dart, ../../data/models/movement_record.dart, build, _buildFilterChip, TransactionFilterBar
+Cohesion: 0.25
+Nodes (7): ../../../../core/constants/app_colors.dart, ../../cubit/movement_history_cubit.dart, ../../cubit/movement_history_state.dart, ../../data/models/movement_record.dart, build, _buildFilterChip, TransactionFilterBar
 
 ### Community 91 - "responsive_layout.dart"
 Cohesion: 0.40
@@ -533,36 +530,36 @@ Cohesion: 0.25
 Nodes (7): ../../../../core/models/carton_piece_quantity.dart, _buildReference, _formatDateTime, fromItems, StockBalanceReceiptMapper, _twoDigits, _
 
 ### Community 93 - "String?"
-Cohesion: 0.18
-Nodes (10): ../../data/models/printer_discovery_snapshot.dart, ../data/repositories/printer_repository_base.dart, PrinterDiscoveryController, _repository, start, stop, _subscription, PrinterDiscoverySnapshot (+2 more)
+Cohesion: 0.25
+Nodes (7): ../../data/models/printer_discovery_snapshot.dart, ../data/repositories/printer_repository_base.dart, PrinterDiscoveryController, _repository, start, stop, _subscription
 
 ### Community 94 - "item_catalog_cubit.dart"
 Cohesion: 0.13
 Nodes (14): ../../data/models/saved_printer.dart, close, _discovery, initialize, _initialized, _printInProgress, printReceipt, _repository (+6 more)
 
 ### Community 95 - "../constants/app_colors.dart"
-Cohesion: 0.29
-Nodes (6): ../../data/repositories/auth_failure.dart, _authRepository, _isValidEmail, signIn, login_state.dart, package:flutter_bloc/flutter_bloc.dart
+Cohesion: 0.50
+Nodes (3): InventoryNumberParsing, toInventoryInteger, String?
 
 ### Community 96 - "../../../../core/models/inventory_item.dart"
-Cohesion: 0.14
-Nodes (13): ../../../../core/models/inventory_item.dart, dashboard_repository_base.dart, ../../../items/data/repositories/items_repository_base.dart, DashboardRepositoryBase, watchItems, DashboardRepository, _itemsRepository, watchItems (+5 more)
+Cohesion: 0.22
+Nodes (8): dashboard_repository_base.dart, ../../../items/data/repositories/items_repository_base.dart, DashboardRepositoryBase, DashboardRepository, _itemsRepository, watchItems, ItemsRepositoryBase, ItemsRepository
 
 ### Community 97 - "List"
-Cohesion: 0.18
-Nodes (9): InventoryNumberParsing, toInventoryInteger, availability, devices, message, PrinterDiscoveryAvailability, List, saved_printer.dart (+1 more)
+Cohesion: 0.20
+Nodes (9): availability, devices, message, PrinterDiscoveryAvailability, PrinterDiscoverySnapshot, BluetoothPrinterRepository, PrinterRepositoryBase, List (+1 more)
 
 ### Community 98 - "bluetooth_printer_repository.dart"
 Cohesion: 0.12
 Nodes (16): connect, discoverPrinters, loadSelectedPrinter, _printerStore, _printImageWithBluetooth, _printJob, printReceiptPng, saveSelectedPrinter (+8 more)
 
 ### Community 99 - "thermal_receipt_content.dart"
-Cohesion: 0.17
-Nodes (11): build, index, label, line, receipt, _ReceiptDetail, _ReceiptDivider, _ReceiptItem (+3 more)
+Cohesion: 0.14
+Nodes (17): build, index, label, line, receipt, _ReceiptDetail, _ReceiptDivider, _ReceiptItem (+9 more)
 
 ### Community 100 - "dashboard_screen.dart"
-Cohesion: 0.33
-Nodes (5): ../../../../core/constants/app_text_styles.dart, build, _buildStatItem, StockSummaryCard, summary
+Cohesion: 0.18
+Nodes (9): ../../../../core/constants/app_sizes.dart, ../../../../core/constants/app_text_styles.dart, build, _buildStatItem, StockSummaryCard, summary, AddItemScreen, build (+1 more)
 
 ### Community 101 - "Q: خطه عمل للمرتجع اللي هيتم رجوعه للمورد نفسه يعني مرتيح المخزن مظبوط وبيرجع للمخزن ك رصيد ازاي اعمل بقا مرتحع للمودر نفسه يعني ياخد بضاعه وتتسجب انها مرتحع للمودر وتنقص من رصيد مخزن هل هي موجوده بشكل تاني ؟"
 Cohesion: 0.40
@@ -580,10 +577,6 @@ Nodes (4): Answer, Outcome, Q: لايسجل, Source Nodes
 Cohesion: 0.25
 Nodes (7): _channel, load, save, SelectedPrinterStore, ../models/saved_printer.dart, package:flutter/services.dart, static const MethodChannel
 
-### Community 105 - "item_catalog_cubit.dart"
-Cohesion: 0.20
-Nodes (10): CustomAppBar, _MobileVoucherSummary, _MovementInventoryNotice, NewMovementView, _NoMatchingItems, _DetailText, _MovementRecordDetailsDialog, TransactionListItem (+2 more)
-
 ### Community 106 - "Q: تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29, Source Nodes
@@ -597,8 +590,8 @@ Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: اصلحه لاضافه اي ايميل يدوي يسجل دخول, Source Nodes
 
 ### Community 109 - "../../../../core/constants/app_text_styles.dart"
-Cohesion: 0.22
-Nodes (8): InventoryItem, MovementLineViewData, build, item, onTap, SelectableItemCard, selectedLine, movement_ui_types.dart
+Cohesion: 0.25
+Nodes (7): MovementLineViewData, build, item, onTap, SelectableItemCard, selectedLine, movement_ui_types.dart
 
 ### Community 110 - "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?"
 Cohesion: 0.40
@@ -612,16 +605,8 @@ Nodes (4): Answer, Outcome, Q: إضافة شعار EL SAUDI أعلى الريس�
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل, Source Nodes
 
-### Community 113 - "package:cloud_firestore/cloud_firestore.dart"
-Cohesion: 0.22
-Nodes (8): kind, movementId, returnId, returnNumber, ReturnResolutionDraft, ReturnResolutionKind, SavedReturnResolution, supplierName
-
-### Community 114 - "String?"
-Cohesion: 0.40
-Nodes (4): ../../../../core/constants/app_sizes.dart, AddItemScreen, build, ../widgets/add_item_form.dart
-
 ## Knowledge Gaps
-- **1010 isolated node(s):** `AppColors`, `primary`, `primaryLight`, `primaryDark`, `secondary` (+1005 more)
+- **1017 isolated node(s):** `AppColors`, `primary`, `primaryLight`, `primaryDark`, `secondary` (+1012 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 
 ## Work-memory lessons
@@ -635,23 +620,23 @@ Nodes (4): ../../../../core/constants/app_sizes.dart, AddItemScreen, build, ../w
 - `WarehouseReturnForm` (3× useful, score=2.746758892)
 - `TransactionsRepository` (3× useful, score=2.73274701)
 - `StockItemsList` (3× useful, score=2.720002417)
-- `StockAdjustmentScreen` (3× useful, score=2.704547556)
-- `AppRouter` (3× useful, score=2.702146164)
+- `StockAdjustmentScreen` (3× useful, score=2.704547556) _(code changed — re-verify)_
+- `AppRouter` (3× useful, score=2.702146164) _(code changed — re-verify)_
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PrinterCubit` connect `stock_summary_card.dart` to `main.dart`, `package:flutter_bloc/flutter_bloc.dart`, `main.dart`, `transaction_history_screen.dart`, `TransactionsCubit`, `item_catalog_cubit.dart`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `MovementHistoryCubit` connect `transaction_history_screen.dart` to `TransactionsCubit`, `../../../../core/models/inventory_item.dart`, `package:flutter_bloc/flutter_bloc.dart`, `main.dart`, `../../../../core/constants/app_colors.dart`, `TransactionsCubit`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `PrinterRepositoryBase` connect `String?` to `item_catalog_cubit.dart`, `TransactionsCubit`, `login_cubit.dart`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `MovementHistoryCubit` connect `ItemsCubit` to `../../../../core/models/inventory_item.dart`, `movement_voucher_preview_dialog.dart`, `TransactionsCubit`, `main.dart`, `transaction_history_screen.dart`, `../../../../core/constants/app_colors.dart`, `TransactionsCubit`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `MovementReportSummary` connect `movement_report_summary.dart` to `transaction_history_screen.dart`, `TransactionsCubit`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `PrinterCubit` connect `main.dart` to `movement_voucher_preview_dialog.dart`, `TransactionsCubit`, `main.dart`, `TransactionsCubit`, `item_catalog_cubit.dart`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **What connects `AppColors`, `primary`, `primaryLight` to the rest of the system?**
-  _1010 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1017 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `app_strings.dart` be split into smaller, more focused modules?**
   _Cohesion score 0.028169014084507043 - nodes in this community are weakly interconnected._
 - **Should `StatelessWidget` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06653225806451613 - nodes in this community are weakly interconnected._
 - **Should `app_router.dart` be split into smaller, more focused modules?**
   _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._

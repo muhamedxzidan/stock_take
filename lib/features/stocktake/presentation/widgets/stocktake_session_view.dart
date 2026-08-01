@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_sizes.dart';
-import '../../../../core/constants/app_text_styles.dart';
-import '../../../../core/models/carton_piece_quantity.dart';
-import '../../../../core/shared_widgets/carton_piece_quantity_fields.dart';
 import '../../../../core/shared_widgets/custom_button.dart';
 import '../../data/models/stocktake_line.dart';
 import '../../data/models/stocktake_session.dart';
+import 'stocktake_line_card.dart';
+import 'stocktake_session_header.dart';
 
 class StocktakeSessionView extends StatelessWidget {
   final StocktakeSession session;
@@ -47,7 +46,7 @@ class StocktakeSessionView extends StatelessWidget {
 
     return Column(
       children: [
-        _SessionHeader(
+        StocktakeSessionHeader(
           session: session,
           countedItems: countedItems,
           totalItems: lines.length,
@@ -64,7 +63,7 @@ class StocktakeSessionView extends StatelessWidget {
                   separatorBuilder: (_, _) => SizedBox(height: AppSizes.h12),
                   itemBuilder: (context, index) {
                     final line = lines[index];
-                    return _StocktakeLineCard(
+                    return StocktakeLineCard(
                       key: ValueKey(
                         '${line.itemId}-${line.actualQuantityPieces}-${line.counted}',
                       ),
@@ -110,213 +109,4 @@ class StocktakeSessionView extends StatelessWidget {
       ],
     );
   }
-}
-
-class _SessionHeader extends StatelessWidget {
-  final StocktakeSession session;
-  final int countedItems;
-  final int totalItems;
-  final int netDifference;
-
-  const _SessionHeader({
-    required this.session,
-    required this.countedItems,
-    required this.totalItems,
-    required this.netDifference,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: EdgeInsets.all(AppSizes.p16),
-      decoration: BoxDecoration(
-        color: AppColors.infoBackground,
-        borderRadius: BorderRadius.circular(AppSizes.r12),
-        border: Border.all(color: AppColors.info),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(session.stocktakeNumber, style: AppTextStyles.heading2),
-          SizedBox(height: AppSizes.h4),
-          Text(
-            'الفترة: ${_formatDate(session.periodFrom)} — '
-            '${_formatDate(session.periodTo)}',
-            style: AppTextStyles.bodyMedium,
-          ),
-          SizedBox(height: AppSizes.h8),
-          Wrap(
-            spacing: AppSizes.p16,
-            runSpacing: AppSizes.h8,
-            children: [
-              Text(
-                'التقدم: $countedItems / $totalItems',
-                style: AppTextStyles.bodyLarge.copyWith(
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              Text(
-                'صافي الفرق الحالي: ${netDifference > 0 ? '+' : ''}'
-                '$netDifference قطعة',
-                style: AppTextStyles.bodyLarge.copyWith(
-                  color: netDifference < 0
-                      ? AppColors.error
-                      : AppColors.success,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _StocktakeLineCard extends StatefulWidget {
-  final StocktakeLine line;
-  final bool isSaving;
-  final Future<bool> Function(int actualQuantityPieces) onSave;
-
-  const _StocktakeLineCard({
-    super.key,
-    required this.line,
-    required this.isSaving,
-    required this.onSave,
-  });
-
-  @override
-  State<_StocktakeLineCard> createState() => _StocktakeLineCardState();
-}
-
-class _StocktakeLineCardState extends State<_StocktakeLineCard> {
-  late CartonPieceQuantity _actualQuantity;
-
-  @override
-  void initState() {
-    super.initState();
-    final actual = widget.line.counted ? widget.line.actualQuantityPieces : 0;
-    _actualQuantity = CartonPieceQuantity(
-      cartons: actual ~/ widget.line.itemsPerCarton,
-      pieces: actual % widget.line.itemsPerCarton,
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final actualPieces = _actualQuantity.totalPiecesFor(
-      widget.line.itemsPerCarton,
-    );
-    final difference = actualPieces - widget.line.systemQuantityPieces;
-
-    return Card(
-      key: Key('stocktake-line-${widget.line.itemId}'),
-      child: Padding(
-        padding: EdgeInsets.all(AppSizes.p16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        widget.line.itemNameSnapshot,
-                        style: AppTextStyles.heading3,
-                      ),
-                      Text(
-                        widget.line.itemCodeSnapshot,
-                        style: AppTextStyles.bodyMedium.copyWith(
-                          color: AppColors.primary,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                if (widget.line.counted)
-                  const Chip(
-                    avatar: Icon(Icons.check_circle, size: 18),
-                    label: Text('تم الحفظ'),
-                  ),
-              ],
-            ),
-            SizedBox(height: AppSizes.h12),
-            Text(
-              'رصيد النظام المثبّت: '
-              '${CartonPieceQuantity.fromTotalPieces(totalPieces: widget.line.systemQuantityPieces, itemsPerCarton: widget.line.itemsPerCarton).cartonFirstLabel}'
-              ' • ${widget.line.systemQuantityPieces} قطعة إجمالي',
-              style: AppTextStyles.bodyLarge.copyWith(
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            SizedBox(height: AppSizes.h12),
-            CartonPieceQuantityFields(
-              keyPrefix: 'stocktake-${widget.line.itemId}',
-              itemsPerCarton: widget.line.itemsPerCarton,
-              initialValue: _actualQuantity,
-              onChanged: (value) => setState(() => _actualQuantity = value),
-            ),
-            SizedBox(height: AppSizes.h12),
-            Text(
-              'الفرق: ${_signedCartonFirstQuantity(difference, widget.line.itemsPerCarton)}',
-              textAlign: TextAlign.center,
-              style: AppTextStyles.heading3.copyWith(
-                color: difference < 0
-                    ? AppColors.error
-                    : difference > 0
-                    ? AppColors.success
-                    : AppColors.textSecondary,
-              ),
-            ),
-            SizedBox(height: AppSizes.h12),
-            CustomButton(
-              key: Key('save-stocktake-line-${widget.line.itemId}'),
-              text: widget.line.counted
-                  ? 'تحديث العدد الفعلي'
-                  : 'حفظ العدد الفعلي',
-              icon: Icons.save_outlined,
-              isLoading: widget.isSaving,
-              onPressed: () async {
-                final saved = await widget.onSave(actualPieces);
-                if (saved && context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        'تم حفظ ${widget.line.itemCodeSnapshot}: '
-                        '${_actualQuantity.cartonFirstLabel}'
-                        ' • $actualPieces قطعة إجمالي.',
-                      ),
-                      backgroundColor: AppColors.success,
-                    ),
-                  );
-                }
-              },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-String _signedCartonFirstQuantity(int totalPieces, int itemsPerCarton) {
-  final sign = totalPieces > 0
-      ? '+'
-      : totalPieces < 0
-      ? '-'
-      : '';
-  final quantity = CartonPieceQuantity.fromTotalPieces(
-    totalPieces: totalPieces.abs(),
-    itemsPerCarton: itemsPerCarton,
-  );
-  return '$sign${quantity.cartonFirstLabel}';
-}
-
-String _formatDate(DateTime date) {
-  return '${date.year}-${date.month.toString().padLeft(2, '0')}-'
-      '${date.day.toString().padLeft(2, '0')}';
 }

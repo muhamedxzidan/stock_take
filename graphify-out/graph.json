@@ -285,8 +285,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_material_dart",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "package:flutter/material.dart"
     },
     {
@@ -329,8 +329,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_bloc_flutter_bloc_dart",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "package:flutter_bloc/flutter_bloc.dart"
     },
     {
@@ -433,6 +433,17 @@
       "norm_label": "../../features/stocktake/cubit/stocktake_cubit.dart"
     },
     {
+      "label": "../../features/stocktake/presentation/screens/stocktake_screen.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "features_stocktake_presentation_screens_stocktake_screen_dart",
+      "community": 71,
+      "community_name": "transaction_filter_bar.dart",
+      "norm_label": "../../features/stocktake/presentation/screens/stocktake_screen.dart"
+    },
+    {
       "label": "../../features/transactions/presentation/screens/new_movement_screen.dart",
       "file_type": "code",
       "source_file": null,
@@ -442,17 +453,6 @@
       "community": 71,
       "community_name": "transaction_filter_bar.dart",
       "norm_label": "../../features/transactions/presentation/screens/new_movement_screen.dart"
-    },
-    {
-      "label": "../../features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "features_transactions_presentation_screens_stock_adjustment_screen_dart",
-      "community": 71,
-      "community_name": "transaction_filter_bar.dart",
-      "norm_label": "../../features/transactions/presentation/screens/stock_adjustment_screen.dart"
     },
     {
       "label": "../../features/transactions/presentation/screens/transaction_history_screen.dart",
@@ -2397,8 +2397,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing",
-      "community": 97,
-      "community_name": "List",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "inventory_number_parsing.dart"
     },
     {
@@ -2408,8 +2408,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing_inventorynumberparsing",
-      "community": 97,
-      "community_name": "List",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "inventorynumberparsing"
     },
     {
@@ -2419,8 +2419,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "string",
-      "community": 97,
-      "community_name": "List",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "string?"
     },
     {
@@ -2430,8 +2430,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing_toinventoryinteger",
-      "community": 97,
-      "community_name": "List",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "toinventoryinteger"
     },
     {
@@ -2518,8 +2518,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_models_inventory_item_inventoryitem",
-      "community": 109,
-      "community_name": "../../../../core/constants/app_text_styles.dart",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "inventoryitem"
     },
     {
@@ -2683,8 +2683,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "int_get",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "int get"
     },
     {
@@ -2782,8 +2782,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_models_thermal_receipt_data_thermalreceiptdata",
-      "community": 53,
-      "community_name": "adjustment_form.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "thermalreceiptdata"
     },
     {
@@ -3013,8 +3013,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "statelesswidget",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
       "norm_label": "statelesswidget"
     },
     {
@@ -3310,8 +3310,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "constants_app_colors_dart",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "../constants/app_colors.dart"
     },
     {
@@ -3321,8 +3321,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "constants_app_sizes_dart",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "../constants/app_sizes.dart"
     },
     {
@@ -3376,8 +3376,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_app_bar_customappbar",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "customappbar"
     },
     {
@@ -3387,8 +3387,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "preferredsizewidget",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "preferredsizewidget"
     },
     {
@@ -3508,8 +3508,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "voidcallback",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "voidcallback"
     },
     {
@@ -4080,8 +4080,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "tablet_navigation_rail.dart"
     },
     {
@@ -4091,8 +4091,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_tabletnavigationrail",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "tabletnavigationrail"
     },
     {
@@ -4102,8 +4102,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_currentroute",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "currentroute"
     },
     {
@@ -4113,8 +4113,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_onlogout",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "onlogout"
     },
     {
@@ -4124,8 +4124,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_build",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "build"
     },
     {
@@ -4135,8 +4135,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_buildnavitem",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "_buildnavitem"
     },
     {
@@ -4146,8 +4146,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_tablet_navigation_rail_issecondarymovementroute",
-      "community": 86,
-      "community_name": "tablet_navigation_rail.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "_issecondarymovementroute"
     },
     {
@@ -4223,8 +4223,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "app_theme.dart"
     },
     {
@@ -4234,8 +4234,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme_apptheme",
-      "community": 47,
-      "community_name": "transaction_list_item.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "apptheme"
     },
     {
@@ -4245,8 +4245,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "login_cubit.dart"
     },
     {
@@ -4267,8 +4267,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "cubit"
     },
     {
@@ -4278,8 +4278,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_authrepository",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "_authrepository"
     },
     {
@@ -4289,8 +4289,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_signin",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "signin"
     },
     {
@@ -4300,8 +4300,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_isvalidemail",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "_isvalidemail"
     },
     {
@@ -4311,8 +4311,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_auth_failure_dart",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "../../data/repositories/auth_failure.dart"
     },
     {
@@ -4322,8 +4322,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_auth_repository_dart",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "../../data/repositories/auth_repository.dart"
     },
     {
@@ -4333,8 +4333,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "login_state_dart",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "login_state.dart"
     },
     {
@@ -4476,8 +4476,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "auth_repository.dart"
     },
     {
@@ -4487,8 +4487,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_authrepository",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "authrepository"
     },
     {
@@ -4498,8 +4498,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_issignedin",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "issignedin"
     },
     {
@@ -4509,8 +4509,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "bool_get",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "bool get"
     },
     {
@@ -4520,8 +4520,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_watchauthentication",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "watchauthentication"
     },
     {
@@ -4531,8 +4531,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signinwithemailandpassword",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "signinwithemailandpassword"
     },
     {
@@ -4542,8 +4542,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signout",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "signout"
     },
     {
@@ -4564,8 +4564,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_firebase_auth_repository_firebaseauthrepository",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 46,
+      "community_name": "item_model.dart",
       "norm_label": "firebaseauthrepository"
     },
     {
@@ -4685,8 +4685,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_routing_auth_session_notifier_authsessionnotifier",
-      "community": 30,
-      "community_name": "TransactionsCubit",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "authsessionnotifier"
     },
     {
@@ -4696,8 +4696,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "changenotifier",
-      "community": 30,
-      "community_name": "TransactionsCubit",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "changenotifier"
     },
     {
@@ -4751,8 +4751,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_foundation_dart",
-      "community": 88,
-      "community_name": "LoginCubit",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "package:flutter/foundation.dart"
     },
     {
@@ -4905,8 +4905,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_colors_dart",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 90,
+      "community_name": "../../../../core/constants/app_colors.dart",
       "norm_label": "../../../../core/constants/app_colors.dart"
     },
     {
@@ -4916,8 +4916,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_sizes_dart",
-      "community": 114,
-      "community_name": "String?",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../../../core/constants/app_sizes.dart"
     },
     {
@@ -4927,8 +4927,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_strings_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "core/constants/app_strings.dart"
     },
     {
@@ -4949,8 +4949,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_button_dart",
-      "community": 70,
-      "community_name": "return_resolution.dart",
+      "community": 34,
+      "community_name": "movement_ui_types.dart",
       "norm_label": "../../../../core/shared_widgets/custom_button.dart"
     },
     {
@@ -4960,8 +4960,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_text_field_dart",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 70,
+      "community_name": "return_resolution.dart",
       "norm_label": "../../../../core/shared_widgets/custom_text_field.dart"
     },
     {
@@ -5147,8 +5147,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_models_inventory_item_dart",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "../../../../core/models/inventory_item.dart"
     },
     {
@@ -5158,8 +5158,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_stock_summary_model_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 60,
+      "community_name": "auth_session_notifier.dart",
       "norm_label": "../../data/models/stock_summary_model.dart"
     },
     {
@@ -5191,8 +5191,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "dashboard_state.dart"
     },
     {
@@ -5202,8 +5202,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_dashboardstate",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "dashboardstate"
     },
     {
@@ -5213,8 +5213,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_dashboardinitial",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "dashboardinitial"
     },
     {
@@ -5224,8 +5224,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_dashboardloading",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "dashboardloading"
     },
     {
@@ -5235,8 +5235,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_dashboardsuccess",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "dashboardsuccess"
     },
     {
@@ -5246,8 +5246,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_dashboardfailure",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "dashboardfailure"
     },
     {
@@ -5257,8 +5257,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_summary",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "summary"
     },
     {
@@ -5268,8 +5268,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_items",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "items"
     },
     {
@@ -5279,8 +5279,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_allitems",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "allitems"
     },
     {
@@ -5290,8 +5290,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_cubit_dashboard_state_message",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "message"
     },
     {
@@ -5400,8 +5400,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stock_summary_model.dart"
     },
     {
@@ -5411,8 +5411,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_stocksummarymodel",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocksummarymodel"
     },
     {
@@ -5422,8 +5422,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_totalitemscount",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "totalitemscount"
     },
     {
@@ -5433,8 +5433,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_totalinboundcount",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "totalinboundcount"
     },
     {
@@ -5444,8 +5444,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_totaloutboundcount",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "totaloutboundcount"
     },
     {
@@ -5455,8 +5455,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_lowstockitemscount",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "lowstockitemscount"
     },
     {
@@ -5466,8 +5466,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_fromjson",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "fromjson"
     },
     {
@@ -5477,8 +5477,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_models_stock_summary_model_tojson",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "tojson"
     },
     {
@@ -5554,8 +5554,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_repositories_dashboard_repository_base",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "dashboard_repository_base.dart"
     },
     {
@@ -5576,8 +5576,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_repositories_dashboard_repository_base_watchitems",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "watchitems"
     },
     {
@@ -5675,8 +5675,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_routes_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "../../../../core/constants/app_routes.dart"
     },
     {
@@ -5697,8 +5697,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "printing_presentation_widgets_thermal_receipt_dialog_dart",
-      "community": 75,
-      "community_name": "LoginCubit",
+      "community": 35,
+      "community_name": "items_cubit.dart",
       "norm_label": "../../../printing/presentation/widgets/thermal_receipt_dialog.dart"
     },
     {
@@ -5708,8 +5708,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_dashboard_cubit_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "../../cubit/dashboard_cubit.dart"
     },
     {
@@ -5719,8 +5719,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_dashboard_state_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "../../cubit/dashboard_state.dart"
     },
     {
@@ -5950,8 +5950,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "stock_items_list.dart"
     },
     {
@@ -5961,8 +5961,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_stockitemslist",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "stockitemslist"
     },
     {
@@ -5972,8 +5972,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_build",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "build"
     },
     {
@@ -5983,8 +5983,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_widgets_stock_items_list_builditemcard",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "_builditemcard"
     },
     {
@@ -6060,8 +6060,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_itemcatalogcubit",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "itemcatalogcubit"
     },
     {
@@ -6137,8 +6137,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "item_catalog_state.dart"
     },
     {
@@ -6148,8 +6148,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcatalogstate",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "itemcatalogstate"
     },
     {
@@ -6159,8 +6159,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcataloginitial",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "itemcataloginitial"
     },
     {
@@ -6170,8 +6170,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcatalogloading",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "itemcatalogloading"
     },
     {
@@ -6181,8 +6181,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcatalogsuccess",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "itemcatalogsuccess"
     },
     {
@@ -6192,8 +6192,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_itemcatalogfailure",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "itemcatalogfailure"
     },
     {
@@ -6203,8 +6203,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_items",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "items"
     },
     {
@@ -6214,8 +6214,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_state_message",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "message"
     },
     {
@@ -6236,8 +6236,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_cubit_itemscubit",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "itemscubit"
     },
     {
@@ -6302,8 +6302,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "items_state.dart"
     },
     {
@@ -6313,8 +6313,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsstate",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "itemsstate"
     },
     {
@@ -6324,8 +6324,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsinitial",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "itemsinitial"
     },
     {
@@ -6335,8 +6335,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsloading",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "itemsloading"
     },
     {
@@ -6346,8 +6346,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemssuccess",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "itemssuccess"
     },
     {
@@ -6357,8 +6357,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_itemsfailure",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "itemsfailure"
     },
     {
@@ -6368,8 +6368,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_item",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "item"
     },
     {
@@ -6379,8 +6379,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_items_state_message",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 39,
+      "community_name": "movement_voucher_preview_dialog.dart",
       "norm_label": "message"
     },
     {
@@ -6599,8 +6599,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_new_inventory_item_draft_dart",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "../models/new_inventory_item_draft.dart"
     },
     {
@@ -6632,8 +6632,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "items_repository_base.dart"
     },
     {
@@ -6654,8 +6654,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_watchactiveitems",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "watchactiveitems"
     },
     {
@@ -6665,8 +6665,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_additem",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "additem"
     },
     {
@@ -6720,8 +6720,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_screens_add_item_screen",
-      "community": 114,
-      "community_name": "String?",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "add_item_screen.dart"
     },
     {
@@ -6731,8 +6731,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_screens_add_item_screen_additemscreen",
-      "community": 114,
-      "community_name": "String?",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "additemscreen"
     },
     {
@@ -6742,8 +6742,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_screens_add_item_screen_build",
-      "community": 114,
-      "community_name": "String?",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "build"
     },
     {
@@ -6753,8 +6753,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_add_item_form_dart",
-      "community": 114,
-      "community_name": "String?",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../widgets/add_item_form.dart"
     },
     {
@@ -6852,8 +6852,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_add_item_form_build",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 70,
+      "community_name": "return_resolution.dart",
       "norm_label": "build"
     },
     {
@@ -6863,8 +6863,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_dashboard",
-      "community": 66,
-      "community_name": "ItemsCubit",
+      "community": 70,
+      "community_name": "return_resolution.dart",
       "norm_label": "approutes.dashboard"
     },
     {
@@ -6918,8 +6918,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_inventory_item_selector_field_inventoryitemselectorfield",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 65,
+      "community_name": "inventory_item_selector_field.dart",
       "norm_label": "inventoryitemselectorfield"
     },
     {
@@ -7072,8 +7072,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_cubit_printer_cubit_printercubit",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "printercubit"
     },
     {
@@ -7347,8 +7347,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_cubit_printer_state_printerstate",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "printerstate"
     },
     {
@@ -7622,8 +7622,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot_printerdiscoverysnapshot",
-      "community": 93,
-      "community_name": "String?",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "printerdiscoverysnapshot"
     },
     {
@@ -7677,8 +7677,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "saved_printer.dart"
     },
     {
@@ -7688,8 +7688,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_savedprinter",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "savedprinter"
     },
     {
@@ -7699,8 +7699,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_address",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "address"
     },
     {
@@ -7710,8 +7710,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_name",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "name"
     },
     {
@@ -7721,8 +7721,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_displayname",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "displayname"
     },
     {
@@ -7732,8 +7732,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "string_get",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "string get"
     },
     {
@@ -7743,8 +7743,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_operator",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "operator"
     },
     {
@@ -7754,8 +7754,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_hashcode",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "hashcode"
     },
     {
@@ -7776,8 +7776,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_bluetoothprinterrepository",
-      "community": 93,
-      "community_name": "String?",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "bluetoothprinterrepository"
     },
     {
@@ -8018,8 +8018,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_printerrepositorybase",
-      "community": 93,
-      "community_name": "String?",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "printerrepositorybase"
     },
     {
@@ -8436,8 +8436,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "printer_selection_dialog.dart"
     },
     {
@@ -8447,8 +8447,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_printerselectiondialog",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "printerselectiondialog"
     },
     {
@@ -8458,8 +8458,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_printerselectiondialogstate",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_printerselectiondialogstate"
     },
     {
@@ -8469,8 +8469,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_cubit",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_cubit"
     },
     {
@@ -8480,8 +8480,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_started",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_started"
     },
     {
@@ -8491,8 +8491,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_query",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_query"
     },
     {
@@ -8502,8 +8502,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_show",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "show"
     },
     {
@@ -8513,8 +8513,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_createstate",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "createstate"
     },
     {
@@ -8524,8 +8524,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_didchangedependencies",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "didchangedependencies"
     },
     {
@@ -8535,8 +8535,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_dispose",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "dispose"
     },
     {
@@ -8546,8 +8546,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_select",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_select"
     },
     {
@@ -8557,8 +8557,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_build",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "build"
     },
     {
@@ -8568,8 +8568,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_filterprinters",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_filterprinters"
     },
     {
@@ -8601,8 +8601,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "printer_selection_dialog_content_dart",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "printer_selection_dialog_content.dart"
     },
     {
@@ -8733,8 +8733,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_setup_button_printersetupbutton",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "printersetupbutton"
     },
     {
@@ -9008,8 +9008,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_thermal_receipt_dialog_print",
-      "community": 17,
-      "community_name": "stock_summary_card.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "_print"
     },
     {
@@ -9052,8 +9052,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "return_resolution_cubit.dart"
     },
     {
@@ -9063,8 +9063,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_returnresolutioncubit",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutioncubit"
     },
     {
@@ -9074,8 +9074,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_repository",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_repository"
     },
     {
@@ -9085,8 +9085,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_subscription",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_subscription"
     },
     {
@@ -9096,8 +9096,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_pendingreturns",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_pendingreturns"
     },
     {
@@ -9107,8 +9107,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_resolvingreturnid",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_resolvingreturnid"
     },
     {
@@ -9118,8 +9118,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_loadpendingreturns",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "loadpendingreturns"
     },
     {
@@ -9129,8 +9129,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_resolvereturn",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "resolvereturn"
     },
     {
@@ -9140,8 +9140,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_close",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "close"
     },
     {
@@ -9151,8 +9151,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_return_resolution_dart",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "../../data/models/return_resolution.dart"
     },
     {
@@ -9162,8 +9162,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_warehouse_return_record_dart",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "../../data/models/warehouse_return_record.dart"
     },
     {
@@ -9195,8 +9195,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "return_resolution_state_dart",
-      "community": 82,
-      "community_name": "stocktake_session.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "return_resolution_state.dart"
     },
     {
@@ -9206,8 +9206,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "return_resolution_state.dart"
     },
     {
@@ -9217,8 +9217,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_returnresolutionstate",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutionstate"
     },
     {
@@ -9228,8 +9228,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_returnresolutioninitial",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutioninitial"
     },
     {
@@ -9239,8 +9239,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_returnresolutionloading",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutionloading"
     },
     {
@@ -9250,8 +9250,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_returnresolutionready",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutionready"
     },
     {
@@ -9261,8 +9261,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_returnresolutionsaving",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutionsaving"
     },
     {
@@ -9272,8 +9272,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_returnresolutionsaved",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutionsaved"
     },
     {
@@ -9283,8 +9283,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_returnresolutionfailure",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutionfailure"
     },
     {
@@ -9294,8 +9294,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_pendingreturns",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "pendingreturns"
     },
     {
@@ -9305,8 +9305,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_returnid",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnid"
     },
     {
@@ -9316,8 +9316,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_resolution",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "resolution"
     },
     {
@@ -9327,8 +9327,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_state_message",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "message"
     },
     {
@@ -9580,8 +9580,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "return_resolution.dart"
     },
     {
@@ -9591,8 +9591,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_returnresolutionkind",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutionkind"
     },
     {
@@ -9602,8 +9602,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_returnresolutiondraft",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnresolutiondraft"
     },
     {
@@ -9613,8 +9613,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_savedreturnresolution",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "savedreturnresolution"
     },
     {
@@ -9624,8 +9624,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_returnid",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnid"
     },
     {
@@ -9635,8 +9635,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_suppliername",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "suppliername"
     },
     {
@@ -9646,8 +9646,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_kind",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "kind"
     },
     {
@@ -9657,8 +9657,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_returnnumber",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnnumber"
     },
     {
@@ -9668,8 +9668,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_models_return_resolution_movementid",
-      "community": 113,
-      "community_name": "package:cloud_firestore/cloud_firestore.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "movementid"
     },
     {
@@ -9965,8 +9965,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_returnsrepository",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "returnsrepository"
     },
     {
@@ -10207,8 +10207,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_return_resolution_dart",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "../models/return_resolution.dart"
     },
     {
@@ -10218,8 +10218,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_warehouse_return_draft_dart",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "../models/warehouse_return_draft.dart"
     },
     {
@@ -10251,8 +10251,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "returns_repository_base.dart"
     },
     {
@@ -10262,8 +10262,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_returnsrepositorybase",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "returnsrepositorybase"
     },
     {
@@ -10273,8 +10273,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_watchpendingreturns",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "watchpendingreturns"
     },
     {
@@ -10284,8 +10284,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_createcustomerreturn",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "createcustomerreturn"
     },
     {
@@ -10295,8 +10295,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_resolvereturn",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 1,
+      "community_name": "StatelessWidget",
       "norm_label": "resolvereturn"
     },
     {
@@ -10350,8 +10350,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "warehouse_return_screen.dart"
     },
     {
@@ -10361,8 +10361,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreen",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "warehousereturnscreen"
     },
     {
@@ -10372,8 +10372,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreenstate",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "_warehousereturnscreenstate"
     },
     {
@@ -10383,8 +10383,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_returnpersistencenotice",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "_returnpersistencenotice"
     },
     {
@@ -10394,8 +10394,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_createstate",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "createstate"
     },
     {
@@ -10405,8 +10405,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_initstate",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "initstate"
     },
     {
@@ -10416,8 +10416,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_build",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "build"
     },
     {
@@ -10427,8 +10427,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "route_approutes_newmovement",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "approutes.newmovement"
     },
     {
@@ -10438,8 +10438,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "items_cubit_item_catalog_cubit_dart",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "../../../items/cubit/item_catalog_cubit.dart"
     },
     {
@@ -10449,8 +10449,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_return_resolution_cubit_dart",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "../../cubit/return_resolution_cubit.dart"
     },
     {
@@ -10460,8 +10460,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_return_workflow_card_dart",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "../widgets/return_workflow_card.dart"
     },
     {
@@ -10471,8 +10471,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_warehouse_return_form_dart",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "../widgets/warehouse_return_form.dart"
     },
     {
@@ -10493,8 +10493,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_returnworkflowcard",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "returnworkflowcard"
     },
     {
@@ -10504,8 +10504,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_return_workflow_card_pendingreturntile",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_pendingreturntile"
     },
     {
@@ -10713,8 +10713,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "warehouse_return_form.dart"
     },
     {
@@ -10724,8 +10724,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnform",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "warehousereturnform"
     },
     {
@@ -10735,8 +10735,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnformstate",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_warehousereturnformstate"
     },
     {
@@ -10746,8 +10746,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_returnsourcecontroller",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_returnsourcecontroller"
     },
     {
@@ -10757,8 +10757,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_selecteditem",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_selecteditem"
     },
     {
@@ -10768,8 +10768,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_quantity",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_quantity"
     },
     {
@@ -10779,8 +10779,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_createstate",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "createstate"
     },
     {
@@ -10790,8 +10790,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_dispose",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "dispose"
     },
     {
@@ -10812,8 +10812,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_showvalidationmessage",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_showvalidationmessage"
     },
     {
@@ -10823,8 +10823,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_build",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "build"
     },
     {
@@ -10834,8 +10834,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "items_presentation_widgets_inventory_item_selector_field_dart",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "../../../items/presentation/widgets/inventory_item_selector_field.dart"
     },
     {
@@ -10845,8 +10845,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_returns_cubit_dart",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "../../cubit/returns_cubit.dart"
     },
     {
@@ -10856,8 +10856,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_returns_state_dart",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "../../cubit/returns_state.dart"
     },
     {
@@ -11026,17 +11026,6 @@
       "norm_label": "_currentlinesfor"
     },
     {
-      "label": "_validateStartDraft",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/cubit/stocktake_cubit.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_cubit_stocktake_cubit_validatestartdraft",
-      "community": 69,
-      "community_name": "StatelessWidget",
-      "norm_label": "_validatestartdraft"
-    },
-    {
       "label": "close",
       "file_type": "code",
       "source_file": "lib/features/stocktake/cubit/stocktake_cubit.dart",
@@ -11054,8 +11043,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_stocktake_line_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 34,
+      "community_name": "movement_ui_types.dart",
       "norm_label": "../../data/models/stocktake_line.dart"
     },
     {
@@ -11065,8 +11054,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_stocktake_session_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../data/models/stocktake_session.dart"
     },
     {
@@ -11092,6 +11081,17 @@
       "norm_label": "../data/repositories/stocktake_repository_failure.dart"
     },
     {
+      "label": "stocktake_draft_validator.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "stocktake_draft_validator_dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
+      "norm_label": "stocktake_draft_validator.dart"
+    },
+    {
       "label": "stocktake_state.dart",
       "file_type": "code",
       "source_file": null,
@@ -11101,6 +11101,50 @@
       "community": 69,
       "community_name": "StatelessWidget",
       "norm_label": "stocktake_state.dart"
+    },
+    {
+      "label": "stocktake_draft_validator.dart",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/cubit/stocktake_draft_validator.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_cubit_stocktake_draft_validator",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
+      "norm_label": "stocktake_draft_validator.dart"
+    },
+    {
+      "label": "StocktakeDraftValidator",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/cubit/stocktake_draft_validator.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_cubit_stocktake_draft_validator_stocktakedraftvalidator",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
+      "norm_label": "stocktakedraftvalidator"
+    },
+    {
+      "label": "_",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/cubit/stocktake_draft_validator.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "users_mohamedzidan_project_stock_take_stock_take_lib_features_stocktake_cubit_stocktake_draft_validator",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
+      "norm_label": "_"
+    },
+    {
+      "label": "validate",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/cubit/stocktake_draft_validator.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_cubit_stocktake_draft_validator_validate",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
+      "norm_label": "validate"
     },
     {
       "label": "stocktake_state.dart",
@@ -11288,6 +11332,61 @@
       "community": 12,
       "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakenumber"
+    },
+    {
+      "label": "stocktake_firestore_failure_mapper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper",
+      "community": 29,
+      "community_name": "transactions_state.dart",
+      "norm_label": "stocktake_firestore_failure_mapper.dart"
+    },
+    {
+      "label": "StocktakeFirestoreFailureMapper",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper_stocktakefirestorefailuremapper",
+      "community": 29,
+      "community_name": "transactions_state.dart",
+      "norm_label": "stocktakefirestorefailuremapper"
+    },
+    {
+      "label": "_",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "users_mohamedzidan_project_stock_take_stock_take_lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper",
+      "community": 29,
+      "community_name": "transactions_state.dart",
+      "norm_label": "_"
+    },
+    {
+      "label": "read",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper_read",
+      "community": 29,
+      "community_name": "transactions_state.dart",
+      "norm_label": "read"
+    },
+    {
+      "label": "write",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper_write",
+      "community": 29,
+      "community_name": "transactions_state.dart",
+      "norm_label": "write"
     },
     {
       "label": "stocktake_firestore_mapper.dart",
@@ -11527,8 +11626,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "stocktake_session.dart"
     },
     {
@@ -11538,8 +11637,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_stocktakestatus",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "stocktakestatus"
     },
     {
@@ -11549,8 +11648,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_stocktakesession",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "stocktakesession"
     },
     {
@@ -11560,8 +11659,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_startstocktakedraft",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "startstocktakedraft"
     },
     {
@@ -11582,8 +11681,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_id",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "id"
     },
     {
@@ -11593,8 +11692,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_stocktakenumber",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "stocktakenumber"
     },
     {
@@ -11604,8 +11703,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_status",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "status"
     },
     {
@@ -11615,8 +11714,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_periodfrom",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "periodfrom"
     },
     {
@@ -11626,8 +11725,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_periodto",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "periodto"
     },
     {
@@ -11637,8 +11736,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_startedat",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "startedat"
     },
     {
@@ -11648,8 +11747,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_completedat",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "completedat"
     },
     {
@@ -11659,8 +11758,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_cancelledat",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "cancelledat"
     },
     {
@@ -11670,8 +11769,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_notes",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "notes"
     },
     {
@@ -11681,8 +11780,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_movementvouchernumber",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "movementvouchernumber"
     },
     {
@@ -11692,8 +11791,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_adjusteditemcount",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "adjusteditemcount"
     },
     {
@@ -11703,8 +11802,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_netdifferencepieces",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 17,
+      "community_name": "stock_summary_card.dart",
       "norm_label": "netdifferencepieces"
     },
     {
@@ -11994,26 +12093,15 @@
       "norm_label": "_writecounter"
     },
     {
-      "label": "_readFailureMessage",
+      "label": "../mappers/stocktake_firestore_failure_mapper.dart",
       "file_type": "code",
-      "source_file": "lib/features/stocktake/data/repositories/stocktake_repository.dart",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast",
-      "id": "lib_features_stocktake_data_repositories_stocktake_repository_readfailuremessage",
+      "id": "mappers_stocktake_firestore_failure_mapper_dart",
       "community": 23,
       "community_name": "custom_button.dart",
-      "norm_label": "_readfailuremessage"
-    },
-    {
-      "label": "_writeFailureMessage",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/data/repositories/stocktake_repository.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_data_repositories_stocktake_repository_writefailuremessage",
-      "community": 23,
-      "community_name": "custom_button.dart",
-      "norm_label": "_writefailuremessage"
+      "norm_label": "../mappers/stocktake_firestore_failure_mapper.dart"
     },
     {
       "label": "../mappers/stocktake_firestore_mapper.dart",
@@ -12179,6 +12267,116 @@
       "community": 58,
       "community_name": "auth_failure.dart",
       "norm_label": "tostring"
+    },
+    {
+      "label": "stocktake_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "stocktake_screen.dart"
+    },
+    {
+      "label": "StocktakeScreen",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_screens_stocktake_screen_stocktakescreen",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "stocktakescreen"
+    },
+    {
+      "label": "_StocktakeLoadFailure",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_screens_stocktake_screen_stocktakeloadfailure",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "_stocktakeloadfailure"
+    },
+    {
+      "label": "message",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_screens_stocktake_screen_message",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "message"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_screens_stocktake_screen_build",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "build"
+    },
+    {
+      "label": "_confirmCancellation",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_screens_stocktake_screen_confirmcancellation",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "_confirmcancellation"
+    },
+    {
+      "label": "../../cubit/stocktake_cubit.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "cubit_stocktake_cubit_dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "../../cubit/stocktake_cubit.dart"
+    },
+    {
+      "label": "../../cubit/stocktake_state.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "cubit_stocktake_state_dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "../../cubit/stocktake_state.dart"
+    },
+    {
+      "label": "../widgets/start_stocktake_card.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "widgets_start_stocktake_card_dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "../widgets/start_stocktake_card.dart"
+    },
+    {
+      "label": "../widgets/stocktake_session_view.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "widgets_stocktake_session_view_dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
+      "norm_label": "../widgets/stocktake_session_view.dart"
     },
     {
       "label": "start_stocktake_card.dart",
@@ -12379,6 +12577,226 @@
       "norm_label": "_formatdate"
     },
     {
+      "label": "stocktake_line_card.dart",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "stocktake_line_card.dart"
+    },
+    {
+      "label": "StocktakeLineCard",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_stocktakelinecard",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "stocktakelinecard"
+    },
+    {
+      "label": "_StocktakeLineCardState",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_stocktakelinecardstate",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "_stocktakelinecardstate"
+    },
+    {
+      "label": "line",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_line",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "line"
+    },
+    {
+      "label": "isSaving",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_issaving",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "issaving"
+    },
+    {
+      "label": "_actualQuantity",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_actualquantity",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "_actualquantity"
+    },
+    {
+      "label": "sign",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_sign",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "sign"
+    },
+    {
+      "label": "quantity",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_quantity",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "quantity"
+    },
+    {
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_createstate",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "createstate"
+    },
+    {
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_initstate",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "initstate"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_build",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "build"
+    },
+    {
+      "label": "_signedCartonFirstQuantity",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_line_card_signedcartonfirstquantity",
+      "community": 28,
+      "community_name": "package:flutter/material.dart",
+      "norm_label": "_signedcartonfirstquantity"
+    },
+    {
+      "label": "stocktake_session_header.dart",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "norm_label": "stocktake_session_header.dart"
+    },
+    {
+      "label": "StocktakeSessionHeader",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_header_stocktakesessionheader",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "norm_label": "stocktakesessionheader"
+    },
+    {
+      "label": "session",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_header_session",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "norm_label": "session"
+    },
+    {
+      "label": "countedItems",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_header_counteditems",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "norm_label": "counteditems"
+    },
+    {
+      "label": "totalItems",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_header_totalitems",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "norm_label": "totalitems"
+    },
+    {
+      "label": "netDifference",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_header_netdifference",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "norm_label": "netdifference"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_header_build",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "norm_label": "build"
+    },
+    {
+      "label": "_formatDate",
+      "file_type": "code",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_header_formatdate",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "norm_label": "_formatdate"
+    },
+    {
       "label": "stocktake_session_view.dart",
       "file_type": "code",
       "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
@@ -12399,39 +12817,6 @@
       "community": 34,
       "community_name": "movement_ui_types.dart",
       "norm_label": "stocktakesessionview"
-    },
-    {
-      "label": "_SessionHeader",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_sessionheader",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "_sessionheader"
-    },
-    {
-      "label": "_StocktakeLineCard",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecard",
-      "community": 8,
-      "community_name": "DashboardCubit",
-      "norm_label": "_stocktakelinecard"
-    },
-    {
-      "label": "_StocktakeLineCardState",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecardstate",
-      "community": 8,
-      "community_name": "DashboardCubit",
-      "norm_label": "_stocktakelinecardstate"
     },
     {
       "label": "session",
@@ -12489,94 +12874,6 @@
       "norm_label": "iscancelling"
     },
     {
-      "label": "countedItems",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_counteditems",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "counteditems"
-    },
-    {
-      "label": "totalItems",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_totalitems",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "totalitems"
-    },
-    {
-      "label": "netDifference",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_netdifference",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "netdifference"
-    },
-    {
-      "label": "line",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_line",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "line"
-    },
-    {
-      "label": "isSaving",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_issaving",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "issaving"
-    },
-    {
-      "label": "_actualQuantity",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_actualquantity",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "_actualquantity"
-    },
-    {
-      "label": "sign",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_sign",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "sign"
-    },
-    {
-      "label": "quantity",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_quantity",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "quantity"
-    },
-    {
       "label": "build",
       "file_type": "code",
       "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
@@ -12588,48 +12885,26 @@
       "norm_label": "build"
     },
     {
-      "label": "createState",
+      "label": "stocktake_line_card.dart",
       "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_createstate",
+      "id": "stocktake_line_card_dart",
       "community": 34,
       "community_name": "movement_ui_types.dart",
-      "norm_label": "createstate"
+      "norm_label": "stocktake_line_card.dart"
     },
     {
-      "label": "initState",
+      "label": "stocktake_session_header.dart",
       "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_initstate",
+      "id": "stocktake_session_header_dart",
       "community": 34,
       "community_name": "movement_ui_types.dart",
-      "norm_label": "initstate"
-    },
-    {
-      "label": "_signedCartonFirstQuantity",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_signedcartonfirstquantity",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "_signedcartonfirstquantity"
-    },
-    {
-      "label": "_formatDate",
-      "file_type": "code",
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_stocktake_presentation_widgets_stocktake_session_view_formatdate",
-      "community": 34,
-      "community_name": "movement_ui_types.dart",
-      "norm_label": "_formatdate"
+      "norm_label": "stocktake_session_header.dart"
     },
     {
       "label": "movement_history_cubit.dart",
@@ -12649,8 +12924,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_cubit_movementhistorycubit",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "movementhistorycubit"
     },
     {
@@ -12869,8 +13144,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_movement_report_summary_dart",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "../../data/models/movement_report_summary.dart"
     },
     {
@@ -12935,8 +13210,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistorystate",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "movementhistorystate"
     },
     {
@@ -12957,8 +13232,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistoryloading",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "movementhistoryloading"
     },
     {
@@ -12968,8 +13243,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistorysuccess",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "movementhistorysuccess"
     },
     {
@@ -12979,8 +13254,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistoryfailure",
-      "community": 3,
-      "community_name": "TransactionsCubit",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "movementhistoryfailure"
     },
     {
@@ -13683,8 +13958,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_models_movement_record_movementrecordtype",
-      "community": 36,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementrecordtype"
     },
     {
@@ -14629,8 +14904,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_new_movement_screen_initstate",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "initstate"
     },
     {
@@ -14788,116 +15063,6 @@
       "norm_label": "../widgets/new_movement_view.dart"
     },
     {
-      "label": "stock_adjustment_screen.dart",
-      "file_type": "code",
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "stock_adjustment_screen.dart"
-    },
-    {
-      "label": "StockAdjustmentScreen",
-      "file_type": "code",
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stockadjustmentscreen",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "stockadjustmentscreen"
-    },
-    {
-      "label": "_StocktakeLoadFailure",
-      "file_type": "code",
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stocktakeloadfailure",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "_stocktakeloadfailure"
-    },
-    {
-      "label": "message",
-      "file_type": "code",
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_message",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "message"
-    },
-    {
-      "label": "build",
-      "file_type": "code",
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_build",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "build"
-    },
-    {
-      "label": "_confirmCancellation",
-      "file_type": "code",
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_confirmcancellation",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "_confirmcancellation"
-    },
-    {
-      "label": "../../../stocktake/cubit/stocktake_cubit.dart",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "stocktake_cubit_stocktake_cubit_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "../../../stocktake/cubit/stocktake_cubit.dart"
-    },
-    {
-      "label": "../../../stocktake/cubit/stocktake_state.dart",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "stocktake_cubit_stocktake_state_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "../../../stocktake/cubit/stocktake_state.dart"
-    },
-    {
-      "label": "../../../stocktake/presentation/widgets/start_stocktake_card.dart",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "stocktake_presentation_widgets_start_stocktake_card_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "../../../stocktake/presentation/widgets/start_stocktake_card.dart"
-    },
-    {
-      "label": "../../../stocktake/presentation/widgets/stocktake_session_view.dart",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "stocktake_presentation_widgets_stocktake_session_view_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
-      "norm_label": "../../../stocktake/presentation/widgets/stocktake_session_view.dart"
-    },
-    {
       "label": "transaction_history_screen.dart",
       "file_type": "code",
       "source_file": "lib/features/transactions/presentation/screens/transaction_history_screen.dart",
@@ -14937,8 +15102,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_datefilterbar",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "_datefilterbar"
     },
     {
@@ -15058,8 +15223,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_initstate",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "initstate"
     },
     {
@@ -15069,8 +15234,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_selectdaterange",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "_selectdaterange"
     },
     {
@@ -15080,8 +15245,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_build",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "build"
     },
     {
@@ -15476,8 +15641,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_details_sheet_movementdetailssheet",
-      "community": 21,
-      "community_name": "package:flutter/material.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "movementdetailssheet"
     },
     {
@@ -15487,8 +15652,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_details_sheet_movementdetailssheetstate",
-      "community": 21,
-      "community_name": "package:flutter/material.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_movementdetailssheetstate"
     },
     {
@@ -15773,8 +15938,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "movement_ui_types.dart"
     },
     {
@@ -15817,8 +15982,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_movementvoucherdetails",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "movementvoucherdetails"
     },
     {
@@ -15828,8 +15993,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_outbound",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "outbound"
     },
     {
@@ -15839,8 +16004,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_label",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "label"
     },
     {
@@ -15850,8 +16015,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_voucherlabel",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "voucherlabel"
     },
     {
@@ -15861,8 +16026,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_actionlabel",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "actionlabel"
     },
     {
@@ -15872,8 +16037,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_cartons",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "cartons"
     },
     {
@@ -15883,8 +16048,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_pieces",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "pieces"
     },
     {
@@ -15894,8 +16059,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_item",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "item"
     },
     {
@@ -15905,8 +16070,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_totalpieces",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "totalpieces"
     },
     {
@@ -15916,8 +16081,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_partyname",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "partyname"
     },
     {
@@ -15927,8 +16092,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_deliveredby",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "deliveredby"
     },
     {
@@ -15938,8 +16103,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_receivedby",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "receivedby"
     },
     {
@@ -15949,8 +16114,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_drivername",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "drivername"
     },
     {
@@ -15960,8 +16125,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_date",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "date"
     },
     {
@@ -15971,8 +16136,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_notes",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "notes"
     },
     {
@@ -15982,8 +16147,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_ui_types_totalpiecesfor",
-      "community": 28,
-      "community_name": "package:flutter/material.dart",
+      "community": 53,
+      "community_name": "adjustment_form.dart",
       "norm_label": "totalpiecesfor"
     },
     {
@@ -16191,8 +16356,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_new_movement_view_newmovementview",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
       "norm_label": "newmovementview"
     },
     {
@@ -16202,8 +16367,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_new_movement_view_movementinventorynotice",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
       "norm_label": "_movementinventorynotice"
     },
     {
@@ -16213,8 +16378,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_new_movement_view_itemspane",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "_itemspane"
     },
     {
@@ -16224,8 +16389,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_new_movement_view_nomatchingitems",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
       "norm_label": "_nomatchingitems"
     },
     {
@@ -16235,8 +16400,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_new_movement_view_mobilevouchersummary",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
       "norm_label": "_mobilevouchersummary"
     },
     {
@@ -16752,8 +16917,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_transactionlistitem",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
       "norm_label": "transactionlistitem"
     },
     {
@@ -16763,8 +16928,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_movementrecorddetailsdialog",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 75,
+      "community_name": "LoginCubit",
       "norm_label": "_movementrecorddetailsdialog"
     },
     {
@@ -16774,8 +16939,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_detailtext",
-      "community": 105,
-      "community_name": "item_catalog_cubit.dart",
+      "community": 75,
+      "community_name": "LoginCubit",
       "norm_label": "_detailtext"
     },
     {
@@ -17016,8 +17181,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_main_stocktakeapp",
-      "community": 83,
-      "community_name": "transaction_history_screen.dart",
+      "community": 41,
+      "community_name": "TransactionsCubit",
       "norm_label": "stocktakeapp"
     },
     {
@@ -18842,11 +19007,44 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "package_flutter_material_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/start_stocktake_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_start_stocktake_card",
+      "target": "package_flutter_material_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "package_flutter_material_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
       "target": "package_flutter_material_dart"
     },
     {
@@ -18869,17 +19067,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_transactions_presentation_screens_new_movement_screen",
-      "target": "package_flutter_material_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
       "target": "package_flutter_material_dart"
     },
     {
@@ -19122,7 +19309,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_core_constants_app_router",
-      "target": "features_transactions_presentation_screens_new_movement_screen_dart"
+      "target": "features_stocktake_presentation_screens_stocktake_screen_dart"
     },
     {
       "relation": "imports",
@@ -19133,7 +19320,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_core_constants_app_router",
-      "target": "features_transactions_presentation_screens_stock_adjustment_screen_dart"
+      "target": "features_transactions_presentation_screens_new_movement_screen_dart"
     },
     {
       "relation": "imports",
@@ -19473,6 +19660,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "package_flutter_bloc_flutter_bloc_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/transactions/cubit/movement_history_cubit.dart",
       "source_location": null,
       "weight": 1.0,
@@ -19500,17 +19698,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_transactions_presentation_screens_new_movement_screen",
-      "target": "package_flutter_bloc_flutter_bloc_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
       "target": "package_flutter_bloc_flutter_bloc_dart"
     },
     {
@@ -19660,22 +19847,22 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_new_movement_screen",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
       "target": "package_go_router_go_router_dart"
     },
     {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
+      "source": "lib_features_transactions_presentation_screens_new_movement_screen",
       "target": "package_go_router_go_router_dart"
     },
     {
@@ -21891,6 +22078,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper",
+      "target": "package_cloud_firestore_cloud_firestore_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_mapper.dart",
       "source_location": null,
       "weight": 1.0,
@@ -22418,12 +22616,12 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "variable_type",
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
       "target": "lib_core_models_carton_piece_quantity_cartonpiecequantity"
     },
     {
@@ -23712,6 +23910,28 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen_stocktakeloadfailure",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen_stocktakescreen",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/start_stocktake_card.dart",
       "source_location": null,
       "weight": 1.0,
@@ -23723,11 +23943,11 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view_sessionheader",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header_stocktakesessionheader",
       "target": "statelesswidget"
     },
     {
@@ -23739,28 +23959,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakesessionview",
-      "target": "statelesswidget"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stockadjustmentscreen",
-      "target": "statelesswidget"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stocktakeloadfailure",
       "target": "statelesswidget"
     },
     {
@@ -24421,11 +24619,11 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecard",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card_stocktakelinecard",
       "target": "statefulwidget"
     },
     {
@@ -24608,11 +24806,11 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecardstate",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card_stocktakelinecardstate",
       "target": "state"
     },
     {
@@ -27396,11 +27594,44 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "core_constants_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/start_stocktake_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_start_stocktake_card",
+      "target": "core_constants_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "core_constants_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
       "target": "core_constants_app_colors_dart"
     },
     {
@@ -27423,17 +27654,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_transactions_presentation_screens_new_movement_screen",
-      "target": "core_constants_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
       "target": "core_constants_app_colors_dart"
     },
     {
@@ -27704,11 +27924,44 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "core_constants_app_sizes_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/start_stocktake_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_start_stocktake_card",
+      "target": "core_constants_app_sizes_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "core_constants_app_sizes_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
       "target": "core_constants_app_sizes_dart"
     },
     {
@@ -27731,17 +27984,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_transactions_presentation_screens_new_movement_screen",
-      "target": "core_constants_app_sizes_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
       "target": "core_constants_app_sizes_dart"
     },
     {
@@ -27924,11 +28166,11 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
       "target": "core_constants_app_strings_dart"
     },
     {
@@ -28122,11 +28364,22 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "core_constants_app_text_styles_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
       "target": "core_constants_app_text_styles_dart"
     },
     {
@@ -28270,6 +28523,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_start_stocktake_card",
+      "target": "core_shared_widgets_custom_button_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
       "target": "core_shared_widgets_custom_button_dart"
     },
     {
@@ -29215,11 +29479,11 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
       "target": "core_models_carton_piece_quantity_dart"
     },
     {
@@ -29680,22 +29944,22 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_new_movement_screen",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
       "target": "core_constants_app_routes_dart"
     },
     {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
+      "source": "lib_features_transactions_presentation_screens_new_movement_screen",
       "target": "core_constants_app_routes_dart"
     },
     {
@@ -29724,11 +29988,11 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
       "target": "core_shared_widgets_custom_app_bar_dart"
     },
     {
@@ -31344,11 +31608,11 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
       "target": "core_shared_widgets_carton_piece_quantity_fields_dart"
     },
     {
@@ -36051,12 +36315,12 @@
       "relation": "navigates",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "route_const",
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen_build",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen_build",
       "target": "route_approutes_newmovement"
     },
     {
@@ -36685,17 +36949,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_cubit_stocktake_cubit",
-      "target": "lib_features_stocktake_cubit_stocktake_cubit_validatestartdraft"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/cubit/stocktake_cubit.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_cubit_stocktake_cubit",
       "target": "lib_features_stocktake_cubit_stocktake_cubit_watchlines"
     },
     {
@@ -36709,6 +36962,17 @@
       "_origin": "ast",
       "source": "lib_features_stocktake_cubit_stocktake_cubit",
       "target": "lib_features_stocktake_data_repositories_stocktake_repository_base_stocktakerepositorybase"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/cubit/stocktake_cubit.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_cubit_stocktake_cubit",
+      "target": "stocktake_draft_validator_dart"
     },
     {
       "relation": "imports",
@@ -36808,48 +37072,48 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "type_lookup",
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
       "target": "lib_features_stocktake_cubit_stocktake_cubit_stocktakecubit"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "bloc_lookup",
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen_build",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen_build",
       "target": "lib_features_stocktake_cubit_stocktake_cubit_stocktakecubit"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "bloc_lookup",
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen_confirmcancellation",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen_confirmcancellation",
       "target": "lib_features_stocktake_cubit_stocktake_cubit_stocktakecubit"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "bloc_lookup",
       "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stockadjustmentscreen",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen_stocktakescreen",
       "target": "lib_features_stocktake_cubit_stocktake_cubit_stocktakecubit"
     },
     {
@@ -36867,12 +37131,34 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "data_models_stocktake_line_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
       "target": "data_models_stocktake_line_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/cubit/stocktake_draft_validator.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_cubit_stocktake_draft_validator",
+      "target": "data_models_stocktake_session_dart"
     },
     {
       "relation": "imports",
@@ -36900,12 +37186,56 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "data_models_stocktake_session_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
       "target": "data_models_stocktake_session_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/cubit/stocktake_draft_validator.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_cubit_stocktake_draft_validator",
+      "target": "lib_features_stocktake_cubit_stocktake_draft_validator_stocktakedraftvalidator"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/cubit/stocktake_draft_validator.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_cubit_stocktake_draft_validator",
+      "target": "lib_features_stocktake_cubit_stocktake_draft_validator_validate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/cubit/stocktake_draft_validator.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_cubit_stocktake_draft_validator",
+      "target": "users_mohamedzidan_project_stock_take_stock_take_lib_features_stocktake_cubit_stocktake_draft_validator"
     },
     {
       "relation": "defines",
@@ -37189,6 +37519,50 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper",
+      "target": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper_read"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper",
+      "target": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper_stocktakefirestorefailuremapper"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper",
+      "target": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper_write"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_failure_mapper.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper",
+      "target": "users_mohamedzidan_project_stock_take_stock_take_lib_features_stocktake_data_mappers_stocktake_firestore_failure_mapper"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/data/mappers/stocktake_firestore_mapper.dart",
       "source_location": null,
       "weight": 1.0,
@@ -37442,12 +37816,12 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "variable_type",
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
       "target": "lib_features_stocktake_data_models_stocktake_line_stocktakeline"
     },
     {
@@ -37626,6 +38000,18 @@
       "context": "variable_type",
       "source": "lib_features_stocktake_data_models_stocktake_session",
       "target": "lib_features_stocktake_data_models_stocktake_session_stocktakestatus"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "lib_features_stocktake_data_models_stocktake_session_stocktakesession"
     },
     {
       "relation": "references",
@@ -37813,17 +38199,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_data_repositories_stocktake_repository",
-      "target": "lib_features_stocktake_data_repositories_stocktake_repository_readfailuremessage"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/data/repositories/stocktake_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_data_repositories_stocktake_repository",
       "target": "lib_features_stocktake_data_repositories_stocktake_repository_requireactivestocktake"
     },
     {
@@ -37926,7 +38301,7 @@
       "target": "lib_features_stocktake_data_repositories_stocktake_repository_writecounter"
     },
     {
-      "relation": "defines",
+      "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/data/repositories/stocktake_repository.dart",
@@ -37934,7 +38309,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_data_repositories_stocktake_repository",
-      "target": "lib_features_stocktake_data_repositories_stocktake_repository_writefailuremessage"
+      "target": "mappers_stocktake_firestore_failure_mapper_dart"
     },
     {
       "relation": "imports",
@@ -38089,6 +38464,105 @@
       "_origin": "ast",
       "source": "lib_features_stocktake_data_repositories_stocktake_repository_failure",
       "target": "lib_features_stocktake_data_repositories_stocktake_repository_failure_tostring"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "cubit_stocktake_cubit_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "cubit_stocktake_state_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "lib_features_stocktake_presentation_screens_stocktake_screen_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "lib_features_stocktake_presentation_screens_stocktake_screen_confirmcancellation"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "lib_features_stocktake_presentation_screens_stocktake_screen_message"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "lib_features_stocktake_presentation_screens_stocktake_screen_stocktakeloadfailure"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "lib_features_stocktake_presentation_screens_stocktake_screen_stocktakescreen"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "widgets_start_stocktake_card_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/screens/stocktake_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_screens_stocktake_screen",
+      "target": "widgets_stocktake_session_view_dart"
     },
     {
       "relation": "defines",
@@ -38292,12 +38766,210 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_actualquantity"
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_actualquantity"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_createstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_initstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_issaving"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_line"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_quantity"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_sign"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_signedcartonfirstquantity"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_stocktakelinecard"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_stocktakelinecardstate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_line_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_line_card_stocktakelinecardstate",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_line_card_stocktakelinecard"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_header_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_header_counteditems"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_header_formatdate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_header_netdifference"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_header_session"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_header_stocktakesessionheader"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_header.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_header",
+      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_header_totalitems"
     },
     {
       "relation": "defines",
@@ -38309,50 +38981,6 @@
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
       "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_counteditems"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_createstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_formatdate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_initstate"
     },
     {
       "relation": "defines",
@@ -38385,51 +39013,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_issaving"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_line"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
       "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_lines"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_netdifference"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_quantity"
     },
     {
       "relation": "defines",
@@ -38462,65 +39046,10 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_sessionheader"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_sign"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_signedcartonfirstquantity"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecard"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecardstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
       "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakesessionview"
     },
     {
-      "relation": "defines",
+      "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
@@ -38528,18 +39057,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_totalitems"
+      "target": "stocktake_line_card_dart"
     },
     {
-      "relation": "references",
+      "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/stocktake/presentation/widgets/stocktake_session_view.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecardstate",
-      "target": "lib_features_stocktake_presentation_widgets_stocktake_session_view_stocktakelinecard"
+      "source": "lib_features_stocktake_presentation_widgets_stocktake_session_view",
+      "target": "stocktake_session_header_dart"
     },
     {
       "relation": "imports",
@@ -41321,105 +41850,6 @@
       "_origin": "ast",
       "source": "lib_features_transactions_presentation_widgets_transaction_list_item",
       "target": "data_mappers_movement_receipt_mapper_dart"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "lib_features_transactions_presentation_screens_stock_adjustment_screen_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "lib_features_transactions_presentation_screens_stock_adjustment_screen_confirmcancellation"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "lib_features_transactions_presentation_screens_stock_adjustment_screen_message"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stockadjustmentscreen"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stocktakeloadfailure"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "stocktake_cubit_stocktake_cubit_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "stocktake_cubit_stocktake_state_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "stocktake_presentation_widgets_start_stocktake_card_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_transactions_presentation_screens_stock_adjustment_screen",
-      "target": "stocktake_presentation_widgets_stocktake_session_view_dart"
     },
     {
       "relation": "imports",
@@ -44669,5 +45099,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "43272dcc169471af51d777e8e14384050ef3c7d3"
+  "built_at_commit": "4c222a68ca798f022ab8ed81a123b71aa8f8f60f"
 }
