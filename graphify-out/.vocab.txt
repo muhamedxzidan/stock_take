@@ -3,7 +3,6 @@ acting
 action
 actions
 active
-actor
 actual
 add
 address
@@ -16,7 +15,6 @@ and
 android
 answer
 app
-apply
 arabic
 async
 auth
@@ -111,6 +109,7 @@ dialog
 did
 diff
 difference
+digits
 discover
 discovered
 discovery
@@ -203,7 +202,6 @@ loading
 locator
 login
 logout
-logs
 loose
 low
 macos
@@ -212,6 +210,7 @@ map
 mapper
 mappers
 matches
+matching
 material
 max
 maximum
@@ -294,7 +293,6 @@ ready
 reason
 receipt
 received
-receiver
 recipient
 record
 reference
@@ -318,6 +316,7 @@ route
 router
 routes
 routing
+saudi
 save
 saved
 saving
@@ -400,6 +399,7 @@ total
 transaction
 transactions
 true
+two
 type
 typed
 types
@@ -429,7 +429,10 @@ with
 worker
 workflow
 write
+آمنة
+أعلى
 إدخال
+إضافة
 ابسط
 اجعل
 اجمالي
@@ -451,6 +454,7 @@ write
 الامور
 الايميل
 التطبيق
+الحركات
 الخطه
 الدخول
 الرولز
@@ -459,12 +463,14 @@ write
 السيس
 السيستم
 الضغط
+الطباعة
 الطباعه
 الظاهر
 العامل
 العميل
 الفاتوره
 القطع
+الكراتين
 الكمية
 اللي
 المبسطة
@@ -478,6 +484,7 @@ write
 ايقونات
 ايميل
 باكدج
+بالكامل
 بحيث
 برضو
 بشكل
@@ -486,6 +493,7 @@ write
 بقا
 تاريخه
 تاني
+تدقيق
 تسجيل
 تشخيص
 تشويش
@@ -501,6 +509,8 @@ write
 رجوعه
 رصيد
 ريسيت
+سجل
+شعار
 صحيح
 صورة
 طلبو
@@ -523,6 +533,7 @@ write
 لازم
 لاضافه
 لايسجل
+لتعديل
 لجرد
 لسه
 للتحكم
@@ -563,6 +574,7 @@ write
 هيتم
 هيخصم
 وأضف
+وإجمالي
 والتسليم
 والتنقل
 والجرد
@@ -573,10 +585,14 @@ write
 وبيرجع
 وتتسجب
 وتحتهم
+وتحسين
 وتنقص
 وتوقيت
 وحاجه
+وحذف
+وضوح
 وضيف
+وطباعة
 وعاوز
 وفي
 ولا
