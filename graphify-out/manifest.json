@@ -668,5 +668,10 @@
     "mtime": 1785622738.7564485,
     "ast_hash": "fcfb6412d050b8be63c8a8f2330c5a51",
     "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md": {
+    "mtime": 1785622834.008241,
+    "ast_hash": "af4a1f6daabed109d63dab6537d4ea52",
+    "semantic_hash": ""
   }
 }

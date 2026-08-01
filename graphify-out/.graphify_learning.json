@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T22:11:43.265085+00:00",
+  "generated_at": "2026-08-01T22:21:24.948627+00:00",
   "nodes": {
     "cubit": {
       "code_fingerprint": "",
@@ -12,7 +12,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.871609037,
+      "score": 0.871473467,
       "source_file": "",
       "status": "tentative",
       "uses": 1
@@ -38,7 +38,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 2.702566522,
+      "score": 2.702146164,
       "source_file": "lib/core/constants/app_router.dart",
       "status": "preferred",
       "uses": 3
@@ -54,7 +54,7 @@
           "q": "يعني اي مشكله لازم احط الايميل في الرولز"
         }
       ],
-      "score": 0.912285501,
+      "score": 0.912143604,
       "source_file": "lib/core/constants/firestore_collections.dart",
       "status": "tentative",
       "uses": 1
@@ -75,7 +75,7 @@
           "q": "دي هتكون ايقونات التطبيق وعاوز احط لوجو منهم في اول ريسيت الطباعه من فوق بشكل احترافي ويوجود تشويش في الطباعه هل لها من حل ام لا وفي اسفل الريسيت عند اجمالي القطع يكون اجمالي كم كرتونه وتحتهم كام قطعه اعمل الخطه"
         }
       ],
-      "score": 1.888735571,
+      "score": 1.888441796,
       "source_file": "lib/core/models/thermal_receipt_data.dart",
       "status": "preferred",
       "uses": 2
@@ -91,7 +91,7 @@
           "q": "إضافة شعار EL SAUDI أعلى الريسيت وإجمالي الكراتين ثم القطع وتحسين وضوح الطباعة"
         }
       ],
-      "score": 0.94452121,
+      "score": 0.944374299,
       "source_file": "lib/core/models/thermal_receipt_data.dart",
       "status": "tentative",
       "uses": 1
@@ -107,7 +107,7 @@
           "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
         }
       ],
-      "score": 0.901660165,
+      "score": 0.90151992,
       "source_file": "lib/core/shared_widgets/tablet_navigation_rail.dart",
       "status": "tentative",
       "uses": 1
@@ -128,46 +128,10 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 1.788884323,
+      "score": 1.78860608,
       "source_file": "lib/core/shared_widgets/worker_bottom_navigation.dart",
       "status": "preferred",
       "uses": 2
-    },
-    "lib_features_auth_cubit_login_login_cubit_logincubit": {
-      "code_fingerprint": "ae24ce7b53f043754b17db10098a59370662d2668d30b9f8f9bbeb700a1756cd",
-      "label": "LoginCubit",
-      "last": "2026-07-29T00:36:33.863306+00:00",
-      "provenance": [
-        {
-          "date": "2026-07-29T00:36:33.863306+00:00",
-          "outcome": "useful",
-          "q": "انا عملت الرولز allow read, write if true ولم يسجل خالص، عاوز حل"
-        },
-        {
-          "date": "2026-07-28T22:54:45.604703+00:00",
-          "outcome": "useful",
-          "q": "اصلحه لاضافه اي ايميل يدوي يسجل دخول"
-        },
-        {
-          "date": "2026-07-28T22:50:11.771153+00:00",
-          "outcome": "useful",
-          "q": "يعني اي مشكله لازم احط الايميل في الرولز"
-        },
-        {
-          "date": "2026-07-28T22:44:38.885279+00:00",
-          "outcome": "useful",
-          "q": "لايسجل"
-        },
-        {
-          "date": "2026-07-28T22:12:10.228837+00:00",
-          "outcome": "useful",
-          "q": "تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
-        }
-      ],
-      "score": 4.562414981,
-      "source_file": "lib/features/auth/cubit/login/login_cubit.dart",
-      "status": "preferred",
-      "uses": 5
     },
     "lib_features_auth_data_repositories_auth_failure_authfailure": {
       "code_fingerprint": "08cb813f7ab21849e55498af59cf5a3f67a89809f9bf829ff22f4c484de34c84",
@@ -180,7 +144,7 @@
           "q": "تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
         }
       ],
-      "score": 0.911729063,
+      "score": 0.911587252,
       "source_file": "lib/features/auth/data/repositories/auth_failure.dart",
       "status": "tentative",
       "uses": 1
@@ -216,41 +180,10 @@
           "q": "تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
         }
       ],
-      "score": 4.562414981,
+      "score": 4.561705341,
       "source_file": "lib/features/auth/data/repositories/firebase_auth_repository.dart",
       "status": "preferred",
       "uses": 5
-    },
-    "lib_features_auth_presentation_routing_auth_session_notifier_authsessionnotifier": {
-      "code_fingerprint": "527e51bbb9ecd6c85597f0eb199814d8728509ebcc4c67b18018cda5c0dadb83",
-      "label": "AuthSessionNotifier",
-      "last": "2026-07-29T00:36:33.863306+00:00",
-      "provenance": [
-        {
-          "date": "2026-07-29T00:36:33.863306+00:00",
-          "outcome": "useful",
-          "q": "انا عملت الرولز allow read, write if true ولم يسجل خالص، عاوز حل"
-        },
-        {
-          "date": "2026-07-28T22:54:45.604703+00:00",
-          "outcome": "useful",
-          "q": "اصلحه لاضافه اي ايميل يدوي يسجل دخول"
-        },
-        {
-          "date": "2026-07-28T22:50:11.771153+00:00",
-          "outcome": "useful",
-          "q": "يعني اي مشكله لازم احط الايميل في الرولز"
-        },
-        {
-          "date": "2026-07-28T22:44:38.885279+00:00",
-          "outcome": "useful",
-          "q": "لايسجل"
-        }
-      ],
-      "score": 3.650685919,
-      "source_file": "lib/features/auth/presentation/routing/auth_session_notifier.dart",
-      "status": "preferred",
-      "uses": 4
     },
     "lib_features_auth_presentation_screens_login_screen_loginscreen": {
       "code_fingerprint": "59b90d8ba8a3d7d9daa899910a662f3d60124e6f57f6c9836a641754cf4ad43d",
@@ -268,26 +201,10 @@
           "q": "تشخيص فشل تسجيل الدخول الظاهر في Screenshot 2026-07-29"
         }
       ],
-      "score": 1.823933356,
+      "score": 1.823649661,
       "source_file": "lib/features/auth/presentation/screens/login_screen.dart",
       "status": "preferred",
       "uses": 2
-    },
-    "lib_features_dashboard_cubit_dashboard_cubit_dashboardcubit": {
-      "code_fingerprint": "9028dc7fc2180283285fdb80be4bdbacd04b981fe6f158d8dc74bf4a25e66016",
-      "label": "DashboardCubit",
-      "last": "2026-07-26T23:27:27.197460+00:00",
-      "provenance": [
-        {
-          "date": "2026-07-26T23:27:27.197460+00:00",
-          "outcome": "useful",
-          "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
-        }
-      ],
-      "score": 0.871609037,
-      "source_file": "lib/features/dashboard/cubit/dashboard_cubit.dart",
-      "status": "tentative",
-      "uses": 1
     },
     "lib_features_dashboard_data_mappers_stock_balance_receipt_mapper_stockbalancereceiptmapper": {
       "code_fingerprint": "0b1d63434ac6bf0acc4768af4cc682d9c0c8e25984140b49d36526f2b08f0048",
@@ -300,7 +217,7 @@
           "q": "لماذا تتلف طباعة كل الأصناف بينما تطبع حركات المخزن الأخرى سليمة؟"
         }
       ],
-      "score": 0.999186067,
+      "score": 0.999030653,
       "source_file": "lib/features/dashboard/data/mappers/stock_balance_receipt_mapper.dart",
       "status": "tentative",
       "uses": 1
@@ -321,7 +238,7 @@
           "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
         }
       ],
-      "score": 1.789294061,
+      "score": 1.789015754,
       "source_file": "lib/features/dashboard/data/repositories/dashboard_repository.dart",
       "status": "preferred",
       "uses": 2
@@ -337,7 +254,7 @@
           "q": "اعمل الخطه ك ui. بس"
         }
       ],
-      "score": 0.88694809,
+      "score": 0.886810134,
       "source_file": "lib/features/dashboard/presentation/screens/dashboard_screen.dart",
       "status": "tentative",
       "uses": 1
@@ -363,31 +280,10 @@
           "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
         }
       ],
-      "score": 2.720425554,
+      "score": 2.720002417,
       "source_file": "lib/features/dashboard/presentation/widgets/stock_items_list.dart",
       "status": "preferred",
       "uses": 3
-    },
-    "lib_features_items_cubit_items_cubit_itemscubit": {
-      "code_fingerprint": "932fdeda3d290d7096e28e7900578c4e854ea46501a62503a777c8e69312c217",
-      "label": "ItemsCubit",
-      "last": "2026-07-30T13:16:23.809698+00:00",
-      "provenance": [
-        {
-          "date": "2026-07-30T13:16:23.809698+00:00",
-          "outcome": "useful",
-          "q": "خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل"
-        },
-        {
-          "date": "2026-07-26T23:27:27.197460+00:00",
-          "outcome": "useful",
-          "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
-        }
-      ],
-      "score": 1.818284326,
-      "source_file": "lib/features/items/cubit/items_cubit.dart",
-      "status": "preferred",
-      "uses": 2
     },
     "lib_features_items_data_repositories_items_repository_itemsrepository": {
       "code_fingerprint": "26b96332f33097fcb4bd98bb644be545b4c2d4512d73951a0b96d5a61ce5527e",
@@ -400,25 +296,25 @@
           "q": "خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل"
         }
       ],
-      "score": 0.946675288,
+      "score": 0.946528042,
       "source_file": "lib/features/items/data/repositories/items_repository.dart",
       "status": "tentative",
       "uses": 1
     },
-    "lib_features_printing_cubit_printer_cubit_printercubit": {
-      "code_fingerprint": "710ec39998db2a7dacaf700bf991528f7deb9f950d9f29437cd5ce5927fe36e1",
-      "label": "PrinterCubit",
-      "last": "2026-08-01T21:20:58.350118+00:00",
+    "lib_features_printing_data_repositories_bluetooth_printer_repository_bluetoothprinterrepository": {
+      "code_fingerprint": "178f358c950884888cf5b832d023f9e4a96d51ffebcceb4ee7b8c6aeb33f5975",
+      "label": "BluetoothPrinterRepository",
+      "last": "2026-08-01T22:20:34.007410+00:00",
       "provenance": [
+        {
+          "date": "2026-08-01T22:20:34.007410+00:00",
+          "outcome": "useful",
+          "q": "Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?"
+        },
         {
           "date": "2026-08-01T21:20:58.350118+00:00",
           "outcome": "useful",
           "q": "لماذا تتلف طباعة كل الأصناف بينما تطبع حركات المخزن الأخرى سليمة؟"
-        },
-        {
-          "date": "2026-07-30T13:16:23.809698+00:00",
-          "outcome": "useful",
-          "q": "خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل"
         },
         {
           "date": "2026-07-30T10:34:10.233695+00:00",
@@ -426,31 +322,26 @@
           "q": "دي هتكون ايقونات التطبيق وعاوز احط لوجو منهم في اول ريسيت الطباعه من فوق بشكل احترافي ويوجود تشويش في الطباعه هل لها من حل ام لا وفي اسفل الريسيت عند اجمالي القطع يكون اجمالي كم كرتونه وتحتهم كام قطعه اعمل الخطه"
         }
       ],
-      "score": 2.890075716,
-      "source_file": "lib/features/printing/cubit/printer_cubit.dart",
+      "score": 2.943084527,
+      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
       "status": "preferred",
       "uses": 3
     },
-    "lib_features_printing_data_repositories_bluetooth_printer_repository_bluetoothprinterrepository": {
-      "code_fingerprint": "f7a001bcad1a52deb83aecc051b8e32da44f785d7c7765a454eb12dcbbe4877c",
-      "label": "BluetoothPrinterRepository",
-      "last": "2026-08-01T21:20:58.350118+00:00",
+    "lib_features_printing_data_services_thermal_receipt_image_slicer_thermalreceiptimageslicer": {
+      "code_fingerprint": "27ff722b24a5733902c52996f39aab6cd8d0399a95d09f95a534f10b69dc9d8f",
+      "label": "ThermalReceiptImageSlicer",
+      "last": "2026-08-01T22:20:34.007410+00:00",
       "provenance": [
         {
-          "date": "2026-08-01T21:20:58.350118+00:00",
+          "date": "2026-08-01T22:20:34.007410+00:00",
           "outcome": "useful",
-          "q": "لماذا تتلف طباعة كل الأصناف بينما تطبع حركات المخزن الأخرى سليمة؟"
-        },
-        {
-          "date": "2026-07-30T10:34:10.233695+00:00",
-          "outcome": "useful",
-          "q": "دي هتكون ايقونات التطبيق وعاوز احط لوجو منهم في اول ريسيت الطباعه من فوق بشكل احترافي ويوجود تشويش في الطباعه هل لها من حل ام لا وفي اسفل الريسيت عند اجمالي القطع يكون اجمالي كم كرتونه وتحتهم كام قطعه اعمل الخطه"
+          "q": "Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?"
         }
       ],
-      "score": 1.943400427,
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "status": "preferred",
-      "uses": 2
+      "score": 0.999986377,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_image_slicer.dart",
+      "status": "tentative",
+      "uses": 1
     },
     "lib_features_printing_presentation_widgets_thermal_receipt_content_receipttotal": {
       "code_fingerprint": "5cf1263d8cb89a0e9c2683d41b6d60463059d03add3ff96b7ec7bdf665a079d7",
@@ -463,7 +354,7 @@
           "q": "إضافة شعار EL SAUDI أعلى الريسيت وإجمالي الكراتين ثم القطع وتحسين وضوح الطباعة"
         }
       ],
-      "score": 0.94452121,
+      "score": 0.944374299,
       "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_content.dart",
       "status": "tentative",
       "uses": 1
@@ -489,7 +380,7 @@
           "q": "دي هتكون ايقونات التطبيق وعاوز احط لوجو منهم في اول ريسيت الطباعه من فوق بشكل احترافي ويوجود تشويش في الطباعه هل لها من حل ام لا وفي اسفل الريسيت عند اجمالي القطع يكون اجمالي كم كرتونه وتحتهم كام قطعه اعمل الخطه"
         }
       ],
-      "score": 2.887921638,
+      "score": 2.887472449,
       "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_content.dart",
       "status": "preferred",
       "uses": 3
@@ -515,26 +406,10 @@
           "q": "دي هتكون ايقونات التطبيق وعاوز احط لوجو منهم في اول ريسيت الطباعه من فوق بشكل احترافي ويوجود تشويش في الطباعه هل لها من حل ام لا وفي اسفل الريسيت عند اجمالي القطع يكون اجمالي كم كرتونه وتحتهم كام قطعه اعمل الخطه"
         }
       ],
-      "score": 2.890075716,
+      "score": 2.889626192,
       "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart",
       "status": "preferred",
       "uses": 3
-    },
-    "lib_features_returns_cubit_return_resolution_cubit_returnresolutioncubit": {
-      "code_fingerprint": "35df875536b826a649c7e5ad562b61cea134723a5c5d62811279982836ef4a5a",
-      "label": "ReturnResolutionCubit",
-      "last": "2026-07-30T10:11:58.141730+00:00",
-      "provenance": [
-        {
-          "date": "2026-07-30T10:11:58.141730+00:00",
-          "outcome": "useful",
-          "q": "خطه عمل للمرتجع اللي هيتم رجوعه للمورد نفسه يعني مرتيح المخزن مظبوط وبيرجع للمخزن ك رصيد ازاي اعمل بقا مرتحع للمودر نفسه يعني ياخد بضاعه وتتسجب انها مرتحع للمودر وتنقص من رصيد مخزن هل هي موجوده بشكل تاني ؟"
-        }
-      ],
-      "score": 0.943878068,
-      "source_file": "lib/features/returns/cubit/return_resolution_cubit.dart",
-      "status": "tentative",
-      "uses": 1
     },
     "lib_features_returns_data_models_warehouse_return_draft_warehousereturndraft": {
       "code_fingerprint": "28d7de1e305dcd0f9c516f7eea748d4904055344291ccb38c7f8f7951ad1e723",
@@ -557,7 +432,7 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 2.675136494,
+      "score": 2.674720402,
       "source_file": "lib/features/returns/data/models/warehouse_return_draft.dart",
       "status": "preferred",
       "uses": 3
@@ -573,7 +448,7 @@
           "q": "خطه عمل للمرتجع اللي هيتم رجوعه للمورد نفسه يعني مرتيح المخزن مظبوط وبيرجع للمخزن ك رصيد ازاي اعمل بقا مرتحع للمودر نفسه يعني ياخد بضاعه وتتسجب انها مرتحع للمودر وتنقص من رصيد مخزن هل هي موجوده بشكل تاني ؟"
         }
       ],
-      "score": 0.943878068,
+      "score": 0.943731256,
       "source_file": "lib/features/returns/data/repositories/returns_repository.dart",
       "status": "tentative",
       "uses": 1
@@ -599,7 +474,7 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 2.674987085,
+      "score": 2.674571016,
       "source_file": "lib/features/returns/presentation/screens/warehouse_return_screen.dart",
       "status": "preferred",
       "uses": 3
@@ -615,7 +490,7 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.871828372,
+      "score": 0.871692767,
       "source_file": "lib/features/returns/presentation/widgets/return_workflow_card.dart",
       "status": "tentative",
       "uses": 1
@@ -631,7 +506,7 @@
           "q": "هيا المشروع ك ui ux بس وضيف كمان خاصيه المرتجع في المخزن ك ui بس برضو مفيش اي لوجيك لسه خليه بس جاهز للوجيك"
         }
       ],
-      "score": 0.871828372,
+      "score": 0.871692767,
       "source_file": "lib/features/returns/presentation/widgets/warehouse_return_form.dart",
       "status": "tentative",
       "uses": 1
@@ -657,62 +532,10 @@
           "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
         }
       ],
-      "score": 2.747186191,
+      "score": 2.746758892,
       "source_file": "lib/features/returns/presentation/widgets/warehouse_return_form.dart",
       "status": "preferred",
       "uses": 3
-    },
-    "lib_features_transactions_cubit_movement_history_cubit_movementhistorycubit": {
-      "code_fingerprint": "10b02cb3ac611ea324afb0d6a6d619f15976ca0d0f76dbdc6e08f318dcd7a7b3",
-      "label": "MovementHistoryCubit",
-      "last": "2026-07-30T13:16:23.809698+00:00",
-      "provenance": [
-        {
-          "date": "2026-07-30T13:16:23.809698+00:00",
-          "outcome": "useful",
-          "q": "خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل"
-        }
-      ],
-      "score": 0.946675288,
-      "source_file": "lib/features/transactions/cubit/movement_history_cubit.dart",
-      "status": "tentative",
-      "uses": 1
-    },
-    "lib_features_transactions_cubit_transactions_cubit_transactionscubit": {
-      "code_fingerprint": "5d259545187c53a4049a645dbf0270f2782afa06560540b871ab41f96cf8dbaa",
-      "label": "TransactionsCubit",
-      "last": "2026-07-28T10:50:22.410550+00:00",
-      "provenance": [
-        {
-          "date": "2026-07-28T10:50:22.410550+00:00",
-          "outcome": "useful",
-          "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
-        },
-        {
-          "date": "2026-07-28T10:28:52.480697+00:00",
-          "outcome": "useful",
-          "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
-        },
-        {
-          "date": "2026-07-27T18:12:24.811771+00:00",
-          "outcome": "useful",
-          "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
-        },
-        {
-          "date": "2026-07-27T17:24:28.747892+00:00",
-          "outcome": "useful",
-          "q": "العميل عاوز يبسط الامور جدا بحيث العامل يفتخ السيستم لما يجي يدوس علي منتج يطلعلو عاوز كام منو هياخد ولا هيخصم منو وبناء علي طلبو هيتحمع في الفاتوره عاوزها مبسطه خالص اقترحلي ال UI"
-        },
-        {
-          "date": "2026-07-26T23:27:27.197460+00:00",
-          "outcome": "useful",
-          "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
-        }
-      ],
-      "score": 4.449203822,
-      "source_file": "lib/features/transactions/cubit/transactions_cubit.dart",
-      "status": "preferred",
-      "uses": 5
     },
     "lib_features_transactions_data_mappers_movement_receipt_mapper_movementreceiptmapper": {
       "code_fingerprint": "ab247ddba2dfa5bc09dc9544895b840b69d10e7cebad2932aacdd8425fdc061f",
@@ -725,7 +548,7 @@
           "q": "دي هتكون ايقونات التطبيق وعاوز احط لوجو منهم في اول ريسيت الطباعه من فوق بشكل احترافي ويوجود تشويش في الطباعه هل لها من حل ام لا وفي اسفل الريسيت عند اجمالي القطع يكون اجمالي كم كرتونه وتحتهم كام قطعه اعمل الخطه"
         }
       ],
-      "score": 0.944214361,
+      "score": 0.944067497,
       "source_file": "lib/features/transactions/data/mappers/movement_receipt_mapper.dart",
       "status": "tentative",
       "uses": 1
@@ -741,7 +564,7 @@
           "q": "خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل"
         }
       ],
-      "score": 0.946675288,
+      "score": 0.946528042,
       "source_file": "lib/features/transactions/data/models/movement_record.dart",
       "status": "tentative",
       "uses": 1
@@ -757,7 +580,7 @@
           "q": "خطه عمل للمرتجع اللي هيتم رجوعه للمورد نفسه يعني مرتيح المخزن مظبوط وبيرجع للمخزن ك رصيد ازاي اعمل بقا مرتحع للمودر نفسه يعني ياخد بضاعه وتتسجب انها مرتحع للمودر وتنقص من رصيد مخزن هل هي موجوده بشكل تاني ؟"
         }
       ],
-      "score": 0.943878068,
+      "score": 0.943731256,
       "source_file": "lib/features/transactions/data/models/movement_record.dart",
       "status": "tentative",
       "uses": 1
@@ -783,7 +606,7 @@
           "q": "بعد الضغط على الاستكمال والمعاينة والطباعة هل يطبع ويخصم للمنصرف أو يزيد للوارد ثم يفرغ الأصناف المختارة؟"
         }
       ],
-      "score": 2.733172129,
+      "score": 2.73274701,
       "source_file": "lib/features/transactions/data/repositories/transactions_repository.dart",
       "status": "preferred",
       "uses": 3
@@ -819,7 +642,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 4.52208172,
+      "score": 4.521378353,
       "source_file": "lib/features/transactions/presentation/screens/new_movement_screen.dart",
       "status": "preferred",
       "uses": 5
@@ -845,7 +668,7 @@
           "q": "عاوز يكون في حاجه للمرتجع وحاجه لجرد المخزن"
         }
       ],
-      "score": 2.704968288,
+      "score": 2.704547556,
       "source_file": "lib/features/transactions/presentation/screens/stock_adjustment_screen.dart",
       "status": "preferred",
       "uses": 3
@@ -866,7 +689,7 @@
           "q": "اعمل الخطه ك ui. بس"
         }
       ],
-      "score": 1.833623379,
+      "score": 1.833338176,
       "source_file": "lib/features/transactions/presentation/screens/transaction_history_screen.dart",
       "status": "preferred",
       "uses": 2
@@ -882,7 +705,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 0.887224158,
+      "score": 0.887086159,
       "source_file": "lib/features/transactions/presentation/widgets/current_voucher_panel.dart",
       "status": "tentative",
       "uses": 1
@@ -903,7 +726,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 1.789033733,
+      "score": 1.788755466,
       "source_file": "lib/features/transactions/presentation/widgets/item_quantity_sheet.dart",
       "status": "preferred",
       "uses": 2
@@ -919,7 +742,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 0.887224158,
+      "score": 0.887086159,
       "source_file": "lib/features/transactions/presentation/widgets/movement_details_sheet.dart",
       "status": "tentative",
       "uses": 1
@@ -935,7 +758,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 0.887224158,
+      "score": 0.887086159,
       "source_file": "lib/features/transactions/presentation/widgets/movement_type_selector.dart",
       "status": "tentative",
       "uses": 1
@@ -956,7 +779,7 @@
           "q": "نفذ خطة UI المبسطة للحركة متعددة الأصناف فقط"
         }
       ],
-      "score": 1.774708645,
+      "score": 1.774432606,
       "source_file": "lib/features/transactions/presentation/widgets/movement_voucher_preview_dialog.dart",
       "status": "preferred",
       "uses": 2
@@ -972,7 +795,7 @@
           "q": "اظهر المرتجع والجرد في ابسط صورة للتحكم والتنقل"
         }
       ],
-      "score": 0.901660165,
+      "score": 0.90151992,
       "source_file": "lib/features/transactions/presentation/widgets/secondary_operations_bar.dart",
       "status": "tentative",
       "uses": 1
@@ -988,7 +811,7 @@
           "q": "اجعل الكمية إدخال يدوي وأضف مدة للجرد وتوقيت صحيح ونسخ احتياطي Firebase وبسط المرتجع مع تاريخه"
         }
       ],
-      "score": 0.901809574,
+      "score": 0.901669306,
       "source_file": "lib/firebase_options.dart",
       "status": "tentative",
       "uses": 1
@@ -1004,7 +827,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.871609037,
+      "score": 0.871473467,
       "source_file": "",
       "status": "tentative",
       "uses": 1
@@ -1020,7 +843,7 @@
           "q": "استخدم باكدج flutter bloc عشان هنستخدم كيوبت منها"
         }
       ],
-      "score": 0.871609037,
+      "score": 0.871473467,
       "source_file": "",
       "status": "tentative",
       "uses": 1
