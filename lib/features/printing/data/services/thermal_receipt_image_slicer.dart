@@ -14,6 +14,9 @@ class ThermalReceiptImageSlice {
   });
 }
 
+typedef ReceiptImageSlicer =
+    Future<List<ThermalReceiptImageSlice>> Function(Uint8List imageBytes);
+
 class ThermalReceiptImageSlicer {
   // At 576 dots, 512 monochrome rows are about 36 KB. This stays safely below
   // the XP-P802A 64 KB input buffer while keeping the number of slices small.

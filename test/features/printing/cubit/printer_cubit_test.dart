@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:typed_data';
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:stock_take/features/printing/cubit/printer_cubit.dart';
 import 'package:stock_take/features/printing/data/models/saved_printer.dart';
@@ -75,21 +74,20 @@ void main() {
         pendingPrint: print.future,
       );
       final cubit = PrinterCubit(repository);
-      final rasterizer = _FakeRasterizer();
+      final imageBytes = _fakeReceiptPng();
       addTearDown(() async {
         await cubit.close();
         await repository.close();
       });
       await cubit.initialize();
 
-      final firstPrint = cubit.printReceipt(rasterizer);
+      final firstPrint = cubit.printReceipt(imageBytes);
       await Future<void>.delayed(Duration.zero);
-      final repeatedPrint = await cubit.printReceipt(rasterizer);
+      final repeatedPrint = await cubit.printReceipt(imageBytes);
       print.complete(true);
 
       expect(repeatedPrint, isFalse);
       expect(await firstPrint, isTrue);
-      expect(rasterizer.calls, 1);
       expect(repository.printCalls, 1);
       expect(cubit.state.isPrinting, isFalse);
     },
@@ -109,7 +107,7 @@ void main() {
       });
       await cubit.initialize();
 
-      final printed = await cubit.printReceipt(_FakeRasterizer());
+      final printed = await cubit.printReceipt(_fakeReceiptPng());
 
       expect(printed, isFalse);
       expect(repository.printCalls, 1);
@@ -119,12 +117,4 @@ void main() {
   );
 }
 
-class _FakeRasterizer implements ThermalReceiptRasterizer {
-  int calls = 0;
-
-  @override
-  Future<Uint8List> renderPng() async {
-    calls++;
-    return Uint8List.fromList(const [137, 80, 78, 71]);
-  }
-}
+Uint8List _fakeReceiptPng() => Uint8List.fromList(const [137, 80, 78, 71]);

@@ -5,36 +5,25 @@ import 'package:flutter_bluetooth_printer/flutter_bluetooth_printer.dart';
 import '../models/printer_connection_profile.dart';
 import '../models/printer_discovery_snapshot.dart';
 import '../models/saved_printer.dart';
+import '../services/selected_printer_store.dart';
 import '../services/thermal_receipt_image_slicer.dart';
+import '../services/thermal_receipt_print_job.dart';
 import 'printer_repository_base.dart';
 
-typedef ReceiptImageSlicer =
-    Future<List<ThermalReceiptImageSlice>> Function(Uint8List imageBytes);
-
-typedef ReceiptImagePrinter =
-    Future<bool> Function({
-      required String address,
-      required Uint8List imageBytes,
-      required int imageWidth,
-      required int imageHeight,
-      required int addFeeds,
-      required void Function(int total, int sent) onProgress,
-    });
-
 class BluetoothPrinterRepository implements PrinterRepositoryBase {
-  static const MethodChannel _preferencesChannel = MethodChannel(
-    'stock_take/printer_preferences',
-  );
-
-  final ReceiptImageSlicer _sliceImage;
-  final ReceiptImagePrinter _printImage;
+  final SelectedPrinterStore _printerStore;
+  final ThermalReceiptPrintJob _printJob;
   SavedPrinter? _sessionPrinter;
 
   BluetoothPrinterRepository({
     ReceiptImageSlicer? imageSlicer,
     ReceiptImagePrinter? imagePrinter,
-  }) : _sliceImage = imageSlicer ?? const ThermalReceiptImageSlicer().slicePng,
-       _printImage = imagePrinter ?? _printImageWithBluetooth;
+    SelectedPrinterStore? printerStore,
+  }) : _printerStore = printerStore ?? const SelectedPrinterStore(),
+       _printJob = ThermalReceiptPrintJob(
+         sliceImage: imageSlicer ?? const ThermalReceiptImageSlicer().slicePng,
+         printImage: imagePrinter ?? _printImageWithBluetooth,
+       );
 
   @override
   PrinterConnectionProfile get connectionProfile {
@@ -53,27 +42,8 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
       return _sessionPrinter;
     }
 
-    try {
-      final value = await _preferencesChannel.invokeMapMethod<Object?, Object?>(
-        'loadSelectedPrinter',
-      );
-      final address = value?['address'];
-      final name = value?['name'];
-      if (address is! String || address.trim().isEmpty) {
-        return _sessionPrinter;
-      }
-      _sessionPrinter = SavedPrinter(
-        address: address,
-        name: name is String ? name : '',
-      );
-      return _sessionPrinter;
-    } on PlatformException {
-      return _sessionPrinter;
-    } on MissingPluginException {
-      return _sessionPrinter;
-    } catch (_) {
-      return _sessionPrinter;
-    }
+    _sessionPrinter = await _printerStore.load() ?? _sessionPrinter;
+    return _sessionPrinter;
   }
 
   @override
@@ -83,10 +53,7 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
       return;
     }
 
-    await _preferencesChannel.invokeMethod<void>('saveSelectedPrinter', {
-      'address': printer.address,
-      'name': printer.name,
-    });
+    await _printerStore.save(printer);
   }
 
   @override
@@ -180,27 +147,11 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
     }
 
     try {
-      final slices = await _sliceImage(imageBytes);
-      if (slices.isEmpty) {
-        return false;
-      }
-
-      for (var index = 0; index < slices.length; index++) {
-        final slice = slices[index];
-        final printed = await _printSlice(
-          printer: printer,
-          slice: slice,
-          isLast: index == slices.length - 1,
-          onProgress: (sliceProgress) {
-            onProgress((index + sliceProgress) / slices.length);
-          },
-        );
-        if (!printed) {
-          return false;
-        }
-        onProgress((index + 1) / slices.length);
-      }
-      return true;
+      return _printJob.print(
+        printer: printer,
+        imageBytes: imageBytes,
+        onProgress: onProgress,
+      );
     } on PlatformException {
       return false;
     } on MissingPluginException {
@@ -208,27 +159,6 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
     } catch (_) {
       return false;
     }
-  }
-
-  Future<bool> _printSlice({
-    required SavedPrinter printer,
-    required ThermalReceiptImageSlice slice,
-    required bool isLast,
-    required void Function(double progress) onProgress,
-  }) async {
-    return _printImage(
-      address: printer.address,
-      imageBytes: slice.bytes,
-      imageWidth: slice.width,
-      imageHeight: slice.height,
-      addFeeds: isLast ? 3 : 0,
-      onProgress: (total, sent) {
-        final progress = total <= 0
-            ? 0.0
-            : (sent / total).clamp(0.0, 1.0).toDouble();
-        onProgress(progress);
-      },
-    );
   }
 
   static Future<bool> _printImageWithBluetooth({

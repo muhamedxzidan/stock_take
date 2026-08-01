@@ -36,7 +36,7 @@ class ThermalReceiptDialog extends StatefulWidget {
 }
 
 class _ThermalReceiptDialogState extends State<ThermalReceiptDialog> {
-  ThermalReceiptRasterizer? _rasterizer;
+  _ReceiptControllerRasterizer? _rasterizer;
 
   Future<void> _print() async {
     final rasterizer = _rasterizer;
@@ -45,7 +45,11 @@ class _ThermalReceiptDialogState extends State<ThermalReceiptDialog> {
     }
 
     final cubit = context.read<PrinterCubit>();
-    final printed = await cubit.printReceipt(rasterizer);
+    final imageBytes = await rasterizer.renderPng();
+    if (!mounted) {
+      return;
+    }
+    final printed = await cubit.printReceipt(imageBytes);
     if (!mounted) {
       return;
     }
@@ -193,11 +197,10 @@ class _ThermalReceiptDialogState extends State<ThermalReceiptDialog> {
   }
 }
 
-class _ReceiptControllerRasterizer implements ThermalReceiptRasterizer {
+class _ReceiptControllerRasterizer {
   final ReceiptController _controller;
 
   _ReceiptControllerRasterizer(this._controller);
 
-  @override
   Future<Uint8List> renderPng() => _controller.getImageBytes();
 }
