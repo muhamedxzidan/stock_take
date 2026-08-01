@@ -5,14 +5,36 @@ import 'package:flutter_bluetooth_printer/flutter_bluetooth_printer.dart';
 import '../models/printer_connection_profile.dart';
 import '../models/printer_discovery_snapshot.dart';
 import '../models/saved_printer.dart';
+import '../services/thermal_receipt_image_slicer.dart';
 import 'printer_repository_base.dart';
+
+typedef ReceiptImageSlicer =
+    Future<List<ThermalReceiptImageSlice>> Function(Uint8List imageBytes);
+
+typedef ReceiptImagePrinter =
+    Future<bool> Function({
+      required String address,
+      required Uint8List imageBytes,
+      required int imageWidth,
+      required int imageHeight,
+      required int addFeeds,
+      required void Function(int total, int sent) onProgress,
+    });
 
 class BluetoothPrinterRepository implements PrinterRepositoryBase {
   static const MethodChannel _preferencesChannel = MethodChannel(
     'stock_take/printer_preferences',
   );
 
+  final ReceiptImageSlicer _sliceImage;
+  final ReceiptImagePrinter _printImage;
   SavedPrinter? _sessionPrinter;
+
+  BluetoothPrinterRepository({
+    ReceiptImageSlicer? imageSlicer,
+    ReceiptImagePrinter? imagePrinter,
+  }) : _sliceImage = imageSlicer ?? const ThermalReceiptImageSlicer().slicePng,
+       _printImage = imagePrinter ?? _printImageWithBluetooth;
 
   @override
   PrinterConnectionProfile get connectionProfile {
@@ -153,63 +175,32 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
     required Uint8List imageBytes,
     required void Function(double progress) onProgress,
   }) async {
-    if (!connectionProfile.isSupported || imageBytes.length < 24) {
+    if (!connectionProfile.isSupported) {
       return false;
     }
 
-    final dimensions = _readPngDimensions(imageBytes);
-    if (dimensions == null) {
-      return false;
-    }
+    try {
+      final slices = await _sliceImage(imageBytes);
+      if (slices.isEmpty) {
+        return false;
+      }
 
-    final firstAttempt = await _printOnce(
-      printer: printer,
-      imageBytes: imageBytes,
-      imageWidth: dimensions.$1,
-      imageHeight: dimensions.$2,
-      onProgress: onProgress,
-    );
-    if (firstAttempt) {
+      for (var index = 0; index < slices.length; index++) {
+        final slice = slices[index];
+        final printed = await _printSlice(
+          printer: printer,
+          slice: slice,
+          isLast: index == slices.length - 1,
+          onProgress: (sliceProgress) {
+            onProgress((index + sliceProgress) / slices.length);
+          },
+        );
+        if (!printed) {
+          return false;
+        }
+        onProgress((index + 1) / slices.length);
+      }
       return true;
-    }
-
-    try {
-      await FlutterBluetoothPrinter.disconnect(printer.address);
-    } catch (_) {
-      // A failed print may already close the socket. The retry reconnects it.
-    }
-
-    onProgress(0);
-    return _printOnce(
-      printer: printer,
-      imageBytes: imageBytes,
-      imageWidth: dimensions.$1,
-      imageHeight: dimensions.$2,
-      onProgress: onProgress,
-    );
-  }
-
-  Future<bool> _printOnce({
-    required SavedPrinter printer,
-    required Uint8List imageBytes,
-    required int imageWidth,
-    required int imageHeight,
-    required void Function(double progress) onProgress,
-  }) async {
-    try {
-      return await FlutterBluetoothPrinter.printImageSingle(
-        address: printer.address,
-        imageBytes: imageBytes,
-        imageWidth: imageWidth,
-        imageHeight: imageHeight,
-        paperSize: PaperSize.mm80,
-        addFeeds: 3,
-        cutPaper: false,
-        keepConnected: true,
-        onProgress: (total, sent) {
-          onProgress(total == 0 ? 0 : sent / total);
-        },
-      );
     } on PlatformException {
       return false;
     } on MissingPluginException {
@@ -219,21 +210,46 @@ class BluetoothPrinterRepository implements PrinterRepositoryBase {
     }
   }
 
-  (int, int)? _readPngDimensions(Uint8List bytes) {
-    const pngSignature = <int>[137, 80, 78, 71, 13, 10, 26, 10];
-    for (var index = 0; index < pngSignature.length; index++) {
-      if (bytes[index] != pngSignature[index]) {
-        return null;
-      }
-    }
+  Future<bool> _printSlice({
+    required SavedPrinter printer,
+    required ThermalReceiptImageSlice slice,
+    required bool isLast,
+    required void Function(double progress) onProgress,
+  }) async {
+    return _printImage(
+      address: printer.address,
+      imageBytes: slice.bytes,
+      imageWidth: slice.width,
+      imageHeight: slice.height,
+      addFeeds: isLast ? 3 : 0,
+      onProgress: (total, sent) {
+        final progress = total <= 0
+            ? 0.0
+            : (sent / total).clamp(0.0, 1.0).toDouble();
+        onProgress(progress);
+      },
+    );
+  }
 
-    final data = ByteData.sublistView(bytes);
-    final width = data.getUint32(16);
-    final height = data.getUint32(20);
-    if (width == 0 || height == 0) {
-      return null;
-    }
-    return (width, height);
+  static Future<bool> _printImageWithBluetooth({
+    required String address,
+    required Uint8List imageBytes,
+    required int imageWidth,
+    required int imageHeight,
+    required int addFeeds,
+    required void Function(int total, int sent) onProgress,
+  }) {
+    return FlutterBluetoothPrinter.printImageSingle(
+      address: address,
+      imageBytes: imageBytes,
+      imageWidth: imageWidth,
+      imageHeight: imageHeight,
+      paperSize: PaperSize.mm80,
+      addFeeds: addFeeds,
+      cutPaper: false,
+      keepConnected: true,
+      onProgress: onProgress,
+    );
   }
 
   String get _permissionMessage {
