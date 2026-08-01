@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -6,22 +5,20 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../data/models/printer_discovery_snapshot.dart';
 import '../data/models/saved_printer.dart';
 import '../data/repositories/printer_repository_base.dart';
+import 'printer_discovery_controller.dart';
 import 'printer_state.dart';
-
-abstract class ThermalReceiptRasterizer {
-  Future<Uint8List> renderPng();
-}
 
 class PrinterCubit extends Cubit<PrinterState> {
   final PrinterRepositoryBase _repository;
-
-  StreamSubscription<PrinterDiscoverySnapshot>? _discoverySubscription;
+  late final PrinterDiscoveryController _discovery;
   bool _initialized = false;
   bool _selectionInProgress = false;
   bool _printInProgress = false;
 
   PrinterCubit(this._repository)
-    : super(PrinterState(connectionProfile: _repository.connectionProfile));
+    : super(PrinterState(connectionProfile: _repository.connectionProfile)) {
+    _discovery = PrinterDiscoveryController(_repository);
+  }
 
   Future<void> initialize() async {
     if (_initialized) {
@@ -60,7 +57,6 @@ class PrinterCubit extends Cubit<PrinterState> {
       return;
     }
 
-    await _discoverySubscription?.cancel();
     if (isClosed) {
       return;
     }
@@ -72,8 +68,8 @@ class PrinterCubit extends Cubit<PrinterState> {
       ),
     );
 
-    _discoverySubscription = _repository.discoverPrinters().listen(
-      (snapshot) {
+    await _discovery.start(
+      onSnapshot: (snapshot) {
         if (isClosed) {
           return;
         }
@@ -85,7 +81,7 @@ class PrinterCubit extends Cubit<PrinterState> {
           ),
         );
       },
-      onError: (_) {
+      onError: () {
         if (isClosed) {
           return;
         }
@@ -100,8 +96,7 @@ class PrinterCubit extends Cubit<PrinterState> {
   }
 
   Future<void> stopDiscovery() async {
-    await _discoverySubscription?.cancel();
-    _discoverySubscription = null;
+    await _discovery.stop();
   }
 
   Future<bool> selectAndConnect(SavedPrinter printer) async {
@@ -156,7 +151,8 @@ class PrinterCubit extends Cubit<PrinterState> {
     }
   }
 
-  Future<bool> printReceipt(ThermalReceiptRasterizer rasterizer) async {
+  /// Sends already-rendered receipt bytes; rendering remains a presentation concern.
+  Future<bool> printReceipt(Uint8List imageBytes) async {
     final printer = state.selectedPrinter;
     if (printer == null || _printInProgress || _selectionInProgress) {
       return false;
@@ -167,7 +163,6 @@ class PrinterCubit extends Cubit<PrinterState> {
       state.copyWith(isPrinting: true, printingProgress: 0.0, message: null),
     );
     try {
-      final imageBytes = await rasterizer.renderPng();
       final printed = await _repository.printReceiptPng(
         printer: printer,
         imageBytes: imageBytes,
@@ -219,7 +214,7 @@ class PrinterCubit extends Cubit<PrinterState> {
 
   @override
   Future<void> close() async {
-    await _discoverySubscription?.cancel();
+    await _discovery.stop();
     return super.close();
   }
 }

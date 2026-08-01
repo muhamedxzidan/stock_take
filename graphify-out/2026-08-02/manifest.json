@@ -530,8 +530,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/cubit/printer_cubit.dart": {
-    "mtime": 1785403753.279348,
-    "ast_hash": "650f2a4028866d1a796d9ccb04ef51d4",
+    "mtime": 1785623505.9941707,
+    "ast_hash": "23c9dfe2d969fc7f55220e7c505d06f1",
     "semantic_hash": ""
   },
   "lib/features/printing/cubit/printer_state.dart": {
@@ -550,8 +550,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/data/repositories/bluetooth_printer_repository.dart": {
-    "mtime": 1785622658.855969,
-    "ast_hash": "eb1f4b2bc7371e89c242ab06bd80941c",
+    "mtime": 1785623454.7363508,
+    "ast_hash": "712072948fe4b1713c73ddbeddb55850",
     "semantic_hash": ""
   },
   "lib/features/printing/data/repositories/printer_repository_base.dart": {
@@ -575,8 +575,8 @@
     "semantic_hash": ""
   },
   "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart": {
-    "mtime": 1785403643.8609028,
-    "ast_hash": "1b9da31a4332afecb52ff7d61845bc8d",
+    "mtime": 1785623483.5841434,
+    "ast_hash": "608339c22a738e2fcdf1e39165d3c89a",
     "semantic_hash": ""
   },
   "lib/features/transactions/data/mappers/movement_receipt_mapper.dart": {
@@ -665,8 +665,28 @@
     "semantic_hash": ""
   },
   "lib/features/printing/data/services/thermal_receipt_image_slicer.dart": {
-    "mtime": 1785622738.7564485,
-    "ast_hash": "fcfb6412d050b8be63c8a8f2330c5a51",
+    "mtime": 1785623454.01076,
+    "ast_hash": "dbe6d41a39728c95c8598f58e8ea94a6",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md": {
+    "mtime": 1785622834.008241,
+    "ast_hash": "af4a1f6daabed109d63dab6537d4ea52",
+    "semantic_hash": ""
+  },
+  "lib/features/printing/cubit/printer_discovery_controller.dart": {
+    "mtime": 1785623505.3803194,
+    "ast_hash": "76eaf85211b834699e27e756d1bce8a8",
+    "semantic_hash": ""
+  },
+  "lib/features/printing/data/services/selected_printer_store.dart": {
+    "mtime": 1785623484.8257735,
+    "ast_hash": "e9c92f23163d09e1ee5a0c67c8e40a15",
+    "semantic_hash": ""
+  },
+  "lib/features/printing/data/services/thermal_receipt_print_job.dart": {
+    "mtime": 1785623509.357377,
+    "ast_hash": "2ed790f5e2dcf246149db59dab745d6d",
     "semantic_hash": ""
   }
 }

@@ -329,8 +329,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_bloc_flutter_bloc_dart",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "package:flutter_bloc/flutter_bloc.dart"
     },
     {
@@ -340,8 +340,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_go_router_go_router_dart",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 86,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "package:go_router/go_router.dart"
     },
     {
@@ -2089,8 +2089,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_cloud_firestore_cloud_firestore_dart",
-      "community": 29,
-      "community_name": "transactions_state.dart",
+      "community": 113,
+      "community_name": "package:cloud_firestore/cloud_firestore.dart",
       "norm_label": "package:cloud_firestore/cloud_firestore.dart"
     },
     {
@@ -2397,7 +2397,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing",
-      "community": 93,
+      "community": 114,
       "community_name": "String?",
       "norm_label": "inventory_number_parsing.dart"
     },
@@ -2408,7 +2408,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing_inventorynumberparsing",
-      "community": 93,
+      "community": 114,
       "community_name": "String?",
       "norm_label": "inventorynumberparsing"
     },
@@ -2419,7 +2419,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "string",
-      "community": 93,
+      "community": 114,
       "community_name": "String?",
       "norm_label": "string?"
     },
@@ -2430,7 +2430,7 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_extensions_inventory_number_parsing_toinventoryinteger",
-      "community": 93,
+      "community": 114,
       "community_name": "String?",
       "norm_label": "toinventoryinteger"
     },
@@ -2518,8 +2518,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_models_inventory_item_inventoryitem",
-      "community": 38,
-      "community_name": "current_voucher_panel.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "inventoryitem"
     },
     {
@@ -2683,8 +2683,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "int_get",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "int get"
     },
     {
@@ -2738,8 +2738,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "extensions_inventory_number_parsing_dart",
-      "community": 39,
-      "community_name": "movement_voucher_preview_dialog.dart",
+      "community": 40,
+      "community_name": "StatelessWidget",
       "norm_label": "../extensions/inventory_number_parsing.dart"
     },
     {
@@ -3101,8 +3101,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_carton_piece_quantity_fields_cartonpiecequantityfields",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 40,
+      "community_name": "StatelessWidget",
       "norm_label": "cartonpiecequantityfields"
     },
     {
@@ -3123,8 +3123,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_carton_piece_quantity_fields_cartonpiecequantityfieldsstate",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 40,
+      "community_name": "StatelessWidget",
       "norm_label": "_cartonpiecequantityfieldsstate"
     },
     {
@@ -3299,8 +3299,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_services_dart",
-      "community": 40,
-      "community_name": "StatelessWidget",
+      "community": 104,
+      "community_name": "PrinterRepositoryBase",
       "norm_label": "package:flutter/services.dart"
     },
     {
@@ -3310,8 +3310,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "constants_app_colors_dart",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "../constants/app_colors.dart"
     },
     {
@@ -3464,8 +3464,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "custom_button.dart"
     },
     {
@@ -3475,8 +3475,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_custombutton",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "custombutton"
     },
     {
@@ -3486,8 +3486,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_text",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "text"
     },
     {
@@ -3497,8 +3497,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_onpressed",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "onpressed"
     },
     {
@@ -3508,8 +3508,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "voidcallback",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 86,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "voidcallback"
     },
     {
@@ -3519,8 +3519,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_icon",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "icon"
     },
     {
@@ -3530,8 +3530,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "icondata",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "icondata"
     },
     {
@@ -3541,8 +3541,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_backgroundcolor",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "backgroundcolor"
     },
     {
@@ -3563,8 +3563,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_isloading",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "isloading"
     },
     {
@@ -3574,8 +3574,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_custom_button_build",
-      "community": 61,
-      "community_name": "stock_summary_model.dart",
+      "community": 62,
+      "community_name": "LoginCubit",
       "norm_label": "build"
     },
     {
@@ -3926,8 +3926,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "constants_app_strings_dart",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 81,
+      "community_name": "start_stocktake_card.dart",
       "norm_label": "../constants/app_strings.dart"
     },
     {
@@ -4157,8 +4157,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_worker_bottom_navigation",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 86,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "worker_bottom_navigation.dart"
     },
     {
@@ -4168,8 +4168,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_worker_bottom_navigation_workerbottomnavigation",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 86,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "workerbottomnavigation"
     },
     {
@@ -4179,8 +4179,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_worker_bottom_navigation_currentroute",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 86,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "currentroute"
     },
     {
@@ -4190,8 +4190,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_worker_bottom_navigation_onlogout",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 86,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "onlogout"
     },
     {
@@ -4201,8 +4201,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_worker_bottom_navigation_build",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 86,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "build"
     },
     {
@@ -4212,8 +4212,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_shared_widgets_worker_bottom_navigation_issecondarymovementroute",
-      "community": 89,
-      "community_name": "dashboard_screen.dart",
+      "community": 86,
+      "community_name": "tablet_navigation_rail.dart",
       "norm_label": "_issecondarymovementroute"
     },
     {
@@ -4223,8 +4223,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "app_theme.dart"
     },
     {
@@ -4234,8 +4234,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_core_theme_app_theme_apptheme",
-      "community": 95,
-      "community_name": "../constants/app_colors.dart",
+      "community": 47,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "apptheme"
     },
     {
@@ -4245,8 +4245,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "login_cubit.dart"
     },
     {
@@ -4256,8 +4256,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_logincubit",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "logincubit"
     },
     {
@@ -4267,8 +4267,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "cubit"
     },
     {
@@ -4278,8 +4278,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_authrepository",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_authrepository"
     },
     {
@@ -4289,8 +4289,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_signin",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "signin"
     },
     {
@@ -4300,8 +4300,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_cubit_isvalidemail",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_isvalidemail"
     },
     {
@@ -4311,8 +4311,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_auth_failure_dart",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "../../data/repositories/auth_failure.dart"
     },
     {
@@ -4322,8 +4322,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_auth_repository_dart",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 87,
+      "community_name": "stocktake_repository_base.dart",
       "norm_label": "../../data/repositories/auth_repository.dart"
     },
     {
@@ -4333,8 +4333,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "login_state_dart",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 95,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "login_state.dart"
     },
     {
@@ -4344,8 +4344,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "login_state.dart"
     },
     {
@@ -4355,8 +4355,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginstate",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "loginstate"
     },
     {
@@ -4366,8 +4366,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_logininitial",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "logininitial"
     },
     {
@@ -4377,8 +4377,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginsubmitting",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "loginsubmitting"
     },
     {
@@ -4388,8 +4388,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginsuccess",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "loginsuccess"
     },
     {
@@ -4399,8 +4399,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_loginfailure",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "loginfailure"
     },
     {
@@ -4410,8 +4410,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_cubit_login_login_state_message",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 55,
+      "community_name": "../../../dashboard/data/models/item_model.dart",
       "norm_label": "message"
     },
     {
@@ -4476,8 +4476,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "auth_repository.dart"
     },
     {
@@ -4487,8 +4487,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_authrepository",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "authrepository"
     },
     {
@@ -4498,8 +4498,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_issignedin",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "issignedin"
     },
     {
@@ -4509,8 +4509,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "bool_get",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "bool get"
     },
     {
@@ -4520,8 +4520,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_watchauthentication",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "watchauthentication"
     },
     {
@@ -4531,8 +4531,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signinwithemailandpassword",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "signinwithemailandpassword"
     },
     {
@@ -4542,8 +4542,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_auth_repository_signout",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "signout"
     },
     {
@@ -4564,8 +4564,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_data_repositories_firebase_auth_repository_firebaseauthrepository",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 89,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "firebaseauthrepository"
     },
     {
@@ -4751,8 +4751,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_foundation_dart",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 88,
+      "community_name": "LoginCubit",
       "norm_label": "package:flutter/foundation.dart"
     },
     {
@@ -4773,8 +4773,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_screens_login_screen_loginscreen",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "loginscreen"
     },
     {
@@ -4784,8 +4784,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_auth_presentation_screens_login_screen_loginscreenstate",
-      "community": 46,
-      "community_name": "item_model.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_loginscreenstate"
     },
     {
@@ -4905,8 +4905,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_colors_dart",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 109,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "../../../../core/constants/app_colors.dart"
     },
     {
@@ -4916,8 +4916,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_sizes_dart",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "../../../../core/constants/app_sizes.dart"
     },
     {
@@ -4927,8 +4927,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_constants_app_strings_dart",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "core/constants/app_strings.dart"
     },
     {
@@ -4960,8 +4960,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_text_field_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../../../core/shared_widgets/custom_text_field.dart"
     },
     {
@@ -5147,8 +5147,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_models_inventory_item_dart",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 9,
+      "community_name": "transaction_model.dart",
       "norm_label": "../../../../core/models/inventory_item.dart"
     },
     {
@@ -5554,8 +5554,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_repositories_dashboard_repository_base",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 9,
+      "community_name": "transaction_model.dart",
       "norm_label": "dashboard_repository_base.dart"
     },
     {
@@ -5576,8 +5576,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_data_repositories_dashboard_repository_base_watchitems",
-      "community": 96,
-      "community_name": "../../../../core/models/inventory_item.dart",
+      "community": 9,
+      "community_name": "transaction_model.dart",
       "norm_label": "watchitems"
     },
     {
@@ -5587,8 +5587,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "dashboard_screen.dart"
     },
     {
@@ -5598,8 +5598,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_dashboardscreen",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "dashboardscreen"
     },
     {
@@ -5609,8 +5609,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_dashboardscreenstate",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_dashboardscreenstate"
     },
     {
@@ -5620,8 +5620,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_dashboard_presentation_screens_dashboard_screen_createstate",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "createstate"
     },
     {
@@ -5686,8 +5686,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "core_shared_widgets_custom_app_bar_dart",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "../../../../core/shared_widgets/custom_app_bar.dart"
     },
     {
@@ -5697,8 +5697,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "printing_presentation_widgets_thermal_receipt_dialog_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../../printing/presentation/widgets/thermal_receipt_dialog.dart"
     },
     {
@@ -5730,8 +5730,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_mappers_stock_balance_receipt_mapper_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../../data/mappers/stock_balance_receipt_mapper.dart"
     },
     {
@@ -5741,8 +5741,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_quick_action_bar_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../widgets/quick_action_bar.dart"
     },
     {
@@ -5752,8 +5752,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_stock_items_list_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../widgets/stock_items_list.dart"
     },
     {
@@ -5763,8 +5763,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_stock_summary_card_dart",
-      "community": 35,
-      "community_name": "items_cubit.dart",
+      "community": 100,
+      "community_name": "dashboard_screen.dart",
       "norm_label": "../widgets/stock_summary_card.dart"
     },
     {
@@ -6049,8 +6049,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 105,
+      "community_name": "item_catalog_cubit.dart",
       "norm_label": "item_catalog_cubit.dart"
     },
     {
@@ -6071,8 +6071,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_repository",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 105,
+      "community_name": "item_catalog_cubit.dart",
       "norm_label": "_repository"
     },
     {
@@ -6082,8 +6082,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_subscription",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 105,
+      "community_name": "item_catalog_cubit.dart",
       "norm_label": "_subscription"
     },
     {
@@ -6093,8 +6093,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_loaditems",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 105,
+      "community_name": "item_catalog_cubit.dart",
       "norm_label": "loaditems"
     },
     {
@@ -6104,8 +6104,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_cubit_item_catalog_cubit_close",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 105,
+      "community_name": "item_catalog_cubit.dart",
       "norm_label": "close"
     },
     {
@@ -6126,8 +6126,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "item_catalog_state_dart",
-      "community": 87,
-      "community_name": "stocktake_repository_base.dart",
+      "community": 105,
+      "community_name": "item_catalog_cubit.dart",
       "norm_label": "item_catalog_state.dart"
     },
     {
@@ -6456,8 +6456,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_itemsrepository",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 96,
+      "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "itemsrepository"
     },
     {
@@ -6599,8 +6599,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_new_inventory_item_draft_dart",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 9,
+      "community_name": "transaction_model.dart",
       "norm_label": "../models/new_inventory_item_draft.dart"
     },
     {
@@ -6632,8 +6632,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 9,
+      "community_name": "transaction_model.dart",
       "norm_label": "items_repository_base.dart"
     },
     {
@@ -6643,8 +6643,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_itemsrepositorybase",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 96,
+      "community_name": "../../../../core/models/inventory_item.dart",
       "norm_label": "itemsrepositorybase"
     },
     {
@@ -6654,8 +6654,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_watchactiveitems",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 9,
+      "community_name": "transaction_model.dart",
       "norm_label": "watchactiveitems"
     },
     {
@@ -6665,8 +6665,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_data_repositories_items_repository_base_additem",
-      "community": 67,
-      "community_name": "inventory_number_parsing.dart",
+      "community": 9,
+      "community_name": "transaction_model.dart",
       "norm_label": "additem"
     },
     {
@@ -6720,8 +6720,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_screens_add_item_screen",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "add_item_screen.dart"
     },
     {
@@ -6731,8 +6731,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_screens_add_item_screen_additemscreen",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "additemscreen"
     },
     {
@@ -6742,8 +6742,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_screens_add_item_screen_build",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "build"
     },
     {
@@ -6753,8 +6753,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_add_item_form_dart",
-      "community": 100,
-      "community_name": "dashboard_screen.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "../widgets/add_item_form.dart"
     },
     {
@@ -6918,8 +6918,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_inventory_item_selector_field_inventoryitemselectorfield",
-      "community": 65,
-      "community_name": "inventory_item_selector_field.dart",
+      "community": 24,
+      "community_name": "transaction_list_item.dart",
       "norm_label": "inventoryitemselectorfield"
     },
     {
@@ -6929,8 +6929,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_inventory_item_selector_field_inventoryitempickersheet",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 65,
+      "community_name": "inventory_item_selector_field.dart",
       "norm_label": "_inventoryitempickersheet"
     },
     {
@@ -6940,8 +6940,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_items_presentation_widgets_inventory_item_selector_field_inventoryitempickersheetstate",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 65,
+      "community_name": "inventory_item_selector_field.dart",
       "norm_label": "_inventoryitempickersheetstate"
     },
     {
@@ -7066,25 +7066,14 @@
       "norm_label": "printer_cubit.dart"
     },
     {
-      "label": "ThermalReceiptRasterizer",
-      "file_type": "code",
-      "source_file": "lib/features/printing/cubit/printer_cubit.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_printing_cubit_printer_cubit_thermalreceiptrasterizer",
-      "community": 5,
-      "community_name": "main.dart",
-      "norm_label": "thermalreceiptrasterizer"
-    },
-    {
       "label": "PrinterCubit",
       "file_type": "code",
       "source_file": "lib/features/printing/cubit/printer_cubit.dart",
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_cubit_printer_cubit_printercubit",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "printercubit"
     },
     {
@@ -7099,15 +7088,15 @@
       "norm_label": "_repository"
     },
     {
-      "label": "_discoverySubscription",
+      "label": "_discovery",
       "file_type": "code",
       "source_file": "lib/features/printing/cubit/printer_cubit.dart",
       "source_location": null,
       "_origin": "ast",
-      "id": "lib_features_printing_cubit_printer_cubit_discoverysubscription",
+      "id": "lib_features_printing_cubit_printer_cubit_discovery",
       "community": 94,
       "community_name": "item_catalog_cubit.dart",
-      "norm_label": "_discoverysubscription"
+      "norm_label": "_discovery"
     },
     {
       "label": "_initialized",
@@ -7141,17 +7130,6 @@
       "community": 94,
       "community_name": "item_catalog_cubit.dart",
       "norm_label": "_printinprogress"
-    },
-    {
-      "label": "renderPng",
-      "file_type": "code",
-      "source_file": "lib/features/printing/cubit/printer_cubit.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_printing_cubit_printer_cubit_renderpng",
-      "community": 94,
-      "community_name": "item_catalog_cubit.dart",
-      "norm_label": "renderpng"
     },
     {
       "label": "initialize",
@@ -7226,8 +7204,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "dart_typed_data",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
       "norm_label": "dart:typed_data"
     },
     {
@@ -7237,8 +7215,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_printer_discovery_snapshot_dart",
-      "community": 68,
-      "community_name": "package:go_router/go_router.dart",
+      "community": 93,
+      "community_name": "String?",
       "norm_label": "../../data/models/printer_discovery_snapshot.dart"
     },
     {
@@ -7259,9 +7237,20 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_repositories_printer_repository_base_dart",
+      "community": 93,
+      "community_name": "String?",
+      "norm_label": "../data/repositories/printer_repository_base.dart"
+    },
+    {
+      "label": "printer_discovery_controller.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "printer_discovery_controller_dart",
       "community": 94,
       "community_name": "item_catalog_cubit.dart",
-      "norm_label": "../data/repositories/printer_repository_base.dart"
+      "norm_label": "printer_discovery_controller.dart"
     },
     {
       "label": "printer_state.dart",
@@ -7273,6 +7262,72 @@
       "community": 94,
       "community_name": "item_catalog_cubit.dart",
       "norm_label": "printer_state.dart"
+    },
+    {
+      "label": "printer_discovery_controller.dart",
+      "file_type": "code",
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_cubit_printer_discovery_controller",
+      "community": 93,
+      "community_name": "String?",
+      "norm_label": "printer_discovery_controller.dart"
+    },
+    {
+      "label": "PrinterDiscoveryController",
+      "file_type": "code",
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_cubit_printer_discovery_controller_printerdiscoverycontroller",
+      "community": 93,
+      "community_name": "String?",
+      "norm_label": "printerdiscoverycontroller"
+    },
+    {
+      "label": "_repository",
+      "file_type": "code",
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_cubit_printer_discovery_controller_repository",
+      "community": 93,
+      "community_name": "String?",
+      "norm_label": "_repository"
+    },
+    {
+      "label": "_subscription",
+      "file_type": "code",
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_cubit_printer_discovery_controller_subscription",
+      "community": 93,
+      "community_name": "String?",
+      "norm_label": "_subscription"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_cubit_printer_discovery_controller_start",
+      "community": 93,
+      "community_name": "String?",
+      "norm_label": "start"
+    },
+    {
+      "label": "stop",
+      "file_type": "code",
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_cubit_printer_discovery_controller_stop",
+      "community": 93,
+      "community_name": "String?",
+      "norm_label": "stop"
     },
     {
       "label": "printer_state.dart",
@@ -7292,8 +7347,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_cubit_printer_state_printerstate",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "printerstate"
     },
     {
@@ -7567,8 +7622,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_printer_discovery_snapshot_printerdiscoverysnapshot",
-      "community": 104,
-      "community_name": "PrinterRepositoryBase",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "printerdiscoverysnapshot"
     },
     {
@@ -7622,8 +7677,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "saved_printer.dart"
     },
     {
@@ -7633,8 +7688,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_savedprinter",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "savedprinter"
     },
     {
@@ -7644,8 +7699,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_address",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "address"
     },
     {
@@ -7655,8 +7710,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_name",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "name"
     },
     {
@@ -7666,8 +7721,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_displayname",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "displayname"
     },
     {
@@ -7677,8 +7732,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "string_get",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "string get"
     },
     {
@@ -7688,8 +7743,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_operator",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "operator"
     },
     {
@@ -7699,8 +7754,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_models_saved_printer_hashcode",
-      "community": 45,
-      "community_name": "saved_printer.dart",
+      "community": 74,
+      "community_name": "warehouse_return_screen.dart",
       "norm_label": "hashcode"
     },
     {
@@ -7721,86 +7776,31 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_bluetoothprinterrepository",
-      "community": 104,
-      "community_name": "PrinterRepositoryBase",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "bluetoothprinterrepository"
     },
     {
-      "label": "ReceiptImageSlicer",
+      "label": "_printerStore",
       "file_type": "code",
       "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
       "source_location": null,
       "_origin": "ast",
-      "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_receiptimageslicer",
+      "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_printerstore",
       "community": 98,
       "community_name": "bluetooth_printer_repository.dart",
-      "norm_label": "receiptimageslicer"
+      "norm_label": "_printerstore"
     },
     {
-      "label": "typedef",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "typedef",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
-      "norm_label": "typedef"
-    },
-    {
-      "label": "ReceiptImagePrinter",
+      "label": "_printJob",
       "file_type": "code",
       "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
       "source_location": null,
       "_origin": "ast",
-      "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_receiptimageprinter",
+      "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_printjob",
       "community": 98,
       "community_name": "bluetooth_printer_repository.dart",
-      "norm_label": "receiptimageprinter"
-    },
-    {
-      "label": "_preferencesChannel",
-      "file_type": "code",
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_preferenceschannel",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
-      "norm_label": "_preferenceschannel"
-    },
-    {
-      "label": "static const MethodChannel",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast",
-      "id": "static_const_methodchannel",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
-      "norm_label": "static const methodchannel"
-    },
-    {
-      "label": "_sliceImage",
-      "file_type": "code",
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_sliceimage",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
-      "norm_label": "_sliceimage"
-    },
-    {
-      "label": "_printImage",
-      "file_type": "code",
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_printimage",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
-      "norm_label": "_printimage"
+      "norm_label": "_printjob"
     },
     {
       "label": "_sessionPrinter",
@@ -7902,17 +7902,6 @@
       "norm_label": "printreceiptpng"
     },
     {
-      "label": "_printSlice",
-      "file_type": "code",
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "lib_features_printing_data_repositories_bluetooth_printer_repository_printslice",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
-      "norm_label": "_printslice"
-    },
-    {
       "label": "_printImageWithBluetooth",
       "file_type": "code",
       "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
@@ -7930,8 +7919,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "package_flutter_bluetooth_printer_flutter_bluetooth_printer_dart",
-      "community": 98,
-      "community_name": "bluetooth_printer_repository.dart",
+      "community": 5,
+      "community_name": "main.dart",
       "norm_label": "package:flutter_bluetooth_printer/flutter_bluetooth_printer.dart"
     },
     {
@@ -7963,9 +7952,20 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_saved_printer_dart",
-      "community": 63,
-      "community_name": "login_cubit.dart",
+      "community": 104,
+      "community_name": "PrinterRepositoryBase",
       "norm_label": "../models/saved_printer.dart"
+    },
+    {
+      "label": "../services/selected_printer_store.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "services_selected_printer_store_dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
+      "norm_label": "../services/selected_printer_store.dart"
     },
     {
       "label": "../services/thermal_receipt_image_slicer.dart",
@@ -7977,6 +7977,17 @@
       "community": 98,
       "community_name": "bluetooth_printer_repository.dart",
       "norm_label": "../services/thermal_receipt_image_slicer.dart"
+    },
+    {
+      "label": "../services/thermal_receipt_print_job.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "services_thermal_receipt_print_job_dart",
+      "community": 98,
+      "community_name": "bluetooth_printer_repository.dart",
+      "norm_label": "../services/thermal_receipt_print_job.dart"
     },
     {
       "label": "printer_repository_base.dart",
@@ -8007,8 +8018,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_data_repositories_printer_repository_base_printerrepositorybase",
-      "community": 104,
-      "community_name": "PrinterRepositoryBase",
+      "community": 97,
+      "community_name": "List",
       "norm_label": "printerrepositorybase"
     },
     {
@@ -8089,6 +8100,72 @@
       "norm_label": "printreceiptpng"
     },
     {
+      "label": "selected_printer_store.dart",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_selected_printer_store",
+      "community": 104,
+      "community_name": "PrinterRepositoryBase",
+      "norm_label": "selected_printer_store.dart"
+    },
+    {
+      "label": "SelectedPrinterStore",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_selected_printer_store_selectedprinterstore",
+      "community": 104,
+      "community_name": "PrinterRepositoryBase",
+      "norm_label": "selectedprinterstore"
+    },
+    {
+      "label": "_channel",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_selected_printer_store_channel",
+      "community": 104,
+      "community_name": "PrinterRepositoryBase",
+      "norm_label": "_channel"
+    },
+    {
+      "label": "static const MethodChannel",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "static_const_methodchannel",
+      "community": 104,
+      "community_name": "PrinterRepositoryBase",
+      "norm_label": "static const methodchannel"
+    },
+    {
+      "label": "load",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_selected_printer_store_load",
+      "community": 104,
+      "community_name": "PrinterRepositoryBase",
+      "norm_label": "load"
+    },
+    {
+      "label": "save",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_selected_printer_store_save",
+      "community": 104,
+      "community_name": "PrinterRepositoryBase",
+      "norm_label": "save"
+    },
+    {
       "label": "thermal_receipt_image_slicer.dart",
       "file_type": "code",
       "source_file": "lib/features/printing/data/services/thermal_receipt_image_slicer.dart",
@@ -8164,6 +8241,28 @@
       "community": 49,
       "community_name": "MovementHistoryCubit",
       "norm_label": "height"
+    },
+    {
+      "label": "ReceiptImageSlicer",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/thermal_receipt_image_slicer.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_thermal_receipt_image_slicer_receiptimageslicer",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "receiptimageslicer"
+    },
+    {
+      "label": "typedef",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "typedef",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "typedef"
     },
     {
       "label": "maxSliceHeight",
@@ -8254,6 +8353,83 @@
       "norm_label": "dart:ui"
     },
     {
+      "label": "thermal_receipt_print_job.dart",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "thermal_receipt_print_job.dart"
+    },
+    {
+      "label": "ThermalReceiptPrintJob",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_thermal_receipt_print_job_thermalreceiptprintjob",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "thermalreceiptprintjob"
+    },
+    {
+      "label": "ReceiptImagePrinter",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_thermal_receipt_print_job_receiptimageprinter",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "receiptimageprinter"
+    },
+    {
+      "label": "_sliceImage",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_thermal_receipt_print_job_sliceimage",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "_sliceimage"
+    },
+    {
+      "label": "_printImage",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_thermal_receipt_print_job_printimage",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "_printimage"
+    },
+    {
+      "label": "print",
+      "file_type": "code",
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "lib_features_printing_data_services_thermal_receipt_print_job_print",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "print"
+    },
+    {
+      "label": "thermal_receipt_image_slicer.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast",
+      "id": "thermal_receipt_image_slicer_dart",
+      "community": 67,
+      "community_name": "inventory_number_parsing.dart",
+      "norm_label": "thermal_receipt_image_slicer.dart"
+    },
+    {
       "label": "printer_selection_dialog.dart",
       "file_type": "code",
       "source_file": "lib/features/printing/presentation/widgets/printer_selection_dialog.dart",
@@ -8271,8 +8447,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_printerselectiondialog",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "printerselectiondialog"
     },
     {
@@ -8282,8 +8458,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_printerselectiondialogstate",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_printerselectiondialogstate"
     },
     {
@@ -8403,8 +8579,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_show",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "show"
     },
     {
@@ -8425,8 +8601,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_didchangedependencies",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "didchangedependencies"
     },
     {
@@ -8458,8 +8634,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_selection_dialog_build",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "build"
     },
     {
@@ -8491,8 +8667,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_printer_cubit_dart",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 109,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "../../cubit/printer_cubit.dart"
     },
     {
@@ -8502,8 +8678,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_printer_state_dart",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 109,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "../../cubit/printer_state.dart"
     },
     {
@@ -8513,8 +8689,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_setup_button",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 109,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "printer_setup_button.dart"
     },
     {
@@ -8524,8 +8700,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_setup_button_printersetupbutton",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 109,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "printersetupbutton"
     },
     {
@@ -8535,8 +8711,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_printer_setup_button_build",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 109,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "build"
     },
     {
@@ -8546,8 +8722,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "printer_selection_dialog_dart",
-      "community": 5,
-      "community_name": "main.dart",
+      "community": 109,
+      "community_name": "../../../../core/constants/app_text_styles.dart",
       "norm_label": "printer_selection_dialog.dart"
     },
     {
@@ -8700,8 +8876,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_thermal_receipt_dialog_thermalreceiptdialog",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "thermalreceiptdialog"
     },
     {
@@ -8711,8 +8887,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_thermal_receipt_dialog_thermalreceiptdialogstate",
-      "community": 8,
-      "community_name": "DashboardCubit",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_thermalreceiptdialogstate"
     },
     {
@@ -8799,8 +8975,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_printing_presentation_widgets_thermal_receipt_dialog_print",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 73,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_print"
     },
     {
@@ -8843,8 +9019,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "return_resolution_cubit.dart"
     },
     {
@@ -8865,8 +9041,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_repository",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_repository"
     },
     {
@@ -8876,8 +9052,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_subscription",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_subscription"
     },
     {
@@ -8887,8 +9063,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_pendingreturns",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_pendingreturns"
     },
     {
@@ -8898,8 +9074,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_resolvingreturnid",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "_resolvingreturnid"
     },
     {
@@ -8909,8 +9085,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_loadpendingreturns",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "loadpendingreturns"
     },
     {
@@ -8920,8 +9096,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_resolvereturn",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "resolvereturn"
     },
     {
@@ -8931,8 +9107,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_cubit_return_resolution_cubit_close",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "close"
     },
     {
@@ -8986,8 +9162,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "return_resolution_state_dart",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 54,
+      "community_name": "../constants/app_colors.dart",
       "norm_label": "return_resolution_state.dart"
     },
     {
@@ -9360,8 +9536,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_warehouse_return_record_dart",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "../models/warehouse_return_record.dart"
     },
     {
@@ -9756,8 +9932,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_returnsrepository",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "returnsrepository"
     },
     {
@@ -9998,8 +10174,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_return_resolution_dart",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "../models/return_resolution.dart"
     },
     {
@@ -10009,8 +10185,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "models_warehouse_return_draft_dart",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "../models/warehouse_return_draft.dart"
     },
     {
@@ -10042,8 +10218,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "returns_repository_base.dart"
     },
     {
@@ -10053,8 +10229,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_returnsrepositorybase",
-      "community": 79,
-      "community_name": "warehouse_return_draft.dart",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "returnsrepositorybase"
     },
     {
@@ -10064,8 +10240,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_watchpendingreturns",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "watchpendingreturns"
     },
     {
@@ -10075,8 +10251,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_createcustomerreturn",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "createcustomerreturn"
     },
     {
@@ -10086,8 +10262,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_data_repositories_returns_repository_base_resolvereturn",
-      "community": 1,
-      "community_name": "StatelessWidget",
+      "community": 29,
+      "community_name": "transactions_state.dart",
       "norm_label": "resolvereturn"
     },
     {
@@ -10141,8 +10317,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "warehouse_return_screen.dart"
     },
     {
@@ -10152,8 +10328,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreen",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "warehousereturnscreen"
     },
     {
@@ -10163,8 +10339,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_warehousereturnscreenstate",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_warehousereturnscreenstate"
     },
     {
@@ -10174,8 +10350,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_returnpersistencenotice",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "_returnpersistencenotice"
     },
     {
@@ -10185,8 +10361,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_screens_warehouse_return_screen_createstate",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "createstate"
     },
     {
@@ -10229,8 +10405,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "items_cubit_item_catalog_cubit_dart",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "../../../items/cubit/item_catalog_cubit.dart"
     },
     {
@@ -10240,8 +10416,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_return_resolution_cubit_dart",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "../../cubit/return_resolution_cubit.dart"
     },
     {
@@ -10251,8 +10427,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_return_workflow_card_dart",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "../widgets/return_workflow_card.dart"
     },
     {
@@ -10262,8 +10438,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "widgets_warehouse_return_form_dart",
-      "community": 24,
-      "community_name": "transaction_list_item.dart",
+      "community": 13,
+      "community_name": "pdf_voucher_dialog.dart",
       "norm_label": "../widgets/warehouse_return_form.dart"
     },
     {
@@ -10504,8 +10680,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "warehouse_return_form.dart"
     },
     {
@@ -10515,8 +10691,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnform",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "warehousereturnform"
     },
     {
@@ -10526,8 +10702,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_warehousereturnformstate",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "_warehousereturnformstate"
     },
     {
@@ -10537,8 +10713,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_returnsourcecontroller",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "_returnsourcecontroller"
     },
     {
@@ -10548,8 +10724,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_selecteditem",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "_selecteditem"
     },
     {
@@ -10559,8 +10735,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_quantity",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "_quantity"
     },
     {
@@ -10570,8 +10746,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_createstate",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "createstate"
     },
     {
@@ -10581,8 +10757,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_dispose",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "dispose"
     },
     {
@@ -10592,8 +10768,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_submit",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 79,
+      "community_name": "warehouse_return_draft.dart",
       "norm_label": "_submit"
     },
     {
@@ -10603,8 +10779,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_showvalidationmessage",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "_showvalidationmessage"
     },
     {
@@ -10614,8 +10790,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_returns_presentation_widgets_warehouse_return_form_build",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "build"
     },
     {
@@ -10625,8 +10801,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "items_presentation_widgets_inventory_item_selector_field_dart",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "../../../items/presentation/widgets/inventory_item_selector_field.dart"
     },
     {
@@ -10636,8 +10812,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_returns_cubit_dart",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "../../cubit/returns_cubit.dart"
     },
     {
@@ -10647,8 +10823,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "cubit_returns_state_dart",
-      "community": 62,
-      "community_name": "LoginCubit",
+      "community": 45,
+      "community_name": "saved_printer.dart",
       "norm_label": "../../cubit/returns_state.dart"
     },
     {
@@ -10669,8 +10845,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_cubit_stocktakecubit",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakecubit"
     },
     {
@@ -10845,8 +11021,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_stocktake_line_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "../../data/models/stocktake_line.dart"
     },
     {
@@ -10856,8 +11032,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "data_models_stocktake_session_dart",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 69,
+      "community_name": "StatelessWidget",
       "norm_label": "../../data/models/stocktake_session.dart"
     },
     {
@@ -10911,8 +11087,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakestate",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakestate"
     },
     {
@@ -10922,8 +11098,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeinitial",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeinitial"
     },
     {
@@ -10933,8 +11109,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeloading",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeloading"
     },
     {
@@ -10944,8 +11120,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeready",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeready"
     },
     {
@@ -10966,8 +11142,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakeactioninprogress",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakeactioninprogress"
     },
     {
@@ -10977,8 +11153,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakefailure",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakefailure"
     },
     {
@@ -10988,8 +11164,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakecompleted",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakecompleted"
     },
     {
@@ -10999,8 +11175,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_cubit_stocktake_state_stocktakecancelled",
-      "community": 55,
-      "community_name": "../../../dashboard/data/models/item_model.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stocktakecancelled"
     },
     {
@@ -11362,8 +11538,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_stocktake_data_models_stocktake_session_savedstocktakecompletion",
-      "community": 12,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 82,
+      "community_name": "stocktake_session.dart",
       "norm_label": "savedstocktakecompletion"
     },
     {
@@ -12440,8 +12616,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_cubit_movementhistorycubit",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "movementhistorycubit"
     },
     {
@@ -12726,8 +12902,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistorystate",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementhistorystate"
     },
     {
@@ -12748,8 +12924,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistoryloading",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementhistoryloading"
     },
     {
@@ -12759,8 +12935,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistorysuccess",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementhistorysuccess"
     },
     {
@@ -12770,8 +12946,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_cubit_movement_history_state_movementhistoryfailure",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 3,
+      "community_name": "TransactionsCubit",
       "norm_label": "movementhistoryfailure"
     },
     {
@@ -13166,8 +13342,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_mappers_movement_record_firestore_mapper",
-      "community": 2,
-      "community_name": "app_router.dart",
+      "community": 113,
+      "community_name": "package:cloud_firestore/cloud_firestore.dart",
       "norm_label": "movement_record_firestore_mapper.dart"
     },
     {
@@ -13177,8 +13353,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_mappers_movement_record_firestore_mapper_movementrecordfirestoremapper",
-      "community": 2,
-      "community_name": "app_router.dart",
+      "community": 113,
+      "community_name": "package:cloud_firestore/cloud_firestore.dart",
       "norm_label": "movementrecordfirestoremapper"
     },
     {
@@ -13188,8 +13364,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "users_mohamedzidan_project_stock_take_stock_take_lib_features_transactions_data_mappers_movement_record_firestore_mapper",
-      "community": 2,
-      "community_name": "app_router.dart",
+      "community": 113,
+      "community_name": "package:cloud_firestore/cloud_firestore.dart",
       "norm_label": "_"
     },
     {
@@ -13199,8 +13375,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_mappers_movement_record_firestore_mapper_frommap",
-      "community": 2,
-      "community_name": "app_router.dart",
+      "community": 113,
+      "community_name": "package:cloud_firestore/cloud_firestore.dart",
       "norm_label": "frommap"
     },
     {
@@ -13210,8 +13386,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_mappers_movement_record_firestore_mapper_movementtypefrom",
-      "community": 2,
-      "community_name": "app_router.dart",
+      "community": 113,
+      "community_name": "package:cloud_firestore/cloud_firestore.dart",
       "norm_label": "_movementtypefrom"
     },
     {
@@ -13221,8 +13397,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_data_mappers_movement_record_firestore_mapper_linefrommap",
-      "community": 2,
-      "community_name": "app_router.dart",
+      "community": 113,
+      "community_name": "package:cloud_firestore/cloud_firestore.dart",
       "norm_label": "_linefrommap"
     },
     {
@@ -14596,8 +14772,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_stockadjustmentscreen",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "stockadjustmentscreen"
     },
     {
@@ -14640,8 +14816,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_stock_adjustment_screen_confirmcancellation",
-      "community": 13,
-      "community_name": "pdf_voucher_dialog.dart",
+      "community": 12,
+      "community_name": "package:flutter_bloc/flutter_bloc.dart",
       "norm_label": "_confirmcancellation"
     },
     {
@@ -14728,8 +14904,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_datefilterbar",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "_datefilterbar"
     },
     {
@@ -14849,8 +15025,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_initstate",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "initstate"
     },
     {
@@ -14860,8 +15036,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_selectdaterange",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "_selectdaterange"
     },
     {
@@ -14871,8 +15047,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_screens_transaction_history_screen_build",
-      "community": 73,
-      "community_name": "package:flutter_bloc/flutter_bloc.dart",
+      "community": 83,
+      "community_name": "transaction_history_screen.dart",
       "norm_label": "build"
     },
     {
@@ -15267,8 +15443,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_details_sheet_movementdetailssheet",
-      "community": 21,
-      "community_name": "package:flutter/material.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "movementdetailssheet"
     },
     {
@@ -15278,8 +15454,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_movement_details_sheet_movementdetailssheetstate",
-      "community": 21,
-      "community_name": "package:flutter/material.dart",
+      "community": 8,
+      "community_name": "DashboardCubit",
       "norm_label": "_movementdetailssheetstate"
     },
     {
@@ -16543,8 +16719,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_transactionlistitem",
-      "community": 75,
-      "community_name": "LoginCubit",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
       "norm_label": "transactionlistitem"
     },
     {
@@ -16554,8 +16730,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_movementrecorddetailsdialog",
-      "community": 75,
-      "community_name": "LoginCubit",
+      "community": 99,
+      "community_name": "thermal_receipt_content.dart",
       "norm_label": "_movementrecorddetailsdialog"
     },
     {
@@ -16565,8 +16741,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_features_transactions_presentation_widgets_transaction_list_item_detailtext",
-      "community": 99,
-      "community_name": "thermal_receipt_content.dart",
+      "community": 75,
+      "community_name": "LoginCubit",
       "norm_label": "_detailtext"
     },
     {
@@ -16807,8 +16983,8 @@
       "source_location": null,
       "_origin": "ast",
       "id": "lib_main_stocktakeapp",
-      "community": 74,
-      "community_name": "warehouse_return_screen.dart",
+      "community": 66,
+      "community_name": "ItemsCubit",
       "norm_label": "stocktakeapp"
     },
     {
@@ -17986,6 +18162,61 @@
       "id": "graphify_out_memory_query_20260801_212058_\u0644\u0645\u0627\u0630\u0627_\u062a\u062a\u0644\u0641_\u0637\u0628\u0627\u0639\u0629_\u0643\u0644_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0628\u064a\u0646\u0645\u0627_\u062a\u0637\u0628\u0639_\u062d\u0631\u0643\u0627\u062a_\u0627\u0644\u0645\u062e\u0632_source_nodes",
       "community": 84,
       "community_name": "firebase_options.dart",
+      "norm_label": "source nodes"
+    },
+    {
+      "label": "query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru",
+      "community": 110,
+      "community_name": "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?",
+      "norm_label": "query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md"
+    },
+    {
+      "label": "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_q_why_does_printing_the_complete_stock_balance_corrupt_on_xp_p802a_while_short_movement_receipts_print_correctly",
+      "community": 110,
+      "community_name": "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?",
+      "norm_label": "q: why does printing the complete stock balance corrupt on xp-p802a while short movement receipts print correctly?"
+    },
+    {
+      "label": "Answer",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_answer",
+      "community": 110,
+      "community_name": "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?",
+      "norm_label": "answer"
+    },
+    {
+      "label": "Outcome",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_outcome",
+      "community": 110,
+      "community_name": "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?",
+      "norm_label": "outcome"
+    },
+    {
+      "label": "Source Nodes",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_source_nodes",
+      "community": 110,
+      "community_name": "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?",
       "norm_label": "source nodes"
     }
   ],
@@ -24517,6 +24748,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_selected_printer_store",
+      "target": "package_flutter_services_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/core/shared_widgets/custom_app_bar.dart",
       "source_location": null,
       "weight": 1.0,
@@ -26599,12 +26841,12 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/printing/cubit/printer_cubit.dart",
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
       "source_location": null,
       "weight": 1.0,
       "context": "variable_type",
       "_origin": "ast",
-      "source": "lib_features_printing_cubit_printer_cubit",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
       "target": "streamsubscription"
     },
     {
@@ -26669,11 +26911,11 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/printing/cubit/printer_cubit.dart",
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lib_features_printing_cubit_printer_cubit",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
       "target": "dart_async"
     },
     {
@@ -31261,7 +31503,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_cubit_printer_cubit",
-      "target": "lib_features_printing_cubit_printer_cubit_discoverysubscription"
+      "target": "lib_features_printing_cubit_printer_cubit_discovery"
     },
     {
       "relation": "defines",
@@ -31327,17 +31569,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_cubit_printer_cubit",
-      "target": "lib_features_printing_cubit_printer_cubit_renderpng"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/cubit/printer_cubit.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_printing_cubit_printer_cubit",
       "target": "lib_features_printing_cubit_printer_cubit_repository"
     },
     {
@@ -31385,15 +31616,16 @@
       "target": "lib_features_printing_cubit_printer_cubit_stopdiscovery"
     },
     {
-      "relation": "defines",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/printing/cubit/printer_cubit.dart",
       "source_location": null,
       "weight": 1.0,
+      "context": "variable_type",
       "_origin": "ast",
       "source": "lib_features_printing_cubit_printer_cubit",
-      "target": "lib_features_printing_cubit_printer_cubit_thermalreceiptrasterizer"
+      "target": "lib_features_printing_cubit_printer_discovery_controller_printerdiscoverycontroller"
     },
     {
       "relation": "references",
@@ -31416,30 +31648,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_cubit_printer_cubit",
+      "target": "printer_discovery_controller_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_cubit.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_cubit",
       "target": "printer_state_dart"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "lib_features_printing_presentation_widgets_thermal_receipt_dialog",
-      "target": "lib_features_printing_cubit_printer_cubit_thermalreceiptrasterizer"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_printing_presentation_widgets_thermal_receipt_dialog_receiptcontrollerrasterizer",
-      "target": "lib_features_printing_cubit_printer_cubit_thermalreceiptrasterizer"
     },
     {
       "relation": "references",
@@ -31634,6 +31854,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "dart_typed_data"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart",
       "source_location": null,
       "weight": 1.0,
@@ -31645,6 +31876,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
+      "target": "data_models_printer_discovery_snapshot_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/printing/cubit/printer_state.dart",
       "source_location": null,
       "weight": 1.0,
@@ -31684,6 +31926,84 @@
       "_origin": "ast",
       "source": "lib_features_printing_presentation_widgets_printer_selection_dialog",
       "target": "data_models_saved_printer_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
+      "target": "data_repositories_printer_repository_base_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
+      "target": "lib_features_printing_cubit_printer_discovery_controller_printerdiscoverycontroller"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
+      "target": "lib_features_printing_cubit_printer_discovery_controller_repository"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
+      "target": "lib_features_printing_cubit_printer_discovery_controller_start"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
+      "target": "lib_features_printing_cubit_printer_discovery_controller_stop"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
+      "target": "lib_features_printing_cubit_printer_discovery_controller_subscription"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/cubit/printer_discovery_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_printing_cubit_printer_discovery_controller",
+      "target": "lib_features_printing_data_repositories_printer_repository_base_printerrepositorybase"
     },
     {
       "relation": "imports",
@@ -32249,18 +32569,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_preferenceschannel"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_printimage"
+      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_printerstore"
     },
     {
       "relation": "defines",
@@ -32282,7 +32591,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_printreceiptpng"
+      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_printjob"
     },
     {
       "relation": "defines",
@@ -32293,31 +32602,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_printslice"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "variable_type",
-      "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_receiptimageprinter"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "variable_type",
-      "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_receiptimageslicer"
+      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_printreceiptpng"
     },
     {
       "relation": "defines",
@@ -32361,17 +32646,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_sliceimage"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
       "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_unsupportedmessage"
     },
     {
@@ -32384,6 +32658,30 @@
       "_origin": "ast",
       "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
       "target": "lib_features_printing_data_repositories_bluetooth_printer_repository_usesnativepreferences"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
+      "target": "lib_features_printing_data_services_selected_printer_store_selectedprinterstore"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
+      "target": "lib_features_printing_data_services_thermal_receipt_print_job_thermalreceiptprintjob"
     },
     {
       "relation": "imports",
@@ -32449,31 +32747,29 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
+      "target": "services_selected_printer_store_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
       "target": "services_thermal_receipt_image_slicer_dart"
     },
     {
-      "relation": "references",
+      "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
       "source_location": null,
       "weight": 1.0,
-      "context": "variable_type",
       "_origin": "ast",
       "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "static_const_methodchannel"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/printing/data/repositories/bluetooth_printer_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "lib_features_printing_data_repositories_bluetooth_printer_repository",
-      "target": "typedef"
+      "target": "services_thermal_receipt_print_job_dart"
     },
     {
       "relation": "implements",
@@ -32528,6 +32824,28 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_data_repositories_printer_repository_base",
+      "target": "models_saved_printer_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_selected_printer_store",
+      "target": "models_saved_printer_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
       "target": "models_saved_printer_dart"
     },
     {
@@ -32620,6 +32938,62 @@
       "target": "printerconnectionprofile_get"
     },
     {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_selected_printer_store",
+      "target": "lib_features_printing_data_services_selected_printer_store_channel"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_selected_printer_store",
+      "target": "lib_features_printing_data_services_selected_printer_store_load"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_selected_printer_store",
+      "target": "lib_features_printing_data_services_selected_printer_store_save"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_selected_printer_store",
+      "target": "lib_features_printing_data_services_selected_printer_store_selectedprinterstore"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/selected_printer_store.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_selected_printer_store",
+      "target": "static_const_methodchannel"
+    },
+    {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -32705,6 +33079,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_features_printing_data_services_thermal_receipt_image_slicer",
+      "target": "lib_features_printing_data_services_thermal_receipt_image_slicer_receiptimageslicer"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_image_slicer.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_image_slicer",
       "target": "lib_features_printing_data_services_thermal_receipt_image_slicer_safesliceheight"
     },
     {
@@ -32773,7 +33158,110 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "lib_features_printing_data_services_thermal_receipt_image_slicer",
+      "target": "typedef"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_image_slicer.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_image_slicer",
       "target": "uint8list"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "lib_features_printing_data_services_thermal_receipt_image_slicer_receiptimageslicer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "typedef"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "lib_features_printing_data_services_thermal_receipt_print_job_print"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "lib_features_printing_data_services_thermal_receipt_print_job_printimage"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "variable_type",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "lib_features_printing_data_services_thermal_receipt_print_job_receiptimageprinter"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "lib_features_printing_data_services_thermal_receipt_print_job_sliceimage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "lib_features_printing_data_services_thermal_receipt_print_job_thermalreceiptprintjob"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/printing/data/services/thermal_receipt_print_job.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_features_printing_data_services_thermal_receipt_print_job",
+      "target": "thermal_receipt_image_slicer_dart"
     },
     {
       "relation": "imports",
@@ -33304,13 +33792,14 @@
       "target": "lib_features_printing_presentation_widgets_thermal_receipt_dialog_receipt"
     },
     {
-      "relation": "defines",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/printing/presentation/widgets/thermal_receipt_dialog.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
+      "context": "variable_type",
       "source": "lib_features_printing_presentation_widgets_thermal_receipt_dialog",
       "target": "lib_features_printing_presentation_widgets_thermal_receipt_dialog_receiptcontrollerrasterizer"
     },
@@ -44001,8 +44490,52 @@
       "source": "graphify_out_memory_query_20260801_212058_\u0644\u0645\u0627\u0630\u0627_\u062a\u062a\u0644\u0641_\u0637\u0628\u0627\u0639\u0629_\u0643\u0644_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0628\u064a\u0646\u0645\u0627_\u062a\u0637\u0628\u0639_\u062d\u0631\u0643\u0627\u062a_\u0627\u0644\u0645\u062e\u0632_q_\u0644\u0645\u0627\u0630\u0627_\u062a\u062a\u0644\u0641_\u0637\u0628\u0627\u0639\u0629_\u0643\u0644_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0628\u064a\u0646\u0645\u0627_\u062a\u0637\u0628\u0639_\u062d\u0631\u0643\u0627\u062a_\u0627\u0644\u0645\u062e\u0632\u0646_\u0627\u0644\u0623\u062e\u0631\u0649_\u0633\u0644\u064a\u0645\u0629",
       "target": "graphify_out_memory_query_20260801_212058_\u0644\u0645\u0627\u0630\u0627_\u062a\u062a\u0644\u0641_\u0637\u0628\u0627\u0639\u0629_\u0643\u0644_\u0627\u0644\u0623\u0635\u0646\u0627\u0641_\u0628\u064a\u0646\u0645\u0627_\u062a\u0637\u0628\u0639_\u062d\u0631\u0643\u0627\u062a_\u0627\u0644\u0645\u062e\u0632_source_nodes",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru",
+      "target": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_q_why_does_printing_the_complete_stock_balance_corrupt_on_xp_p802a_while_short_movement_receipts_print_correctly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_q_why_does_printing_the_complete_stock_balance_corrupt_on_xp_p802a_while_short_movement_receipts_print_correctly",
+      "target": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_q_why_does_printing_the_complete_stock_balance_corrupt_on_xp_p802a_while_short_movement_receipts_print_correctly",
+      "target": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_outcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260801_222034_why_does_printing_the_complete_stock_balance_corru.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_q_why_does_printing_the_complete_stock_balance_corrupt_on_xp_p802a_while_short_movement_receipts_print_correctly",
+      "target": "graphify_out_memory_query_20260801_222034_why_does_printing_the_complete_stock_balance_corru_source_nodes",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0cc940468bc0f2a6ac9c54335c083c6d9d8d17cd"
+  "built_at_commit": "43272dcc169471af51d777e8e14384050ef3c7d3"
 }

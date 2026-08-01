@@ -111,5 +111,7 @@
   "109": "../../../../core/constants/app_text_styles.dart",
   "110": "Q: Why does printing the complete stock balance corrupt on XP-P802A while short movement receipts print correctly?",
   "111": "Q: إضافة شعار EL SAUDI أعلى الريسيت وإجمالي الكراتين ثم القطع وتحسين وضوح الطباعة",
-  "112": "Q: خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل"
+  "112": "Q: خطة آمنة لتعديل وحذف الأصناف مع سجل تدقيق وطباعة الحركات وطباعة رصيد المخزن بالكامل",
+  "113": "package:cloud_firestore/cloud_firestore.dart",
+  "114": "String?"
 }
