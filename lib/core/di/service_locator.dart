@@ -116,7 +116,7 @@ Future<void> configureDependencies({
     serviceLocator.registerSingleton<PrinterRepositoryBase>(printerRepository);
   } else {
     serviceLocator.registerLazySingleton<PrinterRepositoryBase>(
-      BluetoothPrinterRepository.new,
+      () => BluetoothPrinterRepository(),
     );
   }
 
